@@ -7,7 +7,7 @@ echo "Generating..."
 hugo
 
 echo "Commiting docs..."
-cd public && git add --all && git commit -m "auto-generate docs"
+cd docs && git add --all && git commit -m "auto-generate docs"
 
 echo "Pushing..."
 git push
