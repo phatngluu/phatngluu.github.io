@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>  </title>
+  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="" />
+<meta property="og:description" content="CORBA Demo Preparing virtual machine (using Docker)  Ubuntu OpenJDK 8  In host&rsquo;s terminal:
+cd ~/Github/DS/CORBA # Build image docker build --tag corba:latest . # Run container docker run -it --publish 1050:1050 --detach --name corba corba:latest # Open container&#39;s terminal docker exec -it corba /bin/sh; exit In container&rsquo;s terminal:
+cd ~/corba/calc # build project &amp; compile idlj -fall Calc.idl javac *.java CalcApp/*.java orbd -ORBInitialPort 1050&amp; # run server java CalcServer -ORBInitialPort 1050 -ORBInitialHost localhost&amp; To run client, open new container&rsquo;s terminal:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/distributed-systems/corba/" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="CORBA Demo Preparing virtual machine (using Docker)  Ubuntu OpenJDK 8  In host&rsquo;s terminal:
+cd ~/Github/DS/CORBA # Build image docker build --tag corba:latest . # Run container docker run -it --publish 1050:1050 --detach --name corba corba:latest # Open container&#39;s terminal docker exec -it corba /bin/sh; exit In container&rsquo;s terminal:
+cd ~/corba/calc # build project &amp; compile idlj -fall Calc.idl javac *.java CalcApp/*.java orbd -ORBInitialPort 1050&amp; # run server java CalcServer -ORBInitialPort 1050 -ORBInitialHost localhost&amp; To run client, open new container&rsquo;s terminal:"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://phatngluu.github.io/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://phatngluu.github.io/images/favicon.ico" />
+
+  
+  
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://phatngluu.github.io/posts/distributed-systems/examprepare/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://phatngluu.github.io/posts/devops/what/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&text=">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&title=">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&is_video=false&description=">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&title=">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&title=">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&title=">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&title=">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&name=&description=CORBA%20Demo%20Preparing%20virtual%20machine%20%28using%20Docker%29%20%20Ubuntu%20OpenJDK%208%20%20In%20host%26rsquo%3bs%20terminal%3a%0acd%20~%2fGithub%2fDS%2fCORBA%20%23%20Build%20image%20docker%20build%20--tag%20corba%3alatest%20.%20%23%20Run%20container%20docker%20run%20-it%20--publish%201050%3a1050%20--detach%20--name%20corba%20corba%3alatest%20%23%20Open%20container%27s%20terminal%20docker%20exec%20-it%20corba%20%2fbin%2fsh%3b%20exit%20In%20container%26rsquo%3bs%20terminal%3a%0acd%20~%2fcorba%2fcalc%20%23%20build%20project%20%26amp%3b%20compile%20idlj%20-fall%20Calc.idl%20javac%20%2a.java%20CalcApp%2f%2a.java%20orbd%20-ORBInitialPort%201050%26amp%3b%20%23%20run%20server%20java%20CalcServer%20-ORBInitialPort%201050%20-ORBInitialHost%20localhost%26amp%3b%20To%20run%20client%2c%20open%20new%20container%26rsquo%3bs%20terminal%3a">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&t=">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparing-virtual-machine-using-docker">Preparing virtual machine (using Docker)</a>
+      <ul>
+        <li><a href="#the-basic-steps-for-corba-development-include">The basic steps for CORBA development include:</a></li>
+        <li><a href="#how-corba-works">How CORBA works</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">0001-01-01</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <h1 id="corba-demo">CORBA Demo</h1>
+<h2 id="preparing-virtual-machine-using-docker">Preparing virtual machine (using Docker)</h2>
+<ul>
+<li>Ubuntu</li>
+<li>OpenJDK 8</li>
+</ul>
+<p><strong>In host&rsquo;s terminal:</strong></p>
+<pre><code>cd ~/Github/DS/CORBA
+
+# Build image
+docker build --tag corba:latest .
+
+# Run container
+docker run -it --publish 1050:1050 --detach --name corba corba:latest
+
+# Open container's terminal
+docker exec -it corba /bin/sh; exit
+</code></pre><p><strong>In container&rsquo;s terminal:</strong></p>
+<pre><code>cd ~/corba/calc
+
+# build project &amp; compile
+idlj -fall Calc.idl
+javac *.java CalcApp/*.java
+orbd -ORBInitialPort 1050&amp;
+
+# run server
+java CalcServer -ORBInitialPort 1050 -ORBInitialHost localhost&amp;
+</code></pre><p><strong>To run client, open new container&rsquo;s terminal:</strong></p>
+<pre><code>cd ~/corba/calc
+java CalcClient -ORBInitialPort 1050 -ORBInitialHost localhost
+</code></pre><p><strong>Remove built project:</strong></p>
+<pre><code>rm *.class
+rm -r CalcApp
+rm -r orb.db
+</code></pre><h3 id="the-basic-steps-for-corba-development-include">The basic steps for CORBA development include:</h3>
+<p><a href="http://www.ois.com/Products/what-is-corba.html">http://www.ois.com/Products/what-is-corba.html</a></p>
+<p><img src="http://www.ois.com/images/stories/ois/266_red_bullet1.gif" alt="img"> <strong>Create the IDL to Define the Application Interfaces</strong>
+The IDL provides the operating system and programming language independent interfaces to all services and components that are linked to the ORB. The IDL specifies a description of any services a server component exposes to the client. The term &ldquo;IDL Compiler&rdquo; is often used, but the IDL is actually translated into a programming language.</p>
+<p><em><img src="http://www.ois.com/images/stories/ois/267_red_bullet2.gif" alt="267_red_bullet2.gif"></em> <strong>Translate the IDL</strong>
+An IDL translator typically generates two cooperative parts for the client and server implementation, stub code and skeleton code. The stub code generated for the interface classes is associated with a client application and provides the user with a well-defined Application Programming Interface (API). In this example, the IDL is translated into C++.</p>
+<p><img src="http://www.ois.com/images/stories/ois/268_red_bullet3.gif" alt="268_red_bullet3.gif"> **Compile the Interface Files
+**Once the IDL is translated into the appropriate language, C++ in this example, these interface files are compiled and prepared for the object implementation.</p>
+<p><img src="http://www.ois.com/images/stories/ois/269_red_bullet4.gif" alt="269_red_bullet4.gif"> **Complete the Implementation
+**If the implementation classes are incomplete, the spec and header files and complete bodies and definitions need to be modified before passing through to be compiled. The output is a complete client/server implementation.</p>
+<p><em><img src="http://www.ois.com/images/stories/ois/270_red_bullet5.gif" alt="270_red_bullet5.gif"></em> **Compile the Implementation
+**Once the implementation class is complete, the client interfaces are ready to be used in the client application and can be immediately incorporated into the client process. This client process is responsible for obtaining an object reference to a specific object, allowing the client to make requests to that object in the form of a method call on its generated API.</p>
+<p><img src="http://www.ois.com/images/stories/ois/271_red_bullet6.gif" alt="271_red_bullet6.gif"> **Link the Application
+**Once all the object code from steps three and five have been compiled, the object implementation classes need to be linked to the C++ linker. Once linked to the ORB library, in this example, ORB<em>express</em>, two executable operations are created, one for the client and one for the server.</p>
+<p><img src="http://www.ois.com/images/stories/ois/272_red_bullet7.gif" alt="272_red_bullet7.gif"> **Run the Client and Server
+**The development process is now complete and the client will now communicate with the server. The server uses the object implementation classes allowing it to communicate with the objects created by the client requests.</p>
+<p>In its simplest form, the server must perform the following:</p>
+<ul>
+<li>Create the required objects.</li>
+<li>Notify the CORBA environment that it is ready to receive client requests.</li>
+<li>Process client requests by dispatching the appropriate servant.</li>
+</ul>
+<h3 id="how-corba-works">How CORBA works</h3>
+<p><a href="https://voer.edu.vn/m/corba-va-mo-hinh-phan-tan/2ef24490">https://voer.edu.vn/m/corba-va-mo-hinh-phan-tan/2ef24490</a></p>
+<p><img src="https://voer.edu.vn/file/25855" alt="img"></p>
+<ul>
+<li>
+<p>Phần cài đặt đối tượng Corba trên máy chủ diễn ra như sau:</p>
+<ul>
+<li>Đặc tả đối tượng bằng ngôn ngữ IDL của Corba.</li>
+<li>Chuyển đặc tả đó thành mô tả của ngôn ngữ cụ thể. Dựa vào đặc tả IDL yêu cầu trình biên dịch tạo ra lớp trung gian _SKel.</li>
+<li>Cài đặt đối tượng trên bằng ngôn ngữ java.</li>
+</ul>
+</li>
+<li>
+<p>Phần kết nối với đối tượng máy khách.</p>
+<ul>
+<li>Dùng đặc tả IDL của đối tượng yêu cầu trình biên dịch tạo lớp trung gian _Stub.</li>
+<li>Khi trình khách triệu gọi đến đối tượng chủ, lời gọi sẽ được chuyển qua _Stub trên máy khách, gửi đến trình môi giới ORB. Trình ORB máy khách gửi đến trình ORB máy chủ theo giao thức IIOP. Trình ORB máy chủ chuyển lời gọi cho _Skel máy chủ. Cuối cùng đối tượng Corba trên trình chủ sẽ thực thi phương thức của nó.</li>
+</ul>
+</li>
+</ul>
+<p>Giao thức IIOP làm nền tảng cho tất cả các đối tượng có thể giao tiếp với nhau trên mạng Internet một cách dễ dàng.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparing-virtual-machine-using-docker">Preparing virtual machine (using Docker)</a>
+      <ul>
+        <li><a href="#the-basic-steps-for-corba-development-include">The basic steps for CORBA development include:</a></li>
+        <li><a href="#how-corba-works">How CORBA works</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&text=">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&title=">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&is_video=false&description=">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&title=">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&title=">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&title=">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&title=">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&name=&description=CORBA%20Demo%20Preparing%20virtual%20machine%20%28using%20Docker%29%20%20Ubuntu%20OpenJDK%208%20%20In%20host%26rsquo%3bs%20terminal%3a%0acd%20~%2fGithub%2fDS%2fCORBA%20%23%20Build%20image%20docker%20build%20--tag%20corba%3alatest%20.%20%23%20Run%20container%20docker%20run%20-it%20--publish%201050%3a1050%20--detach%20--name%20corba%20corba%3alatest%20%23%20Open%20container%27s%20terminal%20docker%20exec%20-it%20corba%20%2fbin%2fsh%3b%20exit%20In%20container%26rsquo%3bs%20terminal%3a%0acd%20~%2fcorba%2fcalc%20%23%20build%20project%20%26amp%3b%20compile%20idlj%20-fall%20Calc.idl%20javac%20%2a.java%20CalcApp%2f%2a.java%20orbd%20-ORBInitialPort%201050%26amp%3b%20%23%20run%20server%20java%20CalcServer%20-ORBInitialPort%201050%20-ORBInitialHost%20localhost%26amp%3b%20To%20run%20client%2c%20open%20new%20container%26rsquo%3bs%20terminal%3a">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2fcorba%2f&t=">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  You 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</html>

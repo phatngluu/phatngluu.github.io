@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>  </title>
+  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="" />
+<meta property="og:description" content="Passing Information to a Method or a Constructor Parameters refers to the list of variables in a method declaration. Arguments are the actual values that are passed in when the method is invoked. When you invoke a method, the arguments used must match the declaration&rsquo;s parameters in type and order.
+Parameter Types You can use any data type for a parameter of a method or a constructor. This includes primitive data types, such as doubles, floats, and integers,&hellip; and reference data types, such as objects and arrays." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/05-passing-information-to-a-method-or-a-constructor/" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Passing Information to a Method or a Constructor Parameters refers to the list of variables in a method declaration. Arguments are the actual values that are passed in when the method is invoked. When you invoke a method, the arguments used must match the declaration&rsquo;s parameters in type and order.
+Parameter Types You can use any data type for a parameter of a method or a constructor. This includes primitive data types, such as doubles, floats, and integers,&hellip; and reference data types, such as objects and arrays."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://phatngluu.github.io/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://phatngluu.github.io/images/favicon.ico" />
+
+  
+  
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/more-on-classes/initializing-fields/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/04-providing-constructors-for-your-classes/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&text=">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&title=">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&is_video=false&description=">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&title=">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&title=">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&title=">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&title=">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&name=&description=Passing%20Information%20to%20a%20Method%20or%20a%20Constructor%20Parameters%20refers%20to%20the%20list%20of%20variables%20in%20a%20method%20declaration.%20Arguments%20are%20the%20actual%20values%20that%20are%20passed%20in%20when%20the%20method%20is%20invoked.%20When%20you%20invoke%20a%20method%2c%20the%20arguments%20used%20must%20match%20the%20declaration%26rsquo%3bs%20parameters%20in%20type%20and%20order.%0aParameter%20Types%20You%20can%20use%20any%20data%20type%20for%20a%20parameter%20of%20a%20method%20or%20a%20constructor.%20This%20includes%20primitive%20data%20types%2c%20such%20as%20doubles%2c%20floats%2c%20and%20integers%2c%26hellip%3b%20and%20reference%20data%20types%2c%20such%20as%20objects%20and%20arrays.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&t=">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#parameter-types">Parameter Types</a></li>
+    <li><a href="#arbitrary-number-of-arguments">Arbitrary Number of Arguments</a></li>
+    <li><a href="#parameter-names">Parameter Names</a></li>
+    <li><a href="#passing-primitive-data-type-arguments">Passing Primitive Data Type Arguments</a></li>
+    <li><a href="#passing-reference-data-type-arguments">Passing Reference Data Type Arguments</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">0001-01-01</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <h1 id="passing-information-to-a-method-or-a-constructor">Passing Information to a Method or a Constructor</h1>
+<p><em>Parameters</em> refers to the list of variables in a method declaration. <em>Arguments</em> are the actual values that are passed in when the method is invoked. When you invoke a method, the arguments used must match the declaration&rsquo;s parameters in type and order.</p>
+<h2 id="parameter-types">Parameter Types</h2>
+<p>You can use any data type for a parameter of a method or a constructor. This includes primitive data types, such as doubles, floats, and integers,&hellip; and reference data types, such as objects and arrays.</p>
+<p><strong>Note:</strong> If you want to <strong>pass a method</strong> <strong>into a method</strong>, then use a <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">lambda expression</a> or a <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html">method reference</a>.</p>
+<h2 id="arbitrary-number-of-arguments">Arbitrary Number of Arguments</h2>
+<p>When you <strong>don&rsquo;t know how many of a particular type of argument will be passed</strong> to the method, you should use <strong>Varargs</strong>. It allows you to <strong>pass an arbitrary number of values (have the same type)</strong> to a method.</p>
+<p><em>Varargs</em>  allows you to pass an arbitrary number of values to a method.</p>
+<p>This is a shortcut to creating an array manually: you add <code>...</code> <strong>after the type of the</strong> <strong>last parameter</strong>, then a <strong>space</strong>, and the parameter <strong>name</strong>. The method can then be called with any number of that parameter, including none. Example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">myMethod</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> strings<span style="color:#f92672">){</span>
+    <span style="color:#75715e">// method body
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</code></pre></div><p>In above example, you could call it as any of the following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">myMethod<span style="color:#f92672">();</span> <span style="color:#75715e">// Likely useless, but possible
+</span><span style="color:#75715e"></span>myMethod<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;one&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;two&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;three&#34;</span><span style="color:#f92672">);</span>
+myMethod<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;solo&#34;</span><span style="color:#f92672">);</span>
+myMethod<span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]{</span><span style="color:#e6db74">&#34;a&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;b&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;c&#34;</span><span style="color:#f92672">});</span>
+</code></pre></div><p><strong>Important Note:</strong> The argument(s) passed in this way is always an array - even if there&rsquo;s just one. Make sure you treat it that way in the method body.</p>
+<p><strong>Important Note 2:</strong> The argument that gets the <code>...</code> must be the last in the method signature. So, <code>myMethod(int i, String... strings)</code> is okay, but <code>myMethod(String... strings, int i)</code> is not okay.</p>
+<h2 id="parameter-names">Parameter Names</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Circle</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> x<span style="color:#f92672">,</span> y<span style="color:#f92672">,</span> radius<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setOrigin</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> x<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> y<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#f92672">...</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>A parameter can have the same name as one of the class&rsquo;s fields. If this is the case, the parameter is said to <em>shadow</em> the field.</p>
+<p>So using the simple names <code>x</code> or <code>y</code> within the body of the method refers to the parameter, <em>not</em> to the field. To access the field, you must use a qualified name (using <code>this</code> keyword).</p>
+<h2 id="passing-primitive-data-type-arguments">Passing Primitive Data Type Arguments</h2>
+<p>Primitive arguments, such as an <code>int</code> or a <code>double</code>, are passed into methods <em>by value</em>. This means that any changes to the values of the parameters exist only within the scope of the method. When the method returns, the parameters are gone and any changes to them are lost.</p>
+<h2 id="passing-reference-data-type-arguments">Passing Reference Data Type Arguments</h2>
+<p>Reference data type parameters, such as objects, are also passed into methods <em>by value</em>. This means that when the method returns, the passed-in reference still references the same object as before. <em>However</em>, the values of the object&rsquo;s fields <em>can</em>be changed in the method, if they have the proper access level.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#parameter-types">Parameter Types</a></li>
+    <li><a href="#arbitrary-number-of-arguments">Arbitrary Number of Arguments</a></li>
+    <li><a href="#parameter-names">Parameter Names</a></li>
+    <li><a href="#passing-primitive-data-type-arguments">Passing Primitive Data Type Arguments</a></li>
+    <li><a href="#passing-reference-data-type-arguments">Passing Reference Data Type Arguments</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&text=">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&title=">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&is_video=false&description=">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&title=">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&title=">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&title=">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&title=">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&name=&description=Passing%20Information%20to%20a%20Method%20or%20a%20Constructor%20Parameters%20refers%20to%20the%20list%20of%20variables%20in%20a%20method%20declaration.%20Arguments%20are%20the%20actual%20values%20that%20are%20passed%20in%20when%20the%20method%20is%20invoked.%20When%20you%20invoke%20a%20method%2c%20the%20arguments%20used%20must%20match%20the%20declaration%26rsquo%3bs%20parameters%20in%20type%20and%20order.%0aParameter%20Types%20You%20can%20use%20any%20data%20type%20for%20a%20parameter%20of%20a%20method%20or%20a%20constructor.%20This%20includes%20primitive%20data%20types%2c%20such%20as%20doubles%2c%20floats%2c%20and%20integers%2c%26hellip%3b%20and%20reference%20data%20types%2c%20such%20as%20objects%20and%20arrays.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fjava-oracle-tutorials%2fclass-and-objects%2fclasses%2f05-passing-information-to-a-method-or-a-constructor%2f&t=">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  You 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</html>

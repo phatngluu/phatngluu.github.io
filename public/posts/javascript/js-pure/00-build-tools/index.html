@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>  </title>
+  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="" />
+<meta property="og:description" content="Package Managers  npm yarn  Module Bundlers Module bundlers combine all of your source code (and all of its dependencies) into a single, minified JavaScript file before it&rsquo;s served to the browser. Module bundlers commonly used today in JavaScript development are Webpack, Rollup and Browserify. Parcel is also a new open source JavaScript module bundler that recently launched.
+Compilers Javascript runtime environments (like the browser) only understand standard JavaScript. Modern, complex JavaScript applications often require more than pure JavaScript." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/javascript/js-pure/00-build-tools/" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Package Managers  npm yarn  Module Bundlers Module bundlers combine all of your source code (and all of its dependencies) into a single, minified JavaScript file before it&rsquo;s served to the browser. Module bundlers commonly used today in JavaScript development are Webpack, Rollup and Browserify. Parcel is also a new open source JavaScript module bundler that recently launched.
+Compilers Javascript runtime environments (like the browser) only understand standard JavaScript. Modern, complex JavaScript applications often require more than pure JavaScript."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://phatngluu.github.io/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://phatngluu.github.io/images/favicon.ico" />
+
+  
+  
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://phatngluu.github.io/posts/javascript/js-pure/01-basic/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://phatngluu.github.io/posts/javascript/js-dom/dom/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&text=">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&title=">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&is_video=false&description=">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&title=">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&title=">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&title=">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&title=">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&name=&description=Package%20Managers%20%20npm%20yarn%20%20Module%20Bundlers%20Module%20bundlers%20combine%20all%20of%20your%20source%20code%20%28and%20all%20of%20its%20dependencies%29%20into%20a%20single%2c%20minified%20JavaScript%20file%20before%20it%26rsquo%3bs%20served%20to%20the%20browser.%20Module%20bundlers%20commonly%20used%20today%20in%20JavaScript%20development%20are%20Webpack%2c%20Rollup%20and%20Browserify.%20Parcel%20is%20also%20a%20new%20open%20source%20JavaScript%20module%20bundler%20that%20recently%20launched.%0aCompilers%20Javascript%20runtime%20environments%20%28like%20the%20browser%29%20only%20understand%20standard%20JavaScript.%20Modern%2c%20complex%20JavaScript%20applications%20often%20require%20more%20than%20pure%20JavaScript.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&t=">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#package-managers">Package Managers</a></li>
+            <li><a href="#module-bundlers">Module Bundlers</a></li>
+            <li><a href="#compilers">Compilers</a></li>
+            <li><a href="#task-runners">Task Runners</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">0001-01-01</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <h4 id="package-managers">Package Managers</h4>
+<ul>
+<li>npm</li>
+<li>yarn</li>
+</ul>
+<h4 id="module-bundlers">Module Bundlers</h4>
+<p>Module bundlers combine all of your source code (and all of its dependencies) into a single, <a href="https://en.wikipedia.org/wiki/Minification_(programming)">minified</a> JavaScript file before it&rsquo;s served to the browser. Module bundlers commonly used today in JavaScript development are <a href="https://webpack.js.org/">Webpack</a>, <a href="https://rollupjs.org/guide/en">Rollup</a> and <a href="http://browserify.org/">Browserify</a>. <a href="https://parceljs.org/">Parcel</a> is also a new open source JavaScript module bundler that recently launched.</p>
+<h4 id="compilers">Compilers</h4>
+<p>Javascript runtime environments (like the browser) only understand standard JavaScript. Modern, complex JavaScript applications often require more than pure JavaScript.</p>
+<p><a href="https://www.typescriptlang.org/">TypeScript</a> and <a href="http://coffeescript.org/">CoffeeScript</a> are different &ldquo;flavors&rdquo; of JavaScript that do not run natively in the browser. If you try their code in the browser, you&rsquo;ll get all sorts of errors. Since these languages cannot be understood and ran by browsers, you need to transform them to standard JavaScript using a <a href="https://en.wikipedia.org/wiki/Compiler">compiler</a>.</p>
+<p>A compiler is a tool that translates source code written using a special type of syntax into code that can work in the browser. Typescript, for instance, has a built-in compiler that converts a TypeScript file to plain JavaScript.</p>
+<p><a href="https://babeljs.io/">Babel</a> is the most popular JavaScript compiler used by developers.</p>
+<h4 id="task-runners">Task Runners</h4>
+<p>Anything you might do manually over and over again could be automated and handed off to a task runner. For example:</p>
+<ul>
+<li>Minifying your JavaScript so it can be loaded quickly and efficiently into the browser</li>
+<li>Running tests on your code</li>
+<li>Starting up a development server on your computer to run your app</li>
+<li>Automatically reloading the browser for you whenever a JavaScript file is saved</li>
+<li>Compiling source code from one type of syntax to another</li>
+</ul>
+<p><a href="https://gulpjs.com/">Gulp</a> is a common task runner, and <a href="https://www.npmjs.com/">npm</a> (the node package manager) can also run automated tasks and is now the preferred task runner of many developers.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#package-managers">Package Managers</a></li>
+            <li><a href="#module-bundlers">Module Bundlers</a></li>
+            <li><a href="#compilers">Compilers</a></li>
+            <li><a href="#task-runners">Task Runners</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&text=">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&title=">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&is_video=false&description=">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&title=">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&title=">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&title=">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&title=">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&name=&description=Package%20Managers%20%20npm%20yarn%20%20Module%20Bundlers%20Module%20bundlers%20combine%20all%20of%20your%20source%20code%20%28and%20all%20of%20its%20dependencies%29%20into%20a%20single%2c%20minified%20JavaScript%20file%20before%20it%26rsquo%3bs%20served%20to%20the%20browser.%20Module%20bundlers%20commonly%20used%20today%20in%20JavaScript%20development%20are%20Webpack%2c%20Rollup%20and%20Browserify.%20Parcel%20is%20also%20a%20new%20open%20source%20JavaScript%20module%20bundler%20that%20recently%20launched.%0aCompilers%20Javascript%20runtime%20environments%20%28like%20the%20browser%29%20only%20understand%20standard%20JavaScript.%20Modern%2c%20complex%20JavaScript%20applications%20often%20require%20more%20than%20pure%20JavaScript.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjavascript%2fjs-pure%2f00-build-tools%2f&t=">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  You 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</html>

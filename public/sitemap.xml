@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://phatngluu.github.io/about/</loc>
+    <lastmod>2020-09-05T17:51:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/computer-networks/transport-layer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/deutsch/adjektivdeklination/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/deutsch/artikeldeklination/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/deutsch/finalreview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/deutsch/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/deutsch/so-s%C3%A1nh/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/devops/what/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/distributed-systems/corba/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/distributed-systems/examprepare/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/distributed-systems/impacts-of-bigdata/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/distributed-systems/lecture-5-note/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/distributed-systems/mqtt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/distributed-systems/nodejs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/distributed-systems/presentation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/git/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/golang/01/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/golang/go/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/herokuproject/connectpostresql/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/hibernate/01/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/hibernate/03/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/internship/first_day/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/interview/vsa/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/advanced-annotation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/advanced-jpa/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/advanced-reflection/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/j2ee/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/_index/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/01-declaring-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/02-declaring-member-variables/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/03-defining-methods/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/04-providing-constructors-for-your-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/05-passing-information-to-a-method-or-a-constructor/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/more-on-classes/initializing-fields/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/more-on-classes/understanding-class-members/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/nested-classes/01-nested-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/objects/creating-objects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/objects/using-objects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/classes-and-objects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/lambda-expressions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/method-references/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/operators/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/variables/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/maven/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/milestones/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/regular-array-and-array-list/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/rules-for-overriding/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/ajax/what-is-ajax/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/async/01-async-in-js/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/async/02-callback/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/async/03-project/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/async/04-promise/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/async/05-async-await/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/fetch-api/01-why-fetch-api/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/fetch-api/02-basic-fetch-request/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/intellij/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/js-dom/01-getting-and-setting-text/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/js-dom/dom/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/js-pure/00-build-tools/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/js-pure/01-basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/js-pure/03-prototype/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/js-pure/04-inheritance/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/js-pure/05-functions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/objects/01-objects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/objects/02-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/javascript/objects/03-getters-setters/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/life/9-ki%E1%BB%83u-ng%C6%B0%E1%BB%9Di-t%C6%B0%E1%BB%9Fng-d%E1%BA%A1i-d%E1%BB%99t-nh%C6%B0ng-th%E1%BB%B1c-ra-l%E1%BA%A1i-l%C3%A0-th%C3%B4ng-minh-nh%E1%BA%A5t/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/life/h%C3%A3y-gi%E1%BB%8Fi-m%E1%BB%99t-th%E1%BB%A9-tr%C6%B0%E1%BB%9Bc-khi-gi%E1%BB%8Fi-nhi%E1%BB%81u-th%E1%BB%A9/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/network-config/dockerbasic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/network-config/ngrok/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/network-config/port/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/network-config/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/nodejs/https/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/nodejs/install/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/personalproject/plannerapp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/personalproject/untitled/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/phatngluu-website/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/realtime-systems/chapter-1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/realtime-systems/chapter-2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/realtime-systems/chapter-3/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/realtime-systems/chapter-4-review/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/realtime-systems/chapter-4.1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/realtime-systems/chapter-4.2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/realtime-systems/chapter-5/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/realtime-systems/exam-note/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/realtime-systems/exercises/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/realtime-systems/job-tuple/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/remote-development/aws/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/remote-development/java/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/remote-development/vultr/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/skills/b%E1%BB%9Bt-nh%E1%BB%8F-nhen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/skills/tr%C4%83n-tr%E1%BB%9F-t%C3%ACm-vi%E1%BB%87c/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/all/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/behavioral/chain/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/behavioral/decorator/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/behavioral/iterator/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/behavioral/observer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/behavioral/visitor/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/composite/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/creational/abstractfactory/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/creational/adapter/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/creational/factory/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/creational/prototype/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/creational/singleton/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/day14/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/softwaredesign/exampreparation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/springboot/learnpath/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/sql/sql-tricks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/sql/sql-review/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/tester-basic/1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/tester-basic/2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/tester-basic/3/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/tester-basic/5/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/uncategorized/autocad-license/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/uncategorized/docker/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/uncategorized/homo-sapiens/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/uncategorized/install-mysql-on-macos/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/uncategorized/job-hunting/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/uncategorized/lambdaexpression/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/uncategorized/lesson-learned-android/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/</loc>
+  </url>
+  
+</urlset>

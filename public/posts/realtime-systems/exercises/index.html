@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>  </title>
+  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="" />
+<meta property="og:description" content="Exercises Chapter 1   Because sporadic jobs may have varying release times and execution times, the periodic task model may be too inaccurate and can lead to undue underutilization of the processor even when the inter release times of jobs are bounded from below and their executions are bounded from above. As an example, suppose we have a stream of sporadic jobs whose inter release times are uniformly distributed from 9 to 11." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/realtime-systems/exercises/" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Exercises Chapter 1   Because sporadic jobs may have varying release times and execution times, the periodic task model may be too inaccurate and can lead to undue underutilization of the processor even when the inter release times of jobs are bounded from below and their executions are bounded from above. As an example, suppose we have a stream of sporadic jobs whose inter release times are uniformly distributed from 9 to 11."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://phatngluu.github.io/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://phatngluu.github.io/images/favicon.ico" />
+
+  
+  
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://phatngluu.github.io/posts/realtime-systems/job-tuple/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://phatngluu.github.io/posts/realtime-systems/exam-note/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&text=">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&title=">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&is_video=false&description=">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&title=">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&title=">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&title=">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&title=">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&name=&description=Exercises%20Chapter%201%20%20%20Because%20sporadic%20jobs%20may%20have%20varying%20release%20times%20and%20execution%20times%2c%20the%20periodic%20task%20model%20may%20be%20too%20inaccurate%20and%20can%20lead%20to%20undue%20underutilization%20of%20the%20processor%20even%20when%20the%20inter%20release%20times%20of%20jobs%20are%20bounded%20from%20below%20and%20their%20executions%20are%20bounded%20from%20above.%20As%20an%20example%2c%20suppose%20we%20have%20a%20stream%20of%20sporadic%20jobs%20whose%20inter%20release%20times%20are%20uniformly%20distributed%20from%209%20to%2011.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&t=">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter-1">Chapter 1</a></li>
+    <li><a href="#chapter-2">Chapter 2</a>
+      <ul>
+        <li><a href="#solution">Solution</a>
+          <ul>
+            <li><a href="#1">1.</a></li>
+            <li><a href="#2">2.</a></li>
+            <li><a href="#3">3.</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#chapter-3">Chapter 3</a>
+      <ul>
+        <li><a href="#solution-1">Solution</a>
+          <ul>
+            <li><a href="#1-1">1.</a></li>
+            <li><a href="#2-1">2.</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#chapter-41">Chapter 4.1</a>
+      <ul>
+        <li><a href="#solution-2">Solution</a>
+          <ul>
+            <li><a href="#1-2">1.</a></li>
+            <li><a href="#2-2">2.</a></li>
+            <li><a href="#3-1">3.</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#chapter-42">Chapter 4.2</a>
+      <ul>
+        <li><a href="#solution---trong-giấy">Solution - Trong giấy!</a></li>
+      </ul>
+    </li>
+    <li><a href="#chapter-43">Chapter 4.3</a>
+      <ul>
+        <li><a href="#solution-3">Solution</a>
+          <ul>
+            <li><a href="#1-3">1.</a></li>
+            <li><a href="#2-imghttpsmiromediumcommax136013fki7cpva9qbdzkxc-rs-qpng">2. <img src="https://miro.medium.com/max/1360/1*3fkI7cpVA9qBDzKxC-rs-Q.png" alt="img"></a></li>
+            <li><a href="#3-2">3.</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">0001-01-01</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <h1 id="exercises">Exercises</h1>
+<h2 id="chapter-1">Chapter 1</h2>
+<ol>
+<li>
+<p><strong>Because sporadic jobs may have varying release times and execution times, the periodic task model may be too inaccurate and can lead to undue underutilization of the processor even when the inter release times of jobs are bounded from below and their executions are bounded from above. As an example, suppose we have a stream of sporadic jobs whose inter release times are uniformly distributed from 9 to 11. Their execution times are uniformly distributed from 1 to 3.</strong></p>
+<p><strong>a. What are the parameters of the periodic task if we were to use such a task to model the stream?</strong></p>
+<p><em>For the peiodic task model we model a task using the lower bound on its period and the upper bound on its execution time (the worst case). In this case, the period, p = 9 and the execution time , e = 3.</em></p>
+<p><strong>b. Compare the utilization of the periodic task in part (a) with the average utilization of the sporadic job stream.</strong></p>
+<p><img src="https://miro.medium.com/max/1352/1*Y74uVa8xhIVlzr5HQo8Tww.png" alt="img"></p>
+</li>
+<li>
+<p><strong>Consider the real-time program described by the psuedo-code below. Names of jobs are in italic and green</strong>:</p>
+<pre><code>At 9AM, start: have breakfast 
+and 
+go to office; 
+At 10AM,
+ If there is class,
+     teach;
+     Else, help students; 
+When teach or help is done, eat lunch; 
+Until 2PM, sleep; 
+If there is a seminar,
+ If topic is interesting,
+     listen;
+     Else, read; 
+ Else write in office; 
+When seminar is over, attend 
+social hour; 
+discuss; 
+jog; 
+eat dinner; 
+work a little more; 
+end the day;
+</code></pre><p><em>A. Draw a task graph to capture the dependencies among jobs.</em></p>
+<p><img src="Exercises.assets/image-20200615194020698.png" alt="image-20200615194020698"></p>
+<p><em>B. Use as many precedence graphs as needed to represent all the possible paths of the program</em></p>
+<p>Vẽ hết tất cả các trường hợp của câu a.</p>
+</li>
+</ol>
+<h2 id="chapter-2">Chapter 2</h2>
+<p><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --></p>
+<h3 id="solution">Solution</h3>
+<h4 id="1">1.</h4>
+<h5 id="a">a.</h5>
+<p><img src="https://miro.medium.com/max/904/0*cA8cPp4203d5ssy0.jpg" alt="img"></p>
+<h5 id="b">b.</h5>
+<p><img src="https://miro.medium.com/max/1000/0*AaDkx-KgEwqNqXhy.jpg" alt="img"></p>
+<h5 id="c">c.</h5>
+<p><img src="https://miro.medium.com/max/1018/0*gs70AQentXx3PkmV.jpg" alt="img"></p>
+<p>J1 is the only job released at t=0, so it goes first.</p>
+<p>At t=1, J2, J4, and J7 have been released. J4 has a level of 3, so it goes first.</p>
+<p>At t=2, J4is done. J7 has the next highest level (2), so it goes next.</p>
+<p>At t=3, J7 is done. J3, J5, J8, and J9 are released. J5 has the next highest level (2), so it runs.</p>
+<p>At t=4, J5 is done. Either J2 or J8 could run because both have a level of 1 and both have had their precedence constraints met. At this point, J2 has already missed its deadline…</p>
+<p>At t=5, either J2 or J8, whichever was run at t=4, is done. The one that was not previously run gets to run. There are no more level 1 job.</p>
+<p>At t=6, J3, J6, and J9 are all eligible to run and are all at level 0. They can run in any order according to this scheduling algorithm.</p>
+<p>J2 and J3 miss their deadlines. This is *not* an optimal scheduling algorithm.</p>
+<h4 id="2">2.</h4>
+<h5 id="a-1">a.</h5>
+<p><img src="Exercises.assets/image-20200616205526588.png" alt="image-20200616205526588"></p>
+<h5 id="b-1">b.</h5>
+<p><img src="Exercises.assets/image-20200616205739517.png" alt="image-20200616205739517"></p>
+<h4 id="3">3.</h4>
+<h5 id="a-2">a.</h5>
+<p><img src="https://miro.medium.com/max/626/0*P0w9CDMES9zdgG5m.jpg" alt="img"></p>
+<h5 id="b-all-jobs-meet-their-deadline">b. <strong>All jobs meet their deadline.</strong></h5>
+<p><img src="https://miro.medium.com/max/1282/0*gpqXsPJKshjsqdIk.jpg" alt="img"></p>
+<h5 id="3-extra">3. Extra:</h5>
+<p><strong>c)</strong> Can the jobs meet their deadlines if we make them preemptable and schedule them preemptively? Explain your answer.</p>
+<p>Sol: <strong>Job J9 does not meet its deadline.</strong></p>
+<p><img src="https://miro.medium.com/max/60/0*mXqcNzbSPcPy4pIg.jpg?q=20" alt="img"></p>
+<p><img src="https://miro.medium.com/max/1298/0*mXqcNzbSPcPy4pIg.jpg" alt="img"></p>
+<p><strong>d)</strong> Can the jobs meet their deadlines if they are scheduled non-preemptively on four processors? Explain your answer.</p>
+<p>Sol: <strong>Job J9 does not meet its deadline.</strong></p>
+<p><img src="https://miro.medium.com/max/60/0*YgVyofdz6vd43S1t.jpg?q=20" alt="img"></p>
+<p><img src="https://miro.medium.com/max/1300/0*YgVyofdz6vd43S1t.jpg" alt="img"></p>
+<p><strong>e)</strong> Suppose that due to an improvement of the three processors, the execution time of every job is reduced by 1. Can the jobs meet their deadlines? Explain your answer.</p>
+<p>Sol: <strong>Job J9 does not meet its deadline.</strong></p>
+<p><img src="https://miro.medium.com/max/60/0*2OeA0dr5hKFlE6FT.jpg?q=20" alt="img"></p>
+<p><img src="https://miro.medium.com/max/1312/0*2OeA0dr5hKFlE6FT.jpg" alt="img"></p>
+<h2 id="chapter-3">Chapter 3</h2>
+<p><img src="Exercises.assets/image-20200609214449005.png" alt="image-20200609214449005"></p>
+<p><img src="Exercises.assets/image-20200609214501048.png" alt="image-20200609214501048"></p>
+<h3 id="solution-1">Solution</h3>
+<h4 id="1-1">1.</h4>
+<p><strong>a)</strong> (6, 1), (10, 2), and (18, 2)</p>
+<p><img src="https://miro.medium.com/max/1184/1*oXjm0b9zfEhkqHTieqsjvg.png" alt="img"></p>
+<p><strong>b)</strong> (8, 1), (15, 3), (20, 4), and (22, 6)</p>
+<p><img src="https://miro.medium.com/max/1144/1*7S92UObNMU4fN9cNImUhng.png" alt="img"></p>
+<p><strong>c)</strong> (4, 0.5), (5, 1.0), (10, 2), and (24, 9)</p>
+<p><img src="https://miro.medium.com/max/1350/1*arCkJlQXYrsuFC6cTFHfXg.png" alt="img"></p>
+<p><img src="https://miro.medium.com/max/1364/1*ZiFy9q6R60FTS1_qhBAtpw.png" alt="img"></p>
+<p><strong>d)</strong> (5, 0.1), (7, 1.0), (12, 6), and (45, 9)</p>
+<p><img src="https://miro.medium.com/max/1364/1*v2z8QJoqpnKoFdL1lHbe8A.png" alt="img"></p>
+<p><strong>e)</strong> (5, 0.1), (7, 1.0), (12, 6), and (45, 9)</p>
+<p><img src="https://miro.medium.com/max/1358/1*ClojuWRnXWyJXJpe7xkguA.png" alt="img"></p>
+<p><strong>f)</strong> (7, 5, 1, 5), (9, 1), (12, 3), and (0.5, 23, 7, 21)</p>
+<p><img src="https://miro.medium.com/max/1362/1*ywfnED1WJhnWqe7a6R_A8g.png" alt="img"></p>
+<h4 id="2-1">2.</h4>
+<h5 id="a-3">a.</h5>
+<p><img src="https://miro.medium.com/max/1318/1*0ynrHgh79ZJFu2xLmxsrrQ.png" alt="img"></p>
+<h5 id="b-2">b.</h5>
+<p><img src="https://miro.medium.com/max/1288/1*cXX7VJV5RFEbOBnupwk-Bg.png" alt="img"></p>
+<h2 id="chapter-41">Chapter 4.1</h2>
+<p><img src="Exercises.assets/image-20200610170553494.png" alt="image-20200610170553494"></p>
+<h3 id="solution-2">Solution</h3>
+<h4 id="1-2">1.</h4>
+<ul>
+<li>
+<p>T1(6,2); T2(8,2); T3(12,2).</p>
+<p>LCM(6,8,12) = 24</p>
+<p><img src="Exercises.assets/image-20200617090823141.png" alt="image-20200617090823141"></p>
+</li>
+</ul>
+<h4 id="2-2">2.</h4>
+<p>a. Utilization =1/3 + 2/5 + 3/8 = 1.108</p>
+<p>b. <img src="Exercises.assets/image-20200617100938512.png" alt="image-20200617100938512"></p>
+<p>c. Task 3 cần 2 đơn vị thời gian, cần giảm task 1 minimum: 2/3 đơn vị thời gian.</p>
+<h4 id="3-1">3.</h4>
+<h2 id="chapter-42">Chapter 4.2</h2>
+<p><img src="Exercises.assets/image-20200611175429253.png" alt="image-20200611175429253"></p>
+<h3 id="solution---trong-giấy">Solution - Trong giấy!</h3>
+<h2 id="chapter-43">Chapter 4.3</h2>
+<p><img src="Exercises.assets/image-20200617163911115.png" alt="image-20200617163911115"></p>
+<h3 id="solution-3">Solution</h3>
+<h4 id="1-3">1.</h4>
+<h5 id="a-t--8-3-9-3-15-3">a. T = {(8, 3), (9, 3), (15, 3)}</h5>
+<p><img src="https://miro.medium.com/max/1272/1*o3XclvgzUs8LtuiqvTNEkw.png" alt="img"></p>
+<h5 id="b-t--8-4-12-4-20-4">b. T = {(8, 4), (12, 4), (20, 4)}</h5>
+<p><img src="https://miro.medium.com/max/1076/1*dAcTafQH2zKjRVMGpO3d2Q.png" alt="img"></p>
+<h5 id="c--t--8-4-10-2-12-3">c.  T = {(8, 4), (10, 2), (12, 3)}</h5>
+<p><img src="https://miro.medium.com/max/1226/1*IeGC-eDuGF1qCpVO1BIGUA.png" alt="img"></p>
+<h4 id="2-imghttpsmiromediumcommax136013fki7cpva9qbdzkxc-rs-qpng">2. <img src="https://miro.medium.com/max/1360/1*3fkI7cpVA9qBDzKxC-rs-Q.png" alt="img"></h4>
+<h4 id="3-2">3.</h4>
+<h5 id="a-4">a.</h5>
+<p><img src="https://miro.medium.com/max/1224/1*KqA3NdDvuPgroHTVwBk0ug.png" alt="img"></p>
+<h5 id="b-3">b.</h5>
+<p><img src="https://miro.medium.com/max/1290/1*3XzHbDtPhu2TDhLkE8HLbg.png" alt="img"></p>
+<h1 id="httpetengriupuiedudskimclassesesw5004rtsys20lecture20note20-20ch0420clock-driven20schedulingpdfhttpetengriupuiedudskimclassesesw5004rtsys-lecture-note---ch04-clock-driven-schedulingpdf">&laquo;&laquo;&laquo;&lt; Updated upstream
+[http://et.engr.iupui.edu/~dskim/Classes/ESW5004/RTSys%20Lecture%20Note%20-%20ch04%20Clock-Driven%20Scheduling.pdf](<a href="http://et.engr.iupui.edu/~dskim/Classes/ESW5004/RTSys">http://et.engr.iupui.edu/~dskim/Classes/ESW5004/RTSys</a> Lecture Note - ch04 Clock-Driven Scheduling.pdf)</h1>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Stashed changes</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter-1">Chapter 1</a></li>
+    <li><a href="#chapter-2">Chapter 2</a>
+      <ul>
+        <li><a href="#solution">Solution</a>
+          <ul>
+            <li><a href="#1">1.</a></li>
+            <li><a href="#2">2.</a></li>
+            <li><a href="#3">3.</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#chapter-3">Chapter 3</a>
+      <ul>
+        <li><a href="#solution-1">Solution</a>
+          <ul>
+            <li><a href="#1-1">1.</a></li>
+            <li><a href="#2-1">2.</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#chapter-41">Chapter 4.1</a>
+      <ul>
+        <li><a href="#solution-2">Solution</a>
+          <ul>
+            <li><a href="#1-2">1.</a></li>
+            <li><a href="#2-2">2.</a></li>
+            <li><a href="#3-1">3.</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#chapter-42">Chapter 4.2</a>
+      <ul>
+        <li><a href="#solution---trong-giấy">Solution - Trong giấy!</a></li>
+      </ul>
+    </li>
+    <li><a href="#chapter-43">Chapter 4.3</a>
+      <ul>
+        <li><a href="#solution-3">Solution</a>
+          <ul>
+            <li><a href="#1-3">1.</a></li>
+            <li><a href="#2-imghttpsmiromediumcommax136013fki7cpva9qbdzkxc-rs-qpng">2. <img src="https://miro.medium.com/max/1360/1*3fkI7cpVA9qBDzKxC-rs-Q.png" alt="img"></a></li>
+            <li><a href="#3-2">3.</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&text=">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&title=">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&is_video=false&description=">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&title=">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&title=">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&title=">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&title=">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&name=&description=Exercises%20Chapter%201%20%20%20Because%20sporadic%20jobs%20may%20have%20varying%20release%20times%20and%20execution%20times%2c%20the%20periodic%20task%20model%20may%20be%20too%20inaccurate%20and%20can%20lead%20to%20undue%20underutilization%20of%20the%20processor%20even%20when%20the%20inter%20release%20times%20of%20jobs%20are%20bounded%20from%20below%20and%20their%20executions%20are%20bounded%20from%20above.%20As%20an%20example%2c%20suppose%20we%20have%20a%20stream%20of%20sporadic%20jobs%20whose%20inter%20release%20times%20are%20uniformly%20distributed%20from%209%20to%2011.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexercises%2f&t=">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  You 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</html>
