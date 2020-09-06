@@ -7,8 +7,6 @@ date: 2020-09-05T17:51:42+00:00
 
 ##### @ HUMBOLDT UNIVERSITÄT, BERLIN, DEUTSCHLAND - 23rd November 2019
 
-##### 
-
 Hello, world! My name is **Luu Nguyen Phat**.
 
 Firstly, thank you for visiting my website :D
