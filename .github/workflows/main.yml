@@ -37,4 +37,4 @@ jobs:
 
       # Step 4 – Runs a single command using the runners shell
       - name: Run script
-        run: ./publish.sh
+        run: ./auto-publish.sh
