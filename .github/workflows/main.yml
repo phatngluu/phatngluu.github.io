@@ -30,15 +30,6 @@ jobs:
         with:
             hugo-version: 'latest'
 
-      # Step 3 - Git auth
-      - name: Git authentication
-        run: |
-          /usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-          /usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
-          /usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-          /usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
-          /usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-  
       # Step 4 – Runs a single command using the runners shell
       - name: Run script
         run: ./publish.sh
