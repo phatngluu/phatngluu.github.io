@@ -27,3 +27,8 @@ cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)
 
 echo "Pushing to github"
 git push --all
+
+echo "Deleting public folder"
+rm -rf public
+
+echo "Published."
