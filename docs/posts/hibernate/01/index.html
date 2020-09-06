@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>  </title>
+  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="" />
+<meta property="og:description" content="Chúng ta sẽ sử dụng các Annotation để ánh xạ (mapping) class và property trong Java tương ứng với các table và column trong database.
+User.java
+package com.gpcoder.entities; import java.util.Date; import javax.persistence.Column; import javax.persistence.Entity; import javax.persistence.GeneratedValue; import javax.persistence.GenerationType; import javax.persistence.Id; import javax.persistence.Table; import lombok.Data; @Data @Entity @Table(name = &#34;user&#34;) public class User { @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id; @Column private String fullname; @Column private String username; @Column private String password; @Column(name = &#34;created_at&#34;) private Date createdAt; @Column(name = &#34;modified_at&#34;) private Date modifiedAt; } Một số Annotation được sử dụng:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/hibernate/01/" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Chúng ta sẽ sử dụng các Annotation để ánh xạ (mapping) class và property trong Java tương ứng với các table và column trong database.
+User.java
+package com.gpcoder.entities; import java.util.Date; import javax.persistence.Column; import javax.persistence.Entity; import javax.persistence.GeneratedValue; import javax.persistence.GenerationType; import javax.persistence.Id; import javax.persistence.Table; import lombok.Data; @Data @Entity @Table(name = &#34;user&#34;) public class User { @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id; @Column private String fullname; @Column private String username; @Column private String password; @Column(name = &#34;created_at&#34;) private Date createdAt; @Column(name = &#34;modified_at&#34;) private Date modifiedAt; } Một số Annotation được sử dụng:"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://phatngluu.github.io/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://phatngluu.github.io/images/favicon.ico" />
+
+  
+  
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://phatngluu.github.io/posts/hibernate/03/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://phatngluu.github.io/posts/herokuproject/connectpostresql/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&text=">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&title=">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&is_video=false&description=">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&title=">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&title=">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&title=">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&title=">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&name=&description=Ch%c3%bang%20ta%20s%e1%ba%bd%20s%e1%bb%ad%20d%e1%bb%a5ng%20c%c3%a1c%20Annotation%20%c4%91%e1%bb%83%20%c3%a1nh%20x%e1%ba%a1%20%28mapping%29%20class%20v%c3%a0%20property%20trong%20Java%20t%c6%b0%c6%a1ng%20%e1%bb%a9ng%20v%e1%bb%9bi%20c%c3%a1c%20table%20v%c3%a0%20column%20trong%20database.%0aUser.java%0apackage%20com.gpcoder.entities%3b%20import%20java.util.Date%3b%20import%20javax.persistence.Column%3b%20import%20javax.persistence.Entity%3b%20import%20javax.persistence.GeneratedValue%3b%20import%20javax.persistence.GenerationType%3b%20import%20javax.persistence.Id%3b%20import%20javax.persistence.Table%3b%20import%20lombok.Data%3b%20%40Data%20%40Entity%20%40Table%28name%20%3d%20%26%2334%3buser%26%2334%3b%29%20public%20class%20User%20%7b%20%40Id%20%40GeneratedValue%28strategy%20%3d%20GenerationType.IDENTITY%29%20private%20Long%20id%3b%20%40Column%20private%20String%20fullname%3b%20%40Column%20private%20String%20username%3b%20%40Column%20private%20String%20password%3b%20%40Column%28name%20%3d%20%26%2334%3bcreated_at%26%2334%3b%29%20private%20Date%20createdAt%3b%20%40Column%28name%20%3d%20%26%2334%3bmodified_at%26%2334%3b%29%20private%20Date%20modifiedAt%3b%20%7d%20M%e1%bb%99t%20s%e1%bb%91%20Annotation%20%c4%91%c6%b0%e1%bb%a3c%20s%e1%bb%ad%20d%e1%bb%a5ng%3a">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&t=">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#tạo-file-cấu-hình-hibernate">Tạo file cấu hình Hibernate</a></li>
+    <li><a href="#tạo-đối-tượng-sessionfactory">Tạo đối tượng SessionFactory</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">0001-01-01</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <p>Chúng ta sẽ sử dụng các <strong>Annotation</strong> để ánh xạ (mapping) <strong>class</strong> và <strong>property</strong> trong Java tương ứng với các <strong>table</strong> và <strong>column</strong> trong database.</p>
+<p>User.java</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.gpcoder.entities<span style="color:#f92672">;</span>
+ 
+<span style="color:#f92672">import</span> java.util.Date<span style="color:#f92672">;</span>
+ 
+<span style="color:#f92672">import</span> javax.persistence.Column<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> javax.persistence.Entity<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> javax.persistence.GeneratedValue<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> javax.persistence.GenerationType<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> javax.persistence.Id<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> javax.persistence.Table<span style="color:#f92672">;</span>
+ 
+<span style="color:#f92672">import</span> lombok.Data<span style="color:#f92672">;</span>
+ 
+<span style="color:#a6e22e">@Data</span>
+<span style="color:#a6e22e">@Entity</span>
+<span style="color:#a6e22e">@Table</span><span style="color:#f92672">(</span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;user&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span> <span style="color:#f92672">{</span>
+ 
+    <span style="color:#a6e22e">@Id</span>
+    <span style="color:#a6e22e">@GeneratedValue</span><span style="color:#f92672">(</span>strategy <span style="color:#f92672">=</span> GenerationType<span style="color:#f92672">.</span><span style="color:#a6e22e">IDENTITY</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">private</span> Long id<span style="color:#f92672">;</span>
+ 
+    <span style="color:#a6e22e">@Column</span>
+    <span style="color:#66d9ef">private</span> String fullname<span style="color:#f92672">;</span>
+ 
+    <span style="color:#a6e22e">@Column</span>
+    <span style="color:#66d9ef">private</span> String username<span style="color:#f92672">;</span>
+ 
+    <span style="color:#a6e22e">@Column</span>
+    <span style="color:#66d9ef">private</span> String password<span style="color:#f92672">;</span>
+ 
+    <span style="color:#a6e22e">@Column</span><span style="color:#f92672">(</span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;created_at&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">private</span> Date createdAt<span style="color:#f92672">;</span>
+ 
+    <span style="color:#a6e22e">@Column</span><span style="color:#f92672">(</span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;modified_at&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">private</span> Date modifiedAt<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Một số Annotation được sử dụng:</p>
+<ul>
+<li><strong>@Entity</strong> : cho biết đây là một Entity.</li>
+<li><strong>@Table</strong> : cho biết đây là một Table trong database, chúng ta có thể chỉ định tên tương ứng và các ràng buộc trong database. Mặc định, Hibernate sẽ lấy tên class tương ứng với tên table trong database nếu nó không được chỉ định name.</li>
+<li><strong>@Id</strong> : đây là Identity của Entity. nó tương đương với khóa chính (Primary key) của table.</li>
+<li><strong>@GeneratedValue</strong> : được sử dụng để Hibernate tự động tạo ra giá trị và gán vào cho một cột trong trường hợp insert mới một Entity vào database.</li>
+<li><strong>@Column</strong> : được sử dụng để chú thích đây là một column trong database. Nó có thể bao gồm các thông tin ràng buộc của column như độ dài của cột, cho phép null hay không, … Mặc định, Hibernate sẽ lấy tên property tương ứng với tên column trong database nếu nó không được chỉ định name.</li>
+</ul>
+<h2 id="tạo-file-cấu-hình-hibernate">Tạo file cấu hình Hibernate</h2>
+<p>Tạo file <strong>hibernate.cfg.xml</strong> và đặt nó trong thư mục <strong>src\main\resources</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;</span>
+<span style="color:#75715e">&lt;!DOCTYPE hibernate-configuration PUBLIC &#34;-//Hibernate/Hibernate Configuration DTD 3.0//EN&#34; &#34;http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd&#34;&gt;</span>
+ 
+<span style="color:#f92672">&lt;hibernate-configuration&gt;</span>
+    <span style="color:#f92672">&lt;session-factory&gt;</span>
+        <span style="color:#75715e">&lt;!-- Database setting --&gt;</span>
+        <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;connection.driver_class&#34;</span><span style="color:#f92672">&gt;</span>com.mysql.jdbc.Driver<span style="color:#f92672">&lt;/property&gt;</span>
+        <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;connection.url&#34;</span><span style="color:#f92672">&gt;</span>jdbc:mysql://localhost:3306/gp_system?serverTimezone=UTC&amp;amp;useUnicode=true&amp;amp;characterEncoding=utf8<span style="color:#f92672">&lt;/property&gt;</span>
+        <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;connection.username&#34;</span><span style="color:#f92672">&gt;</span>root<span style="color:#f92672">&lt;/property&gt;</span>
+        <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;connection.password&#34;</span><span style="color:#f92672">&gt;&lt;/property&gt;</span>
+         
+        <span style="color:#75715e">&lt;!-- JDBC connection pool (use the built-in) --&gt;</span>
+        <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;connection.pool_size&#34;</span><span style="color:#f92672">&gt;</span>4<span style="color:#f92672">&lt;/property&gt;</span>
+ 
+        <span style="color:#75715e">&lt;!-- SQL dialect --&gt;</span>
+        <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;dialect&#34;</span><span style="color:#f92672">&gt;</span>org.hibernate.dialect.MySQL5Dialect<span style="color:#f92672">&lt;/property&gt;</span>
+ 
+        <span style="color:#75715e">&lt;!-- Enable Hibernate&#39;s automatic session context management --&gt;</span>
+        <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;current_session_context_class&#34;</span><span style="color:#f92672">&gt;</span>thread<span style="color:#f92672">&lt;/property&gt;</span>
+ 
+        <span style="color:#75715e">&lt;!-- Disable the second-level cache --&gt;</span>
+        <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;cache.provider_class&#34;</span><span style="color:#f92672">&gt;</span>org.hibernate.cache.internal.NoCacheProvider<span style="color:#f92672">&lt;/property&gt;</span>
+ 
+        <span style="color:#75715e">&lt;!-- Show all executed SQL to console --&gt;</span>
+        <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;show_sql&#34;</span><span style="color:#f92672">&gt;</span>true<span style="color:#f92672">&lt;/property&gt;</span>
+ 
+        <span style="color:#75715e">&lt;!-- Entity mapping --&gt;</span>
+        <span style="color:#f92672">&lt;mapping</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;com.gpcoder.entities.User&#34;</span> <span style="color:#f92672">/&gt;</span>
+         
+    <span style="color:#f92672">&lt;/session-factory&gt;</span>
+<span style="color:#f92672">&lt;/hibernate-configuration&gt;</span>
+</code></pre></div><h2 id="tạo-đối-tượng-sessionfactory">Tạo đối tượng SessionFactory</h2>
+<p>SessionFactory là đối tượng nặng (heavy weight object) và được sử dụng thường xuyên nên chúng ta sẽ tạo một class <a href="https://gpcoder.com/4190-huong-dan-java-design-pattern-singleton/">singleton</a> HibernateUtils để sử dụng sau này.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.gpcoder.utils<span style="color:#f92672">;</span>
+ 
+<span style="color:#f92672">import</span> org.hibernate.SessionFactory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.hibernate.boot.Metadata<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.hibernate.boot.MetadataSources<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.hibernate.boot.registry.StandardServiceRegistryBuilder<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.hibernate.service.ServiceRegistry<span style="color:#f92672">;</span>
+ 
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HibernateUtils</span> <span style="color:#f92672">{</span>
+ 
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> SessionFactory sessionFactory <span style="color:#f92672">=</span> buildSessionFactory<span style="color:#f92672">();</span>
+ 
+    <span style="color:#66d9ef">private</span> <span style="color:#a6e22e">HibernateUtils</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">super</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+ 
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> SessionFactory <span style="color:#a6e22e">buildSessionFactory</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        ServiceRegistry serviceRegistry <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StandardServiceRegistryBuilder<span style="color:#f92672">()</span> <span style="color:#75715e">//
+</span><span style="color:#75715e"></span>                <span style="color:#f92672">.</span><span style="color:#a6e22e">configure</span><span style="color:#f92672">()</span> <span style="color:#75715e">// Load hibernate.cfg.xml from resource folder by default
+</span><span style="color:#75715e"></span>                <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+        Metadata metadata <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MetadataSources<span style="color:#f92672">(</span>serviceRegistry<span style="color:#f92672">).</span><span style="color:#a6e22e">getMetadataBuilder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">return</span> metadata<span style="color:#f92672">.</span><span style="color:#a6e22e">getSessionFactoryBuilder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+ 
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> SessionFactory <span style="color:#a6e22e">getSessionFactory</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> sessionFactory<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+ 
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">close</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        getSessionFactory<span style="color:#f92672">().</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div>
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#tạo-file-cấu-hình-hibernate">Tạo file cấu hình Hibernate</a></li>
+    <li><a href="#tạo-đối-tượng-sessionfactory">Tạo đối tượng SessionFactory</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&text=">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&title=">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&is_video=false&description=">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&title=">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&title=">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&title=">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&title=">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&name=&description=Ch%c3%bang%20ta%20s%e1%ba%bd%20s%e1%bb%ad%20d%e1%bb%a5ng%20c%c3%a1c%20Annotation%20%c4%91%e1%bb%83%20%c3%a1nh%20x%e1%ba%a1%20%28mapping%29%20class%20v%c3%a0%20property%20trong%20Java%20t%c6%b0%c6%a1ng%20%e1%bb%a9ng%20v%e1%bb%9bi%20c%c3%a1c%20table%20v%c3%a0%20column%20trong%20database.%0aUser.java%0apackage%20com.gpcoder.entities%3b%20import%20java.util.Date%3b%20import%20javax.persistence.Column%3b%20import%20javax.persistence.Entity%3b%20import%20javax.persistence.GeneratedValue%3b%20import%20javax.persistence.GenerationType%3b%20import%20javax.persistence.Id%3b%20import%20javax.persistence.Table%3b%20import%20lombok.Data%3b%20%40Data%20%40Entity%20%40Table%28name%20%3d%20%26%2334%3buser%26%2334%3b%29%20public%20class%20User%20%7b%20%40Id%20%40GeneratedValue%28strategy%20%3d%20GenerationType.IDENTITY%29%20private%20Long%20id%3b%20%40Column%20private%20String%20fullname%3b%20%40Column%20private%20String%20username%3b%20%40Column%20private%20String%20password%3b%20%40Column%28name%20%3d%20%26%2334%3bcreated_at%26%2334%3b%29%20private%20Date%20createdAt%3b%20%40Column%28name%20%3d%20%26%2334%3bmodified_at%26%2334%3b%29%20private%20Date%20modifiedAt%3b%20%7d%20M%e1%bb%99t%20s%e1%bb%91%20Annotation%20%c4%91%c6%b0%e1%bb%a3c%20s%e1%bb%ad%20d%e1%bb%a5ng%3a">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f01%2f&t=">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  You 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</html>

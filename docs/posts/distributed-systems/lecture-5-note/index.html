@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>  </title>
+  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="" />
+<meta property="og:description" content="Web Service Problem: New business model:
+  Dine-in
+  Take away
+  Delivery
+NEC &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delivery App
+  (order system)	|
+​	|
+​	Toreta
+​	(reservation system)
+Solution:
+NEC &mdash;&mdash;&mdash; Webserver &mdash;&mdash;&mdash;&mdash;&mdash; Delivery App
+​ |
+​	|
+​	Toreta
+​	(reservation system)
+Webserver: receives orders, table reservations; sends delivery requests
+In this chapter: To connect 2 systems, webservice is required.
+Information system interaction Why would we have interaction between 2 systems?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/distributed-systems/lecture-5-note/" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Web Service Problem: New business model:
+  Dine-in
+  Take away
+  Delivery
+NEC &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delivery App
+  (order system)	|
+​	|
+​	Toreta
+​	(reservation system)
+Solution:
+NEC &mdash;&mdash;&mdash; Webserver &mdash;&mdash;&mdash;&mdash;&mdash; Delivery App
+​ |
+​	|
+​	Toreta
+​	(reservation system)
+Webserver: receives orders, table reservations; sends delivery requests
+In this chapter: To connect 2 systems, webservice is required.
+Information system interaction Why would we have interaction between 2 systems?"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://phatngluu.github.io/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://phatngluu.github.io/images/favicon.ico" />
+
+  
+  
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://phatngluu.github.io/posts/distributed-systems/mqtt/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://phatngluu.github.io/posts/distributed-systems/impacts-of-bigdata/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&text=">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&title=">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&is_video=false&description=">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&title=">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&title=">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&title=">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&title=">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&name=&description=Web%20Service%20Problem%3a%20New%20business%20model%3a%0a%20%20Dine-in%0a%20%20Take%20away%0a%20%20Delivery%0aNEC%20%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%20Delivery%20App%0a%20%20%28order%20system%29%09%7c%0a%e2%80%8b%09%7c%0a%e2%80%8b%09Toreta%0a%e2%80%8b%09%28reservation%20system%29%0aSolution%3a%0aNEC%20%26mdash%3b%26mdash%3b%26mdash%3b%20Webserver%20%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%20Delivery%20App%0a%e2%80%8b%20%7c%0a%e2%80%8b%09%7c%0a%e2%80%8b%09Toreta%0a%e2%80%8b%09%28reservation%20system%29%0aWebserver%3a%20receives%20orders%2c%20table%20reservations%3b%20sends%20delivery%20requests%0aIn%20this%20chapter%3a%20To%20connect%202%20systems%2c%20webservice%20is%20required.%0aInformation%20system%20interaction%20Why%20would%20we%20have%20interaction%20between%202%20systems%3f">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&t=">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#web-service">Web Service</a>
+      <ul>
+        <li><a href="#problem">Problem:</a></li>
+        <li><a href="#in-this-chapter">In this chapter:</a></li>
+        <li><a href="#information-system-interaction">Information system interaction</a>
+          <ul>
+            <li><a href="#2-sub-models">2 sub models:</a></li>
+          </ul>
+        </li>
+        <li><a href="#integration-vs-interoperability">Integration vs Interoperability</a></li>
+        <li><a href="#web-service-1">Web Service</a></li>
+        <li><a href="#web-services-are-important-in-distributed-systems">Web services are important in distributed systems:</a></li>
+        <li><a href="#web-service--api">Web service &amp; API</a></li>
+        <li><a href="#soap-vs-rest">SOAP vs REST</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">0001-01-01</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <h2 id="web-service">Web Service</h2>
+<h3 id="problem">Problem:</h3>
+<p>New business model:</p>
+<ul>
+<li>
+<p>Dine-in</p>
+</li>
+<li>
+<p>Take away</p>
+</li>
+<li>
+<p>Delivery</p>
+<p>NEC &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delivery App</p>
+</li>
+</ul>
+<p>(order system)	|</p>
+<p>​						      |</p>
+<p>​						Toreta</p>
+<p>​			(reservation system)</p>
+<p>Solution:</p>
+<p>NEC &mdash;&mdash;&mdash;  Webserver  &mdash;&mdash;&mdash;&mdash;&mdash; Delivery App</p>
+<p>​      						|</p>
+<p>​						      |</p>
+<p>​						Toreta</p>
+<p>​			(reservation system)</p>
+<p>Webserver: receives orders, table reservations; sends delivery requests</p>
+<h3 id="in-this-chapter">In this chapter:</h3>
+<p>To connect 2 systems, webservice is required.</p>
+<p><img src="Lecture%205%20note.assets/image-20200608094306580.png" alt="image-20200608094306580"></p>
+<h3 id="information-system-interaction">Information system interaction</h3>
+<p>Why would we have interaction between 2 systems?</p>
+<p>=&gt; Because we want a new system have features of those 2 systems by using them (not develope any new system with the same feature, because the cost and wasting time)</p>
+<ul>
+<li>Business and technology change is instantaneous</li>
+<li>The evolution of information systems</li>
+</ul>
+<h4 id="2-sub-models">2 sub models:</h4>
+<ul>
+<li>Integration: a new system contains 2 existed systems</li>
+<li>Interoperability: communication make 2 systems work together</li>
+</ul>
+<p>Analyse the problem in 2 models =&gt; Choose which model is easier/low cost</p>
+<p>Communication needs interface.</p>
+<p>System interface: a connection between 2 systems.</p>
+<h3 id="integration-vs-interoperability">Integration vs Interoperability</h3>
+<p>Why need integration?</p>
+<p>=&gt;</p>
+<h3 id="web-service-1">Web Service</h3>
+<p><a href="https://www.vs.inf.ethz.ch/edu/WS0405/VS/VS-050117.pdf">https://www.vs.inf.ethz.ch/edu/WS0405/VS/VS-050117.pdf</a></p>
+<p>Example: <a href="https://www.youtube.com/watch?v=oTzNRv6X51o">https://www.youtube.com/watch?v=oTzNRv6X51o</a></p>
+<h3 id="web-services-are-important-in-distributed-systems">Web services are important in distributed systems:</h3>
+<p>It solve these problem of distributed systems:</p>
+<ul>
+<li>Transperency</li>
+<li>Heterogeneity</li>
+<li>Openness</li>
+<li>Security</li>
+</ul>
+<h3 id="web-service--api">Web service &amp; API</h3>
+<p>API needs access from browser while WS does not</p>
+<p><a href="https://www.guru99.com/api-vs-web-service-difference.html">https://www.guru99.com/api-vs-web-service-difference.html</a></p>
+<h3 id="soap-vs-rest">SOAP vs REST</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>SOAP</th>
+<th>REST</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model</td>
+<td>SOAP-based Web Service Model <a href="https://www.researchgate.net/profile/Sanjay_Garg7/publication/282148271/figure/fig1/AS:391502577586181@1470352896964/SOAP-based-Web-Service-Model.png">link</a></td>
+<td>Server/Client</td>
+</tr>
+<tr>
+<td>Protocol</td>
+<td>HTTP, SMTP, TCP, UDP/XML-based messaging <em>protocol</em></td>
+<td>HTTP</td>
+</tr>
+<tr>
+<td>Data Format</td>
+<td>XML</td>
+<td>variety formats (plaintext, HTML, JSON, XML&hellip;)</td>
+</tr>
+<tr>
+<td>Use case</td>
+<td>Enterprise apps, high-security apps, distributed environment, financial services, payment gateways, telecommunication services.</td>
+<td>Public APIs for web services, mobile services, social networks.</td>
+</tr>
+</tbody>
+</table>
+<p>Details: <a href="https://raygun.com/blog/soap-vs-rest-vs-json/#table">https://raygun.com/blog/soap-vs-rest-vs-json/#table</a></p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#web-service">Web Service</a>
+      <ul>
+        <li><a href="#problem">Problem:</a></li>
+        <li><a href="#in-this-chapter">In this chapter:</a></li>
+        <li><a href="#information-system-interaction">Information system interaction</a>
+          <ul>
+            <li><a href="#2-sub-models">2 sub models:</a></li>
+          </ul>
+        </li>
+        <li><a href="#integration-vs-interoperability">Integration vs Interoperability</a></li>
+        <li><a href="#web-service-1">Web Service</a></li>
+        <li><a href="#web-services-are-important-in-distributed-systems">Web services are important in distributed systems:</a></li>
+        <li><a href="#web-service--api">Web service &amp; API</a></li>
+        <li><a href="#soap-vs-rest">SOAP vs REST</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&text=">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&title=">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&is_video=false&description=">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&title=">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&title=">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&title=">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&title=">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&name=&description=Web%20Service%20Problem%3a%20New%20business%20model%3a%0a%20%20Dine-in%0a%20%20Take%20away%0a%20%20Delivery%0aNEC%20%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%20Delivery%20App%0a%20%20%28order%20system%29%09%7c%0a%e2%80%8b%09%7c%0a%e2%80%8b%09Toreta%0a%e2%80%8b%09%28reservation%20system%29%0aSolution%3a%0aNEC%20%26mdash%3b%26mdash%3b%26mdash%3b%20Webserver%20%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%26mdash%3b%20Delivery%20App%0a%e2%80%8b%20%7c%0a%e2%80%8b%09%7c%0a%e2%80%8b%09Toreta%0a%e2%80%8b%09%28reservation%20system%29%0aWebserver%3a%20receives%20orders%2c%20table%20reservations%3b%20sends%20delivery%20requests%0aIn%20this%20chapter%3a%20To%20connect%202%20systems%2c%20webservice%20is%20required.%0aInformation%20system%20interaction%20Why%20would%20we%20have%20interaction%20between%202%20systems%3f">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fdistributed-systems%2flecture-5-note%2f&t=">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  You 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</html>

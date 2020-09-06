@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>  </title>
+  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="" />
+<meta property="og:description" content="Chapter 2 Overview of real-time scheduling algorithms
+ Clock-driven Weighted round-robin Priority driven  Dynamic vs. static Deadline scheduling: EDF and LST    Outline relative strengths, weaknesses
+Task states Ready: not executed, wait for scheduling point
+Running: get scheduled to a processor
+Blocked: not running &amp; cannot be scheduled at the next scheduling point (delay, wait for data/resources)
+Suspended: user/system wants to completely remove the task from being scheduled (user press the “pause” button)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/realtime-systems/chapter-2/" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Chapter 2 Overview of real-time scheduling algorithms
+ Clock-driven Weighted round-robin Priority driven  Dynamic vs. static Deadline scheduling: EDF and LST    Outline relative strengths, weaknesses
+Task states Ready: not executed, wait for scheduling point
+Running: get scheduled to a processor
+Blocked: not running &amp; cannot be scheduled at the next scheduling point (delay, wait for data/resources)
+Suspended: user/system wants to completely remove the task from being scheduled (user press the “pause” button)"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://phatngluu.github.io/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://phatngluu.github.io/images/favicon.ico" />
+
+  
+  
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://phatngluu.github.io/posts/realtime-systems/chapter-3/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://phatngluu.github.io/posts/realtime-systems/chapter-1/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&text=">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&title=">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&is_video=false&description=">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&title=">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&title=">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&title=">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&title=">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&name=&description=Chapter%202%20Overview%20of%20real-time%20scheduling%20algorithms%0a%20Clock-driven%20Weighted%20round-robin%20Priority%20driven%20%20Dynamic%20vs.%20static%20Deadline%20scheduling%3a%20EDF%20and%20LST%20%20%20%20Outline%20relative%20strengths%2c%20weaknesses%0aTask%20states%20Ready%3a%20not%20executed%2c%20wait%20for%20scheduling%20point%0aRunning%3a%20get%20scheduled%20to%20a%20processor%0aBlocked%3a%20not%20running%20%26amp%3b%20cannot%20be%20scheduled%20at%20the%20next%20scheduling%20point%20%28delay%2c%20wait%20for%20data%2fresources%29%0aSuspended%3a%20user%2fsystem%20wants%20to%20completely%20remove%20the%20task%20from%20being%20scheduled%20%28user%20press%20the%20%e2%80%9cpause%e2%80%9d%20button%29">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&t=">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#task-states">Task states</a></li>
+            <li><a href="#feasible-schedule">Feasible schedule</a></li>
+            <li><a href="#approaches-to-real-time-scheduling">Approaches to Real-time scheduling</a></li>
+            <li><a href="#weighted-round-robin-overview">Weighted round-robin: overview</a></li>
+            <li><a href="#clock-driven-scheduling-overview">Clock-driven scheduling: overview</a></li>
+          </ul>
+        </li>
+        <li><a href="#priority-scheduling-overview">Priority scheduling: overview</a>
+          <ul>
+            <li><a href="#scheduling-decision-points-priority-driven">Scheduling decision points (priority driven)</a></li>
+            <li><a href="#priority-scheduling">Priority scheduling</a></li>
+            <li><a href="#priority-scheduling-based-on-deadlines">Priority scheduling based on Deadlines</a></li>
+          </ul>
+        </li>
+        <li><a href="#dynamic-vs-static-system">Dynamic vs Static system</a></li>
+        <li><a href="#img-srcchapter202assetsimage-20200609171646118png-altimage-20200609171646118-stylezoom-33-"><!-- raw HTML omitted --></a></li>
+        <li><a href="#effective-release-times-and-deadlines">Effective Release times and Deadlines</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">0001-01-01</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <h1 id="chapter-2">Chapter 2</h1>
+<p>Overview of real-time scheduling algorithms</p>
+<ul>
+<li>Clock-driven</li>
+<li>Weighted round-robin</li>
+<li>Priority driven
+<ul>
+<li>Dynamic vs. static</li>
+<li>Deadline scheduling: EDF and LST</li>
+</ul>
+</li>
+</ul>
+<p>Outline relative strengths, weaknesses</p>
+<h4 id="task-states">Task states</h4>
+<p><strong>Ready</strong>: not executed, wait for scheduling point</p>
+<p><strong>Running</strong>: get scheduled to a processor</p>
+<p><strong>Blocked</strong>: not running &amp; cannot be scheduled at the next scheduling point (delay, wait for data/resources)</p>
+<p><strong>Suspended</strong>: user/system wants to completely remove the task from being scheduled (user press the “pause” button)</p>
+<p><!-- raw HTML omitted --></p>
+<h4 id="feasible-schedule">Feasible schedule</h4>
+<ul>
+<li>A  <strong>schedule that never misses any deadline</strong> is called <strong>feasible</strong></li>
+<li><strong>A set of tasks</strong> is <strong>schedulable</strong> if there exists <strong>at least a feasible schedule</strong></li>
+<li>A <strong>scheduling algorithm is optimal</strong> if it <strong>always produces a feasible schedule</strong> in case a given set of tasks is schedulable</li>
+</ul>
+<h4 id="approaches-to-real-time-scheduling">Approaches to Real-time scheduling</h4>
+<ul>
+<li>Weighted round-robin
+<ul>
+<li>Primarily used for scheduling real-time traffic in high-speed, switched networks</li>
+<li>Rarely used in other real-time systems</li>
+</ul>
+</li>
+<li>Clock-driven (time-driven)
+<ul>
+<li>Primarily used for hard real-time systems</li>
+<li>All properties of all jobs are known at design time: Offline (at design time) scheduling techniques (complicated) can be used</li>
+</ul>
+</li>
+<li>Priority-driven:
+<ul>
+<li>Primarily used for more dynamic real-time systems with a mix of time-based and event-based activities</li>
+<li>The system must adapt to changing conditions and events</li>
+</ul>
+</li>
+</ul>
+<h4 id="weighted-round-robin-overview">Weighted round-robin: overview</h4>
+<h5 id="regular-round-robin">Regular round-robin</h5>
+<p>It is commonly used for scheduling <strong>time-shared applications</strong></p>
+<ul>
+<li>Every job joins a FIFO queue when it is ready for execution</li>
+<li>When the scheduler runs, it schedules the job at the head of the queue to execute for at most one time slice
+<ul>
+<li>Sometimes called a quantum – typically O(tens of ms)</li>
+</ul>
+</li>
+<li>If the job has not completed by the end of its quantum, it is preempted and placed at the end of the queue</li>
+<li>When there are n ready jobs in the queue, each job gets one slice every n time slices (n time slices is called a round)</li>
+<li>Only limited use in real-time systems</li>
+</ul>
+<h5 id="weighted-round-robin">Weighted round-robin</h5>
+<ul>
+<li>Each job $J_i$ is assigned a weight $w_i$</li>
+<li>The job will receive w i consecutive time slices each round
+<ul>
+<li>Equivalent to regular round robin if all weights equal 1</li>
+</ul>
+</li>
+<li>Partitions capacity between jobs according to some ratio</li>
+<li>Offers throughput guarantees
+<ul>
+<li>Each job makes a certain amount of progress each round</li>
+</ul>
+</li>
+<li>Advantages:
+<ul>
+<li>Simple to implement, since it doesn’t require a sorted priority queue</li>
+<li>Reasonable approach for jobs that can incrementally consume output from their predecessor
+<ul>
+<li>since they execute concurrently in a pipelined fashion</li>
+<li>Jobs communicating using Unix pipes</li>
+<li>Wormhole switching networks, where message transmission is carried out in a pipeline fashion and a downstream switch can begin to transmit an earlier portion of a message, without having to wait for the arrival of the later portion</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Drawbacks: <img src="Chapter%202.assets/image-20200608085656425.png" alt="image-20200608085656425"></li>
+</ul>
+<h4 id="clock-driven-scheduling-overview">Clock-driven scheduling: overview</h4>
+<ul>
+<li>
+<p><strong>Scheduling decision time</strong>: point in time when <strong>scheduler</strong> decides which job to execute next</p>
+</li>
+<li>
+<p>Scheduling decision time in clock-driven schedulers is <strong>defined a priority</strong> <strong>before</strong> the <strong>system begins execution</strong></p>
+<ul>
+<li>Hardware timer to periodically wake up the scheduler to generate a portion of the schedule</li>
+</ul>
+<p><!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><strong>Special case</strong>: When <em>job parameters are known a priority</em>, <strong>schedule</strong> can be <strong>pre-computed</strong> off-line, and <strong>stored as a table</strong> (table-driven schedulers)</p>
+<ul>
+<li>Scheduling overhead at run-time can be minimized</li>
+<li>Simple and straight-forward, not flexible</li>
+</ul>
+</li>
+</ul>
+<h3 id="priority-scheduling-overview">Priority scheduling: overview</h3>
+<ul>
+<li><strong>Basic rule</strong>: <em>never leave processor idle</em> when <em>there is work to be done</em>:
+<ul>
+<li>Work conserving scheduling</li>
+<li>Greedy scheduling</li>
+<li>List scheduling</li>
+</ul>
+</li>
+<li>Possible implementation of <strong>preemptive</strong> priority-driven scheduling:
+<ul>
+<li>Assign priorities to jobs</li>
+<li><strong>Scheduling decisions are made</strong> when
+<ul>
+<li><strong>Job</strong> becomes <strong>ready</strong></li>
+<li><strong>Processor</strong> becomes <strong>idle</strong></li>
+<li><strong>Priorities</strong> of jobs <strong>change</strong></li>
+</ul>
+</li>
+<li>At <strong>each scheduling decision time</strong>, <strong>choose ready task</strong> with <strong>highest priority</strong></li>
+</ul>
+</li>
+<li>In <strong>non-preemptive</strong> cases, <strong>scheduling decisions</strong> are made <strong>only</strong> when <strong>processor</strong> becomes <strong>idle</strong></li>
+</ul>
+<h4 id="scheduling-decision-points-priority-driven">Scheduling decision points (priority driven)</h4>
+<p><!-- raw HTML omitted --></p>
+<ol>
+<li>
+<p>The <strong>running</strong> process <strong>blocks</strong>, i.e. changes from running to waiting</p>
+</li>
+<li>
+<p>The <strong>running</strong> <strong>thread</strong> <strong>terminates</strong></p>
+</li>
+<li>
+<p>A <strong>waiting thread</strong> becomes <strong>ready</strong></p>
+</li>
+<li>
+<p>The <strong>current thread</strong> is <strong>preempted</strong>, i.e. switches from running to ready</p>
+</li>
+</ol>
+<h5 id="example-slide-13-solution-book-p63">Example: slide 13. Solution: Book p.63.</h5>
+<p><!-- raw HTML omitted --></p>
+<h5 id="exercise-slide-14-solution-not-found">Exercise: slide 14. Solution: not found</h5>
+<p><!-- raw HTML omitted --></p>
+<h4 id="priority-scheduling">Priority scheduling</h4>
+<p><strong>Note</strong>: The ability to preempt lower priority jobs slowed down the overall completion of the task</p>
+<ul>
+<li>
+<p>This is not a general rule, but shows that priority scheduling results can be non-intuitive</p>
+</li>
+<li>
+<p>Different priority scheduling algorithms can have very different properties</p>
+</li>
+<li>
+<p><strong>Most scheduling algorithms used in non/soft real-time</strong> systems are priority-driven</p>
+<ul>
+<li>FIFO/LIFO: Assign priority based on release time</li>
+<li>Shortest/Longest -Execution-Time-First: Assign priority based on execution time</li>
+</ul>
+</li>
+<li>
+<p><strong>Real-time priority scheduling</strong> assigns priorities <strong>based on deadline or some other timing constraint</strong>:</p>
+<ul>
+<li>Earliest deadline first</li>
+<li>Least slack time first</li>
+</ul>
+</li>
+</ul>
+<h4 id="priority-scheduling-based-on-deadlines">Priority scheduling based on Deadlines</h4>
+<ul>
+<li>
+<p><strong>Earliest deadline first (EDF)</strong> — mainly used</p>
+<ul>
+<li>Assign priority to jobs based on deadline</li>
+<li>Earlier the deadline, higher the priority</li>
+<li>Simple, just requires knowledge of deadlines</li>
+</ul>
+</li>
+<li>
+<p><strong>Least Slack Time first (LST)</strong></p>
+<ul>
+<li>Assign priority to jobs based on slack time: $t_slack$</li>
+<li>The <strong>smaller the slack time, the higher the priority</strong></li>
+<li>A job $J_i$ has deadline $d_i$ , execution time $e_i$ , and was released at time $r_i$</li>
+<li>At time $t &lt; d_i$ :
+<ul>
+<li>Remaining execution time $t_{rem}= e_i − e_i^′$ ; where $e_i^′$ is the amount of time the processor has processed the job</li>
+<li>Slack time $t_{slack} = d_i − t − t_{rem} = d_i − t − (e_i − e_i^′)$</li>
+</ul>
+</li>
+<li>More complex, requires knowledge of execution times and deadlines
+<ul>
+<li>Knowing the <strong>actual execution time is often difficult a priori</strong>, since it depends on the data, need to use worst case estimates (=&gt; poor performance)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="optimality-of-edflst">Optimality of EDF/LST</h5>
+<ul>
+<li>
+<p>These algorithm are <strong>optimal</strong>. (they will always produce a feasible schedule if one exists).</p>
+</li>
+<li>
+<p><strong>Constraints</strong>: single processor, preemption, no resources contending (không xảy ra tranh chấp tài nguyên).</p>
+</li>
+<li>
+<p>Fact: : any feasible schedule can be transformed into an EDF schedule.<!-- raw HTML omitted --></p>
+</li>
+</ul>
+<h5 id="non-optimality-of-edflst">Non-optimality of EDF/LST</h5>
+<p>These algorithm is <strong>non-optimal</strong> when either: <strong>if jobs are non-preemptable</strong> or <strong>if there is more than one processor</strong>. Example:</p>
+<p><!-- raw HTML omitted --></p>
+<h3 id="dynamic-vs-static-system">Dynamic vs Static system</h3>
+<h3 id="img-srcchapter202assetsimage-20200609171646118png-altimage-20200609171646118-stylezoom-33-"><!-- raw HTML omitted --></h3>
+<h3 id="effective-release-times-and-deadlines">Effective Release times and Deadlines</h3>
+<p>Problem: Sometimes, <strong>release time</strong> of a job may <strong>later than its successors</strong> or <strong>deadline</strong> may be <strong>earlier than</strong> its <strong>predecessors</strong>. =&gt; Make no sense!</p>
+<p>Definition:</p>
+<ul>
+<li>
+<p>Effective release time</p>
+<ul>
+<li>If a job has <strong>no predecessors</strong>, its effective release time is its release time</li>
+<li>If it has <strong>predecessors</strong>, <em>its effective release time</em> is the <strong>maximum</strong> of <em>its release time</em> and the <em>effective release times</em> of its predecessors</li>
+</ul>
+</li>
+<li>
+<p>Effective deadline</p>
+<ul>
+<li>If a job has <strong>no successors</strong>, its effective deadline is its deadline</li>
+<li>It if has <strong>successors</strong>, its <strong>effective deadline</strong> is the <strong>minimum</strong> of <em>its deadline</em> and the <em>effective deadline of its successors</em></li>
+</ul>
+<p><!-- raw HTML omitted --></p>
+</li>
+</ul>
+<h5 id="example">Example</h5>
+<h5 id="img-srcchapter202assetsimage-20200609172757757png-altimage-20200609172757757-stylezoom33-"><!-- raw HTML omitted --></h5>
+<p>Solution:</p>
+<ul>
+<li>$J_1$: no precedence. Effective: (2, 10)</li>
+<li>$J_2$: no precedence. Effective: (0, 7)</li>
+<li>$J_3$: $J_1$, $J_2$. ert = max (1, 2, 0) = 2, edt = min(12, 10, 7) = 7. Effective (2, 7)</li>
+<li>J_4: J_3. ert = max (4, 2) = 4, edt = min(9, 7) = 7. Effective(4, 7)</li>
+<li>J_5: J_3. ert = max (1, 2) = 2, edt = min(8, 7) = 7. Effective(2,7)</li>
+<li>J_6: J_5, J_4. ert = max(0, 4, 2) = 4, edt = min(20, 7,7) = 7. Effective(4, 7)</li>
+<li>J_7: J3, J4. ert = max(6, 2, 4) = 6, edt = min(21, 7, 7) = 7. Effective(6,7)</li>
+</ul>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#task-states">Task states</a></li>
+            <li><a href="#feasible-schedule">Feasible schedule</a></li>
+            <li><a href="#approaches-to-real-time-scheduling">Approaches to Real-time scheduling</a></li>
+            <li><a href="#weighted-round-robin-overview">Weighted round-robin: overview</a></li>
+            <li><a href="#clock-driven-scheduling-overview">Clock-driven scheduling: overview</a></li>
+          </ul>
+        </li>
+        <li><a href="#priority-scheduling-overview">Priority scheduling: overview</a>
+          <ul>
+            <li><a href="#scheduling-decision-points-priority-driven">Scheduling decision points (priority driven)</a></li>
+            <li><a href="#priority-scheduling">Priority scheduling</a></li>
+            <li><a href="#priority-scheduling-based-on-deadlines">Priority scheduling based on Deadlines</a></li>
+          </ul>
+        </li>
+        <li><a href="#dynamic-vs-static-system">Dynamic vs Static system</a></li>
+        <li><a href="#img-srcchapter202assetsimage-20200609171646118png-altimage-20200609171646118-stylezoom-33-"><!-- raw HTML omitted --></a></li>
+        <li><a href="#effective-release-times-and-deadlines">Effective Release times and Deadlines</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&text=">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&title=">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&is_video=false&description=">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&title=">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&title=">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&title=">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&title=">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&name=&description=Chapter%202%20Overview%20of%20real-time%20scheduling%20algorithms%0a%20Clock-driven%20Weighted%20round-robin%20Priority%20driven%20%20Dynamic%20vs.%20static%20Deadline%20scheduling%3a%20EDF%20and%20LST%20%20%20%20Outline%20relative%20strengths%2c%20weaknesses%0aTask%20states%20Ready%3a%20not%20executed%2c%20wait%20for%20scheduling%20point%0aRunning%3a%20get%20scheduled%20to%20a%20processor%0aBlocked%3a%20not%20running%20%26amp%3b%20cannot%20be%20scheduled%20at%20the%20next%20scheduling%20point%20%28delay%2c%20wait%20for%20data%2fresources%29%0aSuspended%3a%20user%2fsystem%20wants%20to%20completely%20remove%20the%20task%20from%20being%20scheduled%20%28user%20press%20the%20%e2%80%9cpause%e2%80%9d%20button%29">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fchapter-2%2f&t=">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  You 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>  </title>
+  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="" />
+<meta property="og:description" content="Priority ceiling protocol in dynamic priority systems không có trong exam.
+Contents:
+3 questions:
+ Questions 1: what is RT, ultimate goal: deadline meet, theory in chapter 1  multiple question short answer, tự luận   Question 2: scheduling Question 3: resources  Pre-emptive priority scheduling: https://www.youtube.com/watch?v=hDn4hM148V8
+RM: https://www.geeksforgeeks.org/rate-monotonic-scheduling/q
+https://youtu.be/xgW8VhEOpFg
+https://www.youtube.com/watch?v=Cv_5aoKXc3g [PART1]
+https://www.youtube.com/watch?v=HJ_vZLjZfYY [PART2]
+DM:
+https://youtu.be/E6KGDpY_XoI
+https://www.youtube.com/watch?v=D5jlciHNTcw
+EDF:
+https://www.youtube.com/watch?v=jgAs8wZMeYs algoLancer
+https://www.youtube.com/watch?v=1cR7vhDYn68 [PART1]
+https://www.youtube.com/watch?v=mk2ldyjKtBc&amp;t=5s [PART2]
+LST: https://www.geeksforgeeks.org/least-slack-time-lst-scheduling-algorithm-in-real-time-systems/?ref=rp
+https://www.youtube.com/watch?v=0-0ASSc5Gvo
+https://www.youtube.com/watch?v=8xe6X8DkD3M
+https://www.youtube.com/watch?v=uNrWtL59tFg" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/realtime-systems/exam-note/" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Priority ceiling protocol in dynamic priority systems không có trong exam.
+Contents:
+3 questions:
+ Questions 1: what is RT, ultimate goal: deadline meet, theory in chapter 1  multiple question short answer, tự luận   Question 2: scheduling Question 3: resources  Pre-emptive priority scheduling: https://www.youtube.com/watch?v=hDn4hM148V8
+RM: https://www.geeksforgeeks.org/rate-monotonic-scheduling/q
+https://youtu.be/xgW8VhEOpFg
+https://www.youtube.com/watch?v=Cv_5aoKXc3g [PART1]
+https://www.youtube.com/watch?v=HJ_vZLjZfYY [PART2]
+DM:
+https://youtu.be/E6KGDpY_XoI
+https://www.youtube.com/watch?v=D5jlciHNTcw
+EDF:
+https://www.youtube.com/watch?v=jgAs8wZMeYs algoLancer
+https://www.youtube.com/watch?v=1cR7vhDYn68 [PART1]
+https://www.youtube.com/watch?v=mk2ldyjKtBc&amp;t=5s [PART2]
+LST: https://www.geeksforgeeks.org/least-slack-time-lst-scheduling-algorithm-in-real-time-systems/?ref=rp
+https://www.youtube.com/watch?v=0-0ASSc5Gvo
+https://www.youtube.com/watch?v=8xe6X8DkD3M
+https://www.youtube.com/watch?v=uNrWtL59tFg"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://phatngluu.github.io/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://phatngluu.github.io/images/favicon.ico" />
+
+  
+  
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://phatngluu.github.io/posts/realtime-systems/exercises/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://phatngluu.github.io/posts/realtime-systems/chapter-5/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&text=">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&title=">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&is_video=false&description=">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&title=">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&title=">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&title=">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&title=">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&name=&description=Priority%20ceiling%20protocol%20in%20dynamic%20priority%20systems%20kh%c3%b4ng%20c%c3%b3%20trong%20exam.%0aContents%3a%0a3%20questions%3a%0a%20Questions%201%3a%20what%20is%20RT%2c%20ultimate%20goal%3a%20deadline%20meet%2c%20theory%20in%20chapter%201%20%20multiple%20question%20short%20answer%2c%20t%e1%bb%b1%20lu%e1%ba%adn%20%20%20Question%202%3a%20scheduling%20Question%203%3a%20resources%20%20Pre-emptive%20priority%20scheduling%3a%20https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dhDn4hM148V8%0aRM%3a%20https%3a%2f%2fwww.geeksforgeeks.org%2frate-monotonic-scheduling%2fq%0ahttps%3a%2f%2fyoutu.be%2fxgW8VhEOpFg%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dCv_5aoKXc3g%20%5bPART1%5d%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dHJ_vZLjZfYY%20%5bPART2%5d%0aDM%3a%0ahttps%3a%2f%2fyoutu.be%2fE6KGDpY_XoI%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dD5jlciHNTcw%0aEDF%3a%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3djgAs8wZMeYs%20algoLancer%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d1cR7vhDYn68%20%5bPART1%5d%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dmk2ldyjKtBc%26amp%3bt%3d5s%20%5bPART2%5d%0aLST%3a%20https%3a%2f%2fwww.geeksforgeeks.org%2fleast-slack-time-lst-scheduling-algorithm-in-real-time-systems%2f%3fref%3drp%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d0-0ASSc5Gvo%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d8xe6X8DkD3M%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3duNrWtL59tFg">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&t=">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">0001-01-01</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <p>Priority ceiling protocol in dynamic priority systems không có trong exam.</p>
+<p>Contents:</p>
+<p><img src="Exam%20Note.assets/image-20200605114045606.png" alt="image-20200605114045606"></p>
+<p>3 questions:</p>
+<ul>
+<li>Questions 1: what is RT, ultimate goal: deadline meet, theory in chapter 1
+<ul>
+<li>multiple question</li>
+<li>short answer, tự luận</li>
+</ul>
+</li>
+<li>Question 2: scheduling</li>
+<li>Question 3: resources</li>
+</ul>
+<p>Pre-emptive priority scheduling: <a href="https://www.youtube.com/watch?v=hDn4hM148V8">https://www.youtube.com/watch?v=hDn4hM148V8</a></p>
+<p>RM: <a href="https://www.geeksforgeeks.org/rate-monotonic-scheduling/q">https://www.geeksforgeeks.org/rate-monotonic-scheduling/q</a></p>
+<p><a href="https://youtu.be/xgW8VhEOpFg">https://youtu.be/xgW8VhEOpFg</a></p>
+<p><a href="https://www.youtube.com/watch?v=Cv_5aoKXc3g">https://www.youtube.com/watch?v=Cv_5aoKXc3g</a> [PART1]</p>
+<p><a href="https://www.youtube.com/watch?v=HJ_vZLjZfYY">https://www.youtube.com/watch?v=HJ_vZLjZfYY</a> [PART2]</p>
+<p>DM:</p>
+<p><a href="https://youtu.be/E6KGDpY_XoI">https://youtu.be/E6KGDpY_XoI</a></p>
+<p><a href="https://www.youtube.com/watch?v=D5jlciHNTcw">https://www.youtube.com/watch?v=D5jlciHNTcw</a></p>
+<p>EDF:</p>
+<p><a href="https://www.youtube.com/watch?v=jgAs8wZMeYs">https://www.youtube.com/watch?v=jgAs8wZMeYs</a> algoLancer</p>
+<p><a href="https://www.youtube.com/watch?v=1cR7vhDYn68">https://www.youtube.com/watch?v=1cR7vhDYn68</a> [PART1]</p>
+<p><a href="https://www.youtube.com/watch?v=mk2ldyjKtBc&amp;t=5s">https://www.youtube.com/watch?v=mk2ldyjKtBc&amp;t=5s</a> [PART2]</p>
+<p>LST: <a href="https://www.geeksforgeeks.org/least-slack-time-lst-scheduling-algorithm-in-real-time-systems/?ref=rp">https://www.geeksforgeeks.org/least-slack-time-lst-scheduling-algorithm-in-real-time-systems/?ref=rp</a></p>
+<p><a href="https://www.youtube.com/watch?v=0-0ASSc5Gvo">https://www.youtube.com/watch?v=0-0ASSc5Gvo</a></p>
+<p><a href="https://www.youtube.com/watch?v=8xe6X8DkD3M">https://www.youtube.com/watch?v=8xe6X8DkD3M</a></p>
+<p><a href="https://www.youtube.com/watch?v=uNrWtL59tFg">https://www.youtube.com/watch?v=uNrWtL59tFg</a></p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&text=">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&title=">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&is_video=false&description=">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&title=">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&title=">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&title=">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&title=">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&name=&description=Priority%20ceiling%20protocol%20in%20dynamic%20priority%20systems%20kh%c3%b4ng%20c%c3%b3%20trong%20exam.%0aContents%3a%0a3%20questions%3a%0a%20Questions%201%3a%20what%20is%20RT%2c%20ultimate%20goal%3a%20deadline%20meet%2c%20theory%20in%20chapter%201%20%20multiple%20question%20short%20answer%2c%20t%e1%bb%b1%20lu%e1%ba%adn%20%20%20Question%202%3a%20scheduling%20Question%203%3a%20resources%20%20Pre-emptive%20priority%20scheduling%3a%20https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dhDn4hM148V8%0aRM%3a%20https%3a%2f%2fwww.geeksforgeeks.org%2frate-monotonic-scheduling%2fq%0ahttps%3a%2f%2fyoutu.be%2fxgW8VhEOpFg%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dCv_5aoKXc3g%20%5bPART1%5d%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dHJ_vZLjZfYY%20%5bPART2%5d%0aDM%3a%0ahttps%3a%2f%2fyoutu.be%2fE6KGDpY_XoI%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dD5jlciHNTcw%0aEDF%3a%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3djgAs8wZMeYs%20algoLancer%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d1cR7vhDYn68%20%5bPART1%5d%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dmk2ldyjKtBc%26amp%3bt%3d5s%20%5bPART2%5d%0aLST%3a%20https%3a%2f%2fwww.geeksforgeeks.org%2fleast-slack-time-lst-scheduling-algorithm-in-real-time-systems%2f%3fref%3drp%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d0-0ASSc5Gvo%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d8xe6X8DkD3M%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3duNrWtL59tFg">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2frealtime-systems%2fexam-note%2f&t=">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  You 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</html>
