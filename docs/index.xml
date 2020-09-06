@@ -27,201 +27,47 @@ Frameworks and applications are used to create this website:
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/computer-networks/transport-layer/</link>
+      <link>https://phatngluu.github.io/posts/advanced-annotation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/computer-networks/transport-layer/</guid>
-      <description>Functions of the Transport Layer  In this layer, processes are addressed via port numbers Application Layer data is split here into smaller parts segments  </description>
+      <guid>https://phatngluu.github.io/posts/advanced-annotation/</guid>
+      <description>Read detail at: https://cs-fundamentals.com/java-programming/java-annotations.php
+Built-in Java Annotations    Annotation Name Applicable To Use Included in     Java Annotations Applied to Java code      @Override Member Methods Checks that this method overrides a method from its superclass java.lang   @Deprecated All annotable items Marks item as deprecated java.lang   @SuppressWarnings All annotable items except packages and annotations Suppress warning of given type java.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/deutsch/adjektivdeklination/</link>
+      <link>https://phatngluu.github.io/posts/advanced-jpa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/deutsch/adjektivdeklination/</guid>
-      <description></description>
+      <guid>https://phatngluu.github.io/posts/advanced-jpa/</guid>
+      <description>What is it?  Bất kỳ một ứng dụng nào cũng đều cần phải thực hiện các tháo tác (CRUD) đến database bằng việc lưu trữ, truy vấn dữ liệu. Chúng ta cần phải viết nhiều code để thực hiện các việc này. Với công nghệ JDBC trước đây, chúng ta phải thực hiện các việc: mở kết nối vào Database, tạo các Statement, ResultSet, … và sau cùng phải đóng tất cả các thứ đó lại.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/deutsch/artikeldeklination/</link>
+      <link>https://phatngluu.github.io/posts/advanced-reflection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/deutsch/artikeldeklination/</guid>
-      <description>Bước 3, sử dụng các qui tắc sau:
- Bestimmter Artikel:
- Unbestimmter Artikel:
- Kein:
- Possessivartikel:
-  Short:
- Nomi: R - E - S - E Akku: N - E - S - E Dativ: M R M N - Mơ Rồi Mơ Nữa / Mang Ra Miền Nam Genitiv: S R S R - Sao Rồi Sao Rồi / Sầu Riêng Sáu Ri  </description>
+      <guid>https://phatngluu.github.io/posts/advanced-reflection/</guid>
+      <description>Read detail at: https://o7planning.org/vi/10155/huong-dan-java-reflection
+Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn có thể truy cập vào một trường của một đối tượng nếu bạn biết tên của trường đó. Hoặc bạn có thể gọi một phương thức của đối tượng nếu bạn biết tên phương thức, các kiểu tham số của phương thức, và các giá trị tham số để truyền vào &amp;hellip;
+  Java Reflecion cho phép bạn đánh giá, sửa đổi cấu trúc và hành vi của một đối tượng tại thời gian chạy (runtime) của chương trình.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/deutsch/finalreview/</link>
+      <link>https://phatngluu.github.io/posts/aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/deutsch/finalreview/</guid>
-      <description>Cụm danh động từ Marathon laufen
-Die Zeitung lesen
-Am Computer spielen
-Motorrad fahren
-Yoga (Pilates) machen
-In die Sauna gehen
-Im Chor singen
-Im Garten arbeiten
-In den Bergen wandern
-Reflexivpronomen und Präpositionen mit Dativ oder Akkusativ Akkusativ sich interessieren für: hung thu
-sich entscheiden für : quyet dinh chon
-sich ärgern über = sich aufregen über: tuc gian
-sich freuen über: mong cho
-Dativ sich verabreden mit: hen ho</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/deutsch/overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/deutsch/overview/</guid>
-      <description>4 cách trong tiếng Đức
-Chia đuôi tính từ trong tiếng Đức
-Adjektivdeklination Typ1 - bestimmten artikel
-Adjektivdeklination Typ2 - unbestimmten artikel
-Adjektivdeklination Typ3 - null artikel
-So sánh bằng, hơn, nhất</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/deutsch/so-s%C3%A1nh/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/deutsch/so-s%C3%A1nh/</guid>
-      <description>Komparativ &amp;amp; S
-Klick hier Đạt Trần Deutsch Youtube
-Als oder Wi
-Klick hier
-Übung</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/devops/what/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/devops/what/</guid>
-      <description>What is it? The DevOps Cycle  There are different parts of the DevOps life-cycle: Version Control, Continuous Integration, Continuous Delivery, and Continuous Deployment.
- What is CI  This is the part where your code gets compiled, reviewed, and tested.
-Big goals with DevOps in general: detecting and fixing bugs and security issues as early as possible, it&amp;rsquo;s important when you are deploying changes multiple times a week or even a day.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/distributed-systems/corba/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/distributed-systems/corba/</guid>
-      <description>CORBA Demo Preparing virtual machine (using Docker)  Ubuntu OpenJDK 8  In host&amp;rsquo;s terminal:
-cd ~/Github/DS/CORBA # Build image docker build --tag corba:latest . # Run container docker run -it --publish 1050:1050 --detach --name corba corba:latest # Open container&#39;s terminal docker exec -it corba /bin/sh; exit In container&amp;rsquo;s terminal:
-cd ~/corba/calc # build project &amp;amp; compile idlj -fall Calc.idl javac *.java CalcApp/*.java orbd -ORBInitialPort 1050&amp;amp; # run server java CalcServer -ORBInitialPort 1050 -ORBInitialHost localhost&amp;amp; To run client, open new container&amp;rsquo;s terminal:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/distributed-systems/examprepare/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/distributed-systems/examprepare/</guid>
-      <description>Question 14
-Question 13
-Question 12
-Question 11
-Question 10
-Question 7
-chapter 3</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/distributed-systems/impacts-of-bigdata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/distributed-systems/impacts-of-bigdata/</guid>
-      <description>Impacts of Big Data: ​	Storage &amp;amp; Processing.
-MAP: Maps divided problems to the corresponding processor (defined by programmer)
-REDUCE: Combine the results of each processor into group of result.
-Example:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/distributed-systems/lecture-5-note/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/distributed-systems/lecture-5-note/</guid>
-      <description>Web Service Problem: New business model:
-  Dine-in
-  Take away
-  Delivery
-NEC &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; Delivery App
-  (order system)	|
-​	|
-​	Toreta
-​	(reservation system)
-Solution:
-NEC &amp;mdash;&amp;mdash;&amp;mdash; Webserver &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; Delivery App
-​ |
-​	|
-​	Toreta
-​	(reservation system)
-Webserver: receives orders, table reservations; sends delivery requests
-In this chapter: To connect 2 systems, webservice is required.
-Information system interaction Why would we have interaction between 2 systems?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/distributed-systems/mqtt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/distributed-systems/mqtt/</guid>
-      <description>Multicast packets
-MQTT Essentials
-QoS:
- Level 0: used when the messages are continous Level 1: used when the messages are sequential Level 2: used when the cost of sending messages is high  Which model MQTT uses?
- Client / Server.  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/distributed-systems/nodejs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/distributed-systems/nodejs/</guid>
-      <description>npm init npm install express --save npm install body-parser --save /* server_app.get(&#39;/&#39;, function(req, res){ res.send(&#39;/&#39;) }) // GET service with user input server_app.get(&#39;/getPara/:param&#39;, function(req, res){ var param = req.params.param res.send(&#39;Your param: &#39; + param) }) // GET service with user input server_app.get(&#39;/getquery&#39;, function(req, res){ var query1 = req.query.query1 var query2 = req.query.query2 res.send(&#39;Your param: &#39; + query1 + &amp;quot;, &amp;quot; + query2) }) // POST service with user input server_app.post(&#39;/testPostMethod&#39;, function(req, res){ var strData = req.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/distributed-systems/presentation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/distributed-systems/presentation/</guid>
-      <description>Team 1 Which context should we use the ddb?
-slaveOk()
-Team 2 Difference between Grid Computing &amp;amp; Map Reduce
-Team 3 Socket &amp;amp; CORBA
-Which context use CORBA
-Why CORBA is still used.
-http://201415tcs4063.blogspot.com/2014/10/advantages-and-disadvantages-of-corba.html
-Team 4 Why Spark is the best
-Team 5 JVM, Sandbox which one is middleware.
-Team 6 Private cloud, hybrid cloud
-Team 8
-Any part of elastic search related to distributed systems</description>
+      <guid>https://phatngluu.github.io/posts/aws/</guid>
+      <description>Amazon Create Instance https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance
+Connect https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
+EC2
+ssh -i MyKeyPair.pem ec2-user@13.212.25.226 Ubuntu
+ssh -i MyKeyPair.pem ubuntu@54.169.249.248 NOTE:
+SSH config
+Host Vultr HostName 207.148.122.57 User root Host AWS_Ubuntu HostName 13.229.183.189 IdentityFile /Users/steven/.ssh/MyKeyPair.pem User ubuntu Change password sudo su - # switch user to root passwd ubuntu su ubuntu # switch user ubuntu </description>
     </item>
     
     <item>
@@ -260,15 +106,6 @@ Go install -&amp;gt; build file &amp;amp; bo vo folder bin</description>
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/herokuproject/connectpostresql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/herokuproject/connectpostresql/</guid>
-      <description>Connect withIn DataGrip  Host: Copy from Host User: copy from User Password: copy from Password Database: copy from Database URL: dont touch it!!!! Let it automatically generate.  </description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://phatngluu.github.io/posts/hibernate/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -291,55 +128,14 @@ Thuộc tính name của @Entity là không bắt buộc. Việc chỉ định r
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/internship/first_day/</link>
+      <link>https://phatngluu.github.io/posts/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/internship/first_day/</guid>
-      <description>1. Demo có những tính năng gì? Lead: KH tiềm năng Search lead  Shows all leads Open Create Convert a lead to account Send email Delete  Create Lead Create lead with informaton.
-A lead can be assigned to a staff.
-Detail Lead  Edit History log: edit history of this customer Send email (generate template fail, use without template -&amp;gt; unreachable) Convert: from Lead to Account  Open/Create/Delete:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/interview/vsa/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/interview/vsa/</guid>
-      <description>Mình và leader xảy ra xung đột, trong trường hợp như vậy thì bạn ứng xử thế nào?
-Team đang có một dự án, có một lỗi sai xuất hiện. Bạn lựa chọn làm ngơ hay là báo cáo lỗi sai đó lên cấp trên?
-Giả sử bạn đang có 2 công việc cùng 1 deadline. Bạn sẽ làm gì trong trường hợp này?
-=&amp;gt; Kết luận, những câu hỏi phỏng vấn thực sự khó đối với mình, vì mình ít có kinh nghiệm, hay là khả năng tư duy kém nên gặp khó khăn trong việc trả lời.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/java/advanced-annotation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/java/advanced-annotation/</guid>
-      <description>Read detail at: https://cs-fundamentals.com/java-programming/java-annotations.php
-Built-in Java Annotations    Annotation Name Applicable To Use Included in     Java Annotations Applied to Java code      @Override Member Methods Checks that this method overrides a method from its superclass java.lang   @Deprecated All annotable items Marks item as deprecated java.lang   @SuppressWarnings All annotable items except packages and annotations Suppress warning of given type java.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/java/advanced-jpa/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/java/advanced-jpa/</guid>
-      <description>What is it?  Bất kỳ một ứng dụng nào cũng đều cần phải thực hiện các tháo tác (CRUD) đến database bằng việc lưu trữ, truy vấn dữ liệu. Chúng ta cần phải viết nhiều code để thực hiện các việc này. Với công nghệ JDBC trước đây, chúng ta phải thực hiện các việc: mở kết nối vào Database, tạo các Statement, ResultSet, … và sau cùng phải đóng tất cả các thứ đó lại.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/java/advanced-reflection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/java/advanced-reflection/</guid>
-      <description>Read detail at: https://o7planning.org/vi/10155/huong-dan-java-reflection
-Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn có thể truy cập vào một trường của một đối tượng nếu bạn biết tên của trường đó. Hoặc bạn có thể gọi một phương thức của đối tượng nếu bạn biết tên phương thức, các kiểu tham số của phương thức, và các giá trị tham số để truyền vào &amp;hellip;
-  Java Reflecion cho phép bạn đánh giá, sửa đổi cấu trúc và hành vi của một đối tượng tại thời gian chạy (runtime) của chương trình.</description>
+      <guid>https://phatngluu.github.io/posts/java/</guid>
+      <description>Install Java JDK 11 apt install default-jdk Open Settings [Command + ,] &amp;gt; Open Remote [SSH: VMCloud] &amp;gt; Edit in settings.json &amp;gt; Add:
+&amp;quot;java.home&amp;quot; : &amp;quot;/usr/lib/jvm/java-11-openjdk-amd64&amp;quot; nano /etc/environment JAVA_HOME=&amp;quot;/usr/lib/jvm/java-11-openjdk-amd64&amp;quot; source /etc/environment Embedded databases Prepare schema.sql and data.sql
+Add to pom.xml:
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-data-jpa&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.h2database&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;h2&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; When you run the project, two sql files are run then the database will be embedded to the program. When the program is terminated, all changes will lost.</description>
     </item>
     
     <item>
@@ -797,470 +593,12 @@ Declaring a class // Declaring a class class Pet { constructor(animal, age, bree
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/life/9-ki%E1%BB%83u-ng%C6%B0%E1%BB%9Di-t%C6%B0%E1%BB%9Fng-d%E1%BA%A1i-d%E1%BB%99t-nh%C6%B0ng-th%E1%BB%B1c-ra-l%E1%BA%A1i-l%C3%A0-th%C3%B4ng-minh-nh%E1%BA%A5t/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/life/9-ki%E1%BB%83u-ng%C6%B0%E1%BB%9Di-t%C6%B0%E1%BB%9Fng-d%E1%BA%A1i-d%E1%BB%99t-nh%C6%B0ng-th%E1%BB%B1c-ra-l%E1%BA%A1i-l%C3%A0-th%C3%B4ng-minh-nh%E1%BA%A5t/</guid>
-      <description>Trong cuộc đời mỗi người, ai ai cũng có rất nhiều lựa chọn. Đứng trước mỗi lựa chọn, chúng ta lại phân vân đắn đo xem chọn cái nào mới đúng? Phía dưới là 9 câu nói bạn cần nhớ kỹ để không phải phạm sai lầm quá lớn trong cuộc đời.
- Thà rằng giả ngốc, cũng đừng cho là mình thông minh  Trong cuộc sống, những sự việc khách quan là quá phức tạp, hơn nữa lại biến hóa quá nhanh.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/life/h%C3%A3y-gi%E1%BB%8Fi-m%E1%BB%99t-th%E1%BB%A9-tr%C6%B0%E1%BB%9Bc-khi-gi%E1%BB%8Fi-nhi%E1%BB%81u-th%E1%BB%A9/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/life/h%C3%A3y-gi%E1%BB%8Fi-m%E1%BB%99t-th%E1%BB%A9-tr%C6%B0%E1%BB%9Bc-khi-gi%E1%BB%8Fi-nhi%E1%BB%81u-th%E1%BB%A9/</guid>
-      <description>HÃY GIỎI MỘT THỨ TRƯỚC KHI MUỐN GIỎI NHIỀU THỨ
-  Hãy giỏi một thứ trước khi muốn giỏi nhiều thứ. Hãy ưu tú trong một lĩnh vực còn hơn giỏi toàn diện nhưng lại bình thường trong xã hội. Thực tế là mỗi người sinh ra đều có sứ mệnh riêng của mình trên đời, ngưng so sánh, ngưng ghen tị. Xuất phát điểm khác nhau thì làm sao kết quả giống nhau.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/network-config/dockerbasic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/network-config/dockerbasic/</guid>
-      <description>Execute the following command to download the official ubuntu image to your computer:
-docker pull ubuntu To see the images that have been downloaded to your computer, type:
-docker images As an example, let’s run a container using the latest image of Ubuntu. The combination of the -iand -t switches gives you interactive shell access into the container:
-docker run -it ubuntu To exit the container, type exit at the prompt.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/network-config/ngrok/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/network-config/ngrok/</guid>
-      <description>Download lynxrowser
-Download ngrok
-lynx https://ngrok.com/download Unzip ngrok &amp;amp; Note down the path
-Export to $PATH
-Adding new directories to your user or global $PATH variable is pretty simple. This allows you to execute commands and scripts stored on nonstandard locations without needing to type the full path to the executable.
-export PATH=&amp;quot;/root/.ngrok2:$PATH&amp;quot; Add token
-ngrok authtoken YOUR_TOKEN Run your localhost, please note down the port
-Use ngrok to expose your localhost with above port</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/network-config/port/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/network-config/port/</guid>
-      <description>What is port?   In computer networking, a port is a communication endpoint.
-  At the software level, within an operating system, a port is a logical construct that identifies a specific process or a type of network service.
-  A port number is always associated with an IP address of a host and the type of transport protocol used for communication. It completes the destination or origination network address of a message.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/network-config/setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/network-config/setup/</guid>
-      <description>Install NGINX brew install nginx Start sudo brew services start nginx Configuration We want to store our web site in the folder of our choice, and access to the URL http://localhost/. To do this, edit the configuration file : nano /usr/local/etc/nginx/nginx.conf
-user &amp;lt;user&amp;gt; staff; server { listen 80; server_name localhost; root /Users/&amp;lt;user&amp;gt;/Documents/path/to/your/website; index index.html index.htm; } Then, restart : sudo brew services restart nginx</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/nodejs/https/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/nodejs/https/</guid>
-      <description>const https = require(&amp;#39;https&amp;#39;); const username = &amp;#34;chalkers&amp;#34;; const url = `https://teamtreehouse.com/${username}.json`; // Connect to API URL const request = https.get(url, response =&amp;gt; { // Emits when &amp;#39;data&amp;#39; of response comes.  // Data comes block by block, so the below callback function will be called several times.  // We concatenate all blocks into one  response.on(&amp;#39;data&amp;#39;, data =&amp;gt; { console.log(data); // Print the buffer  console.log(data.toString()); // Print buffer as string  }); // Emits when the response has fully finished.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/nodejs/install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/nodejs/install/</guid>
-      <description>https://github.com/nodesource/distributions/blob/master/README.md</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/personalproject/plannerapp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/personalproject/plannerapp/</guid>
-      <description>From idea to reality   Ý tưởng loé sáng: giai đoạn này là giai đoạn rất sơ khai về ý tưởng, những chi tiết về ý tưởng vẫn chưa đầy đủ và chúng có rất ít liên kết với nhau
-  Lặn sâu vào ý tưởng: ý tưởng được mở rộng, chi tiết hơn. Ý tưởng này có những trở ngại gì, đưa ra giải pháp vượt qua trở ngại.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/personalproject/untitled/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/personalproject/untitled/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://phatngluu.github.io/posts/phatngluu-website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://phatngluu.github.io/posts/phatngluu-website/</guid>
       <description>phatngluu.website This is personal web project about:
  Blog: post/edit markdown, preview and publish as html/css to view Note: store/search/edit written notes. Todo: input todos, remind via web/push noti/email, sync to calendar ~- Calendar view: sync with calendar to display task/meeting/&amp;hellip; items~  Architecture Backend  Blog:  API to GET/POST/PUT/DELETE .md files. Database to store .md files   Note:  API to GET/POST/PUT/DELETE notes Search service API to publish a note as a blog post   Todo:  API to GET/POST/PUT/DELETE todos Reminder service Sync to calendar service   Calendar:  Sync data from calendar API    Frontend  Blog:  Seamless markdown editor Paste image/drop from clipboard/url, then convert to base64, embedded it directly in markdown file.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/realtime-systems/chapter-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/realtime-systems/chapter-1/</guid>
-      <description>Chapter 1 Outline of terminology and a reference model:
-  Jobs and tasks
-  Processors and resources
-  Time and timing constraints
- Hard real-time Soft real-time    Periodic, aperiodic and sporadic tasks
-  Precedence constraints and dependencies
-  Scheduling
-  Examples  Systems process data at a regular and timely rate: Aircraft positioning system Systems rapid response to irregular events: Over-temperature failure in a nuclear plant Airline reservation counter  All three systems are real-time:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/realtime-systems/chapter-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/realtime-systems/chapter-2/</guid>
-      <description>Chapter 2 Overview of real-time scheduling algorithms
- Clock-driven Weighted round-robin Priority driven  Dynamic vs. static Deadline scheduling: EDF and LST    Outline relative strengths, weaknesses
-Task states Ready: not executed, wait for scheduling point
-Running: get scheduled to a processor
-Blocked: not running &amp;amp; cannot be scheduled at the next scheduling point (delay, wait for data/resources)
-Suspended: user/system wants to completely remove the task from being scheduled (user press the “pause” button)</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/realtime-systems/chapter-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/realtime-systems/chapter-3/</guid>
-      <description>Chapter 3 Outline
-  Assumptions and notation for clock-driven scheduling
-  Handling periodic jobs
- Static, clock-driven schedules and the cyclic executive    Handling aperiodic jobs
- Slack stealing    Handling sporadic jobs
-  Advantages and disadvantages of clock driven scheduling
-  Assumptions Clock-driven scheduling applicable to deterministic systems
-A restricted periodic task model:
-  The parameters of all periodic tasks are known a priori</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/realtime-systems/chapter-4-review/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/realtime-systems/chapter-4-review/</guid>
-      <description>Chapter 4 - Review Schedulable utilization: EDF Check schedulability task:  Time demand function Example Time demand analysis Example Alternative solution Exercises Chapter 4.1 Solution 1. 2.  a b J(3,1) bị trễ deadline 1 đơn vị thời gian =&amp;gt; Điều chỉnh schedule bên trên sao cho J(3,1) được thực hiện trước 1 đơn vị thời gian =&amp;gt; Giảm execution time của T1 hoặc T2. Đề bài yêu cầu điều chỉnh T1, and there exists 3 jobs from the task T1 and we need 1 unit of time available in the interval from 0 to 8 =&amp;gt; The task T1 needs to be reduced at least 1/3 unit of execution time.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/realtime-systems/chapter-4.1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/realtime-systems/chapter-4.1/</guid>
-      <description>Assumptions Priority-driven scheduling of periodic tasks on a single processor
-Assume a restricted periodic task model:
- A fixed number of independent periodic tasks exist  Are ready for execution as soon as they are released Can be pre-empted at any time Never suspend themselves   New tasks only admitted after an acceptance test; may be rejected The period of a task defined as minimum inter-release time of jobs in task There are no aperiodic or sporadic tasks Scheduling decisions made immediately upon job release and completion Context switch overhead negligibly small; unlimited priority levels  Fixed priority vs.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/realtime-systems/chapter-4.2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/realtime-systems/chapter-4.2/</guid>
-      <description>Discussed several dynamic-priority algorithms EDF Example Another example Schedule the following task set using the EDF algorithm: $T_1 = (2,0.5); T_2 = (4,1); T_3 = (5,1.5)$
-LST Example Comparing different algorithms   Compare performance of RM, EDF, LST and FIFO scheduling
- Assume a single processor system with 2 tasks: $T_1 = (2,1);\ T_2 = (5,2.5)$ =&amp;gt; $H = 10$    The total utilization is 1.0 =&amp;gt; no slack time</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/realtime-systems/chapter-5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/realtime-systems/chapter-5/</guid>
-      <description>Chapter 5: Resource access control protocols In previous chapters, we ignores resources for scheduling processors. From this chapter, along with processors, additional resources are required for jobs to be executed.
-Resources: hardware devices, disk, memory, software resources (mutexes, locks, queues&amp;hellip;)
-Aims of this chapter:
- How resource contention affects the execution behavior and schedulability of jobs How various resource access-control protocols work to reduce the undesirable effect of resource contention How well these protocols succeed in achieving this goal  Definitions &amp;amp; Notations Locks Critical sections The segment (khúc) of a job that begins at a lock and ends at a matching unlock is a critical section.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/realtime-systems/exam-note/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/realtime-systems/exam-note/</guid>
-      <description>Priority ceiling protocol in dynamic priority systems không có trong exam.
-Contents:
-3 questions:
- Questions 1: what is RT, ultimate goal: deadline meet, theory in chapter 1  multiple question short answer, tự luận   Question 2: scheduling Question 3: resources  Pre-emptive priority scheduling: https://www.youtube.com/watch?v=hDn4hM148V8
-RM: https://www.geeksforgeeks.org/rate-monotonic-scheduling/q
-https://youtu.be/xgW8VhEOpFg
-https://www.youtube.com/watch?v=Cv_5aoKXc3g [PART1]
-https://www.youtube.com/watch?v=HJ_vZLjZfYY [PART2]
-DM:
-https://youtu.be/E6KGDpY_XoI
-https://www.youtube.com/watch?v=D5jlciHNTcw
-EDF:
-https://www.youtube.com/watch?v=jgAs8wZMeYs algoLancer
-https://www.youtube.com/watch?v=1cR7vhDYn68 [PART1]
-https://www.youtube.com/watch?v=mk2ldyjKtBc&amp;amp;t=5s [PART2]
-LST: https://www.geeksforgeeks.org/least-slack-time-lst-scheduling-algorithm-in-real-time-systems/?ref=rp
-https://www.youtube.com/watch?v=0-0ASSc5Gvo
-https://www.youtube.com/watch?v=8xe6X8DkD3M
-https://www.youtube.com/watch?v=uNrWtL59tFg</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/realtime-systems/exercises/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/realtime-systems/exercises/</guid>
-      <description>Exercises Chapter 1   Because sporadic jobs may have varying release times and execution times, the periodic task model may be too inaccurate and can lead to undue underutilization of the processor even when the inter release times of jobs are bounded from below and their executions are bounded from above. As an example, suppose we have a stream of sporadic jobs whose inter release times are uniformly distributed from 9 to 11.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/realtime-systems/job-tuple/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/realtime-systems/job-tuple/</guid>
-      <description>4 tuples: T(phi, period, execution time, deadline)
-3 tuples: T(period, execution time, deadline)
- phi = 0 dynamic_deadline_i = release_time_at_period_i + deadline  2 tuples: T(period, execution time)
- phi = 0 deadline = period  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/remote-development/aws/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/remote-development/aws/</guid>
-      <description>Amazon Create Instance https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance
-Connect https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
-EC2
-ssh -i MyKeyPair.pem ec2-user@13.212.25.226 Ubuntu
-ssh -i MyKeyPair.pem ubuntu@54.169.249.248 NOTE:
-SSH config
-Host Vultr HostName 207.148.122.57 User root Host AWS_Ubuntu HostName 13.229.183.189 IdentityFile /Users/steven/.ssh/MyKeyPair.pem User ubuntu Change password sudo su - # switch user to root passwd ubuntu su ubuntu # switch user ubuntu </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/remote-development/java/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/remote-development/java/</guid>
-      <description>Install Java JDK 11 apt install default-jdk Open Settings [Command + ,] &amp;gt; Open Remote [SSH: VMCloud] &amp;gt; Edit in settings.json &amp;gt; Add:
-&amp;quot;java.home&amp;quot; : &amp;quot;/usr/lib/jvm/java-11-openjdk-amd64&amp;quot; nano /etc/environment JAVA_HOME=&amp;quot;/usr/lib/jvm/java-11-openjdk-amd64&amp;quot; source /etc/environment Embedded databases Prepare schema.sql and data.sql
-Add to pom.xml:
-&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-data-jpa&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.h2database&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;h2&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; When you run the project, two sql files are run then the database will be embedded to the program. When the program is terminated, all changes will lost.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/remote-development/vultr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/remote-development/vultr/</guid>
-      <description>Vultr Watch above this video to:
-  Deploy Vultr server
-  Add SSH key: https://www.vultr.com/docs/how-do-i-generate-ssh-keys/
-  Server login
-  SSH config
-Host Vultr HostName 207.148.122.57 User root     In your VS Code:
- Install Extension &amp;ldquo;Remote SSH&amp;rdquo; Watch the tutorial of the extension in the extension&amp;rsquo;s main page to connect the server  Or you can watch video as a reference for connecting with the server    Set up development environment   NodeJS: https://www.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/skills/b%E1%BB%9Bt-nh%E1%BB%8F-nhen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/skills/b%E1%BB%9Bt-nh%E1%BB%8F-nhen/</guid>
-      <description>Bước 1 : Tìm hiểu nguyên nhân thực sự của thói nhỏ nhen Con người sinh ra là 1 tờ giấy trắng, qua thời gian chúng ta sẽ trở thành sản phẩm của hành trình lớn lên dựa trên những gì mà ta thấy, những gì ta được dạy cộng với cá tính, mức độ kiến thức của mình và cái cách mình nhìn nhận những điều nằm ngoài vùng an toàn của mình sẽ tạo nên sự rộng mở hoặc sự nhỏ nhen trong đầu óc của mình.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/skills/tr%C4%83n-tr%E1%BB%9F-t%C3%ACm-vi%E1%BB%87c/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/skills/tr%C4%83n-tr%E1%BB%9F-t%C3%ACm-vi%E1%BB%87c/</guid>
-      <description>Tìm công ty:   Công ty lớn hay nhỏ, bao nhiêu nhân viên, văn phòng to nhỏ?
-  Tiềm năng phát triển trong tương lai của công ty đó. Nơi đây sẽ là nơi tôi phát triển và cộng tác cùng.
- Ngành kinh doanh của công ty đang có nhiều nhu cầu hay không? (Còn khát hay là đã bão hoà?) Nội lực công ty (định hướng, ý chí, lãnh đạo có năng lực, nắm giữ thế mạnh cạnh tranh công nghệ, cải tiến độc đáo so với công ty cùng ngành)  =&amp;gt; Hai yếu tố này tạo nên tiềm năng phát triển của công ty.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/all/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/all/</guid>
-      <description>%%%%%%%%  There are bookings of different types: e.g., badminton, zumba, or bike-rental. Each type follows its own &amp;ldquo;behavior&amp;rdquo; when the client creates bookings of this type. The clients should not have access to the &amp;ldquo;new&amp;rdquo; operator. Provide the client with a solution for creating bookings of each of the different types.  %%%%%%%%  There are bookings of different types: e.g., badminton, zumba, or bike-rental. The Consortium requires that bookings include a &amp;ldquo;code&amp;rdquo;, which is &amp;ldquo;expensive&amp;rdquo; to obtain/generate.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/behavioral/chain/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/behavioral/chain/</guid>
-      <description>Chain of Responsibility Sceanario: Có một chuỗi các courts, &amp;ldquo;client&amp;rdquo; muốn có 2 chức năng là book() và add(). Client không biết structure của &amp;ldquo;&amp;ldquo;đám mây courts&amp;rdquo; cũng như là trạng thái của court (đã được book hay chưa)
-Solution: Tổ chức &amp;ldquo;đám mây courts&amp;rdquo; thành chain. Mỗi court sẽ reference court tiếp theo. Sẽ có một entry court, gọi book() hoặc add() thông qua entry court, cho mỗi court trong chuỗi, yêu cầu sẽ được xét xem là có thể thực hiện bởi court đó hay không, nếu không thì truyền yêu cầu cho court kế tiếp.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/behavioral/decorator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/behavioral/decorator/</guid>
-      <description>The Component declares the common interface for both wrappers and wrapped objects. Concrete Component is a class of objects being wrapped. It defines the basic behavior, which can be altered by decorators. The Base Decorator class has a field for referencing a wrapped object. The field’s type should be declared as the component interface so it can contain both concrete components and decorators. The base decorator delegates all operations to the wrapped object.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/behavioral/iterator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/behavioral/iterator/</guid>
-      <description>Iterator - Day 11 Problem Description:
-Traverse a structure/tree with:
- Depth First Breadth First Inorder Postorder  Solution: use Iterator pattern
-What is iterator?
-Iterator helps us traverse a complex structure easiser in specific traverse rule.
-tournament : Tournament // get iterator iterator = tournament.getIterator(&amp;#34;depthfirst&amp;#34;) // client code - it does not change // because it is independent on which kind of iterator (depth first or breadth first) while (iterator.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/behavioral/observer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/behavioral/observer/</guid>
-      <description>Observer - Day 13 Structure  The Publisher issues events of interest to other objects. These events occur when the publisher changes its state or executes some behaviors. Publishers contain a subscription infrastructure that lets new subscribers join and current subscribers leave the list. When a new event happens, the publisher goes over the subscription list and calls the notification method declared in the subscriber interface on each subscriber object. The Subscriber interface declares the notification interface.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/behavioral/visitor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/behavioral/visitor/</guid>
-      <description>Visitor - Day 12 The Visitor pattern helps adding the new behavior into a separate class called visitor, instead of trying to integrate it into existing classes (change the existing classes).
-The new behavior acts as a method of visitor, takes the original object as an argument. The original object must &amp;ldquo;allow&amp;rdquo; visitor to access its data.
-The behavior can be executed over objects of different classes, the visitor class may define a set of methods, each of which could take arguments of different types, like this:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/composite/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/composite/</guid>
-      <description>Composite </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/creational/abstractfactory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/creational/abstractfactory/</guid>
-      <description>Abstract Factory Intent  The new operator considered harmful. Provide an interface for creating families of related or dependent objects without specifying their concrete classes. Map out a matrix of &amp;ldquo;platforms&amp;rdquo; [= sport centers] versus &amp;ldquo;products&amp;rdquo; [events/resources - bookings].  How to Implement  The job of an Abstract Factory is to define an interface for creating a set of products. Each method in that interface is responsible for creating a concrete product, and we implement the Abstract Factory to supply those implementations.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/creational/adapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/creational/adapter/</guid>
-      <description>// Client is familiar with this interface class Duck { public void quack(){ sout(&amp;#34;Quacking...&amp;#34;); } public void fly(){ sout(&amp;#34;Flying...&amp;#34;); } } // Client code Duck duck = new Duck(); duck.quack(); duck.fly(); When you introduces new interface, it differs from the old one:
-class Turkey { public void gobble(){ sout(&amp;#34;Gobbling...&amp;#34;); } public void fly(){ sout(&amp;#34;Flying with Turkey style...&amp;#34;); } } Client does not familiar with the new interface. We need an adapter:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/creational/factory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/creational/factory/</guid>
-      <description>Factory Method Here we’ve got several concrete classes being instantiated, and the decision of which to instantiate is made at runtime depending on some set of conditions.
-Factory Method allows the class to delegate instantiation to subclasses.
-The goal of any factory is to protect customers from the details of creating copies of classes or class hierarchy.
-The new operator considered harmful.
- Creator declares an abstract or virtual method of creating a product: factoryMethod().</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/creational/prototype/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/creational/prototype/</guid>
-      <description>Prototype Basic implementation Prototype registry implementation </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/creational/singleton/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/creational/singleton/</guid>
-      <description>Singleton class Singleton { private static Singleton instance = new Singleton(); private Singleton() { ... }; public static Singleton getInstance(){ return instance; } } class Singleton { private static Singleton instance; private Singleton() { ... }; public static Singleton getInstance(){ if (instance == null){ instance = new Singleton(); } return instance; } } </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/day14/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/day14/</guid>
-      <description>Thi trên giấy
-Ask for specific DS,
-Give some piece code, follow this pattern = &amp;gt; implement.
-Extending the code, give design pattern, what&amp;rsquo;s wrong  Ob: simple version of mediator
- one to many subject knows about the observers  Media: cái nào sử dụng ob được =&amp;gt; dùng me được
- many to many loose coupling  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/softwaredesign/exampreparation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/softwaredesign/exampreparation/</guid>
-      <description>Only learned design patterns.
-Five example for DS: sourcemaking, refactoing guru, tutorial points, geeks for geeks
-Next week: 2,3,4 9h;16h
-Observer is MVC
-Classroom exercise Why do I use Visitor? =&amp;gt; Because my structure is recursiv
-  &amp;ldquo;Encrypted&amp;rdquo; mathematical expressions: A(B(A(4, 5), 5))
-  A, B, C, D: chosen from {*, +, -, /}
-  You are the class provider.
-  You want to hide from the client:</description>
     </item>
     
     <item>
@@ -1275,140 +613,17 @@ Classroom exercise Why do I use Visitor? =&amp;gt; Because my structure is recur
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/sql/sql-tricks/</link>
+      <link>https://phatngluu.github.io/posts/vultr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/sql/sql-tricks/</guid>
-      <description>Problem: Solution ( select city, length(city) from station where length(city) = (select min(length(city)) from station) order by city asc limit 1 ) union ( select city, length(city) from station where length(city) = (select max(length(city)) from station) order by city asc limit 1 ) Problem Solution select distinct city from station where city regexp &amp;#39;^[aeuoiAEUOI].*&amp;#39; Solution endings with vowels select distinct city from station where city regexp &amp;#39;^.*[aeuoiAEUOI]$&amp;#39; Solution startings &amp;amp; endings with vowels select distinct city from station where city regexp &amp;#39;^[aeuoiAEUOI].</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/sql/sql-review/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/sql/sql-review/</guid>
-      <description>ALTER TABLE vendors ADD COLUMN vendor_group INT NOT NULL; SELECT * FROM t1 INNER JOIN t2 ON condition; SELECT * FROM t GROUP BY c1, c2... SELECT * FROM t GROUP BY c1 HAVING condition INSERT INTO </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/tester-basic/1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/tester-basic/1/</guid>
-      <description>Software Testing Life Cycle  Requirement Analysis Test Planning Test Case Development: phát triển test case Environment Setup: cài đặt môi trường khớp với môi trường của khách hàng, Cbị môi trường test là chuẩn bị thiết bị test Test Execution: thực hiện test, report bug Test Cycle Closure  Các cấp độ testing  Unit Test: whitebox Integration Test: test các chức năng cùng lúc, mua hàng + thanh toán System Testing: test toàn bộ hệ thống: trang thương mại điện tử Acceptance Testing: khách hàng sẽ test, coi có đúng với yêu cầu của bản thân không  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/tester-basic/2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/tester-basic/2/</guid>
-      <description>7 nguyên tắc kiểm thử phần mềm   Phát hiện ra lỗi
-   Kiểm thử toàn bộ là không thể
-  https://www.geeksforgeeks.org/software-engineering-seven-principles-of-software-testing/
-Test Scenario là trường hợp kiểm thử, group các test case lại theo nhóm chức năng
-Test Scenario là gì? Tại sao cần Test Scenario Làm sao để viết Test Scenario Bước 5: tiến hành tạo scenario và yêu cầu review vởi cấp trên và khách hàng</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/tester-basic/3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/tester-basic/3/</guid>
-      <description>Phần 5: Lỗi phần mềm Qui tắc xác định lỗi Cấu trúc của Bug Vòng đời của Bug &amp;ldquo;Is it an scope&amp;rdquo;: Nó có nằm trong phạm vi của dự án không?
-Lưu ý khi viết Bug Tiêu đề *the logout button&amp;hellip;
-[prefix] [lỗi gì] [khi nào lỗi ?] [screen nào lỗi ?]
-prefix: màn hình / module
-Mô tả Cấm kị đưa lỗi bằng video. Trường hợp bất đắt dĩ thì video càng ngắn, càng trực quan càng tốt.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/tester-basic/5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/tester-basic/5/</guid>
-      <description>12 Bước của Test Report </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/uncategorized/autocad-license/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/uncategorized/autocad-license/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/uncategorized/docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/uncategorized/docker/</guid>
-      <description>PREPARE DOCKER IMAGE Read full post at https://docs.docker.com/get-started/part2/
-Assumption PROJECT_DIR is project&amp;rsquo;s directory. This folder contains Dockerfile.
-Define a container with Dockerfile In Dockerfile:
-FROMubuntu:latestRUN apt-get updateRUN apt-get install openjdk-8-jdk -yRUN apt-get install wget -yRUN apt-get install nano -yRUN apt-get install ssh -yRUN apt-get remove openssh-client openssh-server -yRUN apt-get install openssh-client openssh-server -yRUN service ssh startWORKDIR/rootRUN wget https://archive.apache.org/dist/hadoop/core/hadoop-2.7.3/hadoop-2.7.3.tar.gzRUN tar -xvf hadoop-2.7.3.tar.gzEXPOSE50070ADD ./site /rootBuild image docker build --tag IMAGE_NAME:TAG_NAME PROJECT_DIR
-Run your image as a container docker run --publish HOST_PORT:CONTAINER_PORT --detach --name CONTAINER_NAME IMAGE_NAME:TAG_NAME</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/uncategorized/homo-sapiens/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/uncategorized/homo-sapiens/</guid>
-      <description>Người tối cổ họ rành về thiên nhiên, bởi vì cuộc sống hằng ngày của họ xoay quanh việc hái lượm, săn bắt, chế tạo vũ khí và công cụ để tìm kiếm, chống lại thú dữ và đối phó với những tác động từ môi trường.
-Người hiện đại có cuộc sống cộng sinh, làm việc trong các lĩnh vực khác nhau, họ có thể là chuyên gia trong các lĩnh vực này, nhưng lĩnh vực khác thì lại không.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/uncategorized/install-mysql-on-macos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/uncategorized/install-mysql-on-macos/</guid>
-      <description>Install MySQL on macOS Download MySQL Community Server: https://dev.mysql.com/downloads/mysql/ Download MySQL Workbench: https://dev.mysql.com/downloads/workbench/
-In Terminal, type: sudo ln -s /usr/local/mysql/bin/mysql /usr/local/bin/
-Then, mysql -u root -p. MySQL will start.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/uncategorized/job-hunting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/uncategorized/job-hunting/</guid>
-      <description>Job Hunting Lời khuyên:
-Cũng giống như chọn trường đại học vậy:
-1. phai dựa trên sở thích sở trường của mình rồi chọn những cty phù hợp với tiêu chí đó 2. Dựa trên năng lực (tài năng) quyết định chọn loại cty mạnh yếu 3. Môi trường làm việc tốt ko, yếu tố quan trọng để mình học hỏi và học tập kinh nghiệm trong tương lai : quan hệ giữa các thành viên, tính chuyên nghiệp, sự bài bản, đào tạo.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/uncategorized/lambdaexpression/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/uncategorized/lambdaexpression/</guid>
-      <description>The interface must have exact one method to use lambda function.
-public interface IDecision { boolean decide(ZumbaClass c); } The method that call the lambda function must take the interface as perameter.
-public class Person { ... public Person setLogic(IDecision decision) { ... } } Usage ZumbaClass class102 = new ZumbaClass(&amp;#34;Class 102&amp;#34;); Player p1 = new Player(&amp;#34;Player 1&amp;#34;); // define the lambda function p1.setLogic((c) -&amp;gt; { if (!c.equals(class101)) return true; return (c.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/uncategorized/lesson-learned-android/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/uncategorized/lesson-learned-android/</guid>
-      <description>Lesson learned Android   Khi chuyển từ Activity X (có chứa button A) này sang Activity Y (chứa button B), khi nhấn button A để chuyển từ X sang Y, thì có thể vô tình button B cũng sẽ bị nhấn (? chưa hiểu tại sao). Giải pháp: trong Android Manifest, phần khai báo &amp;lt;activity…&amp;gt; chèn vào: android:launchMode = &amp;ldquo;singleTop&amp;rdquo;
-Ví dụ:
-&amp;lt;activity android:name=&amp;#34;.PlayerBookingActivity&amp;#34; android:label=&amp;#34;My Bookings&amp;#34; android:launchMode=&amp;#34;singleTop&amp;#34;/&amp;gt;   Volley có thể kết hợp với JSONArray, JSONObject.</description>
+      <guid>https://phatngluu.github.io/posts/vultr/</guid>
+      <description>Vultr Watch above this video to:
+  Deploy Vultr server
+  Add SSH key: https://www.vultr.com/docs/how-do-i-generate-ssh-keys/
+  Server login
+  SSH config
+Host Vultr HostName 207.148.122.57 User root     In your VS Code:
+ Install Extension &amp;ldquo;Remote SSH&amp;rdquo; Watch the tutorial of the extension in the extension&amp;rsquo;s main page to connect the server  Or you can watch video as a reference for connecting with the server    Set up development environment   NodeJS: https://www.</description>
     </item>
     
   </channel>
