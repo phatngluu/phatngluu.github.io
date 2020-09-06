@@ -1,6 +1,6 @@
 baseURL = "https://phatngluu.github.io"
 languageCode = "en-us"
-title = "Yadsendew"
+title = "Luu Nguyen Phat"
 publishDir = "docs"
 copyright = "You" # cactus will use title if copyright is not set
 disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
