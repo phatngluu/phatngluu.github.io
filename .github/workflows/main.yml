@@ -20,6 +20,25 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
+      # Step 1 – 
+      - name: Change directory
+        run: cd /home/runner/work/phatngluu.github.io/phatngluu.github.io/.git/
+
+      # Step 2 - Sets up the latest version of Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+            hugo-version: 'latest'
+
+      # Step 3 - Git auth
+      - name: Git authentication
+        run: |
+          /usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+          /usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+          /usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+          /usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+          /usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+  
+      # Step 4 – Runs a single command using the runners shell
       - name: Run script
         run: ./publish.sh
