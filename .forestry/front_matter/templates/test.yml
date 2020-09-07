@@ -33,4 +33,5 @@ fields:
   label: Layout
   description: Choose a layout for post
 pages:
+- content/posts/graphql.md
 - content/posts/try.md
