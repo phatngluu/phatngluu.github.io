@@ -640,5 +640,14 @@ Host Vultr HostName 207.148.122.57 User root     In your VS Code:
  Install Extension &amp;ldquo;Remote SSH&amp;rdquo; Watch the tutorial of the extension in the extension&amp;rsquo;s main page to connect the server  Or you can watch video as a reference for connecting with the server    Set up development environment   NodeJS: https://www.</description>
     </item>
     
+    <item>
+      <title>GraphQL</title>
+      <link>https://phatngluu.github.io/posts/graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/graphql/</guid>
+      <description>Hello hello</description>
+    </item>
+    
   </channel>
 </rss>
