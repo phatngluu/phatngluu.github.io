@@ -11,5 +11,14 @@
 	<atom:link href="https://phatngluu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>graphql</title>
+      <link>https://phatngluu.github.io/categories/graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/categories/graphql/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
