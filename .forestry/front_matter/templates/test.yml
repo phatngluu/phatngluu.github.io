@@ -3,16 +3,10 @@ label: New post template
 hide_body: false
 fields:
 - name: title
-  type: textarea
-  default: ''
+  type: text
   config:
     required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-    min: 
   label: Title
-  description: Enter post title
 - name: categories
   type: tag_list
   default: []
