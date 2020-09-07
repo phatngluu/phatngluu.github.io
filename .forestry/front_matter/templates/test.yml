@@ -2,14 +2,41 @@
 label: Test
 hide_body: false
 fields:
-- name: text
+- name: title
   type: textarea
   default: ''
   config:
     required: false
-    wysiwyg: false
+    wysiwyg: true
     schema:
       format: markdown
-  label: Text
+    min: 
+  label: Title
+  description: Enter post title
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
+  description: Enter categories of post
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Enter tags of post
+- name: layout
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - layout1
+    - " layout2"
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
+  description: Choose a layout for post
 pages:
 - content/posts/try.md
