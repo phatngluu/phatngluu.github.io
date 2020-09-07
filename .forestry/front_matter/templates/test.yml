@@ -1,5 +1,5 @@
 ---
-label: Test
+label: New Post
 hide_body: false
 fields:
 - name: title
@@ -18,11 +18,6 @@ fields:
   default: []
   label: Categories
   description: Enter categories of post
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
-  description: Enter tags of post
 - name: layout
   type: select
   default: []
@@ -38,5 +33,10 @@ fields:
       path: 
   label: Layout
   description: Choose a layout for post
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Enter tags of post
 pages:
 - content/posts/try.md
