@@ -114,18 +114,6 @@ Thuộc tính name của @Entity là không bắt buộc. Việc chỉ định r
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/java/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/java/</guid>
-      <description>Install Java JDK 11 apt install default-jdk Open Settings [Command + ,] &amp;gt; Open Remote [SSH: VMCloud] &amp;gt; Edit in settings.json &amp;gt; Add:
-&amp;quot;java.home&amp;quot; : &amp;quot;/usr/lib/jvm/java-11-openjdk-amd64&amp;quot; nano /etc/environment JAVA_HOME=&amp;quot;/usr/lib/jvm/java-11-openjdk-amd64&amp;quot; source /etc/environment Embedded databases Prepare schema.sql and data.sql
-Add to pom.xml:
-&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-data-jpa&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.h2database&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;h2&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; When you run the project, two sql files are run then the database will be embedded to the program. When the program is terminated, all changes will lost.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://phatngluu.github.io/posts/java/j2ee/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
