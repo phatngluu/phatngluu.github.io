@@ -35,4 +35,5 @@ fields:
 pages:
 - content/posts/Golang/01.md
 - content/posts/Golang/Go.md
+- content/posts/Golang/gopath-explained.md
 - content/posts/GraphQL/introduction.md
