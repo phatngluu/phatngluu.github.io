@@ -590,6 +590,16 @@ Host Vultr HostName 207.148.122.57 User root     In your VS Code:
     </item>
     
     <item>
+      <title>01</title>
+      <link>https://phatngluu.github.io/posts/golang/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/golang/01/</guid>
+      <description>var ( x int y int z int ) var t int = 8 Number: uninitialized value in Go equals to 0
+package main import &amp;#34;fmt&amp;#34; func main() { var x int x = 1 var y int = 1 // inferred 	var z = 4.5 // var t int 	// t = 8 	t := 8 // popular  // convert type 	t = int(z) t = float64(x) c := complex(4,3) } s := &amp;#34;CaptainCode&amp;#34; fmt.</description>
+    </item>
+    
+    <item>
       <title>Golang</title>
       <link>https://phatngluu.github.io/posts/golang/go/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
