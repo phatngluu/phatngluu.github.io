@@ -28,6 +28,31 @@
   </url>
   
   <url>
+    <loc>https://phatngluu.github.io/categories/</loc>
+    <lastmod>2020-09-09T17:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/golang/</loc>
+    <lastmod>2020-09-09T17:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/categories/golang/</loc>
+    <lastmod>2020-09-09T17:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/golang/gopath-explained/</loc>
+    <lastmod>2020-09-09T17:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/</loc>
+    <lastmod>2020-09-09T17:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://phatngluu.github.io/about/</loc>
     <lastmod>2020-09-05T17:51:42+00:00</lastmod>
   </url>
@@ -225,23 +250,7 @@
   </url>
   
   <url>
-    <loc>https://phatngluu.github.io/categories/</loc>
-  </url>
-  
-  <url>
     <loc>https://phatngluu.github.io/posts/golang/go/</loc>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/tags/golang/</loc>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/categories/golang/</loc>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/golang/gopath-explained/</loc>
   </url>
   
   <url>
@@ -254,10 +263,6 @@
   
   <url>
     <loc>https://phatngluu.github.io/posts/graphql/introduction/</loc>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/tags/</loc>
   </url>
   
 </urlset>
