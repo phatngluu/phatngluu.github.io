@@ -34,4 +34,3 @@ fields:
   description: Choose a layout for post
 pages:
 - content/posts/GraphQL/introduction.md
-- content/posts/try.md
