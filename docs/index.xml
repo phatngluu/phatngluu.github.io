@@ -7,9 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
+    <lastBuildDate>Thu, 10 Sep 2020 09:53:33 +0700</lastBuildDate>
     
 	<atom:link href="https://phatngluu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Advanced] Annotation</title>
+      <link>https://phatngluu.github.io/posts/java/advanced-annotation/</link>
+      <pubDate>Thu, 10 Sep 2020 09:53:33 +0700</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/java/advanced-annotation/</guid>
+      <description>Read detail at: https://cs-fundamentals.com/java-programming/java-annotations.php
+Built-in Java Annotations    Annotation Name Applicable To Use Included in     Java Annotations Applied to Java code      @Override Member Methods Checks that this method overrides a method from its superclass java.lang   @Deprecated All annotable items Marks item as deprecated java.lang   @SuppressWarnings All annotable items except packages and annotations Suppress warning of given type java.</description>
+    </item>
+    
+    <item>
+      <title>[Advanced] JPA</title>
+      <link>https://phatngluu.github.io/posts/java/advanced-jpa/</link>
+      <pubDate>Thu, 10 Sep 2020 09:53:14 +0700</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/java/advanced-jpa/</guid>
+      <description>What is it?  Bất kỳ một ứng dụng nào cũng đều cần phải thực hiện các tháo tác (CRUD) đến database bằng việc lưu trữ, truy vấn dữ liệu. Chúng ta cần phải viết nhiều code để thực hiện các việc này. Với công nghệ JDBC trước đây, chúng ta phải thực hiện các việc: mở kết nối vào Database, tạo các Statement, ResultSet, … và sau cùng phải đóng tất cả các thứ đó lại.</description>
+    </item>
+    
+    <item>
+      <title>[Advanced] Reflection</title>
+      <link>https://phatngluu.github.io/posts/java/advanced-reflection/</link>
+      <pubDate>Thu, 10 Sep 2020 09:51:45 +0700</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/java/advanced-reflection/</guid>
+      <description>Read detail at: https://o7planning.org/vi/10155/huong-dan-java-reflection
+Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn có thể truy cập vào một trường của một đối tượng nếu bạn biết tên của trường đó. Hoặc bạn có thể gọi một phương thức của đối tượng nếu bạn biết tên phương thức, các kiểu tham số của phương thức, và các giá trị tham số để truyền vào &amp;hellip;
+  Java Reflecion cho phép bạn đánh giá, sửa đổi cấu trúc và hành vi của một đối tượng tại thời gian chạy (runtime) của chương trình.</description>
+    </item>
     
     <item>
       <title>About me</title>
@@ -23,36 +54,6 @@ This is the place where I store my own stuff.
 Hope this website is also helpful for you.
 Frameworks and applications are used to create this website:
  Hugo for generating static website Github Pages to host the website Forestry – Git-backed CMS for Hugo  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/advanced-annotation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/advanced-annotation/</guid>
-      <description>Read detail at: https://cs-fundamentals.com/java-programming/java-annotations.php
-Built-in Java Annotations    Annotation Name Applicable To Use Included in     Java Annotations Applied to Java code      @Override Member Methods Checks that this method overrides a method from its superclass java.lang   @Deprecated All annotable items Marks item as deprecated java.lang   @SuppressWarnings All annotable items except packages and annotations Suppress warning of given type java.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/advanced-jpa/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/advanced-jpa/</guid>
-      <description>What is it?  Bất kỳ một ứng dụng nào cũng đều cần phải thực hiện các tháo tác (CRUD) đến database bằng việc lưu trữ, truy vấn dữ liệu. Chúng ta cần phải viết nhiều code để thực hiện các việc này. Với công nghệ JDBC trước đây, chúng ta phải thực hiện các việc: mở kết nối vào Database, tạo các Statement, ResultSet, … và sau cùng phải đóng tất cả các thứ đó lại.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/advanced-reflection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/advanced-reflection/</guid>
-      <description>Read detail at: https://o7planning.org/vi/10155/huong-dan-java-reflection
-Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn có thể truy cập vào một trường của một đối tượng nếu bạn biết tên của trường đó. Hoặc bạn có thể gọi một phương thức của đối tượng nếu bạn biết tên phương thức, các kiểu tham số của phương thức, và các giá trị tham số để truyền vào &amp;hellip;
-  Java Reflecion cho phép bạn đánh giá, sửa đổi cấu trúc và hành vi của một đối tượng tại thời gian chạy (runtime) của chương trình.</description>
     </item>
     
     <item>
@@ -597,20 +598,6 @@ Declaring a class // Declaring a class class Pet { constructor(animal, age, bree
       <guid>https://phatngluu.github.io/posts/springboot/learnpath/</guid>
       <description>https://spring.io/quickstart
  @GetMapping(&amp;quot;/hello&amp;quot;):tells Spring to use our hello() method to answer requests that get sent to the http://localhost:8080/hello address @RestController annotation tells Spring that this code describes an endpoint that should be made available over the web @RequestParam is telling Spring to expect a name value in the request, but if it’s not there, it will use the word “World” by default.  MVC  Fundamental pattern for web app development Model = data, View = the visual display that is populated, Controller = wires View + Model  Spring Controller  Spring bean Annotated for the servlet mapping Responds to incoming web requests Outputs a view or raw data  Template Engines  Spring supports several Thymeleaf - most popular Provides a DSL for HTML, leaving raw HTML documents Placeholders for dynamic data Rendering engine allows for final product  Spring Material Beginner https://www.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/try/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/try/</guid>
-      <description>sdfdsfjhsdfkjlhdslkjfh
-fhjkfhlkjdshkajfhlkjhdf
-dfhkjhsldkjfhdslkjfh
-dfjkhsafjkhlskdjhf
-dfhjkshdflkjsahflk
-hdsjlkhfkjdshfdsf</description>
     </item>
     
     <item>

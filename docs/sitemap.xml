@@ -3,20 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://phatngluu.github.io/posts/java/advanced-annotation/</loc>
+    <lastmod>2020-09-10T09:53:33+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/</loc>
+    <lastmod>2020-09-10T09:53:33+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/</loc>
+    <lastmod>2020-09-10T09:53:33+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/advanced-jpa/</loc>
+    <lastmod>2020-09-10T09:53:14+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/java/advanced-reflection/</loc>
+    <lastmod>2020-09-10T09:51:45+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://phatngluu.github.io/about/</loc>
     <lastmod>2020-09-05T17:51:42+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/advanced-annotation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/advanced-jpa/</loc>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/advanced-reflection/</loc>
   </url>
   
   <url>
@@ -212,10 +225,6 @@
   </url>
   
   <url>
-    <loc>https://phatngluu.github.io/posts/try/</loc>
-  </url>
-  
-  <url>
     <loc>https://phatngluu.github.io/posts/vultr/</loc>
   </url>
   
@@ -233,14 +242,6 @@
   
   <url>
     <loc>https://phatngluu.github.io/posts/graphql/introduction/</loc>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/</loc>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/</loc>
   </url>
   
   <url>
