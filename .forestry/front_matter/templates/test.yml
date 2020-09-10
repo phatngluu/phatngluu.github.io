@@ -7,6 +7,16 @@ fields:
   config:
     required: false
   label: Title
+- name: date
+  type: datetime
+  description: ''
+  config:
+    required: false
+    date_format: dd/mm/yyyy
+    time_format: 
+    display_utc: false
+  label: Date
+  default: now
 - name: categories
   type: tag_list
   default: []
