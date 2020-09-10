@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> [Advanced] JPA </title>
+  <title> [Advanced] JPA - What is it? </title>
   <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="[Advanced] JPA" />
+  <meta property="og:title" content="[Advanced] JPA - What is it?" />
 <meta property="og:description" content="What is it?  Bất kỳ một ứng dụng nào cũng đều cần phải thực hiện các tháo tác (CRUD) đến database bằng việc lưu trữ, truy vấn dữ liệu. Chúng ta cần phải viết nhiều code để thực hiện các việc này. Với công nghệ JDBC trước đây, chúng ta phải thực hiện các việc: mở kết nối vào Database, tạo các Statement, ResultSet, … và sau cùng phải đóng tất cả các thứ đó lại." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://phatngluu.github.io/posts/java/advanced-jpa/" />
@@ -16,7 +16,7 @@
 <meta property="article:modified_time" content="2020-09-10T09:53:14+07:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[Advanced] JPA"/>
+<meta name="twitter:title" content="[Advanced] JPA - What is it?"/>
 <meta name="twitter:description" content="What is it?  Bất kỳ một ứng dụng nào cũng đều cần phải thực hiện các tháo tác (CRUD) đến database bằng việc lưu trữ, truy vấn dữ liệu. Chúng ta cần phải viết nhiều code để thực hiện các việc này. Với công nghệ JDBC trước đây, chúng ta phải thực hiện các việc: mở kết nối vào Database, tạo các Statement, ResultSet, … và sau cùng phải đóng tất cả các thứ đó lại."/>
 
   
@@ -110,52 +110,52 @@
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&text=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&text=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&is_video=false&description=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&is_video=false&description=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=%5bAdvanced%5d%20JPA&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f">
+    <a class="icon" href="mailto:?subject=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&name=%5bAdvanced%5d%20JPA&description=What%20is%20it%3f%20%20B%e1%ba%a5t%20k%e1%bb%b3%20m%e1%bb%99t%20%e1%bb%a9ng%20d%e1%bb%a5ng%20n%c3%a0o%20c%c5%a9ng%20%c4%91%e1%bb%81u%20c%e1%ba%a7n%20ph%e1%ba%a3i%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20th%c3%a1o%20t%c3%a1c%20%28CRUD%29%20%c4%91%e1%ba%bfn%20database%20b%e1%ba%b1ng%20vi%e1%bb%87c%20l%c6%b0u%20tr%e1%bb%af%2c%20truy%20v%e1%ba%a5n%20d%e1%bb%af%20li%e1%bb%87u.%20Ch%c3%bang%20ta%20c%e1%ba%a7n%20ph%e1%ba%a3i%20vi%e1%ba%bft%20nhi%e1%bb%81u%20code%20%c4%91%e1%bb%83%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20vi%e1%bb%87c%20n%c3%a0y.%20V%e1%bb%9bi%20c%c3%b4ng%20ngh%e1%bb%87%20JDBC%20tr%c6%b0%e1%bb%9bc%20%c4%91%c3%a2y%2c%20ch%c3%bang%20ta%20ph%e1%ba%a3i%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20vi%e1%bb%87c%3a%20m%e1%bb%9f%20k%e1%ba%bft%20n%e1%bb%91i%20v%c3%a0o%20Database%2c%20t%e1%ba%a1o%20c%c3%a1c%20Statement%2c%20ResultSet%2c%20%e2%80%a6%20v%c3%a0%20sau%20c%c3%b9ng%20ph%e1%ba%a3i%20%c4%91%c3%b3ng%20t%e1%ba%a5t%20c%e1%ba%a3%20c%c3%a1c%20th%e1%bb%a9%20%c4%91%c3%b3%20l%e1%ba%a1i.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&name=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f&description=What%20is%20it%3f%20%20B%e1%ba%a5t%20k%e1%bb%b3%20m%e1%bb%99t%20%e1%bb%a9ng%20d%e1%bb%a5ng%20n%c3%a0o%20c%c5%a9ng%20%c4%91%e1%bb%81u%20c%e1%ba%a7n%20ph%e1%ba%a3i%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20th%c3%a1o%20t%c3%a1c%20%28CRUD%29%20%c4%91%e1%ba%bfn%20database%20b%e1%ba%b1ng%20vi%e1%bb%87c%20l%c6%b0u%20tr%e1%bb%af%2c%20truy%20v%e1%ba%a5n%20d%e1%bb%af%20li%e1%bb%87u.%20Ch%c3%bang%20ta%20c%e1%ba%a7n%20ph%e1%ba%a3i%20vi%e1%ba%bft%20nhi%e1%bb%81u%20code%20%c4%91%e1%bb%83%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20vi%e1%bb%87c%20n%c3%a0y.%20V%e1%bb%9bi%20c%c3%b4ng%20ngh%e1%bb%87%20JDBC%20tr%c6%b0%e1%bb%9bc%20%c4%91%c3%a2y%2c%20ch%c3%bang%20ta%20ph%e1%ba%a3i%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20vi%e1%bb%87c%3a%20m%e1%bb%9f%20k%e1%ba%bft%20n%e1%bb%91i%20v%c3%a0o%20Database%2c%20t%e1%ba%a1o%20c%c3%a1c%20Statement%2c%20ResultSet%2c%20%e2%80%a6%20v%c3%a0%20sau%20c%c3%b9ng%20ph%e1%ba%a3i%20%c4%91%c3%b3ng%20t%e1%ba%a5t%20c%e1%ba%a3%20c%c3%a1c%20th%e1%bb%a9%20%c4%91%c3%b3%20l%e1%ba%a1i.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&t=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&t=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -172,7 +172,7 @@
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        [Advanced] JPA
+        [Advanced] JPA - What is it?
       </h1>
       <div class="meta">
         
@@ -246,52 +246,52 @@
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&text=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&text=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&is_video=false&description=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&is_video=false&description=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=%5bAdvanced%5d%20JPA&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f">
+    <a class="icon" href="mailto:?subject=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&title=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&name=%5bAdvanced%5d%20JPA&description=What%20is%20it%3f%20%20B%e1%ba%a5t%20k%e1%bb%b3%20m%e1%bb%99t%20%e1%bb%a9ng%20d%e1%bb%a5ng%20n%c3%a0o%20c%c5%a9ng%20%c4%91%e1%bb%81u%20c%e1%ba%a7n%20ph%e1%ba%a3i%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20th%c3%a1o%20t%c3%a1c%20%28CRUD%29%20%c4%91%e1%ba%bfn%20database%20b%e1%ba%b1ng%20vi%e1%bb%87c%20l%c6%b0u%20tr%e1%bb%af%2c%20truy%20v%e1%ba%a5n%20d%e1%bb%af%20li%e1%bb%87u.%20Ch%c3%bang%20ta%20c%e1%ba%a7n%20ph%e1%ba%a3i%20vi%e1%ba%bft%20nhi%e1%bb%81u%20code%20%c4%91%e1%bb%83%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20vi%e1%bb%87c%20n%c3%a0y.%20V%e1%bb%9bi%20c%c3%b4ng%20ngh%e1%bb%87%20JDBC%20tr%c6%b0%e1%bb%9bc%20%c4%91%c3%a2y%2c%20ch%c3%bang%20ta%20ph%e1%ba%a3i%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20vi%e1%bb%87c%3a%20m%e1%bb%9f%20k%e1%ba%bft%20n%e1%bb%91i%20v%c3%a0o%20Database%2c%20t%e1%ba%a1o%20c%c3%a1c%20Statement%2c%20ResultSet%2c%20%e2%80%a6%20v%c3%a0%20sau%20c%c3%b9ng%20ph%e1%ba%a3i%20%c4%91%c3%b3ng%20t%e1%ba%a5t%20c%e1%ba%a3%20c%c3%a1c%20th%e1%bb%a9%20%c4%91%c3%b3%20l%e1%ba%a1i.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&name=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f&description=What%20is%20it%3f%20%20B%e1%ba%a5t%20k%e1%bb%b3%20m%e1%bb%99t%20%e1%bb%a9ng%20d%e1%bb%a5ng%20n%c3%a0o%20c%c5%a9ng%20%c4%91%e1%bb%81u%20c%e1%ba%a7n%20ph%e1%ba%a3i%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20th%c3%a1o%20t%c3%a1c%20%28CRUD%29%20%c4%91%e1%ba%bfn%20database%20b%e1%ba%b1ng%20vi%e1%bb%87c%20l%c6%b0u%20tr%e1%bb%af%2c%20truy%20v%e1%ba%a5n%20d%e1%bb%af%20li%e1%bb%87u.%20Ch%c3%bang%20ta%20c%e1%ba%a7n%20ph%e1%ba%a3i%20vi%e1%ba%bft%20nhi%e1%bb%81u%20code%20%c4%91%e1%bb%83%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20vi%e1%bb%87c%20n%c3%a0y.%20V%e1%bb%9bi%20c%c3%b4ng%20ngh%e1%bb%87%20JDBC%20tr%c6%b0%e1%bb%9bc%20%c4%91%c3%a2y%2c%20ch%c3%bang%20ta%20ph%e1%ba%a3i%20th%e1%bb%b1c%20hi%e1%bb%87n%20c%c3%a1c%20vi%e1%bb%87c%3a%20m%e1%bb%9f%20k%e1%ba%bft%20n%e1%bb%91i%20v%c3%a0o%20Database%2c%20t%e1%ba%a1o%20c%c3%a1c%20Statement%2c%20ResultSet%2c%20%e2%80%a6%20v%c3%a0%20sau%20c%c3%b9ng%20ph%e1%ba%a3i%20%c4%91%c3%b3ng%20t%e1%ba%a5t%20c%e1%ba%a3%20c%c3%a1c%20th%e1%bb%a9%20%c4%91%c3%b3%20l%e1%ba%a1i.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&t=%5bAdvanced%5d%20JPA">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-jpa%2f&t=%5bAdvanced%5d%20JPA%20-%20What%20is%20it%3f">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
