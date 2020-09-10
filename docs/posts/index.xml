@@ -67,21 +67,6 @@ Host Vultr HostName 207.148.122.57 User root Host AWS_Ubuntu HostName 13.229.183
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/golang/go/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/golang/go/</guid>
-      <description>Nhung cai duoc Go tai ve se duoc luu tai src
-go get github.com/letung3105/demo
-Neu package
-Go module
-Go run chay code
-Go build
-Go install -&amp;gt; build file &amp;amp; bo vo folder bin</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://phatngluu.github.io/posts/hibernate/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -588,6 +573,21 @@ Declaring a class // Declaring a class class Pet { constructor(animal, age, bree
   SSH config
 Host Vultr HostName 207.148.122.57 User root     In your VS Code:
  Install Extension &amp;ldquo;Remote SSH&amp;rdquo; Watch the tutorial of the extension in the extension&amp;rsquo;s main page to connect the server  Or you can watch video as a reference for connecting with the server    Set up development environment   NodeJS: https://www.</description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://phatngluu.github.io/posts/golang/go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/golang/go/</guid>
+      <description>Nhung cai duoc Go tai ve se duoc luu tai src
+go get github.com/letung3105/demo
+Neu package
+Go module
+Go run chay code
+Go build
+Go install -&amp;gt; build file &amp;amp; bo vo folder bin</description>
     </item>
     
     <item>
