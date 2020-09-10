@@ -1,3 +1,9 @@
+---
+title: "[Advanced] Reflection"
+date: 2020-09-10T09:51:45+07:00
+draft: false
+---
+
 Read detail at: https://o7planning.org/vi/10155/huong-dan-java-reflection
 
 # Reflection
@@ -15,6 +21,3 @@ Methods
 - 
 
 - `getAnnotation(Class<A> annotationClass)`: Returns this element's annotation for the specified type if such an annotation is *present*, else null.
-
-  
-
