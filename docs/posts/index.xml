@@ -601,6 +601,20 @@ Go install -&amp;gt; build file &amp;amp; bo vo folder bin</description>
     </item>
     
     <item>
+      <title>GOPATH Explained</title>
+      <link>https://phatngluu.github.io/posts/golang/gopath-explained/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/golang/gopath-explained/</guid>
+      <description>See details at: https://flaviocopes.com/go-gopath/
+ Go programmers typically keep all their Go code in a single workspace.
+A workspace contains many version control repositories (managed by Git, for example).
+Each repository contains one or more packages.
+ Libraries installed using go get will be put in $GOPATH/src
+Commands installed using go get will be put in $GOPATH/bin</description>
+    </item>
+    
+    <item>
       <title>Introduction</title>
       <link>https://phatngluu.github.io/posts/graphql/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
