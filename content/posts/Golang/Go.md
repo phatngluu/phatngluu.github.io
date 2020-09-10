@@ -1,3 +1,10 @@
++++
+categories = ["golang"]
+layout = ""
+tags = []
+title = "Golang"
+
++++
 ![image-20200901204533623](Go.assets/image-20200901204533623.png)
 
 Nhung cai duoc Go tai ve se duoc luu tai src
@@ -15,4 +22,3 @@ Go run chay code
 Go build
 
 Go install -> build file & bo vo folder bin
-
