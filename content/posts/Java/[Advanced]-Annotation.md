@@ -1,26 +1,23 @@
 ---
 title: "[Advanced] Annotation"
-date: 2020-09-10T09:53:33+07:00
-draft: false
+date: 2020-09-10T09:53:33.000+07:00
+
 ---
-
 Read detail at: https://cs-fundamentals.com/java-programming/java-annotations.php
-
-
 
 ## Built-in Java Annotations
 
-| Annotation Name                               | Applicable To                                       | Use                                                          | Included in            |
-| --------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------ | ---------------------- |
-| Java Annotations Applied to Java code         |                                                     |                                                              |                        |
-| @Override                                     | Member Methods                                      | Checks that this method overrides a method from its superclass | `java.lang`            |
-| @Deprecated                                   | All annotable items                                 | Marks item as deprecated                                     | `java.lang`            |
-| @SuppressWarnings                             | All annotable items except packages and annotations | Suppress warning of given type                               | `java.lang`            |
-| Java Annotations Applied to Other Annotations |                                                     |                                                              |                        |
-| @Retention                                    | Annotations                                         | Specifies how long this annotation is retained - whether in code only, compiled into the class, or available at run time through reflection. | `java.lang.annotation` |
-| @Documented                                   | Annotations                                         | Specifies that this annotation should be included in the documentation of annotated items | `java.lang.annotation` |
-| @Target                                       | Annotations                                         | Specifies the items to which this annotation can be applied  | `java.lang.annotation` |
-| @Inherited                                    | Annotations                                         | Specifies that this annotation, when applied to a class, is automatically inherited by its subclasses. | `java.lang.annotation` |
+| Annotation Name | Applicable To | Use | Included in |
+| --- | --- | --- | --- |
+| Java Annotations Applied to Java code |  |  |  |
+| @Override | Member Methods | Checks that this method overrides a method from its superclass | java.lang |
+| @Deprecated | All annotable items | Marks item as deprecated | java.lang |
+| @SuppressWarnings | All annotable items except packages and annotations | Suppress warning of given type | java.lang |
+| Java Annotations Applied to Other Annotations |  |  |  |
+| @Retention | Annotations | Specifies how long this annotation is retained - whether in code only, compiled into the class, or available at run time through reflection. | java.lang.annotation |
+| @Documented | Annotations | Specifies that this annotation should be included in the documentation of annotated items | java.lang.annotation |
+| @Target | Annotations | Specifies the items to which this annotation can be applied | java.lang.annotation |
+| @Inherited | Annotations | Specifies that this annotation, when applied to a class, is automatically inherited by its subclasses. | java.lang.annotation |
 
 ## Purpose of annotation
 
@@ -28,7 +25,7 @@ Read detail at: https://cs-fundamentals.com/java-programming/java-annotations.ph
 
 ## Annotation usage I encountered
 
-When use Lombok, Hibernate, Spring... They will, somehow, generate the code in run time/compile time/build time (I dont know exactly). 
+When use Lombok, Hibernate, Spring... They will, somehow, generate the code in run time/compile time/build time (I dont know exactly).
 
 For example with Lombok, cited in https://www.toptal.com/java/write-fat-free-java-code-project-lombok:
 
@@ -83,3 +80,16 @@ Usage:
 ...
 ```
 
+## Java Tutorial
+
+[Annotations Basics](https://docs.oracle.com/javase/tutorial/java/annotations/basics.html)
+
+[Declaring an Annotation Type](https://docs.oracle.com/javase/tutorial/java/annotations/declaring.html)
+
+[Predefined Annotation Types](https://docs.oracle.com/javase/tutorial/java/annotations/predefined.html)
+
+[Type Annotations and Pluggable Type Systems](https://docs.oracle.com/javase/tutorial/java/annotations/type_annotations.html)
+
+[Repeating Annotations](https://docs.oracle.com/javase/tutorial/java/annotations/repeating.html)
+
+[Questions and Exercises](https://docs.oracle.com/javase/tutorial/java/annotations/QandE/questions.html)
