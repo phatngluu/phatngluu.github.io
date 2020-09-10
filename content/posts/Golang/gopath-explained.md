@@ -1,5 +1,6 @@
 +++
 categories = ["golang"]
+date = 2020-09-09T17:00:00Z
 layout = ""
 tags = ["golang"]
 title = "GOPATH Explained"
