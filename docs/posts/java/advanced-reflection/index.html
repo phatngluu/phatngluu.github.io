@@ -9,9 +9,8 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:title" content="[Advanced] Reflection" />
-<meta property="og:description" content="Read detail at: https://o7planning.org/vi/10155/huong-dan-java-reflection
-Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn có thể truy cập vào một trường của một đối tượng nếu bạn biết tên của trường đó. Hoặc bạn có thể gọi một phương thức của đối tượng nếu bạn biết tên phương thức, các kiểu tham số của phương thức, và các giá trị tham số để truyền vào &hellip;
-  Java Reflecion cho phép bạn đánh giá, sửa đổi cấu trúc và hành vi của một đối tượng tại thời gian chạy (runtime) của chương trình." />
+<meta property="og:description" content="Read detail at:
+ https://o7planning.org/vi/10155/huong-dan-java-reflection https://viblo.asia/p/java-reflection-and-anotation-DbmvmWRMeAg  Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn có thể truy cập vào một trường của một đối tượng nếu bạn biết tên của trường đó. Hoặc bạn có thể gọi một phương thức của đối tượng nếu bạn biết tên phương thức, các kiểu tham số của phương thức, và các giá trị tham số để truyền vào &hellip;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://phatngluu.github.io/posts/java/advanced-reflection/" />
 <meta property="article:published_time" content="2020-09-10T09:51:45+07:00" />
@@ -19,9 +18,8 @@ Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[Advanced] Reflection"/>
-<meta name="twitter:description" content="Read detail at: https://o7planning.org/vi/10155/huong-dan-java-reflection
-Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn có thể truy cập vào một trường của một đối tượng nếu bạn biết tên của trường đó. Hoặc bạn có thể gọi một phương thức của đối tượng nếu bạn biết tên phương thức, các kiểu tham số của phương thức, và các giá trị tham số để truyền vào &hellip;
-  Java Reflecion cho phép bạn đánh giá, sửa đổi cấu trúc và hành vi của một đối tượng tại thời gian chạy (runtime) của chương trình."/>
+<meta name="twitter:description" content="Read detail at:
+ https://o7planning.org/vi/10155/huong-dan-java-reflection https://viblo.asia/p/java-reflection-and-anotation-DbmvmWRMeAg  Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn có thể truy cập vào một trường của một đối tượng nếu bạn biết tên của trường đó. Hoặc bạn có thể gọi một phương thức của đối tượng nếu bạn biết tên phương thức, các kiểu tham số của phương thức, và các giá trị tham số để truyền vào &hellip;"/>
 
   
   
@@ -154,7 +152,7 @@ Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-reflection%2f&name=%5bAdvanced%5d%20Reflection&description=Read%20detail%20at%3a%20https%3a%2f%2fo7planning.org%2fvi%2f10155%2fhuong-dan-java-reflection%0aReflection%20%20Java%20Reflection%20gi%e1%bb%9bi%20thi%e1%bb%87u%20m%e1%bb%99t%20c%c3%a1ch%20ti%e1%ba%bfp%20c%e1%ba%adn%20kh%c3%a1c%2c%20b%e1%ba%a1n%20c%c3%b3%20th%e1%bb%83%20truy%20c%e1%ba%adp%20v%c3%a0o%20m%e1%bb%99t%20tr%c6%b0%e1%bb%9dng%20c%e1%bb%a7a%20m%e1%bb%99t%20%c4%91%e1%bb%91i%20t%c6%b0%e1%bb%a3ng%20n%e1%ba%bfu%20b%e1%ba%a1n%20bi%e1%ba%bft%20t%c3%aan%20c%e1%bb%a7a%20tr%c6%b0%e1%bb%9dng%20%c4%91%c3%b3.%20Ho%e1%ba%b7c%20b%e1%ba%a1n%20c%c3%b3%20th%e1%bb%83%20g%e1%bb%8di%20m%e1%bb%99t%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%20c%e1%bb%a7a%20%c4%91%e1%bb%91i%20t%c6%b0%e1%bb%a3ng%20n%e1%ba%bfu%20b%e1%ba%a1n%20bi%e1%ba%bft%20t%c3%aan%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%2c%20c%c3%a1c%20ki%e1%bb%83u%20tham%20s%e1%bb%91%20c%e1%bb%a7a%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%2c%20v%c3%a0%20c%c3%a1c%20gi%c3%a1%20tr%e1%bb%8b%20tham%20s%e1%bb%91%20%c4%91%e1%bb%83%20truy%e1%bb%81n%20v%c3%a0o%20%26hellip%3b%0a%20%20Java%20Reflecion%20cho%20ph%c3%a9p%20b%e1%ba%a1n%20%c4%91%c3%a1nh%20gi%c3%a1%2c%20s%e1%bb%ada%20%c4%91%e1%bb%95i%20c%e1%ba%a5u%20tr%c3%bac%20v%c3%a0%20h%c3%a0nh%20vi%20c%e1%bb%a7a%20m%e1%bb%99t%20%c4%91%e1%bb%91i%20t%c6%b0%e1%bb%a3ng%20t%e1%ba%a1i%20th%e1%bb%9di%20gian%20ch%e1%ba%a1y%20%28runtime%29%20c%e1%bb%a7a%20ch%c6%b0%c6%a1ng%20tr%c3%acnh.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-reflection%2f&name=%5bAdvanced%5d%20Reflection&description=Read%20detail%20at%3a%0a%20https%3a%2f%2fo7planning.org%2fvi%2f10155%2fhuong-dan-java-reflection%20https%3a%2f%2fviblo.asia%2fp%2fjava-reflection-and-anotation-DbmvmWRMeAg%20%20Reflection%20%20Java%20Reflection%20gi%e1%bb%9bi%20thi%e1%bb%87u%20m%e1%bb%99t%20c%c3%a1ch%20ti%e1%ba%bfp%20c%e1%ba%adn%20kh%c3%a1c%2c%20b%e1%ba%a1n%20c%c3%b3%20th%e1%bb%83%20truy%20c%e1%ba%adp%20v%c3%a0o%20m%e1%bb%99t%20tr%c6%b0%e1%bb%9dng%20c%e1%bb%a7a%20m%e1%bb%99t%20%c4%91%e1%bb%91i%20t%c6%b0%e1%bb%a3ng%20n%e1%ba%bfu%20b%e1%ba%a1n%20bi%e1%ba%bft%20t%c3%aan%20c%e1%bb%a7a%20tr%c6%b0%e1%bb%9dng%20%c4%91%c3%b3.%20Ho%e1%ba%b7c%20b%e1%ba%a1n%20c%c3%b3%20th%e1%bb%83%20g%e1%bb%8di%20m%e1%bb%99t%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%20c%e1%bb%a7a%20%c4%91%e1%bb%91i%20t%c6%b0%e1%bb%a3ng%20n%e1%ba%bfu%20b%e1%ba%a1n%20bi%e1%ba%bft%20t%c3%aan%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%2c%20c%c3%a1c%20ki%e1%bb%83u%20tham%20s%e1%bb%91%20c%e1%bb%a7a%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%2c%20v%c3%a0%20c%c3%a1c%20gi%c3%a1%20tr%e1%bb%8b%20tham%20s%e1%bb%91%20%c4%91%e1%bb%83%20truy%e1%bb%81n%20v%c3%a0o%20%26hellip%3b">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -192,7 +190,11 @@ Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn
 
   
     <div class="content" itemprop="articleBody">
-      <p>Read detail at: <a href="https://o7planning.org/vi/10155/huong-dan-java-reflection">https://o7planning.org/vi/10155/huong-dan-java-reflection</a></p>
+      <p>Read detail at:</p>
+<ul>
+<li><a href="https://o7planning.org/vi/10155/huong-dan-java-reflection" title="https://o7planning.org/vi/10155/huong-dan-java-reflection">https://o7planning.org/vi/10155/huong-dan-java-reflection</a></li>
+<li><a href="https://viblo.asia/p/java-reflection-and-anotation-DbmvmWRMeAg" title="https://viblo.asia/p/java-reflection-and-anotation-DbmvmWRMeAg">https://viblo.asia/p/java-reflection-and-anotation-DbmvmWRMeAg</a></li>
+</ul>
 <h1 id="reflection">Reflection</h1>
 <blockquote>
 <p><strong>Java Reflection</strong> giới thiệu một cách tiếp cận khác, bạn có thể truy cập vào một trường của một đối tượng nếu bạn biết tên của trường đó. Hoặc bạn có thể gọi một phương thức của đối tượng nếu bạn biết tên phương thức, các kiểu tham số của phương thức, và các giá trị tham số để truyền vào &hellip;</p>
@@ -200,14 +202,19 @@ Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn
 <blockquote>
 <p><strong>Java Reflecion</strong> cho phép bạn đánh giá, sửa đổi cấu trúc và hành vi của một đối tượng tại thời gian chạy (runtime) của chương trình. Đồng thời nó cho phép bạn truy cập vào các thành viên <strong>private</strong> (private member) tại mọi nơi trong ứng dụng, điều này không được phép với cách tiếp cận truyền thống.</p>
 </blockquote>
-<h1 id="class-class-api">&ldquo;Class&rdquo; class API</h1>
-<p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html</a></p>
-<p>Methods</p>
+<h1 id="javalangclass-api">&ldquo;java.lang.Class&rdquo; API</h1>
+<p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html" title="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html</a></p>
+<p>Properties:</p>
 <ul>
 <li></li>
 </ul>
+<p>Methods</p>
 <ul>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html#getAnnotations--"><strong><code>getAnnotations</code></strong></a><code>()</code> : Returns annotations that are <em>present</em> on this element.</li>
 <li><code>getAnnotation(Class&lt;A&gt; annotationClass)</code>: Returns this element&rsquo;s annotation for the specified type if such an annotation is <em>present</em>, else null.</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html#getMethods--"><strong>getMethods</strong></a>()</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html#getModifiers--"><strong>getModifiers</strong></a>()</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html#getMethod-java.lang.String-java.lang.Class...-"><strong>getMethod</strong></a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="class in java.lang"><strong>String</strong></a> name, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html" title="class in java.lang"><strong>Class</strong></a>&lt;?&gt;&hellip; parameterTypes)</li>
 </ul>
 
     </div>
@@ -297,7 +304,7 @@ Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-reflection%2f&name=%5bAdvanced%5d%20Reflection&description=Read%20detail%20at%3a%20https%3a%2f%2fo7planning.org%2fvi%2f10155%2fhuong-dan-java-reflection%0aReflection%20%20Java%20Reflection%20gi%e1%bb%9bi%20thi%e1%bb%87u%20m%e1%bb%99t%20c%c3%a1ch%20ti%e1%ba%bfp%20c%e1%ba%adn%20kh%c3%a1c%2c%20b%e1%ba%a1n%20c%c3%b3%20th%e1%bb%83%20truy%20c%e1%ba%adp%20v%c3%a0o%20m%e1%bb%99t%20tr%c6%b0%e1%bb%9dng%20c%e1%bb%a7a%20m%e1%bb%99t%20%c4%91%e1%bb%91i%20t%c6%b0%e1%bb%a3ng%20n%e1%ba%bfu%20b%e1%ba%a1n%20bi%e1%ba%bft%20t%c3%aan%20c%e1%bb%a7a%20tr%c6%b0%e1%bb%9dng%20%c4%91%c3%b3.%20Ho%e1%ba%b7c%20b%e1%ba%a1n%20c%c3%b3%20th%e1%bb%83%20g%e1%bb%8di%20m%e1%bb%99t%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%20c%e1%bb%a7a%20%c4%91%e1%bb%91i%20t%c6%b0%e1%bb%a3ng%20n%e1%ba%bfu%20b%e1%ba%a1n%20bi%e1%ba%bft%20t%c3%aan%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%2c%20c%c3%a1c%20ki%e1%bb%83u%20tham%20s%e1%bb%91%20c%e1%bb%a7a%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%2c%20v%c3%a0%20c%c3%a1c%20gi%c3%a1%20tr%e1%bb%8b%20tham%20s%e1%bb%91%20%c4%91%e1%bb%83%20truy%e1%bb%81n%20v%c3%a0o%20%26hellip%3b%0a%20%20Java%20Reflecion%20cho%20ph%c3%a9p%20b%e1%ba%a1n%20%c4%91%c3%a1nh%20gi%c3%a1%2c%20s%e1%bb%ada%20%c4%91%e1%bb%95i%20c%e1%ba%a5u%20tr%c3%bac%20v%c3%a0%20h%c3%a0nh%20vi%20c%e1%bb%a7a%20m%e1%bb%99t%20%c4%91%e1%bb%91i%20t%c6%b0%e1%bb%a3ng%20t%e1%ba%a1i%20th%e1%bb%9di%20gian%20ch%e1%ba%a1y%20%28runtime%29%20c%e1%bb%a7a%20ch%c6%b0%c6%a1ng%20tr%c3%acnh.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fjava%2fadvanced-reflection%2f&name=%5bAdvanced%5d%20Reflection&description=Read%20detail%20at%3a%0a%20https%3a%2f%2fo7planning.org%2fvi%2f10155%2fhuong-dan-java-reflection%20https%3a%2f%2fviblo.asia%2fp%2fjava-reflection-and-anotation-DbmvmWRMeAg%20%20Reflection%20%20Java%20Reflection%20gi%e1%bb%9bi%20thi%e1%bb%87u%20m%e1%bb%99t%20c%c3%a1ch%20ti%e1%ba%bfp%20c%e1%ba%adn%20kh%c3%a1c%2c%20b%e1%ba%a1n%20c%c3%b3%20th%e1%bb%83%20truy%20c%e1%ba%adp%20v%c3%a0o%20m%e1%bb%99t%20tr%c6%b0%e1%bb%9dng%20c%e1%bb%a7a%20m%e1%bb%99t%20%c4%91%e1%bb%91i%20t%c6%b0%e1%bb%a3ng%20n%e1%ba%bfu%20b%e1%ba%a1n%20bi%e1%ba%bft%20t%c3%aan%20c%e1%bb%a7a%20tr%c6%b0%e1%bb%9dng%20%c4%91%c3%b3.%20Ho%e1%ba%b7c%20b%e1%ba%a1n%20c%c3%b3%20th%e1%bb%83%20g%e1%bb%8di%20m%e1%bb%99t%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%20c%e1%bb%a7a%20%c4%91%e1%bb%91i%20t%c6%b0%e1%bb%a3ng%20n%e1%ba%bfu%20b%e1%ba%a1n%20bi%e1%ba%bft%20t%c3%aan%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%2c%20c%c3%a1c%20ki%e1%bb%83u%20tham%20s%e1%bb%91%20c%e1%bb%a7a%20ph%c6%b0%c6%a1ng%20th%e1%bb%a9c%2c%20v%c3%a0%20c%c3%a1c%20gi%c3%a1%20tr%e1%bb%8b%20tham%20s%e1%bb%91%20%c4%91%e1%bb%83%20truy%e1%bb%81n%20v%c3%a0o%20%26hellip%3b">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>

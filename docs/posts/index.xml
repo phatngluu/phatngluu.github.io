@@ -37,9 +37,8 @@ Built-in Java Annotations    Annotation Name Applicable To Use Included in     J
       <pubDate>Thu, 10 Sep 2020 09:51:45 +0700</pubDate>
       
       <guid>https://phatngluu.github.io/posts/java/advanced-reflection/</guid>
-      <description>Read detail at: https://o7planning.org/vi/10155/huong-dan-java-reflection
-Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn có thể truy cập vào một trường của một đối tượng nếu bạn biết tên của trường đó. Hoặc bạn có thể gọi một phương thức của đối tượng nếu bạn biết tên phương thức, các kiểu tham số của phương thức, và các giá trị tham số để truyền vào &amp;hellip;
-  Java Reflecion cho phép bạn đánh giá, sửa đổi cấu trúc và hành vi của một đối tượng tại thời gian chạy (runtime) của chương trình.</description>
+      <description>Read detail at:
+ https://o7planning.org/vi/10155/huong-dan-java-reflection https://viblo.asia/p/java-reflection-and-anotation-DbmvmWRMeAg  Reflection  Java Reflection giới thiệu một cách tiếp cận khác, bạn có thể truy cập vào một trường của một đối tượng nếu bạn biết tên của trường đó. Hoặc bạn có thể gọi một phương thức của đối tượng nếu bạn biết tên phương thức, các kiểu tham số của phương thức, và các giá trị tham số để truyền vào &amp;hellip;</description>
     </item>
     
     <item>
