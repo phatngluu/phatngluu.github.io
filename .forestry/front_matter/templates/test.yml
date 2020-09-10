@@ -33,5 +33,6 @@ fields:
   label: Layout
   description: Choose a layout for post
 pages:
+- content/posts/Golang/01.md
 - content/posts/Golang/Go.md
 - content/posts/GraphQL/introduction.md
