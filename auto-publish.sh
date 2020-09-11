@@ -9,7 +9,9 @@ hugo
 echo "Moving uploads to static/uploads"
 pwd
 ls
-mv -f /docs/uploads /docs/static/uploads
+cd docs && mkdir static
+ls
+mv -f uploads static/uploads
 
 echo "Commiting docs..."
 cd docs && git add --all && git commit -m "auto-generate docs"
