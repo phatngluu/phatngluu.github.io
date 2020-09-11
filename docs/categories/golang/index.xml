@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Thu, 10 Sep 2020 17:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2020 09:07:12 +0000</lastBuildDate>
     
 	<atom:link href="https://phatngluu.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Basic] Package &amp; Module</title>
+      <link>https://phatngluu.github.io/posts/golang/basic-package-module/</link>
+      <pubDate>Fri, 11 Sep 2020 09:07:12 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/golang/basic-package-module/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>01 Captain Code</title>

@@ -3,42 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://phatngluu.github.io/posts/golang/basic-package-module/</loc>
+    <lastmod>2020-09-11T09:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/categories/</loc>
+    <lastmod>2020-09-11T09:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/golang/</loc>
+    <lastmod>2020-09-11T09:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/categories/golang/</loc>
+    <lastmod>2020-09-11T09:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/</loc>
+    <lastmod>2020-09-11T09:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/</loc>
+    <lastmod>2020-09-11T09:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/</loc>
+    <lastmod>2020-09-11T09:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://phatngluu.github.io/posts/golang/get-started-with-go/</loc>
     <lastmod>2020-09-11T02:46:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://phatngluu.github.io/</loc>
-    <lastmod>2020-09-11T02:46:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/</loc>
-    <lastmod>2020-09-11T02:46:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://phatngluu.github.io/posts/golang/01/</loc>
-    <lastmod>2020-09-10T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/categories/</loc>
-    <lastmod>2020-09-10T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/tags/golang/</loc>
-    <lastmod>2020-09-10T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/categories/golang/</loc>
-    <lastmod>2020-09-10T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/tags/</loc>
     <lastmod>2020-09-10T17:00:00+00:00</lastmod>
   </url>
   
