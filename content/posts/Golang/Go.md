@@ -3,7 +3,7 @@ categories = ["golang"]
 date = ""
 layout = ""
 tags = ["golang"]
-title = "Golang"
+title = "00 Captain Code Golang"
 
 +++
 ![image-20200901204533623](Go.assets/image-20200901204533623.png)
