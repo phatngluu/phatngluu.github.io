@@ -21,7 +21,7 @@ title = "Get started with Go"
 
    ![](static/uploads/screen-shot-2020-09-11-at-09-59-32.png)
 
-#### Import and calling
+#### Import and calling functions non-standard packages
 
     package main
     import "fmt"
@@ -31,4 +31,11 @@ title = "Get started with Go"
         fmt.Println(quote.Go())
     }
 
-#### Put your own code in a module
+#### **Import packages from another module**
+
+When your code imports packages from another module, a go.mod file lists the specific modules and versions providing those packages. That file stays with your code, including in your source code repository.
+
+To create a go.mod file, run the [`go mod init` command](https://golang.org/cmd/go/#hdr-Initialize_new_module_in_current_directory), giving it the name of the module your code will be in (here, just use "hello"):
+
+    $ go mod init hello
+    go: creating new go.mod: module hello
