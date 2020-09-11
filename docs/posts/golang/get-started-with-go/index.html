@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Get started with Go </title>
+  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Get started with Go" />
+<meta property="og:description" content="Standard library https://golang.org/pkg/
+Call code in an external package Discover packages at pkg.go.dev   Search a package, eg. &ldquo;quote&rdquo;
+  Locate and click the rsc.io/quote package in search results
+  On the Doc tab, note the list of functions you can call from your code. You&rsquo;ll use the Go function
+  At the top of this page, note that package quote is included in the rsc.io/quote module." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/golang/get-started-with-go/" />
+<meta property="article:published_time" content="2020-09-11T02:46:00+00:00" />
+<meta property="article:modified_time" content="2020-09-11T02:46:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Get started with Go"/>
+<meta name="twitter:description" content="Standard library https://golang.org/pkg/
+Call code in an external package Discover packages at pkg.go.dev   Search a package, eg. &ldquo;quote&rdquo;
+  Locate and click the rsc.io/quote package in search results
+  On the Doc tab, note the list of functions you can call from your code. You&rsquo;ll use the Go function
+  At the top of this page, note that package quote is included in the rsc.io/quote module."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://phatngluu.github.io/css/style-dark.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://phatngluu.github.io/images/favicon.ico" />
+
+  
+  
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+         
+        <li><a href="/admin">Admin</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://phatngluu.github.io/posts/golang/01/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&text=Get%20started%20with%20Go">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&title=Get%20started%20with%20Go">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&is_video=false&description=Get%20started%20with%20Go">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Get%20started%20with%20Go&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&title=Get%20started%20with%20Go">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&title=Get%20started%20with%20Go">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&title=Get%20started%20with%20Go">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&title=Get%20started%20with%20Go">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&name=Get%20started%20with%20Go&description=Standard%20library%20https%3a%2f%2fgolang.org%2fpkg%2f%0aCall%20code%20in%20an%20external%20package%20Discover%20packages%20at%20pkg.go.dev%20%20%20Search%20a%20package%2c%20eg.%20%26ldquo%3bquote%26rdquo%3b%0a%20%20Locate%20and%20click%20the%20rsc.io%2fquote%20package%20in%20search%20results%0a%20%20On%20the%20Doc%20tab%2c%20note%20the%20list%20of%20functions%20you%20can%20call%20from%20your%20code.%20You%26rsquo%3bll%20use%20the%20Go%20function%0a%20%20At%20the%20top%20of%20this%20page%2c%20note%20that%20package%20quote%20is%20included%20in%20the%20rsc.io%2fquote%20module.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&t=Get%20started%20with%20Go">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#standard-library">Standard library</a></li>
+        <li><a href="#call-code-in-an-external-package">Call code in an external package</a>
+          <ul>
+            <li><a href="#discover-packages-at-pkggodev">Discover packages at pkg.go.dev</a></li>
+            <li><a href="#import-and-calling">Import and calling</a></li>
+            <li><a href="#put-your-own-code-in-a-module">Put your own code in a module</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Get started with Go
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-09-11 02:46:00 &#43;0000 UTC" itemprop="datePublished">2020-09-11</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <h3 id="standard-library">Standard library</h3>
+<p><a href="https://golang.org/pkg/" title="https://golang.org/pkg/">https://golang.org/pkg/</a></p>
+<h3 id="call-code-in-an-external-package">Call code in an external package</h3>
+<h4 id="discover-packages-at-pkggodev">Discover packages at pkg.go.dev</h4>
+<ol>
+<li>
+<p>Search a package, eg. &ldquo;quote&rdquo;</p>
+</li>
+<li>
+<p>Locate and click the <code>rsc.io/quote</code> package in search results</p>
+</li>
+<li>
+<p>On the <strong>Doc</strong> tab, note the list of functions you can call from your code. You&rsquo;ll use the <code>Go</code> function</p>
+</li>
+<li>
+<p>At the top of this page, note that package <code>quote</code> is included in the <code>rsc.io/quote</code> module.</p>
+<p><img src="static/uploads/screen-shot-2020-09-11-at-09-59-32.png" alt=""></p>
+</li>
+</ol>
+<h4 id="import-and-calling">Import and calling</h4>
+<pre><code>package main
+import &quot;fmt&quot;
+import &quot;rsc.io/quote&quot;
+
+func main() {
+    fmt.Println(quote.Go())
+}
+</code></pre>
+<h4 id="put-your-own-code-in-a-module">Put your own code in a module</h4>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+         
+          <li><a href="/admin">Admin</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#standard-library">Standard library</a></li>
+        <li><a href="#call-code-in-an-external-package">Call code in an external package</a>
+          <ul>
+            <li><a href="#discover-packages-at-pkggodev">Discover packages at pkg.go.dev</a></li>
+            <li><a href="#import-and-calling">Import and calling</a></li>
+            <li><a href="#put-your-own-code-in-a-module">Put your own code in a module</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&text=Get%20started%20with%20Go">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&title=Get%20started%20with%20Go">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&is_video=false&description=Get%20started%20with%20Go">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Get%20started%20with%20Go&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&title=Get%20started%20with%20Go">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&title=Get%20started%20with%20Go">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&title=Get%20started%20with%20Go">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&title=Get%20started%20with%20Go">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&name=Get%20started%20with%20Go&description=Standard%20library%20https%3a%2f%2fgolang.org%2fpkg%2f%0aCall%20code%20in%20an%20external%20package%20Discover%20packages%20at%20pkg.go.dev%20%20%20Search%20a%20package%2c%20eg.%20%26ldquo%3bquote%26rdquo%3b%0a%20%20Locate%20and%20click%20the%20rsc.io%2fquote%20package%20in%20search%20results%0a%20%20On%20the%20Doc%20tab%2c%20note%20the%20list%20of%20functions%20you%20can%20call%20from%20your%20code.%20You%26rsquo%3bll%20use%20the%20Go%20function%0a%20%20At%20the%20top%20of%20this%20page%2c%20note%20that%20package%20quote%20is%20included%20in%20the%20rsc.io%2fquote%20module.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fget-started-with-go%2f&t=Get%20started%20with%20Go">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  You 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+         
+        <li><a href="/admin">Admin</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</html>
