@@ -1,7 +1,8 @@
 +++
 categories = ["golang"]
+date = ""
 layout = ""
-tags = []
+tags = ["golang"]
 title = "Golang"
 
 +++
