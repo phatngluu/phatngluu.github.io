@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Thu, 10 Sep 2020 09:53:33 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2020 17:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://phatngluu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Get started with Go</title>
+      <link>https://phatngluu.github.io/posts/golang/01/</link>
+      <pubDate>Thu, 10 Sep 2020 17:00:00 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/golang/01/</guid>
+      <description>var ( x int y int z int ) var t int = 8 Number: uninitialized value in Go equals to 0
+package main import &amp;#34;fmt&amp;#34; func main() { var x int x = 1 var y int = 1 // inferred 	var z = 4.5 // var t int 	// t = 8 	t := 8 // popular  // convert type 	t = int(z) t = float64(x) c := complex(4,3) } s := &amp;#34;CaptainCode&amp;#34; fmt.</description>
+    </item>
     
     <item>
       <title>[Advanced] Annotation</title>
@@ -587,16 +597,6 @@ Declaring a class // Declaring a class class Pet { constructor(animal, age, bree
   SSH config
 Host Vultr HostName 207.148.122.57 User root     In your VS Code:
  Install Extension &amp;ldquo;Remote SSH&amp;rdquo; Watch the tutorial of the extension in the extension&amp;rsquo;s main page to connect the server  Or you can watch video as a reference for connecting with the server    Set up development environment   NodeJS: https://www.</description>
-    </item>
-    
-    <item>
-      <title>01</title>
-      <link>https://phatngluu.github.io/posts/golang/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/golang/01/</guid>
-      <description>var ( x int y int z int ) var t int = 8 Number: uninitialized value in Go equals to 0
-package main import &amp;#34;fmt&amp;#34; func main() { var x int x = 1 var y int = 1 // inferred 	var z = 4.5 // var t int 	// t = 8 	t := 8 // popular  // convert type 	t = int(z) t = float64(x) c := complex(4,3) } s := &amp;#34;CaptainCode&amp;#34; fmt.</description>
     </item>
     
     <item>
