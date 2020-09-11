@@ -21,7 +21,7 @@ title = "Get started with Go"
 
    ![](static/uploads/screen-shot-2020-09-11-at-09-59-32.png)
 
-#### Import and calling functions non-standard packages
+#### Import and use external package
 
     package main
     import "fmt"
@@ -31,11 +31,15 @@ title = "Get started with Go"
         fmt.Println(quote.Go())
     }
 
-#### **Import packages from another module**
+#### Put your code in a module for tracking dependencies
 
-When your code imports packages from another module, a go.mod file lists the specific modules and versions providing those packages. That file stays with your code, including in your source code repository.
+When your code imports packages from another module, a `go.mod` file lists the specific modules and versions providing those packages. That file stays with your code, including in your source code repository.
 
 To create a go.mod file, run the [`go mod init` command](https://golang.org/cmd/go/#hdr-Initialize_new_module_in_current_directory), giving it the name of the module your code will be in (here, just use "hello"):
 
     $ go mod init hello
     go: creating new go.mod: module hello
+
+#### How it works?
+
+But before it ran the code, `go run` located and downloaded the `rsc.io/quote` module that contains the package you imported. By default, it downloaded the latest version -- v1.5.2. Go build commands are designed to locate the modules required for packages you import.
