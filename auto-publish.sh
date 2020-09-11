@@ -8,6 +8,7 @@ hugo
 
 echo "Moving uploads to static/uploads"
 pwd
+ls
 mv -f /docs/uploads /docs/static/uploads
 
 echo "Commiting docs..."
