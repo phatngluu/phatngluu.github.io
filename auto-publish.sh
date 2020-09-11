@@ -7,6 +7,7 @@ echo "Generating..."
 hugo
 
 echo "Moving uploads to static/uploads"
+pwd
 mv -f /docs/uploads /docs/static/uploads
 
 echo "Commiting docs..."
