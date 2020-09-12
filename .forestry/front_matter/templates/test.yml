@@ -43,6 +43,7 @@ fields:
   label: Layout
   description: Choose a layout for post
 pages:
+- content/posts/.bashrc-and.profile.md
 - content/posts/Golang/01.md
 - content/posts/Golang/Go.md
 - content/posts/Golang/basic-package-module.md
