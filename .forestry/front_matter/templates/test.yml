@@ -49,4 +49,5 @@ pages:
 - content/posts/Golang/get-started-with-go.md
 - content/posts/Golang/gopath-explained.md
 - content/posts/GraphQL/introduction.md
+- content/posts/environment-variables-1.md
 - content/posts/environment-variables.md
