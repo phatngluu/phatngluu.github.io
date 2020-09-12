@@ -24,12 +24,13 @@ To make an environment persistent for a user’s environment, we export the vari
     </item>
     
     <item>
-      <title>[Basic] Package &amp; Module</title>
+      <title>[Basic] Call code in an external package</title>
       <link>https://phatngluu.github.io/posts/golang/basic-package-module/</link>
       <pubDate>Fri, 11 Sep 2020 09:07:12 +0000</pubDate>
       
       <guid>https://phatngluu.github.io/posts/golang/basic-package-module/</guid>
-      <description></description>
+      <description>See details at: here
+ Go Package là tập hợp các file trong cùng một thư mục, hướng tới xử lí một tập hợp các vấn đề có liên quan đến thứ mà Package đó hướng tới, ví dụ, trong thư mục user của mình mình có 3 file .go cùng xử lí các vấn đề liên quan đối với user thì mình sẽ đặt tên package là user, việc này giúp năng cao khả năng tái sử dụng code cho những project sau này.</description>
     </item>
     
     <item>
