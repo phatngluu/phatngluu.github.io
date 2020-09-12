@@ -3,7 +3,7 @@ categories = ["golang"]
 date = 2020-09-11T09:07:12Z
 layout = ""
 tags = ["golang"]
-title = "[Basic] Call code in an external package"
+title = "[Basic] Get started with Go"
 
 +++
 See details at: [here](https://medium.com/@dongnguyenltqb/quản-l%C3%AD-package-trong-golang-fdb3dad9f586)
