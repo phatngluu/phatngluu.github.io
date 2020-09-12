@@ -179,9 +179,8 @@ Call code in an external package Discover packages at pkg.go.dev   Search a pack
         <li><a href="#call-code-in-an-external-package">Call code in an external package</a>
           <ul>
             <li><a href="#discover-packages-at-pkggodev">Discover packages at pkg.go.dev</a></li>
-            <li><a href="#import-and-use-external-package">Import and use external package</a></li>
-            <li><a href="#put-your-code-in-a-module-for-tracking-dependencies">Put your code in a module for tracking dependencies</a></li>
-            <li><a href="#how-it-works">How it works?</a></li>
+            <li><a href="#import-and-calling-functions-packages">Import and calling functions packages</a></li>
+            <li><a href="#import-packages-from-another-module"><strong>Import packages from another module</strong></a></li>
           </ul>
         </li>
       </ul>
@@ -231,7 +230,7 @@ Call code in an external package Discover packages at pkg.go.dev   Search a pack
 <p><img src="static/uploads/screen-shot-2020-09-11-at-09-59-32.png" alt=""></p>
 </li>
 </ol>
-<h4 id="import-and-use-external-package">Import and use external package</h4>
+<h4 id="import-and-calling-functions-packages">Import and calling functions packages</h4>
 <pre><code>package main
 import &quot;fmt&quot;
 import &quot;rsc.io/quote&quot;
@@ -240,14 +239,11 @@ func main() {
     fmt.Println(quote.Go())
 }
 </code></pre>
-<h4 id="put-your-code-in-a-module-for-tracking-dependencies">Put your code in a module for tracking dependencies</h4>
-<p>When your code imports packages from another module, a <code>go.mod</code> file lists the specific modules and versions providing those packages. That file stays with your code, including in your source code repository.</p>
+<h4 id="import-packages-from-another-module"><strong>Import packages from another module</strong></h4>
+<p>When your code imports packages from another module, a go.mod file lists the specific modules and versions providing those packages. That file stays with your code, including in your source code repository.</p>
 <p>To create a go.mod file, run the <a href="https://golang.org/cmd/go/#hdr-Initialize_new_module_in_current_directory"><code>go mod init</code> command</a>, giving it the name of the module your code will be in (here, just use &ldquo;hello&rdquo;):</p>
 <pre><code>$ go mod init hello
-go: creating new go.mod: module hello
-</code></pre>
-<h4 id="how-it-works">How it works?</h4>
-<p>But before it ran the code, <code>go run</code> located and downloaded the <code>rsc.io/quote</code> module that contains the package you imported. By default, it downloaded the latest version &ndash; v1.5.2. Go build commands are designed to locate the modules required for packages you import.</p>
+go: creating new go.mod: module hello</code></pre>
 
     </div>
   </article>
@@ -287,9 +283,8 @@ go: creating new go.mod: module hello
         <li><a href="#call-code-in-an-external-package">Call code in an external package</a>
           <ul>
             <li><a href="#discover-packages-at-pkggodev">Discover packages at pkg.go.dev</a></li>
-            <li><a href="#import-and-use-external-package">Import and use external package</a></li>
-            <li><a href="#put-your-code-in-a-module-for-tracking-dependencies">Put your code in a module for tracking dependencies</a></li>
-            <li><a href="#how-it-works">How it works?</a></li>
+            <li><a href="#import-and-calling-functions-packages">Import and calling functions packages</a></li>
+            <li><a href="#import-packages-from-another-module"><strong>Import packages from another module</strong></a></li>
           </ul>
         </li>
       </ul>
