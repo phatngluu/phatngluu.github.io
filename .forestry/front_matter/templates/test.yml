@@ -46,6 +46,7 @@ pages:
 - content/posts/.bashrc-and.profile.md
 - content/posts/Golang/01.md
 - content/posts/Golang/Go.md
+- content/posts/Golang/basic-02-create-a-go-module.md
 - content/posts/Golang/basic-package-module.md
 - content/posts/Golang/gopath-explained.md
 - content/posts/GraphQL/introduction.md
