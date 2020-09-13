@@ -1,9 +1,9 @@
 ---
 title: About me
-date: 2020-09-05T17:51:42+00:00
+date: 2020-09-05T17:51:42.000+00:00
 
 ---
-![](/uploads/img_2119.jpeg)
+![](static/uploads/img_2119.jpeg)
 
 ##### @ HUMBOLDT UNIVERSITÄT, BERLIN, DEUTSCHLAND - 23rd November 2019
 
