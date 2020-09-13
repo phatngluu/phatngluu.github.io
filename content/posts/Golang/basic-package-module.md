@@ -12,6 +12,7 @@ See details at: [here](https://medium.com/@dongnguyenltqb/quản-l%C3%AD-package
 * Go Module là tập hợp của các Go Package, mỗi project là một module và các package được sử dụng trong module đều được go quản lí bằng go.mod file.
 
 # Call code in an external package
+
 Discover packages at pkg.go.dev
 
 1. Search a package, eg. "quote"
@@ -19,9 +20,7 @@ Discover packages at pkg.go.dev
 3. On the **Doc** tab, note the list of functions you can call from your code. You'll use the `Go` function
 4. At the top of this page, note that package `quote` is included in the `rsc.io/quote` module.
 
-   ![](static/uploads/screen-shot-2020-09-11-at-09-59-32.png)
-
-
+   ![](/static/uploads/screen-shot-2020-09-11-at-09-59-32.png)
 
 Let's say we want to use `rsc.io/quote` package. In your Go code, import the `rsc.io/quote` package and add a call to its `Go` function:
 
