@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spring on Luu Nguyen Phat</title>
+    <link>https://phatngluu.github.io/tags/spring/</link>
+    <description>Recent content in spring on Luu Nguyen Phat</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Phat Nguyen Luu</copyright>
+    <lastBuildDate>Sun, 13 Sep 2020 15:41:21 +0000</lastBuildDate>
+    
+	<atom:link href="https://phatngluu.github.io/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning Paths</title>
+      <link>https://phatngluu.github.io/posts/springboot/learnpath/</link>
+      <pubDate>Sun, 13 Sep 2020 15:41:21 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/springboot/learnpath/</guid>
+      <description>https://spring.io/quickstart
+ @GetMapping(&amp;quot;/hello&amp;quot;):tells Spring to use our hello() method to answer requests that get sent to the http://localhost:8080/hello address @RestController annotation tells Spring that this code describes an endpoint that should be made available over the web @RequestParam is telling Spring to expect a name value in the request, but if it’s not there, it will use the word “World” by default.  MVC  Fundamental pattern for web app development Model = data, View = the visual display that is populated, Controller = wires View + Model  Spring Controller  Spring bean Annotated for the servlet mapping Responds to incoming web requests Outputs a view or raw data  Template Engines  Spring supports several Thymeleaf - most popular Provides a DSL for HTML, leaving raw HTML documents Placeholders for dynamic data Rendering engine allows for final product  Spring Material Beginner https://www.</description>
+    </item>
+    
+  </channel>
+</rss>

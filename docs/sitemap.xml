@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://phatngluu.github.io/posts/hibernate/03/</loc>
-    <lastmod>2020-09-13T15:40:30+00:00</lastmod>
+    <loc>https://phatngluu.github.io/categories/</loc>
+    <lastmod>2020-09-13T15:41:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://phatngluu.github.io/categories/</loc>
+    <loc>https://phatngluu.github.io/posts/springboot/learnpath/</loc>
+    <lastmod>2020-09-13T15:41:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/</loc>
+    <lastmod>2020-09-13T15:41:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/</loc>
+    <lastmod>2020-09-13T15:41:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/spring/</loc>
+    <lastmod>2020-09-13T15:41:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/categories/spring/</loc>
+    <lastmod>2020-09-13T15:41:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/</loc>
+    <lastmod>2020-09-13T15:41:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/hibernate/03/</loc>
     <lastmod>2020-09-13T15:40:30+00:00</lastmod>
   </url>
   
@@ -19,21 +49,6 @@
   
   <url>
     <loc>https://phatngluu.github.io/categories/hibernate/</loc>
-    <lastmod>2020-09-13T15:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/</loc>
-    <lastmod>2020-09-13T15:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/</loc>
-    <lastmod>2020-09-13T15:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/tags/</loc>
     <lastmod>2020-09-13T15:40:30+00:00</lastmod>
   </url>
   
@@ -293,10 +308,6 @@
   
   <url>
     <loc>https://phatngluu.github.io/posts/javascript/objects/03-getters-setters/</loc>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/springboot/learnpath/</loc>
   </url>
   
   <url>
