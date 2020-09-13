@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Phat Nguyen Luu</copyright>
-    <lastBuildDate>Sun, 13 Sep 2020 15:38:54 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2020 15:40:30 +0000</lastBuildDate>
     
 	<atom:link href="https://phatngluu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Basic - 02] Hibernate annotations</title>
+      <link>https://phatngluu.github.io/posts/hibernate/03/</link>
+      <pubDate>Sun, 13 Sep 2020 15:40:30 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/hibernate/03/</guid>
+      <description>Tuy nhiên, tôi khuyến khích các bạn sử dụng các Annotation của Java Persistence API bởi vì sau này chúng ta muốn chuyển sang một ORM khác sẽ dễ dàng hơn mà không phải thay đổi code.
+ @Entity @Entity được sử dụng để chú thích một class là một Entity.
+Thuộc tính name của @Entity là không bắt buộc. Việc chỉ định rõ name của @Entity cho phép viết ngắn câu HSQL.</description>
+    </item>
     
     <item>
       <title>[Basics - 01] Configurations and Mappings</title>
@@ -174,17 +185,6 @@ Host Vultr HostName 207.148.122.57 User root Host AWS_Ubuntu HostName 13.229.183
       
       <guid>https://phatngluu.github.io/posts/git/</guid>
       <description> Sign in to Github  git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot; Create new repo on Github Initialize and stage changes and commit/push  git init # Staged all files changes git add . # Unstaged all files changes git rm -r --cached . # Commit git commit -m &amp;quot;Message&amp;quot; # Push git remote add &amp;lt;repo_name&amp;gt; &amp;lt;url&amp;gt; # run it first time git push -u origin master # run it first time git push --set-upstream &amp;lt;repo_name&amp;gt; master # run it first time # optional git push &amp;lt;repo_name&amp;gt; # run it next time </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/hibernate/03/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/hibernate/03/</guid>
-      <description>Tuy nhiên, tôi khuyến khích các bạn sử dụng các Annotation của Java Persistence API bởi vì sau này chúng ta muốn chuyển sang một ORM khác sẽ dễ dàng hơn mà không phải thay đổi code.
- @Entity @Entity được sử dụng để chú thích một class là một Entity.
-Thuộc tính name của @Entity là không bắt buộc. Việc chỉ định rõ name của @Entity cho phép viết ngắn câu HSQL.</description>
     </item>
     
     <item>

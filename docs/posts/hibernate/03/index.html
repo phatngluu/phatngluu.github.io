@@ -3,21 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>  </title>
+  <title> [Basic - 02] Hibernate annotations </title>
   <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="[Basic - 02] Hibernate annotations" />
 <meta property="og:description" content="Tuy nhiên, tôi khuyến khích các bạn sử dụng các Annotation của Java Persistence API bởi vì sau này chúng ta muốn chuyển sang một ORM khác sẽ dễ dàng hơn mà không phải thay đổi code.
  @Entity @Entity được sử dụng để chú thích một class là một Entity.
 Thuộc tính name của @Entity là không bắt buộc. Việc chỉ định rõ name của @Entity cho phép viết ngắn câu HSQL." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://phatngluu.github.io/posts/hibernate/03/" />
-
+<meta property="article:published_time" content="2020-09-13T15:40:30+00:00" />
+<meta property="article:modified_time" content="2020-09-13T15:40:30+00:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
+<meta name="twitter:title" content="[Basic - 02] Hibernate annotations"/>
 <meta name="twitter:description" content="Tuy nhiên, tôi khuyến khích các bạn sử dụng các Annotation của Java Persistence API bởi vì sau này chúng ta muốn chuyển sang một ORM khác sẽ dễ dàng hơn mà không phải thay đổi code.
  @Entity @Entity được sử dụng để chú thích một class là một Entity.
 Thuộc tính name của @Entity là không bắt buộc. Việc chỉ định rõ name của @Entity cho phép viết ngắn câu HSQL."/>
@@ -70,17 +71,11 @@ Thuộc tính name của @Entity là không bắt buộc. Việc chỉ định r
       <ul>
         
         <li>
-          <a class="icon" href=" https://phatngluu.github.io/posts/java/j2ee/">
+          <a class="icon" href=" https://phatngluu.github.io/posts/hibernate/01/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
-        
-        <li>
-          <a class="icon" href="https://phatngluu.github.io/posts/git/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
@@ -113,52 +108,52 @@ Thuộc tính name của @Entity là không bắt buộc. Việc chỉ định r
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&text=">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&text=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&is_video=false&description=">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&is_video=false&description=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f">
+    <a class="icon" href="mailto:?subject=%5bBasic%20-%2002%5d%20Hibernate%20annotations&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&name=&description=Tuy%20nhi%c3%aan%2c%20t%c3%b4i%20khuy%e1%ba%bfn%20kh%c3%adch%20c%c3%a1c%20b%e1%ba%a1n%20s%e1%bb%ad%20d%e1%bb%a5ng%20c%c3%a1c%20Annotation%20c%e1%bb%a7a%20Java%20Persistence%20API%20b%e1%bb%9fi%20v%c3%ac%20sau%20n%c3%a0y%20ch%c3%bang%20ta%20mu%e1%bb%91n%20chuy%e1%bb%83n%20sang%20m%e1%bb%99t%20ORM%20kh%c3%a1c%20s%e1%ba%bd%20d%e1%bb%85%20d%c3%a0ng%20h%c6%a1n%20m%c3%a0%20kh%c3%b4ng%20ph%e1%ba%a3i%20thay%20%c4%91%e1%bb%95i%20code.%0a%20%40Entity%20%40Entity%20%c4%91%c6%b0%e1%bb%a3c%20s%e1%bb%ad%20d%e1%bb%a5ng%20%c4%91%e1%bb%83%20ch%c3%ba%20th%c3%adch%20m%e1%bb%99t%20class%20l%c3%a0%20m%e1%bb%99t%20Entity.%0aThu%e1%bb%99c%20t%c3%adnh%20name%20c%e1%bb%a7a%20%40Entity%20l%c3%a0%20kh%c3%b4ng%20b%e1%ba%aft%20bu%e1%bb%99c.%20Vi%e1%bb%87c%20ch%e1%bb%89%20%c4%91%e1%bb%8bnh%20r%c3%b5%20name%20c%e1%bb%a7a%20%40Entity%20cho%20ph%c3%a9p%20vi%e1%ba%bft%20ng%e1%ba%afn%20c%c3%a2u%20HSQL.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&name=%5bBasic%20-%2002%5d%20Hibernate%20annotations&description=Tuy%20nhi%c3%aan%2c%20t%c3%b4i%20khuy%e1%ba%bfn%20kh%c3%adch%20c%c3%a1c%20b%e1%ba%a1n%20s%e1%bb%ad%20d%e1%bb%a5ng%20c%c3%a1c%20Annotation%20c%e1%bb%a7a%20Java%20Persistence%20API%20b%e1%bb%9fi%20v%c3%ac%20sau%20n%c3%a0y%20ch%c3%bang%20ta%20mu%e1%bb%91n%20chuy%e1%bb%83n%20sang%20m%e1%bb%99t%20ORM%20kh%c3%a1c%20s%e1%ba%bd%20d%e1%bb%85%20d%c3%a0ng%20h%c6%a1n%20m%c3%a0%20kh%c3%b4ng%20ph%e1%ba%a3i%20thay%20%c4%91%e1%bb%95i%20code.%0a%20%40Entity%20%40Entity%20%c4%91%c6%b0%e1%bb%a3c%20s%e1%bb%ad%20d%e1%bb%a5ng%20%c4%91%e1%bb%83%20ch%c3%ba%20th%c3%adch%20m%e1%bb%99t%20class%20l%c3%a0%20m%e1%bb%99t%20Entity.%0aThu%e1%bb%99c%20t%c3%adnh%20name%20c%e1%bb%a7a%20%40Entity%20l%c3%a0%20kh%c3%b4ng%20b%e1%ba%aft%20bu%e1%bb%99c.%20Vi%e1%bb%87c%20ch%e1%bb%89%20%c4%91%e1%bb%8bnh%20r%c3%b5%20name%20c%e1%bb%a7a%20%40Entity%20cho%20ph%c3%a9p%20vi%e1%ba%bft%20ng%e1%ba%afn%20c%c3%a2u%20HSQL.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&t=">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&t=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -189,16 +184,32 @@ Thuộc tính name của @Entity là không bắt buộc. Việc chỉ định r
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        
+        [Basic - 02] Hibernate annotations
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">0001-01-01</time>
+          <time datetime="2020-09-13 15:40:30 &#43;0000 UTC" itemprop="datePublished">2020-09-13</time>
           
         </div>
         
+        <div class="article-category">
+            <i class="fas fa-archive"></i>
+            
+            
+            <a class="category-link" href="https://phatngluu.github.io/categories/hibernate">hibernate</a>
+            
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="https://phatngluu.github.io/tags/hibernate" rel="tag">hibernate</a>
+            
+        </div> 
         
       </div>
     </header>
@@ -336,52 +347,52 @@ Thuộc tính name của @Entity là không bắt buộc. Việc chỉ định r
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&text=">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&text=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&is_video=false&description=">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&is_video=false&description=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f">
+    <a class="icon" href="mailto:?subject=%5bBasic%20-%2002%5d%20Hibernate%20annotations&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&title=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&name=&description=Tuy%20nhi%c3%aan%2c%20t%c3%b4i%20khuy%e1%ba%bfn%20kh%c3%adch%20c%c3%a1c%20b%e1%ba%a1n%20s%e1%bb%ad%20d%e1%bb%a5ng%20c%c3%a1c%20Annotation%20c%e1%bb%a7a%20Java%20Persistence%20API%20b%e1%bb%9fi%20v%c3%ac%20sau%20n%c3%a0y%20ch%c3%bang%20ta%20mu%e1%bb%91n%20chuy%e1%bb%83n%20sang%20m%e1%bb%99t%20ORM%20kh%c3%a1c%20s%e1%ba%bd%20d%e1%bb%85%20d%c3%a0ng%20h%c6%a1n%20m%c3%a0%20kh%c3%b4ng%20ph%e1%ba%a3i%20thay%20%c4%91%e1%bb%95i%20code.%0a%20%40Entity%20%40Entity%20%c4%91%c6%b0%e1%bb%a3c%20s%e1%bb%ad%20d%e1%bb%a5ng%20%c4%91%e1%bb%83%20ch%c3%ba%20th%c3%adch%20m%e1%bb%99t%20class%20l%c3%a0%20m%e1%bb%99t%20Entity.%0aThu%e1%bb%99c%20t%c3%adnh%20name%20c%e1%bb%a7a%20%40Entity%20l%c3%a0%20kh%c3%b4ng%20b%e1%ba%aft%20bu%e1%bb%99c.%20Vi%e1%bb%87c%20ch%e1%bb%89%20%c4%91%e1%bb%8bnh%20r%c3%b5%20name%20c%e1%bb%a7a%20%40Entity%20cho%20ph%c3%a9p%20vi%e1%ba%bft%20ng%e1%ba%afn%20c%c3%a2u%20HSQL.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&name=%5bBasic%20-%2002%5d%20Hibernate%20annotations&description=Tuy%20nhi%c3%aan%2c%20t%c3%b4i%20khuy%e1%ba%bfn%20kh%c3%adch%20c%c3%a1c%20b%e1%ba%a1n%20s%e1%bb%ad%20d%e1%bb%a5ng%20c%c3%a1c%20Annotation%20c%e1%bb%a7a%20Java%20Persistence%20API%20b%e1%bb%9fi%20v%c3%ac%20sau%20n%c3%a0y%20ch%c3%bang%20ta%20mu%e1%bb%91n%20chuy%e1%bb%83n%20sang%20m%e1%bb%99t%20ORM%20kh%c3%a1c%20s%e1%ba%bd%20d%e1%bb%85%20d%c3%a0ng%20h%c6%a1n%20m%c3%a0%20kh%c3%b4ng%20ph%e1%ba%a3i%20thay%20%c4%91%e1%bb%95i%20code.%0a%20%40Entity%20%40Entity%20%c4%91%c6%b0%e1%bb%a3c%20s%e1%bb%ad%20d%e1%bb%a5ng%20%c4%91%e1%bb%83%20ch%c3%ba%20th%c3%adch%20m%e1%bb%99t%20class%20l%c3%a0%20m%e1%bb%99t%20Entity.%0aThu%e1%bb%99c%20t%c3%adnh%20name%20c%e1%bb%a7a%20%40Entity%20l%c3%a0%20kh%c3%b4ng%20b%e1%ba%aft%20bu%e1%bb%99c.%20Vi%e1%bb%87c%20ch%e1%bb%89%20%c4%91%e1%bb%8bnh%20r%c3%b5%20name%20c%e1%bb%a7a%20%40Entity%20cho%20ph%c3%a9p%20vi%e1%ba%bft%20ng%e1%ba%afn%20c%c3%a2u%20HSQL.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&t=">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fhibernate%2f03%2f&t=%5bBasic%20-%2002%5d%20Hibernate%20annotations">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
