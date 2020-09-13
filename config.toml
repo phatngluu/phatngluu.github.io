@@ -4,7 +4,7 @@ title = "Luu Nguyen Phat"
 publishDir = "docs"
 copyright = "Phat Nguyen Luu" # cactus will use title if copyright is not set
 disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
-canonifyURLs: true
+canonifyURLs = true
 # googleAnalytics = "UA-1234-5"
 
 
