@@ -1,3 +1,11 @@
++++
+categories = ["spring"]
+date = 2020-09-13T15:41:21Z
+layout = ""
+tags = ["spring"]
+title = "Learning Paths"
+
++++
 https://spring.io/quickstart
 
 - `@GetMapping("/hello")`:tells Spring to use our `hello()` method to answer requests that get sent to the `http://localhost:8080/hello` address
@@ -86,4 +94,3 @@ https://www.lynda.com/Spring-Framework-tutorials/Building-Full-Stack-App-Angular
 https://www.lynda.com/Java-tutorials/Learning-Java-Enterprise-Edition/516591-2.html
 
 > Turbocharge your back-end Java RESTful API development with Spring Boot and Spring Data technologies. This course is intended for experienced Java developers who want to rapidly build microservices that connect with relational databases via the Java Persistence API (JPA). Here, Mary Ellen Bowman walks you through a step-by-step process for building a microservice with an exposed RESTful API featuring HATEOAS, paging, sorting, and CrudRepository interfaces. Learn about technologies such as Spring Boot, Spring Data JPA, Spring Data REST, and Spring Web MVC @RestController
-
