@@ -1,3 +1,12 @@
++++
+categories = ["cloud"]
+date = 2020-09-12T09:30:27Z
+layout = ""
+tags = ["cloud"]
+title = "Vultr"
+
++++
+
 # Vultr
 
 Watch above [this video](https://www.youtube.com/watch?v=9_APwMa7hNI) to:

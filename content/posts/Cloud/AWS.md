@@ -1,3 +1,11 @@
++++
+categories = ["cloud"]
+date = 2020-09-12T09:30:27Z
+layout = ""
+tags = ["cloud"]
+title = "Amazon"
+
++++
 # Amazon
 
 ## Create Instance
