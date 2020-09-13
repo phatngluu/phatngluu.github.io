@@ -3,37 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://phatngluu.github.io/posts/golang/basic-05-packages-variables-and-functions/</loc>
-    <lastmod>2020-09-13T03:55:37+00:00</lastmod>
+    <loc>https://phatngluu.github.io/posts/golang/basic-05-for-if-else-switch-and-defer/</loc>
+    <lastmod>2020-09-13T05:21:38+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/categories/</loc>
-    <lastmod>2020-09-13T03:55:37+00:00</lastmod>
+    <lastmod>2020-09-13T05:21:38+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/tags/golang/</loc>
-    <lastmod>2020-09-13T03:55:37+00:00</lastmod>
+    <lastmod>2020-09-13T05:21:38+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/categories/golang/</loc>
-    <lastmod>2020-09-13T03:55:37+00:00</lastmod>
+    <lastmod>2020-09-13T05:21:38+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/</loc>
-    <lastmod>2020-09-13T03:55:37+00:00</lastmod>
+    <lastmod>2020-09-13T05:21:38+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/posts/</loc>
-    <lastmod>2020-09-13T03:55:37+00:00</lastmod>
+    <lastmod>2020-09-13T05:21:38+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/tags/</loc>
+    <lastmod>2020-09-13T05:21:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/golang/basic-05-packages-variables-and-functions/</loc>
     <lastmod>2020-09-13T03:55:37+00:00</lastmod>
   </url>
   
