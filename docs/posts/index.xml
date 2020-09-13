@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Sun, 13 Sep 2020 02:39:14 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2020 03:13:32 +0000</lastBuildDate>
     
 	<atom:link href="https://phatngluu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Basic - 03] Install your Go application on your machine</title>
+      <link>https://phatngluu.github.io/posts/golang/basic-03-install-your-go-application-on-your-machine/</link>
+      <pubDate>Sun, 13 Sep 2020 03:13:32 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/golang/basic-03-install-your-go-application-on-your-machine/</guid>
+      <description>Locate to your package, then use this command to discover the Go install path, where the go command will install the current package.
+$ go list -f &#39;{{.Target}}&#39; /root/codekeeper/go/bin/hello  Add the Go install directory to your system&amp;rsquo;s shell path. By doing this way, you&amp;rsquo;ll be able to run your program&amp;rsquo;s executable without specifying where the executable is.
+export PATH=$PATH:/root/codekeeper/go/bin/hello  Run the go install command to compile and install the package.</description>
+    </item>
     
     <item>
       <title>[Basic - 00] Setting up GOROOT, GOPATH</title>
