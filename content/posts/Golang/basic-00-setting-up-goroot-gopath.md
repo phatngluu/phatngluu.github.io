@@ -1,6 +1,6 @@
 +++
 categories = ["golang"]
-date = 2020-09-13T02:39:14Z
+date = 2020-09-11T02:39:14Z
 layout = ""
 tags = ["golang"]
 title = "[Basic - 00] Setting up GOROOT, GOPATH"
