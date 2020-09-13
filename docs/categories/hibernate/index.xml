@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hibernate on Luu Nguyen Phat</title>
+    <link>https://phatngluu.github.io/categories/hibernate/</link>
+    <description>Recent content in hibernate on Luu Nguyen Phat</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Phat Nguyen Luu</copyright>
+    <lastBuildDate>Sun, 13 Sep 2020 15:38:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://phatngluu.github.io/categories/hibernate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Basics - 01] Configurations and Mappings</title>
+      <link>https://phatngluu.github.io/posts/hibernate/01/</link>
+      <pubDate>Sun, 13 Sep 2020 15:38:54 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/hibernate/01/</guid>
+      <description>Chúng ta sẽ sử dụng các Annotation để ánh xạ (mapping) class và property trong Java tương ứng với các table và column trong database.
+User.java
+package com.gpcoder.entities; import java.util.Date; import javax.persistence.Column; import javax.persistence.Entity; import javax.persistence.GeneratedValue; import javax.persistence.GenerationType; import javax.persistence.Id; import javax.persistence.Table; import lombok.Data; @Data @Entity @Table(name = &amp;#34;user&amp;#34;) public class User { @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id; @Column private String fullname; @Column private String username; @Column private String password; @Column(name = &amp;#34;created_at&amp;#34;) private Date createdAt; @Column(name = &amp;#34;modified_at&amp;#34;) private Date modifiedAt; } Một số Annotation được sử dụng:</description>
+    </item>
+    
+  </channel>
+</rss>
