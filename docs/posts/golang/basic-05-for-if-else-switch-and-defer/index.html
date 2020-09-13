@@ -10,7 +10,8 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:title" content="[Basic - 05] For, If-else, Switch and Defer" />
 <meta property="og:description" content="For Structure The basic for loop has three components separated by semicolons:
- the init statement: executed before the first iteration the condition expression: evaluated before every iteration the post statement: executed at the end of every iteration  Attention  The init statement will often be a short variable declaration, and the variables declared there are visible only in the scope of the for statement. The loop will stop iterating once condition false." />
+ the init statement: executed before the first iteration the condition expression: evaluated before every iteration the post statement: executed at the end of every iteration  Attention   The init statement will often be a short variable declaration, and the variables declared there are visible only in the scope of the for statement.
+  The loop will stop iterating once condition false." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://phatngluu.github.io/posts/golang/basic-05-for-if-else-switch-and-defer/" />
 <meta property="article:published_time" content="2020-09-13T05:21:38+00:00" />
@@ -19,7 +20,8 @@
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[Basic - 05] For, If-else, Switch and Defer"/>
 <meta name="twitter:description" content="For Structure The basic for loop has three components separated by semicolons:
- the init statement: executed before the first iteration the condition expression: evaluated before every iteration the post statement: executed at the end of every iteration  Attention  The init statement will often be a short variable declaration, and the variables declared there are visible only in the scope of the for statement. The loop will stop iterating once condition false."/>
+ the init statement: executed before the first iteration the condition expression: evaluated before every iteration the post statement: executed at the end of every iteration  Attention   The init statement will often be a short variable declaration, and the variables declared there are visible only in the scope of the for statement.
+  The loop will stop iterating once condition false."/>
 
   
   
@@ -146,7 +148,7 @@
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fbasic-05-for-if-else-switch-and-defer%2f&name=%5bBasic%20-%2005%5d%20For%2c%20If-else%2c%20Switch%20and%20Defer&description=For%20Structure%20The%20basic%20for%20loop%20has%20three%20components%20separated%20by%20semicolons%3a%0a%20the%20init%20statement%3a%20executed%20before%20the%20first%20iteration%20the%20condition%20expression%3a%20evaluated%20before%20every%20iteration%20the%20post%20statement%3a%20executed%20at%20the%20end%20of%20every%20iteration%20%20Attention%20%20The%20init%20statement%20will%20often%20be%20a%20short%20variable%20declaration%2c%20and%20the%20variables%20declared%20there%20are%20visible%20only%20in%20the%20scope%20of%20the%20for%20statement.%20The%20loop%20will%20stop%20iterating%20once%20condition%20false.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fbasic-05-for-if-else-switch-and-defer%2f&name=%5bBasic%20-%2005%5d%20For%2c%20If-else%2c%20Switch%20and%20Defer&description=For%20Structure%20The%20basic%20for%20loop%20has%20three%20components%20separated%20by%20semicolons%3a%0a%20the%20init%20statement%3a%20executed%20before%20the%20first%20iteration%20the%20condition%20expression%3a%20evaluated%20before%20every%20iteration%20the%20post%20statement%3a%20executed%20at%20the%20end%20of%20every%20iteration%20%20Attention%20%20%20The%20init%20statement%20will%20often%20be%20a%20short%20variable%20declaration%2c%20and%20the%20variables%20declared%20there%20are%20visible%20only%20in%20the%20scope%20of%20the%20for%20statement.%0a%20%20The%20loop%20will%20stop%20iterating%20once%20condition%20false.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -167,6 +169,15 @@
 
   <ul>
     <li><a href="#if-with-a-short-statement">If with a short statement</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#attention-1">Attention</a></li>
+    <li><a href="#switch-with-no-condition">Switch with no condition</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#stacking-defers">Stacking defers</a></li>
   </ul>
 </nav>
     </div>
@@ -219,18 +230,24 @@
 </ul>
 <h2 id="attention">Attention</h2>
 <ul>
-<li>The init statement will often be a short variable declaration, and the variables declared there are <strong>visible only in the scope of the <code>for</code> statement</strong>.</li>
-<li>The loop will <strong>stop iterating once</strong> <strong>condition</strong> <code>false</code>.</li>
-<li>The <strong>init and post statements are optional</strong>.
+<li>
+<p>The init statement will often be a short variable declaration, and the variables declared there are <strong>visible only in the scope of the <code>for</code> statement</strong>.</p>
+</li>
+<li>
+<p>The loop will <strong>stop iterating once</strong> <strong>condition</strong> <code>false</code>.</p>
+</li>
+<li>
+<p>The <strong>init and post statements are optional</strong>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">sum</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">1</span>
 <span style="color:#66d9ef">for</span> ; <span style="color:#a6e22e">sum</span> &lt; <span style="color:#ae81ff">1000</span>; {
-    <span style="color:#a6e22e">sum</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">sum</span>
+  <span style="color:#a6e22e">sum</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">sum</span>
 }
 <span style="color:#75715e">// It&#39;s like a while loop!
 </span></code></pre></div></li>
-<li>Infinite loop:
+<li>
+<p>Infinite loop:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">for</span> {
-    <span style="color:#75715e">// do stuff
+  <span style="color:#75715e">// do stuff
 </span><span style="color:#75715e"></span>}
 </code></pre></div></li>
 </ul>
@@ -238,17 +255,38 @@
 <h2 id="if-with-a-short-statement">If with a short statement</h2>
 <p>Like for, the if statement can start with a short statement to execute before the condition.</p>
 <p>Variables declared by the statement are only <strong>in scope until the end of the if</strong>, and are <strong>also available inside any of the else blocks</strong>.</p>
-<pre><code>func pow(x, n, lim float64) float64 {
-	if v := math.Pow(x, n); v &lt; lim {
-		return v
-	} else {
-		fmt.Printf(&quot;%g &gt;= %g\n&quot;, v, lim)
-	}
-	// can't use v here, though
-	return lim
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">pow</span>(<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">n</span>, <span style="color:#a6e22e">lim</span> <span style="color:#66d9ef">float64</span>) <span style="color:#66d9ef">float64</span> {
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">v</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">math</span>.<span style="color:#a6e22e">Pow</span>(<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">n</span>); <span style="color:#a6e22e">v</span> &lt; <span style="color:#a6e22e">lim</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">v</span>
+    } <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%g &gt;= %g\n&#34;</span>, <span style="color:#a6e22e">v</span>, <span style="color:#a6e22e">lim</span>)
+    }
+    <span style="color:#75715e">// can&#39;t use v here, though
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">lim</span>
 }
-</code></pre><h1 id="switch">Switch</h1>
-<h1 id="defer">Defer</h1>
+</code></pre></div><h1 id="switch">Switch</h1>
+<p>A <code>switch</code> statement is a shorter way to write a sequence of <code>if - else</code> statements. It runs the first case whose value is equal to the condition expression.</p>
+<h2 id="attention-1">Attention</h2>
+<p>Go <strong>only runs the selected case</strong>, <strong>not all the cases</strong> that follow. The <code>break</code> statement is provided automatically in Go.</p>
+<p>Go&rsquo;s switch cases <strong>need not be constants</strong>, and the values involved <strong>need not be integers</strong>.</p>
+<p>Switch cases evaluate cases from <strong>top to bottom</strong>, <strong>stopping</strong> when a <strong>case</strong> <strong>succeeds</strong>.</p>
+<h2 id="switch-with-no-condition">Switch with no condition</h2>
+<p>Switch without a condition is the same as <code>switch true</code>.</p>
+<p>This construct can be a clean way to write long if-then-else chains.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">t</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Now</span>()
+<span style="color:#66d9ef">switch</span> {
+<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Hour</span>() &lt; <span style="color:#ae81ff">12</span>:
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Good morning!&#34;</span>)
+<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Hour</span>() &lt; <span style="color:#ae81ff">17</span>:
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Good afternoon.&#34;</span>)
+<span style="color:#66d9ef">default</span>:
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Good evening.&#34;</span>)
+}
+</code></pre></div><h1 id="defer">Defer</h1>
+<p>A defer statement defers the execution of a function until the surrounding function returns.</p>
+<p>The deferred call&rsquo;s arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.</p>
+<h2 id="stacking-defers">Stacking defers</h2>
+<p>Deferred function calls are pushed onto a stack. When a function returns, its deferred calls are executed in last-in-first-out order</p>
 
     </div>
   </article>
@@ -288,6 +326,15 @@
 
   <ul>
     <li><a href="#if-with-a-short-statement">If with a short statement</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#attention-1">Attention</a></li>
+    <li><a href="#switch-with-no-condition">Switch with no condition</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#stacking-defers">Stacking defers</a></li>
   </ul>
 </nav>
     </div>
@@ -346,7 +393,7 @@
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fbasic-05-for-if-else-switch-and-defer%2f&name=%5bBasic%20-%2005%5d%20For%2c%20If-else%2c%20Switch%20and%20Defer&description=For%20Structure%20The%20basic%20for%20loop%20has%20three%20components%20separated%20by%20semicolons%3a%0a%20the%20init%20statement%3a%20executed%20before%20the%20first%20iteration%20the%20condition%20expression%3a%20evaluated%20before%20every%20iteration%20the%20post%20statement%3a%20executed%20at%20the%20end%20of%20every%20iteration%20%20Attention%20%20The%20init%20statement%20will%20often%20be%20a%20short%20variable%20declaration%2c%20and%20the%20variables%20declared%20there%20are%20visible%20only%20in%20the%20scope%20of%20the%20for%20statement.%20The%20loop%20will%20stop%20iterating%20once%20condition%20false.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fbasic-05-for-if-else-switch-and-defer%2f&name=%5bBasic%20-%2005%5d%20For%2c%20If-else%2c%20Switch%20and%20Defer&description=For%20Structure%20The%20basic%20for%20loop%20has%20three%20components%20separated%20by%20semicolons%3a%0a%20the%20init%20statement%3a%20executed%20before%20the%20first%20iteration%20the%20condition%20expression%3a%20evaluated%20before%20every%20iteration%20the%20post%20statement%3a%20executed%20at%20the%20end%20of%20every%20iteration%20%20Attention%20%20%20The%20init%20statement%20will%20often%20be%20a%20short%20variable%20declaration%2c%20and%20the%20variables%20declared%20there%20are%20visible%20only%20in%20the%20scope%20of%20the%20for%20statement.%0a%20%20The%20loop%20will%20stop%20iterating%20once%20condition%20false.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>

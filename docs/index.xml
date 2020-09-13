@@ -19,7 +19,8 @@
       
       <guid>https://phatngluu.github.io/posts/golang/basic-05-for-if-else-switch-and-defer/</guid>
       <description>For Structure The basic for loop has three components separated by semicolons:
- the init statement: executed before the first iteration the condition expression: evaluated before every iteration the post statement: executed at the end of every iteration  Attention  The init statement will often be a short variable declaration, and the variables declared there are visible only in the scope of the for statement. The loop will stop iterating once condition false.</description>
+ the init statement: executed before the first iteration the condition expression: evaluated before every iteration the post statement: executed at the end of every iteration  Attention   The init statement will often be a short variable declaration, and the variables declared there are visible only in the scope of the for statement.
+  The loop will stop iterating once condition false.</description>
     </item>
     
     <item>
