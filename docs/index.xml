@@ -645,16 +645,6 @@ Declaring a class // Declaring a class class Pet { constructor(animal, age, bree
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/phatngluu-website/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/phatngluu-website/</guid>
-      <description>phatngluu.website This is personal web project about:
- Blog: post/edit markdown, preview and publish as html/css to view Note: store/search/edit written notes. Todo: input todos, remind via web/push noti/email, sync to calendar ~- Calendar view: sync with calendar to display task/meeting/&amp;hellip; items~  Architecture Backend  Blog:  API to GET/POST/PUT/DELETE .md files. Database to store .md files   Note:  API to GET/POST/PUT/DELETE notes Search service API to publish a note as a blog post   Todo:  API to GET/POST/PUT/DELETE todos Reminder service Sync to calendar service   Calendar:  Sync data from calendar API    Frontend  Blog:  Seamless markdown editor Paste image/drop from clipboard/url, then convert to base64, embedded it directly in markdown file.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://phatngluu.github.io/posts/springboot/learnpath/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
