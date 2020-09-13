@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Luu Nguyen Phat"
 publishDir = "docs"
 copyright = "Phat Nguyen Luu" # cactus will use title if copyright is not set
-canonifyURLs = true
+canonifyURLs = true # If set true, then whenever Hugo build markdown file, it will add baseURL before the path of image and apply for result html.
 # googleAnalytics = "UA-1234-5"
 
 
@@ -51,8 +51,8 @@ weight = 6
   colortheme = "dark" # dark, light, white, or classic
 
   # Home page settings
-  mainSection = "categories" # your main section
-  showAllPostsOnHomePage = true # default
+  mainSection = "posts" # your main section
+  showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = true # show tags overview by default.
   showProjectsList = false # show projects list by default (if projects data file exists).
