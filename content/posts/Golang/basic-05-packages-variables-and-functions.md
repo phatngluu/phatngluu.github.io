@@ -3,7 +3,7 @@ categories = ["golang"]
 date = 2020-09-13T03:55:37Z
 layout = ""
 tags = ["golang"]
-title = "[Basic - 05] Packages, variables and functions"
+title = "[Basic - 04] Packages, variables and functions"
 
 +++
 # Functions
