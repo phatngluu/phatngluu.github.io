@@ -88,7 +88,22 @@
   </url>
   
   <url>
-    <loc>https://phatngluu.github.io/posts/environment-variables/</loc>
+    <loc>https://phatngluu.github.io/posts/cloud/aws/</loc>
+    <lastmod>2020-09-12T09:30:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/cloud/</loc>
+    <lastmod>2020-09-12T09:30:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/categories/cloud/</loc>
+    <lastmod>2020-09-12T09:30:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/linux/environment-variables/</loc>
     <lastmod>2020-09-12T09:30:27+00:00</lastmod>
   </url>
   
@@ -99,6 +114,11 @@
   
   <url>
     <loc>https://phatngluu.github.io/categories/linux/</loc>
+    <lastmod>2020-09-12T09:30:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/cloud/vultr/</loc>
     <lastmod>2020-09-12T09:30:27+00:00</lastmod>
   </url>
   
@@ -143,11 +163,7 @@
   </url>
   
   <url>
-    <loc>https://phatngluu.github.io/posts/aws/</loc>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/git/</loc>
+    <loc>https://phatngluu.github.io/posts/git/git/</loc>
   </url>
   
   <url>
@@ -308,10 +324,6 @@
   
   <url>
     <loc>https://phatngluu.github.io/posts/javascript/objects/03-getters-setters/</loc>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/vultr/</loc>
   </url>
   
   <url>

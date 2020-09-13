@@ -14,10 +14,10 @@
     
     <item>
       <title>Environment variables</title>
-      <link>https://phatngluu.github.io/posts/environment-variables/</link>
+      <link>https://phatngluu.github.io/posts/linux/environment-variables/</link>
       <pubDate>Sat, 12 Sep 2020 09:30:27 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/environment-variables/</guid>
+      <guid>https://phatngluu.github.io/posts/linux/environment-variables/</guid>
       <description>Environment variables Export and unset export NAME=VALUE # Set unset NAME # Unset  Persisting env vars for current user When an environment variable is set from the shell using the export command, its existence ends when the user’s sessions ends.
 To make an environment persistent for a user’s environment, we export the variable from the user’s profile script.
   Open the current user’s profile into a text editor</description>

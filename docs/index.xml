@@ -89,14 +89,44 @@ In this tutorial you&amp;rsquo;ll create two modules:
     </item>
     
     <item>
-      <title>Environment variables</title>
-      <link>https://phatngluu.github.io/posts/environment-variables/</link>
+      <title>Amazon</title>
+      <link>https://phatngluu.github.io/posts/cloud/aws/</link>
       <pubDate>Sat, 12 Sep 2020 09:30:27 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/environment-variables/</guid>
+      <guid>https://phatngluu.github.io/posts/cloud/aws/</guid>
+      <description>Amazon Create Instance https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance
+Connect https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
+EC2
+ssh -i MyKeyPair.pem ec2-user@13.212.25.226 Ubuntu
+ssh -i MyKeyPair.pem ubuntu@54.169.249.248 NOTE:
+SSH config
+Host Vultr HostName 207.148.122.57 User root Host AWS_Ubuntu HostName 13.229.183.189 IdentityFile /Users/steven/.ssh/MyKeyPair.pem User ubuntu Change password sudo su - # switch user to root passwd ubuntu su ubuntu # switch user ubuntu </description>
+    </item>
+    
+    <item>
+      <title>Environment variables</title>
+      <link>https://phatngluu.github.io/posts/linux/environment-variables/</link>
+      <pubDate>Sat, 12 Sep 2020 09:30:27 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/linux/environment-variables/</guid>
       <description>Environment variables Export and unset export NAME=VALUE # Set unset NAME # Unset  Persisting env vars for current user When an environment variable is set from the shell using the export command, its existence ends when the user’s sessions ends.
 To make an environment persistent for a user’s environment, we export the variable from the user’s profile script.
   Open the current user’s profile into a text editor</description>
+    </item>
+    
+    <item>
+      <title>Vultr</title>
+      <link>https://phatngluu.github.io/posts/cloud/vultr/</link>
+      <pubDate>Sat, 12 Sep 2020 09:30:27 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/cloud/vultr/</guid>
+      <description>Vultr Watch above this video to:
+  Deploy Vultr server
+  Add SSH key: https://www.vultr.com/docs/how-do-i-generate-ssh-keys/
+  Server login
+  SSH config
+Host Vultr HostName 207.148.122.57 User root     In your VS Code:
+ Install Extension &amp;ldquo;Remote SSH&amp;rdquo; Watch the tutorial of the extension in the extension&amp;rsquo;s main page to connect the server  Or you can watch video as a reference for connecting with the server    Set up development environment   NodeJS: https://www.</description>
     </item>
     
     <item>
@@ -189,25 +219,10 @@ Frameworks and applications are used to create this website:
     
     <item>
       <title></title>
-      <link>https://phatngluu.github.io/posts/aws/</link>
+      <link>https://phatngluu.github.io/posts/git/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/aws/</guid>
-      <description>Amazon Create Instance https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance
-Connect https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
-EC2
-ssh -i MyKeyPair.pem ec2-user@13.212.25.226 Ubuntu
-ssh -i MyKeyPair.pem ubuntu@54.169.249.248 NOTE:
-SSH config
-Host Vultr HostName 207.148.122.57 User root Host AWS_Ubuntu HostName 13.229.183.189 IdentityFile /Users/steven/.ssh/MyKeyPair.pem User ubuntu Change password sudo su - # switch user to root passwd ubuntu su ubuntu # switch user ubuntu </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/git/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/git/</guid>
+      <guid>https://phatngluu.github.io/posts/git/git/</guid>
       <description> Sign in to Github  git config --global user.email &amp;quot;you@example.com&amp;quot; git config --global user.name &amp;quot;Your Name&amp;quot; Create new repo on Github Initialize and stage changes and commit/push  git init # Staged all files changes git add . # Unstaged all files changes git rm -r --cached . # Commit git commit -m &amp;quot;Message&amp;quot; # Push git remote add &amp;lt;repo_name&amp;gt; &amp;lt;url&amp;gt; # run it first time git push -u origin master # run it first time git push --set-upstream &amp;lt;repo_name&amp;gt; master # run it first time # optional git push &amp;lt;repo_name&amp;gt; # run it next time </description>
     </item>
     
@@ -662,21 +677,6 @@ Declaring a class // Declaring a class class Pet { constructor(animal, age, bree
  Pet { animal: &#39;dog&#39;, age: 1, breed: &#39;pug&#39;, _owner: &#39;Ash&#39; } 
  NOTE:
   Calling getter by its name without parentheses.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://phatngluu.github.io/posts/vultr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/vultr/</guid>
-      <description>Vultr Watch above this video to:
-  Deploy Vultr server
-  Add SSH key: https://www.vultr.com/docs/how-do-i-generate-ssh-keys/
-  Server login
-  SSH config
-Host Vultr HostName 207.148.122.57 User root     In your VS Code:
- Install Extension &amp;ldquo;Remote SSH&amp;rdquo; Watch the tutorial of the extension in the extension&amp;rsquo;s main page to connect the server  Or you can watch video as a reference for connecting with the server    Set up development environment   NodeJS: https://www.</description>
     </item>
     
     <item>
