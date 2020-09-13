@@ -59,6 +59,8 @@ Rules:
          
         <li><a href="/posts">Writings</a></li>
          
+        <li><a href="/categories">Categories</a></li>
+         
         <li><a href="/tags">Tags</a></li>
          
         <li><a href="/about">About</a></li>
@@ -170,20 +172,25 @@ Rules:
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#arguments-must-the-same-and-return-types-must-be-compatible">Arguments must the same, and return types must be compatible.</a></li>
-    <li><a href="#the-method-cant-be-less-accessible">The method can&rsquo;t be less accessible</a></li>
-    <li><a href="#final-methods-can-not-be-overridden">Final methods can not be overridden</a></li>
-    <li><a href="#static-methods-can-not-be-overriddenmethod-overriding-vs-method-hiding">Static methods can not be overridden(Method Overriding vs Method Hiding)</a></li>
-    <li><a href="#heading"></a></li>
-    <li><a href="#the-overriding-method-must-have-same-return-type-or-subtype">The overriding method must have same return type (or subtype)</a></li>
-    <li><a href="#invoking-overridden-method-from-sub-class">Invoking overridden method from sub-class</a></li>
-    <li><a href="#heading-1"></a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#the-return-types-can-be-different">The return types can be different</a></li>
-    <li><a href="#you-cant-change-only-the-return-type">You can’t change ONLY the return type</a></li>
-    <li><a href="#you-can-vary-the-access-levels-in-any-direction">You can vary the access levels in any direction</a></li>
+    <li><a href="#rules-for-overriding">Rules for overriding</a>
+      <ul>
+        <li><a href="#arguments-must-the-same-and-return-types-must-be-compatible">Arguments must the same, and return types must be compatible.</a></li>
+        <li><a href="#the-method-cant-be-less-accessible">The method can&rsquo;t be less accessible</a></li>
+        <li><a href="#final-methods-can-not-be-overridden">Final methods can not be overridden</a></li>
+        <li><a href="#static-methods-can-not-be-overriddenmethod-overriding-vs-method-hiding">Static methods can not be overridden(Method Overriding vs Method Hiding)</a></li>
+        <li><a href="#heading"></a></li>
+        <li><a href="#the-overriding-method-must-have-same-return-type-or-subtype">The overriding method must have same return type (or subtype)</a></li>
+        <li><a href="#invoking-overridden-method-from-sub-class">Invoking overridden method from sub-class</a></li>
+        <li><a href="#heading-1"></a></li>
+      </ul>
+    </li>
+    <li><a href="#rules-for-overloading-a-method">Rules for overloading a method</a>
+      <ul>
+        <li><a href="#the-return-types-can-be-different">The return types can be different</a></li>
+        <li><a href="#you-cant-change-only-the-return-type">You can’t change ONLY the return type</a></li>
+        <li><a href="#you-can-vary-the-access-levels-in-any-direction">You can vary the access levels in any direction</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -299,6 +306,8 @@ Rules:
          
           <li><a href="/posts">Writings</a></li>
          
+          <li><a href="/categories">Categories</a></li>
+         
           <li><a href="/tags">Tags</a></li>
          
           <li><a href="/about">About</a></li>
@@ -311,20 +320,25 @@ Rules:
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#arguments-must-the-same-and-return-types-must-be-compatible">Arguments must the same, and return types must be compatible.</a></li>
-    <li><a href="#the-method-cant-be-less-accessible">The method can&rsquo;t be less accessible</a></li>
-    <li><a href="#final-methods-can-not-be-overridden">Final methods can not be overridden</a></li>
-    <li><a href="#static-methods-can-not-be-overriddenmethod-overriding-vs-method-hiding">Static methods can not be overridden(Method Overriding vs Method Hiding)</a></li>
-    <li><a href="#heading"></a></li>
-    <li><a href="#the-overriding-method-must-have-same-return-type-or-subtype">The overriding method must have same return type (or subtype)</a></li>
-    <li><a href="#invoking-overridden-method-from-sub-class">Invoking overridden method from sub-class</a></li>
-    <li><a href="#heading-1"></a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#the-return-types-can-be-different">The return types can be different</a></li>
-    <li><a href="#you-cant-change-only-the-return-type">You can’t change ONLY the return type</a></li>
-    <li><a href="#you-can-vary-the-access-levels-in-any-direction">You can vary the access levels in any direction</a></li>
+    <li><a href="#rules-for-overriding">Rules for overriding</a>
+      <ul>
+        <li><a href="#arguments-must-the-same-and-return-types-must-be-compatible">Arguments must the same, and return types must be compatible.</a></li>
+        <li><a href="#the-method-cant-be-less-accessible">The method can&rsquo;t be less accessible</a></li>
+        <li><a href="#final-methods-can-not-be-overridden">Final methods can not be overridden</a></li>
+        <li><a href="#static-methods-can-not-be-overriddenmethod-overriding-vs-method-hiding">Static methods can not be overridden(Method Overriding vs Method Hiding)</a></li>
+        <li><a href="#heading"></a></li>
+        <li><a href="#the-overriding-method-must-have-same-return-type-or-subtype">The overriding method must have same return type (or subtype)</a></li>
+        <li><a href="#invoking-overridden-method-from-sub-class">Invoking overridden method from sub-class</a></li>
+        <li><a href="#heading-1"></a></li>
+      </ul>
+    </li>
+    <li><a href="#rules-for-overloading-a-method">Rules for overloading a method</a>
+      <ul>
+        <li><a href="#the-return-types-can-be-different">The return types can be different</a></li>
+        <li><a href="#you-cant-change-only-the-return-type">You can’t change ONLY the return type</a></li>
+        <li><a href="#you-can-vary-the-access-levels-in-any-direction">You can vary the access levels in any direction</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -423,6 +437,8 @@ Rules:
         <li><a href="/">Home</a></li>
          
         <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/categories">Categories</a></li>
          
         <li><a href="/tags">Tags</a></li>
          
