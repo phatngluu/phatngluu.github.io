@@ -52,5 +52,4 @@ pages:
 - content/posts/Golang/basic-05-for-if-else-switch-and-defer.md
 - content/posts/Golang/basic-package-module.md
 - content/posts/Golang/gopath-explained.md
-- content/posts/GraphQL/introduction.md
 - content/posts/environment-variables.md
