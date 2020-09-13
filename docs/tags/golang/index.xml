@@ -24,17 +24,6 @@ export PATH=$PATH:/root/codekeeper/go/bin/hello  Run the go install command to c
     </item>
     
     <item>
-      <title>[Basic - 00] Setting up GOROOT, GOPATH</title>
-      <link>https://phatngluu.github.io/posts/golang/basic-00-setting-up-goroot-gopath/</link>
-      <pubDate>Sun, 13 Sep 2020 02:39:14 +0000</pubDate>
-      
-      <guid>https://phatngluu.github.io/posts/golang/basic-00-setting-up-goroot-gopath/</guid>
-      <description>Open ~/.bashrc file with vim to edit:
-vim ~/.bashrc  Add following lines
-export GOROOT=/usr/local/go export PATH=$PATH:$GOROOT/bin # Wherever, up to you export GOPATH=/root/codekeeper/go export PATH=$PATH:$GOPATH/bin </description>
-    </item>
-    
-    <item>
       <title>[Basic - 02] Create a Go module</title>
       <link>https://phatngluu.github.io/posts/golang/basic-02-create-a-go-module/</link>
       <pubDate>Sat, 12 Sep 2020 12:22:56 +0000</pubDate>
@@ -54,6 +43,17 @@ In this tutorial you&amp;rsquo;ll create two modules:
       <guid>https://phatngluu.github.io/posts/golang/basic-package-module/</guid>
       <description>See details at: here
  Go Package là tập hợp các file trong cùng một thư mục, hướng tới xử lí một tập hợp các vấn đề có liên quan đến thứ mà Package đó hướng tới, ví dụ, trong thư mục user của mình mình có 3 file .go cùng xử lí các vấn đề liên quan đối với user thì mình sẽ đặt tên package là user, việc này giúp năng cao khả năng tái sử dụng code cho những project sau này.</description>
+    </item>
+    
+    <item>
+      <title>[Basic - 00] Setting up GOROOT, GOPATH</title>
+      <link>https://phatngluu.github.io/posts/golang/basic-00-setting-up-goroot-gopath/</link>
+      <pubDate>Fri, 11 Sep 2020 02:39:14 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/golang/basic-00-setting-up-goroot-gopath/</guid>
+      <description>Open ~/.bashrc file with vim to edit:
+vim ~/.bashrc  Add following lines
+export GOROOT=/usr/local/go export PATH=$PATH:$GOROOT/bin # Wherever, up to you export GOPATH=/root/codekeeper/go export PATH=$PATH:$GOPATH/bin </description>
     </item>
     
     <item>

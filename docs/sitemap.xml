@@ -38,11 +38,6 @@
   </url>
   
   <url>
-    <loc>https://phatngluu.github.io/posts/golang/basic-00-setting-up-goroot-gopath/</loc>
-    <lastmod>2020-09-13T02:39:14+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://phatngluu.github.io/posts/golang/basic-02-create-a-go-module/</loc>
     <lastmod>2020-09-12T12:22:56+00:00</lastmod>
   </url>
@@ -65,6 +60,11 @@
   <url>
     <loc>https://phatngluu.github.io/posts/golang/basic-package-module/</loc>
     <lastmod>2020-09-11T09:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/golang/basic-00-setting-up-goroot-gopath/</loc>
+    <lastmod>2020-09-11T02:39:14+00:00</lastmod>
   </url>
   
   <url>
