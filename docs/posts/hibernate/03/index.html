@@ -248,7 +248,7 @@ Thuộc tính name của @Entity là không bắt buộc. Việc chỉ định r
 </ul>
 <p>Chúng ta có thể không cần chỉ định @Column cho tất cả các field nếu tên field và tên column và tên trong database là giống nhau.</p>
 <h2 id="transient">@Transient</h2>
-<p>Trong một số trường hợp, trong entity class có chứa một field mà field này không tồn tồn tại trong database. Khi đó chúng ta sẽ gặp lỗi “java.sql.SQLSyntaxErrorException: Unknown column ‘additionalPropery’ in ‘field list&rsquo;”.</p>
+<p>Trong một số trường hợp, trong entity class có chứa một field mà field này không tồn tồn tại trong database. Khi đó chúng ta sẽ gặp lỗi “java.sql.SQLSyntaxErrorException: Unknown column ‘additionalPropery’ in ‘field list'”.</p>
 <p>Để tránh lỗi này, chúng ta có thể <strong>sử dụng @Transient để thông báo rằng thuộc tính/ phương thức này không liên quan gì tới một cột nào dưới database. Khi đó, Hibernate sẽ bỏ qua field này.</strong></p>
 <h2 id="temporal">@Temporal</h2>
 <p>@Temporal sử dụng để chú thích cho cột dữ liệu ngày tháng và thời gian (date time).</p>

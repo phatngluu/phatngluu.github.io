@@ -7,10 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Phat Nguyen Luu</copyright>
-    <lastBuildDate>Sun, 13 Sep 2020 15:41:21 +0000</lastBuildDate>
-    
-	<atom:link href="https://phatngluu.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 15 Sep 2020 12:33:18 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>03 - Captain Code - Go Module</title>
+      <link>https://phatngluu.github.io/posts/golang/03-captain-code-go-module/</link>
+      <pubDate>Tue, 15 Sep 2020 12:33:18 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/golang/03-captain-code-go-module/</guid>
+      <description>Go get trong GOPATH thì cài vào GOPATH và cả binary
+go mod tidy # don dep thu vien khong dung go mod why # why do i need this go mod download # download nhugn thang trong require go mod get ./... # kiem tra tat ca file cua ban roi download go list -m all # liet ke het package minh   Import package, khong import file rieng le  HandlerFunc has signature: func(ResponseWriter, *Request).</description>
+    </item>
     
     <item>
       <title>Learning Paths</title>
