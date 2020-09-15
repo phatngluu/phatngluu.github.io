@@ -26,3 +26,19 @@ Go get trong GOPATH thì cài vào GOPATH và cả binary
         ...
         }
     }
+
+\`\`\`go
+
+func GetHello() http.HandlerFunc {
+
+	...
+
+    return func(w http.ResponseWriter, r *http.Request) {
+
+    ...
+
+    }
+
+}
+
+\`\`\`
