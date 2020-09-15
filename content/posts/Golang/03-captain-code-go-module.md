@@ -22,7 +22,7 @@ Go get trong GOPATH thì cài vào GOPATH và cả binary
 
     func GetHello() http.HandlerFunc {
     	...
-        return func(w http.ResponseWriter, r *http Request) {
+        return func(w http.ResponseWriter, r *http.Request) {
         ...
         }
     }
