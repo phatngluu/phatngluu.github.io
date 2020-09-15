@@ -45,6 +45,7 @@ fields:
 pages:
 - content/posts/.bashrc-and.profile.md
 - content/posts/Golang/01.md
+- content/posts/Golang/03-captain-code-go-module.md
 - content/posts/Golang/Go.md
 - content/posts/Golang/basic-00-setting-up-goroot-gopath.md
 - content/posts/Golang/basic-02-create-a-go-module.md
@@ -55,4 +56,3 @@ pages:
 - content/posts/Hibernate/01.md
 - content/posts/Hibernate/03.md
 - content/posts/SpringBoot/LearnPath.md
-- content/posts/environment-variables.md
