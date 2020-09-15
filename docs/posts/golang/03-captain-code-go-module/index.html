@@ -215,7 +215,7 @@ go list -m all # liet ke het package minh
 <p><code>HandlerFunc</code> has signature: <code>func(ResponseWriter, *Request)</code>. So it is true if return like this:</p>
 <pre><code>func GetHello() http.HandlerFunc {
     ...
-    return func(w http.ResponseWriter, r *http Request) {
+    return func(w http.ResponseWriter, r *http.Request) {
     ...
     }
 }</code></pre>
