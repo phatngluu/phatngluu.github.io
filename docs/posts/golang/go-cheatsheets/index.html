@@ -165,7 +165,15 @@ package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) 
     <div id="toc">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#variables">Variables</a></li>
+    <li><a href="#variables">Variables</a>
+      <ul>
+        <li><a href="#primitives">Primitives</a>
+          <ul>
+            <li><a href="#string">String</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -249,7 +257,35 @@ func main(){
 <p>Type conversion:</p>
 <pre><code>var i int = 3
 var f float32 = float32(i) # convert int to float32
-var s string = strconv.Itoa(i) # convert int to string</code></pre>
+var s string = strconv.Itoa(i) # convert int to string
+</code></pre>
+<h2 id="primitives">Primitives</h2>
+<pre><code>int8:  [-2^7, 2^7 - 1]
+int16: [-2^15, 2^15 - 1]
+int32: [-2^31, 2^31 - 1]
+int64: [-2^63, 2^63 - 1]
+  
+uint8: [0, 2^16 - 1]
+uint16: [0, 2^32 - 1]
+uint32: [0, 2^64 - 1]
+  
+float32: []
+float64: []
+</code></pre>
+<h3 id="string">String</h3>
+<ul>
+<li>
+<p>Cannot reassign an element of a string</p>
+<pre><code>s := &quot;This is a string&quot;
+s[2] = &quot;u&quot;
+</code></pre>
+</li>
+<li>
+<p>Concatenate:</p>
+<pre><code>var s string = &quot;This is &quot;
+s = s + &quot;a string&quot;</code></pre>
+</li>
+</ul>
 </li>
 </ul>
 
@@ -287,7 +323,15 @@ var s string = strconv.Itoa(i) # convert int to string</code></pre>
     <div id="toc-footer" style="display: none">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#variables">Variables</a></li>
+    <li><a href="#variables">Variables</a>
+      <ul>
+        <li><a href="#primitives">Primitives</a>
+          <ul>
+            <li><a href="#string">String</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
