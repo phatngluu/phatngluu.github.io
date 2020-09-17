@@ -3,23 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> 03 - Captain Code - Go Module </title>
+  <title> Go Cheatsheets </title>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="03 - Captain Code - Go Module" />
-<meta property="og:description" content="Go get trong GOPATH thì cài vào GOPATH và cả binary
-go mod tidy # don dep thu vien khong dung go mod why # why do i need this go mod download # download nhugn thang trong require go mod get ./... # kiem tra tat ca file cua ban roi download go list -m all # liet ke het package minh   Import package, khong import file rieng le  HandlerFunc has signature: func(ResponseWriter, *Request)." />
+  <meta property="og:title" content="Go Cheatsheets" />
+<meta property="og:description" content="Variables   Variable declaration:
+var foo int var foo int = 42 foo := 23  Note: foo := 23 is short-form declaration, which can be valid in block scope.
+  Can&rsquo;t redeclare variables, but can shadow them:
+package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) } # Output: 2    All variables must be used, if not then the compiler will throw an error." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://phatngluu.github.io/posts/golang/03-captain-code-go-module/" />
-<meta property="article:published_time" content="2020-09-15T12:33:18+00:00" />
-<meta property="article:modified_time" content="2020-09-15T12:33:18+00:00" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/golang/go-cheatsheets/" />
+<meta property="article:published_time" content="2020-09-17T04:22:52+00:00" />
+<meta property="article:modified_time" content="2020-09-17T04:22:52+00:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="03 - Captain Code - Go Module"/>
-<meta name="twitter:description" content="Go get trong GOPATH thì cài vào GOPATH và cả binary
-go mod tidy # don dep thu vien khong dung go mod why # why do i need this go mod download # download nhugn thang trong require go mod get ./... # kiem tra tat ca file cua ban roi download go list -m all # liet ke het package minh   Import package, khong import file rieng le  HandlerFunc has signature: func(ResponseWriter, *Request)."/>
+<meta name="twitter:title" content="Go Cheatsheets"/>
+<meta name="twitter:description" content="Variables   Variable declaration:
+var foo int var foo int = 42 foo := 23  Note: foo := 23 is short-form declaration, which can be valid in block scope.
+  Can&rsquo;t redeclare variables, but can shadow them:
+package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) } # Output: 2    All variables must be used, if not then the compiler will throw an error."/>
 
   
   
@@ -69,17 +73,11 @@ go mod tidy # don dep thu vien khong dung go mod why # why do i need this go mod
       <ul>
         
         <li>
-          <a class="icon" href=" https://phatngluu.github.io/posts/springboot/learnpath/">
+          <a class="icon" href=" https://phatngluu.github.io/posts/golang/03-captain-code-go-module/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
-        
-        <li>
-          <a class="icon" href="https://phatngluu.github.io/posts/golang/go-cheatsheets/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
@@ -107,57 +105,57 @@ go mod tidy # don dep thu vien khong dung go mod why # why do i need this go mod
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&text=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&text=Go%20Cheatsheets">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&title=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&title=Go%20Cheatsheets">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&is_video=false&description=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&is_video=false&description=Go%20Cheatsheets">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=03%20-%20Captain%20Code%20-%20Go%20Module&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f">
+    <a class="icon" href="mailto:?subject=Go%20Cheatsheets&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&title=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&title=Go%20Cheatsheets">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&title=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&title=Go%20Cheatsheets">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&title=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&title=Go%20Cheatsheets">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&title=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&title=Go%20Cheatsheets">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&name=03%20-%20Captain%20Code%20-%20Go%20Module&description=Go%20get%20trong%20GOPATH%20th%c3%ac%20c%c3%a0i%20v%c3%a0o%20GOPATH%20v%c3%a0%20c%e1%ba%a3%20binary%0ago%20mod%20tidy%20%23%20don%20dep%20thu%20vien%20khong%20dung%20go%20mod%20why%20%23%20why%20do%20i%20need%20this%20go%20mod%20download%20%23%20download%20nhugn%20thang%20trong%20require%20go%20mod%20get%20.%2f...%20%23%20kiem%20tra%20tat%20ca%20file%20cua%20ban%20roi%20download%20go%20list%20-m%20all%20%23%20liet%20ke%20het%20package%20minh%20%20%20Import%20package%2c%20khong%20import%20file%20rieng%20le%20%20HandlerFunc%20has%20signature%3a%20func%28ResponseWriter%2c%20%2aRequest%29.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&name=Go%20Cheatsheets&description=Variables%20%20%20Variable%20declaration%3a%0avar%20foo%20int%20var%20foo%20int%20%3d%2042%20foo%20%3a%3d%2023%20%20Note%3a%20foo%20%3a%3d%2023%20is%20short-form%20declaration%2c%20which%20can%20be%20valid%20in%20block%20scope.%0a%20%20Can%26rsquo%3bt%20redeclare%20variables%2c%20but%20can%20shadow%20them%3a%0apackage%20main%20...%20var%20foo%20int%20%3d%201%20func%20main%28%29%20%7b%20var%20foo%20int%20%3d%202%20fmt.Println%28foo%29%20%7d%20%23%20Output%3a%202%20%20%20%20All%20variables%20must%20be%20used%2c%20if%20not%20then%20the%20compiler%20will%20throw%20an%20error.">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&t=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&t=Go%20Cheatsheets">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -165,7 +163,11 @@ go mod tidy # don dep thu vien khong dung go mod why # why do i need this go mod
 
     </div>
     <div id="toc">
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#variables">Variables</a></li>
+  </ul>
+</nav>
     </div>
   </span>
 </div>
@@ -174,13 +176,13 @@ go mod tidy # don dep thu vien khong dung go mod why # why do i need this go mod
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        03 - Captain Code - Go Module
+        Go Cheatsheets
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2020-09-15 12:33:18 &#43;0000 UTC" itemprop="datePublished">2020-09-15</time>
+          <time datetime="2020-09-17 04:22:52 &#43;0000 UTC" itemprop="datePublished">2020-09-17</time>
           
         </div>
         
@@ -206,25 +208,50 @@ go mod tidy # don dep thu vien khong dung go mod why # why do i need this go mod
 
   
     <div class="content" itemprop="articleBody">
-      <p>Go get trong GOPATH thì cài vào GOPATH và cả binary</p>
-<pre><code>go mod tidy # don dep thu vien khong dung
-go mod why # why do i need this 
-
-go mod download # download nhugn thang trong require
-go mod get ./... # kiem tra tat ca file cua ban roi download
-
-go list -m all # liet ke het package minh
-</code></pre>
+      <h1 id="variables">Variables</h1>
 <ul>
-<li>Import package, khong import file rieng le</li>
+<li>
+<p>Variable declaration:</p>
+<pre><code>var foo int
+var foo int = 42
+foo := 23
+</code></pre>
+<p><strong>Note</strong>: <code>foo := 23</code> is short-form declaration, which can be valid in block scope.</p>
+</li>
+<li>
+<p>Can&rsquo;t redeclare variables, but can <strong>shadow</strong> them:</p>
+<pre><code>package main
+...
+var foo int = 1
+  
+func main() {
+  var foo int = 2
+    fmt.Println(foo)
+}
+# Output: 2
+</code></pre>
+</li>
+<li>
+<p>All variables must be used, if not then the compiler will throw an error.</p>
+</li>
+<li>
+<p>Visibility:</p>
+<pre><code>package main
+...
+var myVar int # package scope
+var MyVar int # export globally
+func main(){
+  var myvar int # block scope
+}
+</code></pre>
+</li>
+<li>
+<p>Type conversion:</p>
+<pre><code>var i int = 3
+var f float32 = float32(i) # convert int to float32
+var s string = strconv.Itoa(i) # convert int to string</code></pre>
+</li>
 </ul>
-<p><code>HandlerFunc</code> has signature: <code>func(ResponseWriter, *Request)</code>. So it is true if return like this:</p>
-<pre><code>func GetHello() http.HandlerFunc {
-    ...
-    return func(w http.ResponseWriter, r *http.Request) {
-    ...
-    }
-}</code></pre>
 
     </div>
   </article>
@@ -258,7 +285,11 @@ go list -m all # liet ke het package minh
     </div>
 
     <div id="toc-footer" style="display: none">
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#variables">Variables</a></li>
+  </ul>
+</nav>
     </div>
 
     <div id="share-footer" style="display: none">
@@ -270,57 +301,57 @@ go list -m all # liet ke het package minh
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&text=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&text=Go%20Cheatsheets">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&title=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&title=Go%20Cheatsheets">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&is_video=false&description=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&is_video=false&description=Go%20Cheatsheets">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=03%20-%20Captain%20Code%20-%20Go%20Module&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f">
+    <a class="icon" href="mailto:?subject=Go%20Cheatsheets&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&title=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&title=Go%20Cheatsheets">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&title=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&title=Go%20Cheatsheets">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&title=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&title=Go%20Cheatsheets">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&title=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&title=Go%20Cheatsheets">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&name=03%20-%20Captain%20Code%20-%20Go%20Module&description=Go%20get%20trong%20GOPATH%20th%c3%ac%20c%c3%a0i%20v%c3%a0o%20GOPATH%20v%c3%a0%20c%e1%ba%a3%20binary%0ago%20mod%20tidy%20%23%20don%20dep%20thu%20vien%20khong%20dung%20go%20mod%20why%20%23%20why%20do%20i%20need%20this%20go%20mod%20download%20%23%20download%20nhugn%20thang%20trong%20require%20go%20mod%20get%20.%2f...%20%23%20kiem%20tra%20tat%20ca%20file%20cua%20ban%20roi%20download%20go%20list%20-m%20all%20%23%20liet%20ke%20het%20package%20minh%20%20%20Import%20package%2c%20khong%20import%20file%20rieng%20le%20%20HandlerFunc%20has%20signature%3a%20func%28ResponseWriter%2c%20%2aRequest%29.">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&name=Go%20Cheatsheets&description=Variables%20%20%20Variable%20declaration%3a%0avar%20foo%20int%20var%20foo%20int%20%3d%2042%20foo%20%3a%3d%2023%20%20Note%3a%20foo%20%3a%3d%2023%20is%20short-form%20declaration%2c%20which%20can%20be%20valid%20in%20block%20scope.%0a%20%20Can%26rsquo%3bt%20redeclare%20variables%2c%20but%20can%20shadow%20them%3a%0apackage%20main%20...%20var%20foo%20int%20%3d%201%20func%20main%28%29%20%7b%20var%20foo%20int%20%3d%202%20fmt.Println%28foo%29%20%7d%20%23%20Output%3a%202%20%20%20%20All%20variables%20must%20be%20used%2c%20if%20not%20then%20the%20compiler%20will%20throw%20an%20error.">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2f03-captain-code-go-module%2f&t=03%20-%20Captain%20Code%20-%20Go%20Module">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgo-cheatsheets%2f&t=Go%20Cheatsheets">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

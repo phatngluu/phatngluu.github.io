@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Phat Nguyen Luu</copyright>
-    <lastBuildDate>Tue, 15 Sep 2020 12:33:18 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Sep 2020 04:22:52 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go Cheatsheets</title>
+      <link>https://phatngluu.github.io/posts/golang/go-cheatsheets/</link>
+      <pubDate>Thu, 17 Sep 2020 04:22:52 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/golang/go-cheatsheets/</guid>
+      <description>Variables   Variable declaration:
+var foo int var foo int = 42 foo := 23  Note: foo := 23 is short-form declaration, which can be valid in block scope.
+  Can&amp;rsquo;t redeclare variables, but can shadow them:
+package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) } # Output: 2    All variables must be used, if not then the compiler will throw an error.</description>
+    </item>
+    
     <item>
       <title>03 - Captain Code - Go Module</title>
       <link>https://phatngluu.github.io/posts/golang/03-captain-code-go-module/</link>
