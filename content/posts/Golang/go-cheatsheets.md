@@ -41,3 +41,27 @@ title = "Go Cheatsheets"
       var i int = 3
       var f float32 = float32(i) # convert int to float32
       var s string = strconv.Itoa(i) # convert int to string
+
+  ## Primitives
+
+      int8:  [-2^7, 2^7 - 1]
+      int16: [-2^15, 2^15 - 1]
+      int32: [-2^31, 2^31 - 1]
+      int64: [-2^63, 2^63 - 1]
+      
+      uint8: [0, 2^16 - 1]
+      uint16: [0, 2^32 - 1]
+      uint32: [0, 2^64 - 1]
+      
+      float32: []
+      float64: []
+
+  ### String
+  * Cannot reassign an element of a string
+
+        s := "This is a string"
+        s[2] = "u"
+  * Concatenate:
+
+        var s string = "This is "
+        s = s + "a string"
