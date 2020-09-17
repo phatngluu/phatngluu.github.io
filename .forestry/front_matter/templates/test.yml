@@ -52,6 +52,7 @@ pages:
 - content/posts/Golang/basic-03-install-your-go-application-on-your-machine.md
 - content/posts/Golang/basic-05-for-if-else-switch-and-defer.md
 - content/posts/Golang/basic-package-module.md
+- content/posts/Golang/go-cheatsheets.md
 - content/posts/Golang/gopath-explained.md
 - content/posts/Hibernate/01.md
 - content/posts/Hibernate/03.md
