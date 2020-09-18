@@ -169,6 +169,7 @@ package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) 
       <ul>
         <li><a href="#primitives">Primitives</a>
           <ul>
+            <li><a href="#float-point-declaration">Float point declaration</a></li>
             <li><a href="#string">String</a></li>
           </ul>
         </li>
@@ -269,8 +270,13 @@ uint8: [0, 2^16 - 1]
 uint16: [0, 2^32 - 1]
 uint32: [0, 2^64 - 1]
   
-float32: []
-float64: []
+float32: [-3.4E38, -1.18E-38] U [1.18E-38, 3.4E38]
+float64: [-1.8E308, -2.23E-308] U [2.23E-308, 1.8E308]
+</code></pre>
+<h3 id="float-point-declaration">Float point declaration</h3>
+<pre><code>n := 3.14
+n = 13.7e72
+n = 2.1E-14
 </code></pre>
 <h3 id="string">String</h3>
 <ul>
@@ -327,6 +333,7 @@ s = s + &quot;a string&quot;</code></pre>
       <ul>
         <li><a href="#primitives">Primitives</a>
           <ul>
+            <li><a href="#float-point-declaration">Float point declaration</a></li>
             <li><a href="#string">String</a></li>
           </ul>
         </li>
