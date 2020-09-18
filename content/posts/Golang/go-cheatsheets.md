@@ -53,8 +53,14 @@ title = "Go Cheatsheets"
       uint16: [0, 2^32 - 1]
       uint32: [0, 2^64 - 1]
       
-      float32: []
-      float64: []
+      float32: [-3.4E38, -1.18E-38] U [1.18E-38, 3.4E38]
+      float64: [-1.8E308, -2.23E-308] U [2.23E-308, 1.8E308]
+
+  ### Float point declaration
+
+      n := 3.14
+      n = 13.7e72
+      n = 2.1E-14
 
   ### String
   * Cannot reassign an element of a string
