@@ -44,30 +44,43 @@ title = "Go Cheatsheets"
 
   ## Primitives
 
-      int8:  [-2^7, 2^7 - 1]
-      int16: [-2^15, 2^15 - 1]
-      int32: [-2^31, 2^31 - 1]
-      int64: [-2^63, 2^63 - 1]
+  See details: [https://golang.org/pkg/builtin/](https://golang.org/pkg/builtin/ "https://golang.org/pkg/builtin/")
+
+      int  int8  int16  int32  int64
+      uint uint8 uint16 uint32 uint64 uintptr
+      // int, uint, uintptr: 32 bits wide on 32-bit systems and 64 bits wide on 64-bit systems.
       
-      uint8: [0, 2^16 - 1]
-      uint16: [0, 2^32 - 1]
-      uint32: [0, 2^64 - 1]
+      byte // alias for uint8
+      rune // alias for int32, represents a Unicode code point
       
       float32: [-3.4E38, -1.18E-38] U [1.18E-38, 3.4E38]
       float64: [-1.8E308, -2.23E-308] U [2.23E-308, 1.8E308]
 
-  ### Float point declaration
+
+* Float point declaration
 
       n := 3.14
       n = 13.7e72
       n = 2.1E-14
+* Complex number:
 
-  ### String
-  * Cannot reassign an element of a string
+      var n complex64 = 1 + 2i
+      // var n complex64 = complex(1,2)
+      real(n) // return real part (float32)
+      imag(n) // return imagine part (float32)
+      // float64 for complex128
 
-        s := "This is a string"
-        s[2] = "u"
-  * Concatenate:
+### String
 
-        var s string = "This is "
-        s = s + "a string"
+* Cannot reassign an element of a string
+
+      s := "This is a string"
+      s[2] = "u"
+* Concatenate:
+
+      var s string = "This is "
+      s = s + "a string"
+* Byte slices
+
+      s := "This is a string"
+      b = []byte(s)
