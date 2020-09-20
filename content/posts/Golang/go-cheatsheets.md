@@ -136,3 +136,26 @@ See details: [https://golang.org/pkg/builtin/](https://golang.org/pkg/builtin/ "
             _			// 2
             c			// 3
         )
+
+    # Arrays and Slices
+
+    ## Arrays
+    * Declarations:
+
+          grades := [3]int{97, 85, 93}
+          grades2 := [...]int{97, 85, 93}
+          var grades3 [3]int = [3]int{97, 85, 93}
+    * Copy an array:
+      * New array is created (no pointer used):
+
+            a := [...]int{1,2,3}
+            b := a // create new from a and assign to b
+      * Using pointer, no new array is created:
+
+            a := [...]int{1,2,3}
+            b := &a // a,b points to the same array
+
+    ## Slices
+    * Declarations:
+
+          grades := []int{1,2,3}
