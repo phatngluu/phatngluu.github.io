@@ -121,6 +121,18 @@ See details: [https://golang.org/pkg/builtin/](https://golang.org/pkg/builtin/ "
         const (
         	c = iota // 0
         )
-  * Real-life example:
+  * Formular with iota is also inferred:
 
-        
+        const (
+        	a = iota + 5 // 0 + 5
+            b		 // 1 + 5
+            c		 // 2 + 5
+        )
+  * Ignore values of iota:
+
+        const (
+        	_ = iota	// 0
+            a			// 1
+            _			// 2
+            c			// 3
+        )
