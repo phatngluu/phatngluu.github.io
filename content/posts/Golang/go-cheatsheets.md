@@ -86,76 +86,133 @@ See details: [https://golang.org/pkg/builtin/](https://golang.org/pkg/builtin/ "
       s := "This is a string"
       b = []byte(s)
 
-  # Constants
+# Constants
 
-      const a int = 8
-      var b int = 8
-      a + b // success
-      var c int8 = 9
-      a + c // mismatched types error
-      const d = 42 // inferred type: int
-      d + c // d will be replaced by 42 as below
-      42 + c // inferred type int8
+    const a int = 8
+    var b int = 8
+    a + b // success
+    var c int8 = 9
+    a + c // mismatched types error
+    const d = 42 // inferred type: int
+    d + c // d will be replaced by 42 as below
+    42 + c // inferred type int8
 
-  ## Iota
-  * iota is a counter, it increases whenever we specify a new enumeric constant:
+## Iota
 
-        const (
-        	a = iota // 0
-            b = iota // 1
-            c = iota // 2
-        )
-  * iota is inferred:
+* iota is a counter, it increases whenever we specify a new enumeric constant:
 
-        const (
-        	a = iota // 0
-            b		 // 1
-            c		 // 2
-        )
-  * iota resets in a new const block:
+      const (
+      	a = iota // 0
+      	b = iota // 1
+      	c = iota // 2
+      )
+* iota is inferred:
 
-        const (
-        	a = iota // 0
-            b		 // 1
-        )
-        const (
-        	c = iota // 0
-        )
-  * Formular with iota is also inferred:
+      const (
+      	a = iota // 0
+      	b		 // 1
+      	c		 // 2
+      )
+* iota resets in a new const block:
 
-        const (
-        	a = iota + 5 // 0 + 5
-            b		 // 1 + 5
-            c		 // 2 + 5
-        )
-  * Ignore values of iota:
+      const (
+      	a = iota // 0
+      	b		 // 1
+      )
+      const (
+      	c = iota // 0
+      )
+* Formular with iota is also inferred:
 
-        const (
-        	_ = iota	// 0
-            a			// 1
-            _			// 2
-            c			// 3
-        )
+      const (
+      	a = iota + 5 // 0 + 5
+      	b		 // 1 + 5
+      	c		 // 2 + 5
+      )
+* Ignore values of iota:
 
-    # Arrays and Slices
+      const (
+      	_ = iota	// 0
+      	a			// 1
+      	_			// 2
+      	c			// 3
+      )
 
-    ## Arrays
-    * Declarations:
+## Pointers
 
-          grades := [3]int{97, 85, 93}
-          grades2 := [...]int{97, 85, 93}
-          var grades3 [3]int = [3]int{97, 85, 93}
-    * Copy an array:
-      * New array is created (no pointer used):
+* Like C pointer
+* Zero value is `nil`
+* No pointer arithmetic
 
-            a := [...]int{1,2,3}
-            b := a // create new from a and assign to b
-      * Using pointer, no new array is created:
+## Structs
 
-            a := [...]int{1,2,3}
-            b := &a // a,b points to the same array
+A `struct` is a collection of fields.
 
-    ## Slices
-    * Declarations:
+    type Vertex struct {
+    	X int
+    	Y int
+    }
+    v := Vertex{1, 2}
+    v.X = 4
+    fmt.Println(v.X)
 
-          grades := []int{1,2,3}
+Pointer to struct:
+
+    	v := Vertex{1, 2}
+    	p := &v
+    	(*p).X or "cleaner": p.X
+
+Struct literals:
+
+    v1 = Vertex{1, 2}  // {1 2}  
+    v2 = Vertex{X: 1}  // {1 0}
+    v3 = Vertex{}      // {0 0}
+    p  = &Vertex{1, 2} // &{1 2}
+
+## Arrays
+
+* Not resizable.
+
+
+* Declarations - must specify **number** (or `...`) inside `[]`
+
+      var a [3]int = [3]int{1, 2, 3}
+      a := [3]int{1, 2, 3}
+      a := [...]int{1, 2, 3}
+* Copy an array:
+  * New array is created (no pointer used):
+
+        a := [...]int{1,2,3}
+        b := a // create new from a and assign to b
+  * Using pointer, no new array is created:
+
+        a := [...]int{1,2,3}
+        b := &a // a,b points to the same array
+
+## Slices
+
+* Resizable
+
+
+* Declarations - no number inside `[]`
+
+      grades := []int{1,2,3}
+* Sub-array:
+
+      var a [10]int
+      a[1:4] // index 1,2,3
+      a[0:10] == a[:10] == a[0:] == a[:]
+* Facts about slices:
+
+  > _A slice does not store any data, it just describes a section of an underlying array. Changing the elements of a slice modifies the corresponding elements of its underlying array. Other slices that share the same underlying array will see those changes._
+* `len()` and `cap()`
+  * The length of a slice is the number of elements it contains.
+  * The capacity of a slice is the number of elements in the underlying array, counting from the first element in the slice.
+
+        s := []int{2, 3, 5, 7, 11, 13} // len: 6, cap: 6
+        s = s[:4] // len: 4, cap: 6
+* `make()` : allocates a zeroed array and returns a slice that refers to that array.
+
+      a := make([]int, 5)  // len(a)=5
+      b := make([]int, 0, 5) // len(b)=0, cap(b)=5
+* `append()` : The first parameter `s` of `append` is a slice of type `T`, and the rest are `T` values to append to the slice.
