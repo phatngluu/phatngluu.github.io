@@ -352,7 +352,22 @@ const (
 </code></pre>
 </li>
 <li>
-<p>Real-life example:</p>
+<p>Formular with iota is also inferred:</p>
+<pre><code>const (
+    a = iota + 5 // 0 + 5
+    b		 // 1 + 5
+    c		 // 2 + 5
+)
+</code></pre>
+</li>
+<li>
+<p>Ignore values of iota:</p>
+<pre><code>const (
+    _ = iota	// 0
+    a			// 1
+    _			// 2
+    c			// 3
+)</code></pre>
 </li>
 </ul>
 </li>
