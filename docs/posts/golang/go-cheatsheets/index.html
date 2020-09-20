@@ -180,10 +180,8 @@ package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) 
     <li><a href="#constants">Constants</a>
       <ul>
         <li><a href="#iota">Iota</a></li>
-      </ul>
-    </li>
-    <li><a href="#arrays-and-slices">Arrays and Slices</a>
-      <ul>
+        <li><a href="#pointers">Pointers</a></li>
+        <li><a href="#structs">Structs</a></li>
         <li><a href="#arrays">Arrays</a></li>
         <li><a href="#slices">Slices</a></li>
       </ul>
@@ -316,6 +314,8 @@ s = s + &quot;a string&quot;
 <pre><code>s := &quot;This is a string&quot;
 b = []byte(s)
 </code></pre>
+</li>
+</ul>
 <h1 id="constants">Constants</h1>
 <pre><code>const a int = 8
 var b int = 8
@@ -331,58 +331,89 @@ d + c // d will be replaced by 42 as below
 <li>
 <p>iota is a counter, it increases whenever we specify a new enumeric constant:</p>
 <pre><code>const (
-    a = iota // 0
-    b = iota // 1
-    c = iota // 2
+  a = iota // 0
+  b = iota // 1
+  c = iota // 2
 )
 </code></pre>
 </li>
 <li>
 <p>iota is inferred:</p>
 <pre><code>const (
-    a = iota // 0
-    b		 // 1
-    c		 // 2
+  a = iota // 0
+  b		 // 1
+  c		 // 2
 )
 </code></pre>
 </li>
 <li>
 <p>iota resets in a new const block:</p>
 <pre><code>const (
-    a = iota // 0
-    b		 // 1
+  a = iota // 0
+  b		 // 1
 )
 const (
-    c = iota // 0
+  c = iota // 0
 )
 </code></pre>
 </li>
 <li>
 <p>Formular with iota is also inferred:</p>
 <pre><code>const (
-    a = iota + 5 // 0 + 5
-    b		 // 1 + 5
-    c		 // 2 + 5
+  a = iota + 5 // 0 + 5
+  b		 // 1 + 5
+  c		 // 2 + 5
 )
 </code></pre>
 </li>
 <li>
 <p>Ignore values of iota:</p>
 <pre><code>const (
-    _ = iota	// 0
-    a			// 1
-    _			// 2
-    c			// 3
+  _ = iota	// 0
+  a			// 1
+  _			// 2
+  c			// 3
 )
 </code></pre>
-<h1 id="arrays-and-slices">Arrays and Slices</h1>
+</li>
+</ul>
+<h2 id="pointers">Pointers</h2>
+<ul>
+<li>Like C pointer</li>
+<li>Zero value is <code>nil</code></li>
+<li>No pointer arithmetic</li>
+</ul>
+<h2 id="structs">Structs</h2>
+<p>A <code>struct</code> is a collection of fields.</p>
+<pre><code>type Vertex struct {
+    X int
+    Y int
+}
+v := Vertex{1, 2}
+v.X = 4
+fmt.Println(v.X)
+</code></pre>
+<p>Pointer to struct:</p>
+<pre><code>    v := Vertex{1, 2}
+    p := &amp;v
+    (*p).X or &quot;cleaner&quot;: p.X
+</code></pre>
+<p>Struct literals:</p>
+<pre><code>v1 = Vertex{1, 2}  // {1 2}  
+v2 = Vertex{X: 1}  // {1 0}
+v3 = Vertex{}      // {0 0}
+p  = &amp;Vertex{1, 2} // &amp;{1 2}
+</code></pre>
 <h2 id="arrays">Arrays</h2>
 <ul>
 <li>
-<p>Declarations:</p>
-<pre><code>grades := [3]int{97, 85, 93}
-grades2 := [...]int{97, 85, 93}
-var grades3 [3]int = [3]int{97, 85, 93}
+<p>Not resizable.</p>
+</li>
+<li>
+<p>Declarations - must specify <strong>number</strong> (or <code>...</code>) inside <code>[]</code></p>
+<pre><code>var a [3]int = [3]int{1, 2, 3}
+a := [3]int{1, 2, 3}
+a := [...]int{1, 2, 3}
 </code></pre>
 </li>
 <li>
@@ -406,12 +437,48 @@ b := &amp;a // a,b points to the same array
 <h2 id="slices">Slices</h2>
 <ul>
 <li>
-<p>Declarations:</p>
-<pre><code>grades := []int{1,2,3}</code></pre>
+<p>Resizable</p>
+</li>
+<li>
+<p>Declarations - no number inside <code>[]</code></p>
+<pre><code>grades := []int{1,2,3}
+</code></pre>
+</li>
+<li>
+<p>Sub-array:</p>
+<pre><code>var a [10]int
+a[1:4] // index 1,2,3
+a[0:10] == a[:10] == a[0:] == a[:]
+</code></pre>
+</li>
+<li>
+<p>Facts about slices:</p>
+<blockquote>
+<p><em>A slice does not store any data, it just describes a section of an underlying array. Changing the elements of a slice modifies the corresponding elements of its underlying array. Other slices that share the same underlying array will see those changes.</em></p>
+</blockquote>
+</li>
+<li>
+<p><code>len()</code> and <code>cap()</code></p>
+<ul>
+<li>
+<p>The length of a slice is the number of elements it contains.</p>
+</li>
+<li>
+<p>The capacity of a slice is the number of elements in the underlying array, counting from the first element in the slice.</p>
+<pre><code>s := []int{2, 3, 5, 7, 11, 13} // len: 6, cap: 6
+s = s[:4] // len: 4, cap: 6
+</code></pre>
 </li>
 </ul>
 </li>
-</ul>
+<li>
+<p><code>make()</code> : allocates a zeroed array and returns a slice that refers to that array.</p>
+<pre><code>a := make([]int, 5)  // len(a)=5
+b := make([]int, 0, 5) // len(b)=0, cap(b)=5
+</code></pre>
+</li>
+<li>
+<p><code>append()</code> : The first parameter <code>s</code> of <code>append</code> is a slice of type <code>T</code>, and the rest are <code>T</code> values to append to the slice.</p>
 </li>
 </ul>
 
@@ -464,10 +531,8 @@ b := &amp;a // a,b points to the same array
     <li><a href="#constants">Constants</a>
       <ul>
         <li><a href="#iota">Iota</a></li>
-      </ul>
-    </li>
-    <li><a href="#arrays-and-slices">Arrays and Slices</a>
-      <ul>
+        <li><a href="#pointers">Pointers</a></li>
+        <li><a href="#structs">Structs</a></li>
         <li><a href="#arrays">Arrays</a></li>
         <li><a href="#slices">Slices</a></li>
       </ul>
