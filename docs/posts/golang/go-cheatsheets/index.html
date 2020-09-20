@@ -182,6 +182,12 @@ package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) 
         <li><a href="#iota">Iota</a></li>
       </ul>
     </li>
+    <li><a href="#arrays-and-slices">Arrays and Slices</a>
+      <ul>
+        <li><a href="#arrays">Arrays</a></li>
+        <li><a href="#slices">Slices</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -367,7 +373,43 @@ const (
     a			// 1
     _			// 2
     c			// 3
-)</code></pre>
+)
+</code></pre>
+<h1 id="arrays-and-slices">Arrays and Slices</h1>
+<h2 id="arrays">Arrays</h2>
+<ul>
+<li>
+<p>Declarations:</p>
+<pre><code>grades := [3]int{97, 85, 93}
+grades2 := [...]int{97, 85, 93}
+var grades3 [3]int = [3]int{97, 85, 93}
+</code></pre>
+</li>
+<li>
+<p>Copy an array:</p>
+<ul>
+<li>
+<p>New array is created (no pointer used):</p>
+<pre><code>a := [...]int{1,2,3}
+b := a // create new from a and assign to b
+</code></pre>
+</li>
+<li>
+<p>Using pointer, no new array is created:</p>
+<pre><code>a := [...]int{1,2,3}
+b := &amp;a // a,b points to the same array
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="slices">Slices</h2>
+<ul>
+<li>
+<p>Declarations:</p>
+<pre><code>grades := []int{1,2,3}</code></pre>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -422,6 +464,12 @@ const (
     <li><a href="#constants">Constants</a>
       <ul>
         <li><a href="#iota">Iota</a></li>
+      </ul>
+    </li>
+    <li><a href="#arrays-and-slices">Arrays and Slices</a>
+      <ul>
+        <li><a href="#arrays">Arrays</a></li>
+        <li><a href="#slices">Slices</a></li>
       </ul>
     </li>
   </ul>
