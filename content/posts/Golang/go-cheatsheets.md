@@ -138,13 +138,13 @@ See details: [https://golang.org/pkg/builtin/](https://golang.org/pkg/builtin/ "
       	c			// 3
       )
 
-## Pointers
+# Pointers
 
 * Like C pointer
 * Zero value is `nil`
 * No pointer arithmetic
 
-## Structs
+# Structs
 
 A `struct` is a collection of fields.
 
@@ -169,11 +169,11 @@ Struct literals:
     v3 = Vertex{}      // {0 0}
     p  = &Vertex{1, 2} // &{1 2}
 
-## Arrays
+## Arrays & Slices
+
+### Arrays
 
 * Not resizable.
-
-
 * Declarations - must specify **number** (or `...`) inside `[]`
 
       var a [3]int = [3]int{1, 2, 3}
@@ -189,11 +189,9 @@ Struct literals:
         a := [...]int{1,2,3}
         b := &a // a,b points to the same array
 
-## Slices
+### Slices
 
 * Resizable
-
-
 * Declarations - no number inside `[]`
 
       grades := []int{1,2,3}
@@ -216,3 +214,11 @@ Struct literals:
       a := make([]int, 5)  // len(a)=5
       b := make([]int, 0, 5) // len(b)=0, cap(b)=5
 * `append()` : The first parameter `s` of `append` is a slice of type `T`, and the rest are `T` values to append to the slice.
+
+## `Range` - Looping thru arrays and slices
+
+    var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
+    for i, v := range pow {...}
+    for i, _ := range pow {...}
+    for i := range pow {...}
+    for _, v := range pow {...}
