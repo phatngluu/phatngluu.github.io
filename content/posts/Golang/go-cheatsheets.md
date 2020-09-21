@@ -169,9 +169,9 @@ Struct literals:
     v3 = Vertex{}      // {0 0}
     p  = &Vertex{1, 2} // &{1 2}
 
-## Arrays, Slices & Maps
+# Arrays, Slices & Maps
 
-### Arrays
+## Arrays
 
 * Not resizable.
 * Declarations - must specify **number** (or `...`) inside `[]`
@@ -189,7 +189,7 @@ Struct literals:
         a := [...]int{1,2,3}
         b := &a // a,b points to the same array
 
-### Slices
+## Slices
 
 * Resizable
 * Declarations - no number inside `[]`
