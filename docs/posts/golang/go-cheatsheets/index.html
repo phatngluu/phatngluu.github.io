@@ -185,13 +185,14 @@ package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) 
     <li><a href="#pointers">Pointers</a></li>
     <li><a href="#structs">Structs</a>
       <ul>
-        <li><a href="#arrays--slices">Arrays &amp; Slices</a>
+        <li><a href="#arrays-slices--maps">Arrays, Slices &amp; Maps</a>
           <ul>
             <li><a href="#arrays">Arrays</a></li>
             <li><a href="#slices">Slices</a></li>
+            <li><a href="#range---looping-thru-arrays-and-slices"><code>Range</code> - Looping thru arrays and slices</a></li>
           </ul>
         </li>
-        <li><a href="#range---looping-thru-arrays-and-slices"><code>Range</code> - Looping thru arrays and slices</a></li>
+        <li><a href="#maps">Maps</a></li>
       </ul>
     </li>
   </ul>
@@ -412,7 +413,7 @@ v2 = Vertex{X: 1}  // {1 0}
 v3 = Vertex{}      // {0 0}
 p  = &amp;Vertex{1, 2} // &amp;{1 2}
 </code></pre>
-<h2 id="arrays--slices">Arrays &amp; Slices</h2>
+<h2 id="arrays-slices--maps">Arrays, Slices &amp; Maps</h2>
 <h3 id="arrays">Arrays</h3>
 <ul>
 <li>
@@ -490,12 +491,55 @@ b := make([]int, 0, 5) // len(b)=0, cap(b)=5
 <p><code>append()</code> : The first parameter <code>s</code> of <code>append</code> is a slice of type <code>T</code>, and the rest are <code>T</code> values to append to the slice.</p>
 </li>
 </ul>
-<h2 id="range---looping-thru-arrays-and-slices"><code>Range</code> - Looping thru arrays and slices</h2>
+<h3 id="range---looping-thru-arrays-and-slices"><code>Range</code> - Looping thru arrays and slices</h3>
 <pre><code>var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
 for i, v := range pow {...}
 for i, _ := range pow {...}
 for i := range pow {...}
-for _, v := range pow {...}</code></pre>
+for _, v := range pow {...}
+</code></pre>
+<h2 id="maps">Maps</h2>
+<ul>
+<li>
+<p>Basic usage:</p>
+<pre><code>type Vertex struct {
+  Lat, Long float64
+}
+var m map[string]Vertex = make(map[string]Vertex)
+m[&quot;Bell Labs&quot;] = Vertex{40.68433, -74.39967}
+</code></pre>
+</li>
+<li>
+<p>Map literals:</p>
+<pre><code>var m = map[string]Vertex{
+  &quot;Bell Labs&quot;: Vertex{
+      40.68433, -74.39967,
+  },
+  &quot;Google&quot;: Vertex{
+      37.42202, -122.08408,
+  },
+}
+// Shorter
+var m = map[string]Vertex{
+  &quot;Bell Labs&quot;: {40.68433, -74.39967},
+  &quot;Google&quot;:    {37.42202, -122.08408},
+}
+</code></pre>
+</li>
+<li>
+<p>Mutaing maps:</p>
+<pre><code>// Insert or update
+m[key] = elem
+// Retrieve an element
+elem = m[key]
+// Delete an element
+delete(m, key)
+// Contain key?
+elem, ok := m[key]
+</code></pre>
+<p><strong>Note:</strong> If <code>key</code> is in <code>m</code>, <code>ok</code> is <code>true</code>. If not, <code>ok</code> is <code>false</code>. If <code>key</code> is not in the map, then <code>elem</code> is the zero value for the map&rsquo;s element type.</p>
+</li>
+</ul>
 
     </div>
   </article>
@@ -551,13 +595,14 @@ for _, v := range pow {...}</code></pre>
     <li><a href="#pointers">Pointers</a></li>
     <li><a href="#structs">Structs</a>
       <ul>
-        <li><a href="#arrays--slices">Arrays &amp; Slices</a>
+        <li><a href="#arrays-slices--maps">Arrays, Slices &amp; Maps</a>
           <ul>
             <li><a href="#arrays">Arrays</a></li>
             <li><a href="#slices">Slices</a></li>
+            <li><a href="#range---looping-thru-arrays-and-slices"><code>Range</code> - Looping thru arrays and slices</a></li>
           </ul>
         </li>
-        <li><a href="#range---looping-thru-arrays-and-slices"><code>Range</code> - Looping thru arrays and slices</a></li>
+        <li><a href="#maps">Maps</a></li>
       </ul>
     </li>
   </ul>
