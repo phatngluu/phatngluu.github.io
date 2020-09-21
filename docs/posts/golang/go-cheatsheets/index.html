@@ -180,10 +180,18 @@ package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) 
     <li><a href="#constants">Constants</a>
       <ul>
         <li><a href="#iota">Iota</a></li>
-        <li><a href="#pointers">Pointers</a></li>
-        <li><a href="#structs">Structs</a></li>
-        <li><a href="#arrays">Arrays</a></li>
-        <li><a href="#slices">Slices</a></li>
+      </ul>
+    </li>
+    <li><a href="#pointers">Pointers</a></li>
+    <li><a href="#structs">Structs</a>
+      <ul>
+        <li><a href="#arrays--slices">Arrays &amp; Slices</a>
+          <ul>
+            <li><a href="#arrays">Arrays</a></li>
+            <li><a href="#slices">Slices</a></li>
+          </ul>
+        </li>
+        <li><a href="#range---looping-thru-arrays-and-slices"><code>Range</code> - Looping thru arrays and slices</a></li>
       </ul>
     </li>
   </ul>
@@ -377,13 +385,13 @@ const (
 </code></pre>
 </li>
 </ul>
-<h2 id="pointers">Pointers</h2>
+<h1 id="pointers">Pointers</h1>
 <ul>
 <li>Like C pointer</li>
 <li>Zero value is <code>nil</code></li>
 <li>No pointer arithmetic</li>
 </ul>
-<h2 id="structs">Structs</h2>
+<h1 id="structs">Structs</h1>
 <p>A <code>struct</code> is a collection of fields.</p>
 <pre><code>type Vertex struct {
     X int
@@ -404,7 +412,8 @@ v2 = Vertex{X: 1}  // {1 0}
 v3 = Vertex{}      // {0 0}
 p  = &amp;Vertex{1, 2} // &amp;{1 2}
 </code></pre>
-<h2 id="arrays">Arrays</h2>
+<h2 id="arrays--slices">Arrays &amp; Slices</h2>
+<h3 id="arrays">Arrays</h3>
 <ul>
 <li>
 <p>Not resizable.</p>
@@ -434,7 +443,7 @@ b := &amp;a // a,b points to the same array
 </ul>
 </li>
 </ul>
-<h2 id="slices">Slices</h2>
+<h3 id="slices">Slices</h3>
 <ul>
 <li>
 <p>Resizable</p>
@@ -481,6 +490,12 @@ b := make([]int, 0, 5) // len(b)=0, cap(b)=5
 <p><code>append()</code> : The first parameter <code>s</code> of <code>append</code> is a slice of type <code>T</code>, and the rest are <code>T</code> values to append to the slice.</p>
 </li>
 </ul>
+<h2 id="range---looping-thru-arrays-and-slices"><code>Range</code> - Looping thru arrays and slices</h2>
+<pre><code>var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
+for i, v := range pow {...}
+for i, _ := range pow {...}
+for i := range pow {...}
+for _, v := range pow {...}</code></pre>
 
     </div>
   </article>
@@ -531,10 +546,18 @@ b := make([]int, 0, 5) // len(b)=0, cap(b)=5
     <li><a href="#constants">Constants</a>
       <ul>
         <li><a href="#iota">Iota</a></li>
-        <li><a href="#pointers">Pointers</a></li>
-        <li><a href="#structs">Structs</a></li>
-        <li><a href="#arrays">Arrays</a></li>
-        <li><a href="#slices">Slices</a></li>
+      </ul>
+    </li>
+    <li><a href="#pointers">Pointers</a></li>
+    <li><a href="#structs">Structs</a>
+      <ul>
+        <li><a href="#arrays--slices">Arrays &amp; Slices</a>
+          <ul>
+            <li><a href="#arrays">Arrays</a></li>
+            <li><a href="#slices">Slices</a></li>
+          </ul>
+        </li>
+        <li><a href="#range---looping-thru-arrays-and-slices"><code>Range</code> - Looping thru arrays and slices</a></li>
       </ul>
     </li>
   </ul>
