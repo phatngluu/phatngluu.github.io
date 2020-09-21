@@ -195,6 +195,7 @@ package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) 
         <li><a href="#maps">Maps</a></li>
       </ul>
     </li>
+    <li><a href="#functions">Functions</a></li>
   </ul>
 </nav>
     </div>
@@ -540,6 +541,27 @@ elem, ok := m[key]
 <p><strong>Note:</strong> If <code>key</code> is in <code>m</code>, <code>ok</code> is <code>true</code>. If not, <code>ok</code> is <code>false</code>. If <code>key</code> is not in the map, then <code>elem</code> is the zero value for the map&rsquo;s element type.</p>
 </li>
 </ul>
+<h1 id="functions">Functions</h1>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;math&quot;
+)
+
+func compute(fn func(float64, float64) float64) float64 {
+    return fn(3, 4)
+}
+
+func main() {
+    hypot := func(x, y float64) float64 {
+        return math.Sqrt(x*x + y*y)
+    }
+    fmt.Println(hypot(3, 4))
+
+    fmt.Println(compute(hypot))
+    fmt.Println(compute(math.Pow))
+}</code></pre>
 
     </div>
   </article>
@@ -605,6 +627,7 @@ elem, ok := m[key]
         <li><a href="#maps">Maps</a></li>
       </ul>
     </li>
+    <li><a href="#functions">Functions</a></li>
   </ul>
 </nav>
     </div>
