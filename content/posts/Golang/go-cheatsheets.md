@@ -169,7 +169,7 @@ Struct literals:
     v3 = Vertex{}      // {0 0}
     p  = &Vertex{1, 2} // &{1 2}
 
-## Arrays & Slices
+## Arrays, Slices & Maps
 
 ### Arrays
 
@@ -215,10 +215,47 @@ Struct literals:
       b := make([]int, 0, 5) // len(b)=0, cap(b)=5
 * `append()` : The first parameter `s` of `append` is a slice of type `T`, and the rest are `T` values to append to the slice.
 
-## `Range` - Looping thru arrays and slices
+### `Range` - Looping thru arrays and slices
 
     var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
     for i, v := range pow {...}
     for i, _ := range pow {...}
     for i := range pow {...}
     for _, v := range pow {...}
+
+## Maps
+
+* Basic usage:
+
+      type Vertex struct {
+      	Lat, Long float64
+      }
+      var m map[string]Vertex = make(map[string]Vertex)
+      m["Bell Labs"] = Vertex{40.68433, -74.39967}
+* Map literals:
+
+      var m = map[string]Vertex{
+      	"Bell Labs": Vertex{
+      		40.68433, -74.39967,
+      	},
+      	"Google": Vertex{
+      		37.42202, -122.08408,
+      	},
+      }
+      // Shorter
+      var m = map[string]Vertex{
+      	"Bell Labs": {40.68433, -74.39967},
+      	"Google":    {37.42202, -122.08408},
+      }
+* Mutaing maps:
+
+      // Insert or update
+      m[key] = elem
+      // Retrieve an element
+      elem = m[key]
+      // Delete an element
+      delete(m, key)
+      // Contain key?
+      elem, ok := m[key]
+
+  **Note:** If `key` is in `m`, `ok` is `true`. If not, `ok` is `false`. If `key` is not in the map, then `elem` is the zero value for the map's element type.
