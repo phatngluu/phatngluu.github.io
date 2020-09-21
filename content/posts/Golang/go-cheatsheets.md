@@ -259,3 +259,26 @@ Struct literals:
       elem, ok := m[key]
 
   **Note:** If `key` is in `m`, `ok` is `true`. If not, `ok` is `false`. If `key` is not in the map, then `elem` is the zero value for the map's element type.
+
+# Functions
+
+    package main
+    
+    import (
+    	"fmt"
+    	"math"
+    )
+    
+    func compute(fn func(float64, float64) float64) float64 {
+    	return fn(3, 4)
+    }
+    
+    func main() {
+    	hypot := func(x, y float64) float64 {
+    		return math.Sqrt(x*x + y*y)
+    	}
+    	fmt.Println(hypot(3, 4))
+    
+    	fmt.Println(compute(hypot))
+    	fmt.Println(compute(math.Pow))
+    }
