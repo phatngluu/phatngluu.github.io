@@ -15,8 +15,8 @@ var foo int var foo int = 42 foo := 23  Note: foo := 23 is short-form declaratio
 package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) } # Output: 2    All variables must be used, if not then the compiler will throw an error." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://phatngluu.github.io/posts/golang/go-cheatsheets/" />
-<meta property="article:published_time" content="2020-09-17T04:22:52+00:00" />
-<meta property="article:modified_time" content="2020-09-17T04:22:52+00:00" />
+<meta property="article:published_time" content="2020-09-21T04:22:52+00:00" />
+<meta property="article:modified_time" content="2020-09-21T04:22:52+00:00" />
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Go Cheatsheets"/>
@@ -212,7 +212,7 @@ package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) 
         
         <div class="postdate">
           
-          <time datetime="2020-09-17 04:22:52 &#43;0000 UTC" itemprop="datePublished">2020-09-17</time>
+          <time datetime="2020-09-21 04:22:52 &#43;0000 UTC" itemprop="datePublished">2020-09-21</time>
           
         </div>
         
@@ -542,26 +542,44 @@ elem, ok := m[key]
 </li>
 </ul>
 <h1 id="functions">Functions</h1>
-<pre><code>package main
-
-import (
-    &quot;fmt&quot;
-    &quot;math&quot;
-)
-
-func compute(fn func(float64, float64) float64) float64 {
-    return fn(3, 4)
-}
-
-func main() {
+<ul>
+<li>
+<p>Functions can be passed around just like other values:</p>
+<ul>
+<li>
+<p>Function values may be used as function arguments (1) and return values (2):</p>
+<p><img src="https://phatngluu.github.io/static/uploads/untitled.png" alt=""></p>
+<pre><code>func main() {
     hypot := func(x, y float64) float64 {
         return math.Sqrt(x*x + y*y)
     }
-    fmt.Println(hypot(3, 4))
-
     fmt.Println(compute(hypot))
     fmt.Println(compute(math.Pow))
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><em>A closure is a function value that <strong>references variables from outside its body.</strong> The function may access and assign to the referenced variables =&gt; function is &ldquo;bound&rdquo; to the variables.</em> For example, the <code>adder</code> function returns a closure. Each closure is bound to its own <code>sum</code> variable.</p>
+<pre><code>func adder() func(int) int {
+  sum := 0
+  return func(x int) int {
+      sum += x
+      return sum
+  }
+}
+func main() {
+  pos, neg := adder(), adder()
+  for i := 0; i &lt; 10; i++ {
+      fmt.Println(
+          pos(i),
+          neg(-2*i),
+      )
+  }
 }</code></pre>
+</li>
+</ul>
 
     </div>
   </article>
