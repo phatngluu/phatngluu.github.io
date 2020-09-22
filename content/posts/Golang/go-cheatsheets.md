@@ -1,6 +1,6 @@
 +++
 categories = ["golang"]
-date = 2020-09-17T04:22:52Z
+date = 2020-09-21T04:22:52Z
 layout = ""
 tags = ["golang"]
 title = "Go Cheatsheets"
@@ -262,23 +262,33 @@ Struct literals:
 
 # Functions
 
-    package main
-    
-    import (
-    	"fmt"
-    	"math"
-    )
-    
-    func compute(fn func(float64, float64) float64) float64 {
-    	return fn(3, 4)
-    }
-    
-    func main() {
-    	hypot := func(x, y float64) float64 {
-    		return math.Sqrt(x*x + y*y)
-    	}
-    	fmt.Println(hypot(3, 4))
-    
-    	fmt.Println(compute(hypot))
-    	fmt.Println(compute(math.Pow))
-    }
+* Functions can be passed around just like other values:
+  * Function values may be used as function arguments (1) and return values (2):
+
+    ![](/static/uploads/untitled.png)
+
+        func main() {
+        	hypot := func(x, y float64) float64 {
+        		return math.Sqrt(x*x + y*y)
+        	}
+        	fmt.Println(compute(hypot))
+        	fmt.Println(compute(math.Pow))
+        }
+* _A closure is a function value that **references variables from outside its body.** The function may access and assign to the referenced variables => function is "bound" to the variables._ For example, the `adder` function returns a closure. Each closure is bound to its own `sum` variable.
+
+      func adder() func(int) int {
+      	sum := 0
+      	return func(x int) int {
+      		sum += x
+      		return sum
+      	}
+      }
+      func main() {
+      	pos, neg := adder(), adder()
+      	for i := 0; i < 10; i++ {
+      		fmt.Println(
+      			pos(i),
+      			neg(-2*i),
+      		)
+      	}
+      }
