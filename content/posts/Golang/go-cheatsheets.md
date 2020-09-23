@@ -274,21 +274,40 @@ Struct literals:
         	fmt.Println(compute(hypot))
         	fmt.Println(compute(math.Pow))
         }
-* _A closure is a function value that **references variables from outside its body.** The function may access and assign to the referenced variables => function is "bound" to the variables._ For example, the `adder` function returns a closure. Each closure is bound to its own `sum` variable.
 
-      func adder() func(int) int {
-      	sum := 0
-      	return func(x int) int {
-      		sum += x
-      		return sum
-      	}
+_A closure is a function value that **references variables from outside its body.** The function may access and assign to the referenced variables => function is "bound" to the variables._ For example, the `adder` function returns a closure. Each closure is bound to its own `sum` variable.
+
+    func adder() func(int) int {
+    	sum := 0
+    	return func(x int) int {
+    		sum += x
+    		return sum
+    	}
+    }
+    func main() {
+    	pos, neg := adder(), adder()
+    	for i := 0; i < 10; i++ {
+    		fmt.Println(
+    			pos(i),
+    			neg(-2*i),
+    		)
+    	}
+    }
+
+# Methods
+
+Go does not have classes. However, you can define methods on types. In this example, the `Abs` method has a receiver of type `Vertex` named `v`
+
+    func (v Vertex) Abs() float64 {
+        return math.Sqrt(v.Xv.X + v.Yv.Y)
+    }
+
+You can declare a method on non-struct types, too.
+
+    type MyFloat float64
+    func (f MyFloat) Abs() float64 {
+      if f < 0 {
+        return float64(-f)
       }
-      func main() {
-      	pos, neg := adder(), adder()
-      	for i := 0; i < 10; i++ {
-      		fmt.Println(
-      			pos(i),
-      			neg(-2*i),
-      		)
-      	}
-      }
+      return float64(f)
+    }
