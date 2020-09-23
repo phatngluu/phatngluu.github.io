@@ -196,6 +196,7 @@ package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) 
       </ul>
     </li>
     <li><a href="#functions">Functions</a></li>
+    <li><a href="#methods">Methods</a></li>
   </ul>
 </nav>
     </div>
@@ -543,8 +544,7 @@ elem, ok := m[key]
 </ul>
 <h1 id="functions">Functions</h1>
 <ul>
-<li>
-<p>Functions can be passed around just like other values:</p>
+<li>Functions can be passed around just like other values:
 <ul>
 <li>
 <p>Function values may be used as function arguments (1) and return values (2):</p>
@@ -560,26 +560,39 @@ elem, ok := m[key]
 </li>
 </ul>
 </li>
-<li>
+</ul>
 <p><em>A closure is a function value that <strong>references variables from outside its body.</strong> The function may access and assign to the referenced variables =&gt; function is &ldquo;bound&rdquo; to the variables.</em> For example, the <code>adder</code> function returns a closure. Each closure is bound to its own <code>sum</code> variable.</p>
 <pre><code>func adder() func(int) int {
-  sum := 0
-  return func(x int) int {
-      sum += x
-      return sum
-  }
+    sum := 0
+    return func(x int) int {
+        sum += x
+        return sum
+    }
 }
 func main() {
-  pos, neg := adder(), adder()
-  for i := 0; i &lt; 10; i++ {
-      fmt.Println(
-          pos(i),
-          neg(-2*i),
-      )
+    pos, neg := adder(), adder()
+    for i := 0; i &lt; 10; i++ {
+        fmt.Println(
+            pos(i),
+            neg(-2*i),
+        )
+    }
+}
+</code></pre>
+<h1 id="methods">Methods</h1>
+<p>Go does not have classes. However, you can define methods on types. In this example, the <code>Abs</code> method has a receiver of type <code>Vertex</code> named <code>v</code></p>
+<pre><code>func (v Vertex) Abs() float64 {
+    return math.Sqrt(v.Xv.X + v.Yv.Y)
+}
+</code></pre>
+<p>You can declare a method on non-struct types, too.</p>
+<pre><code>type MyFloat float64
+func (f MyFloat) Abs() float64 {
+  if f &lt; 0 {
+    return float64(-f)
   }
+  return float64(f)
 }</code></pre>
-</li>
-</ul>
 
     </div>
   </article>
@@ -646,6 +659,7 @@ func main() {
       </ul>
     </li>
     <li><a href="#functions">Functions</a></li>
+    <li><a href="#methods">Methods</a></li>
   </ul>
 </nav>
     </div>
