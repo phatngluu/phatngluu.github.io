@@ -12,8 +12,8 @@
 <meta property="og:description" content="What things you can do with Go keyword type? AFAIK, there are:
   Define a custom type (from primitive types):
 type MyFloat float64 // Initialization var myFloat MyFloat = MyFloat(3.14243444)    Define a struct:
-type Vertex struct { X int Y int } // Initialization var myVertex Vertex = Vertex{3,4}    What else? Please email me to update.
-  " />
+type Vertex struct { X int Y int } // Initialization var myVertex Vertex = Vertex{3,4}    Define an interface:
+type Abser interface { Abs() float64 }    What else?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://phatngluu.github.io/posts/golang/golang-custom-types/" />
 <meta property="article:published_time" content="2020-09-23T15:21:44+00:00" />
@@ -24,8 +24,8 @@ type Vertex struct { X int Y int } // Initialization var myVertex Vertex = Verte
 <meta name="twitter:description" content="What things you can do with Go keyword type? AFAIK, there are:
   Define a custom type (from primitive types):
 type MyFloat float64 // Initialization var myFloat MyFloat = MyFloat(3.14243444)    Define a struct:
-type Vertex struct { X int Y int } // Initialization var myVertex Vertex = Vertex{3,4}    What else? Please email me to update.
-  "/>
+type Vertex struct { X int Y int } // Initialization var myVertex Vertex = Vertex{3,4}    Define an interface:
+type Abser interface { Abs() float64 }    What else?"/>
 
   
   
@@ -152,7 +152,7 @@ type Vertex struct { X int Y int } // Initialization var myVertex Vertex = Verte
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgolang-custom-types%2f&name=Golang%20Custom%20Types&description=What%20things%20you%20can%20do%20with%20Go%20keyword%20type%3f%20AFAIK%2c%20there%20are%3a%0a%20%20Define%20a%20custom%20type%20%28from%20primitive%20types%29%3a%0atype%20MyFloat%20float64%20%2f%2f%20Initialization%20var%20myFloat%20MyFloat%20%3d%20MyFloat%283.14243444%29%20%20%20%20Define%20a%20struct%3a%0atype%20Vertex%20struct%20%7b%20X%20int%20Y%20int%20%7d%20%2f%2f%20Initialization%20var%20myVertex%20Vertex%20%3d%20Vertex%7b3%2c4%7d%20%20%20%20What%20else%3f%20Please%20email%20me%20to%20update.%0a%20%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgolang-custom-types%2f&name=Golang%20Custom%20Types&description=What%20things%20you%20can%20do%20with%20Go%20keyword%20type%3f%20AFAIK%2c%20there%20are%3a%0a%20%20Define%20a%20custom%20type%20%28from%20primitive%20types%29%3a%0atype%20MyFloat%20float64%20%2f%2f%20Initialization%20var%20myFloat%20MyFloat%20%3d%20MyFloat%283.14243444%29%20%20%20%20Define%20a%20struct%3a%0atype%20Vertex%20struct%20%7b%20X%20int%20Y%20int%20%7d%20%2f%2f%20Initialization%20var%20myVertex%20Vertex%20%3d%20Vertex%7b3%2c4%7d%20%20%20%20Define%20an%20interface%3a%0atype%20Abser%20interface%20%7b%20Abs%28%29%20float64%20%7d%20%20%20%20What%20else%3f">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -225,6 +225,13 @@ var myFloat MyFloat = MyFloat(3.14243444)
    
 // Initialization
 var myVertex Vertex = Vertex{3,4}
+</code></pre>
+</li>
+<li>
+<p>Define an interface:</p>
+<pre><code>type Abser interface {
+ Abs() float64
+}
 </code></pre>
 </li>
 <li>
@@ -321,7 +328,7 @@ var myVertex Vertex = Vertex{3,4}
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgolang-custom-types%2f&name=Golang%20Custom%20Types&description=What%20things%20you%20can%20do%20with%20Go%20keyword%20type%3f%20AFAIK%2c%20there%20are%3a%0a%20%20Define%20a%20custom%20type%20%28from%20primitive%20types%29%3a%0atype%20MyFloat%20float64%20%2f%2f%20Initialization%20var%20myFloat%20MyFloat%20%3d%20MyFloat%283.14243444%29%20%20%20%20Define%20a%20struct%3a%0atype%20Vertex%20struct%20%7b%20X%20int%20Y%20int%20%7d%20%2f%2f%20Initialization%20var%20myVertex%20Vertex%20%3d%20Vertex%7b3%2c4%7d%20%20%20%20What%20else%3f%20Please%20email%20me%20to%20update.%0a%20%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fgolang%2fgolang-custom-types%2f&name=Golang%20Custom%20Types&description=What%20things%20you%20can%20do%20with%20Go%20keyword%20type%3f%20AFAIK%2c%20there%20are%3a%0a%20%20Define%20a%20custom%20type%20%28from%20primitive%20types%29%3a%0atype%20MyFloat%20float64%20%2f%2f%20Initialization%20var%20myFloat%20MyFloat%20%3d%20MyFloat%283.14243444%29%20%20%20%20Define%20a%20struct%3a%0atype%20Vertex%20struct%20%7b%20X%20int%20Y%20int%20%7d%20%2f%2f%20Initialization%20var%20myVertex%20Vertex%20%3d%20Vertex%7b3%2c4%7d%20%20%20%20Define%20an%20interface%3a%0atype%20Abser%20interface%20%7b%20Abs%28%29%20float64%20%7d%20%20%20%20What%20else%3f">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
