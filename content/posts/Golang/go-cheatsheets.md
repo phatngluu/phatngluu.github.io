@@ -296,18 +296,42 @@ _A closure is a function value that **references variables from outside its body
 
 # Methods
 
-Go does not have classes. However, you can define methods on types. In this example, the `Abs` method has a receiver of type `Vertex` named `v`
+Referenced from: [https://tour.golang.org/methods/1](https://tour.golang.org/methods/1 "https://tour.golang.org/methods/1")
 
-    func (v Vertex) Abs() float64 {
-        return math.Sqrt(v.Xv.X + v.Yv.Y)
-    }
+* Go does not have classes. 
+* However, you can define methods on types. 
+* In this example, the `Abs` method has a receiver of type `Vertex` named `v`
 
-You can declare a method on non-struct types, too.
-
-    type MyFloat float64
-    func (f MyFloat) Abs() float64 {
-      if f < 0 {
-        return float64(-f)
+      func (v Vertex) Abs() float64 {
+          return math.Sqrt(v.Xv.X + v.Yv.Y)
       }
-      return float64(f)
-    }
+
+
+* You can declare a method on non-struct types, too.
+
+      type MyFloat float64
+      func (f MyFloat) Abs() float64 {
+        if f < 0 {
+          return float64(-f)
+        }
+        return float64(f)
+      }
+* **Pointer receivers:** Methods with pointer receivers can modify the value to which the receiver points (as `Scale` does here):
+
+      func (v *Vertex) Scale(f float64) {
+      	v.X = v.X * f
+      	v.Y = v.Y * f
+      }
+
+  Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
+* Method and pointer indirection:
+
+      var v Vertex = Vertex{3,4}
+      v.Scale(5)  // OK
+      p := &v
+      p.Scale(10) // OK
+* **value** or **pointer receiver**: There are two reasons to use a pointer receiver: method can modify the value that its receiver points to, and avoid copying the value on each method call (more efficient if the receiver is a large struct).
+
+# Interfaces
+
+An **_interface type_** = a **set of method signatures**
