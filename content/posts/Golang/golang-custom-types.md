@@ -23,4 +23,9 @@ What things you can do with Go keyword `type`? AFAIK, there are:
        
        // Initialization
        var myVertex Vertex = Vertex{3,4}
-3. What else? Please email me to update.
+3. Define an interface:
+
+       type Abser interface {
+       	Abs() float64
+       }
+4. What else? Please email me to update.
