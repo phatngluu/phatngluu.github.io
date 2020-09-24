@@ -3,7 +3,7 @@ categories = ["golang"]
 date = 2020-09-23T15:21:44Z
 layout = ""
 tags = ["golang"]
-title = "What things you can do with\"type\"  Go keyword?"
+title = "What things you can do with \"type\"  Go keyword?"
 
 +++
 What things you can do with Go keyword `type`? AFAIK, there are:
