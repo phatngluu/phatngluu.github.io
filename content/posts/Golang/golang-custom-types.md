@@ -29,5 +29,5 @@ What things you can do with Go keyword `type`? AFAIK, there are:
        	Abs() float64
        }
 
-   [Click here to see more about "Interfaces"](https://phatngluu.github.io/posts/golang/go-cheatsheets/#interfaces)
+   [Click here to read more about "Interfaces"](https://phatngluu.github.io/posts/golang/go-cheatsheets/#interfaces)
 4. What else? Please email me to update.
