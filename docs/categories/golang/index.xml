@@ -18,7 +18,7 @@
   Define a custom type (from primitive types):
 type MyFloat float64 // Initialization var myFloat MyFloat = MyFloat(3.14243444)    Define a struct:
 type Vertex struct { X int Y int } // Initialization var myVertex Vertex = Vertex{3,4}    Define an interface:
-type Abser interface { Abs() float64 }  Click here to see more about &amp;ldquo;Interfaces&amp;rdquo;</description>
+type Abser interface { Abs() float64 }  Click here to read more about &amp;ldquo;Interfaces&amp;rdquo;</description>
     </item>
     
     <item>
