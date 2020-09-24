@@ -9,7 +9,7 @@
     <copyright>Phat Nguyen Luu</copyright>
     <lastBuildDate>Wed, 23 Sep 2020 15:21:44 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Golang Custom Types</title>
+      <title>What things you can do with&#34;type&#34;  Go keyword?</title>
       <link>https://phatngluu.github.io/posts/golang/golang-custom-types/</link>
       <pubDate>Wed, 23 Sep 2020 15:21:44 +0000</pubDate>
       
@@ -18,7 +18,7 @@
   Define a custom type (from primitive types):
 type MyFloat float64 // Initialization var myFloat MyFloat = MyFloat(3.14243444)    Define a struct:
 type Vertex struct { X int Y int } // Initialization var myVertex Vertex = Vertex{3,4}    Define an interface:
-type Abser interface { Abs() float64 }    What else?</description>
+type Abser interface { Abs() float64 }  Click here to see more about &amp;ldquo;Interfaces&amp;rdquo;</description>
     </item>
     
     <item>
