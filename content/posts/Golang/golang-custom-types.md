@@ -28,4 +28,4 @@ What things you can do with Go keyword `type`? AFAIK, there are:
        type Abser interface {
        	Abs() float64
        }
-4. What else? Please email me to update.
+4. What else? Please email `lnp279@gmail.com` to update.
