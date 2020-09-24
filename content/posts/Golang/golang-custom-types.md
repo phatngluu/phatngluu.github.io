@@ -3,7 +3,7 @@ categories = ["golang"]
 date = 2020-09-23T15:21:44Z
 layout = ""
 tags = ["golang"]
-title = "Golang Custom Types"
+title = "What things you can do with\"type\"  Go keyword?"
 
 +++
 What things you can do with Go keyword `type`? AFAIK, there are:
@@ -28,4 +28,6 @@ What things you can do with Go keyword `type`? AFAIK, there are:
        type Abser interface {
        	Abs() float64
        }
+
+   [Click here to see more about "Interfaces"](https://phatngluu.github.io/posts/golang/go-cheatsheets/#interfaces)
 4. What else? Please email me to update.
