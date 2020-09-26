@@ -298,15 +298,13 @@ _A closure is a function value that **references variables from outside its body
 
 Referenced from: [https://tour.golang.org/methods/1](https://tour.golang.org/methods/1 "https://tour.golang.org/methods/1")
 
-* Go does not have classes. 
-* However, you can define methods on types. 
+* Go does not have classes.
+* However, you can define methods on types.
 * In this example, the `Abs` method has a receiver of type `Vertex` named `v`
 
       func (v Vertex) Abs() float64 {
           return math.Sqrt(v.Xv.X + v.Yv.Y)
       }
-
-
 * You can declare a method on non-struct types, too.
 
       type MyFloat float64
@@ -330,8 +328,54 @@ Referenced from: [https://tour.golang.org/methods/1](https://tour.golang.org/met
       v.Scale(5)  // OK
       p := &v
       p.Scale(10) // OK
-* **value** or **pointer receiver**: There are two reasons to use a pointer receiver: method can modify the value that its receiver points to, and avoid copying the value on each method call (more efficient if the receiver is a large struct).
+* Chosing **value** or **pointer receiver**: There are two reasons to use a pointer receiver: method can modify the value that its receiver points to, and avoid copying the value on each method call (more efficient if the receiver is a large struct).
 
 # Interfaces
 
-An **_interface type_** = a **set of method signatures**
+* An **_interface type_** = a **set of method signatures**
+* A **value of interface** type can hold **any value that implements those methods**.
+* Interfaces are implemented **implicitly**
+
+## Basic usage:
+
+1. Interface:
+
+       type Abser interface {
+       	Abs() float64
+       }
+2. `MyFloat` and `*Vertex` (not `Vertex`) implement `Abs` of interface `Abser`:
+
+       type MyFloat float64
+       func (f MyFloat) Abs() float64 {
+       	if f < 0 {
+       		return float64(-f)
+       	}
+       	return float64(f)
+       }
+       type Vertex struct {
+       	X float64
+       	Y float64
+       }
+       func (v *Vertex) Abs() float64 {
+       	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+       }
+
+   Note: See pointer receiver in Methods.
+3. Usage:
+
+       var a1 Abser = MyFloat(-math.Sqrt2)
+       var a2 Abser = &Vertex{3, 4} // 
+       a1.Abs()
+       a2.Abs()
+
+   Note: `*Vertex` implements `Abs()`, interface value must be `&Vertex` 
+
+## Interface values
+
+An i**nterface value** holds a **value** of a specific underlying **concrete type**: `(value, type)`. 
+
+**Calling a method on an interface value** executes the **method of the same name on its underlying type.**
+
+    fmt.Printf("%v - %T", a2, a2)
+    // Output
+    &{3 4} - *main.Vertex
