@@ -45,9 +45,32 @@ Example:
 
 ![](/static/uploads/screen-shot-2020-09-27-at-18-28-12.png)
 
-## Probability Mass Function  
+## Probability Mass Function
+
 ![](/static/uploads/screen-shot-2020-09-27-at-18-52-24.png)
 
 ## Cumulative Distribution Functions
 
 ![](/static/uploads/screen-shot-2020-09-27-at-19-05-18.png)
+
+### Properties
+
+The cumulative distribution function is built from the probability mass function and vice versa.
+
+![](/static/uploads/screen-shot-2020-09-27-at-19-07-31.png)
+
+Example: x_i là các số tại dấu "="
+
+![](/static/uploads/screen-shot-2020-09-27-at-20-58-58.png)
+
+![](/static/uploads/screen-shot-2020-09-27-at-21-04-19.png)
+
+## **Mean, Variance and Standard deviation**
+
+* The **mean** is a measure of the center of a probability distribution.
+
+  ![](/static/uploads/screen-shot-2020-09-27-at-21-32-43.png)
+* The **variance** is a measure of the dispersion (sự phân tán) or variability (tính biến đổi) of a probability distribution.
+
+  ![](/static/uploads/screen-shot-2020-09-27-at-21-33-12.png)
+* The **standard deviation** is another measure of the dispersion. It is the **square root of the variance**.
