@@ -1,8 +1,8 @@
 +++
-categories = []
+categories = ["statistic"]
 date = 2020-09-27T08:24:20Z
 layout = ""
-tags = []
+tags = ["statistic"]
 title = "Random Variables"
 
 +++
