@@ -53,6 +53,8 @@ Example:
 
 ![](/static/uploads/screen-shot-2020-09-27-at-19-05-18.png)
 
+![](/static/uploads/screen-shot-2020-09-28-at-10-31-32.png)
+
 ### Properties
 
 The cumulative distribution function is built from the probability mass function and vice versa.
