@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>statistic on Luu Nguyen Phat</title>
+    <link>https://phatngluu.github.io/categories/statistic/</link>
+    <description>Recent content in statistic on Luu Nguyen Phat</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Phat Nguyen Luu</copyright>
+    <lastBuildDate>Sun, 27 Sep 2020 08:24:20 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/categories/statistic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Random Variables</title>
+      <link>https://phatngluu.github.io/posts/random-variables/</link>
+      <pubDate>Sun, 27 Sep 2020 08:24:20 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/random-variables/</guid>
+      <description>Random variables - RV Random variables are ways to map outcomes of random processes to numbers.
+For examples:
+ Flipping a coin: X = {0 if head, 1 if tail} Sum of upward face after rolling 7 dice  Discrete and continous RV Discrete: distinct/separate value:
+ X = {0 heads, 1 tails} X = Year that a random student was born X = # of ants born tomorrow X = Execution time of a program every time it get executed (rounded to the nearest miliseconds).</description>
+    </item>
+    
+  </channel>
+</rss>
