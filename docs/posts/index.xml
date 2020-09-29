@@ -30,7 +30,7 @@ For examples:
   Define a custom type (from primitive types):
 type MyFloat float64 // Initialization var myFloat MyFloat = MyFloat(3.14243444)    Define a struct:
 type Vertex struct { X int Y int } // Initialization var myVertex Vertex = Vertex{3,4}    Define an interface (&amp;ldquo;Interfaces&amp;rdquo; cheatsheet):
-type Abser interface { Abs() float64 }    What else?</description>
+type Abser interface { Abs() float64 }    Define a function as a type</description>
     </item>
     
     <item>
