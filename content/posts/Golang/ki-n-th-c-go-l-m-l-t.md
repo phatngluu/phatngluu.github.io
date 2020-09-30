@@ -12,8 +12,6 @@ The type of `request.Form` is `url.Value`. It saves data with the format `key=va
 
         v := url.Values{}
         v.Set("name", "Ava")
-        v.Add("friend", "Jess")
-        v.Add("friend", "Sarah")
         v.Add("friend", "Zoe")
         // v.Encode() == "name=Ava&friend=Jess&friend=Sarah&friend=Zoe"
         fmt.Println(v.Get("name"))
