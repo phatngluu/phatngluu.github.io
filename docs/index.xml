@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Phat Nguyen Luu</copyright>
-    <lastBuildDate>Sun, 27 Sep 2020 08:24:20 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Sep 2020 08:12:32 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kiến thức Go lượm lặt</title>
+      <link>https://phatngluu.github.io/posts/golang/ki-n-th-c-go-l-m-l-t/</link>
+      <pubDate>Wed, 30 Sep 2020 08:12:32 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/golang/ki-n-th-c-go-l-m-l-t/</guid>
+      <description>r.Form contains all of the request arguments, for instance the query-string in the URL and the data in POST and PUT. If the data has conflicts, for example parameters that have the same name, the server will save the data into a slice with multiple values. The Go documentation states that Go will save the data from GET and POST requests in different places.
+The type of request.Form is url.Value. It saves data with the format key=value.</description>
+    </item>
+    
     <item>
       <title>Random Variables</title>
       <link>https://phatngluu.github.io/posts/random-variables/</link>
