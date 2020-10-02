@@ -3,47 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://phatngluu.github.io/tags/server/</loc>
+    <lastmod>2020-10-02T08:40:51+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://phatngluu.github.io/categories/</loc>
-    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+    <lastmod>2020-10-02T08:40:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/raspberry-server/install-ubuntu-to-run-raspberry-pi/</loc>
+    <lastmod>2020-10-02T08:40:51+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/</loc>
-    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+    <lastmod>2020-10-02T08:40:51+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/posts/</loc>
-    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+    <lastmod>2020-10-02T08:40:51+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/tags/raspberry/</loc>
-    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+    <lastmod>2020-10-02T08:40:51+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/categories/raspberry/</loc>
-    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/tags/server/</loc>
-    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+    <lastmod>2020-10-02T08:40:51+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/categories/server/</loc>
-    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/raspberry-server/ssh-to-a-raspberry-pi-server/</loc>
-    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+    <lastmod>2020-10-02T08:40:51+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/tags/</loc>
+    <lastmod>2020-10-02T08:40:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/raspberry-server/ssh-to-a-raspberry-pi-server/</loc>
     <lastmod>2020-10-02T07:50:43+00:00</lastmod>
   </url>
   
