@@ -4,7 +4,47 @@
   
   <url>
     <loc>https://phatngluu.github.io/categories/</loc>
-    <lastmod>2020-09-30T08:12:32+00:00</lastmod>
+    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/</loc>
+    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/</loc>
+    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/raspberry/</loc>
+    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/categories/raspberry/</loc>
+    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/server/</loc>
+    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/categories/server/</loc>
+    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/ssh-to-a-raspberry-pi-server/</loc>
+    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/</loc>
+    <lastmod>2020-10-02T07:50:43+00:00</lastmod>
   </url>
   
   <url>
@@ -19,21 +59,6 @@
   
   <url>
     <loc>https://phatngluu.github.io/posts/golang/ki-n-th-c-go-l-m-l-t/</loc>
-    <lastmod>2020-09-30T08:12:32+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/</loc>
-    <lastmod>2020-09-30T08:12:32+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/</loc>
-    <lastmod>2020-09-30T08:12:32+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/tags/</loc>
     <lastmod>2020-09-30T08:12:32+00:00</lastmod>
   </url>
   
