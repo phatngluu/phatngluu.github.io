@@ -10,10 +10,10 @@
     <lastBuildDate>Fri, 02 Oct 2020 07:50:43 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH to a Raspberry Pi Server</title>
-      <link>https://phatngluu.github.io/posts/ssh-to-a-raspberry-pi-server/</link>
+      <link>https://phatngluu.github.io/posts/raspberry-server/ssh-to-a-raspberry-pi-server/</link>
       <pubDate>Fri, 02 Oct 2020 07:50:43 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/ssh-to-a-raspberry-pi-server/</guid>
+      <guid>https://phatngluu.github.io/posts/raspberry-server/ssh-to-a-raspberry-pi-server/</guid>
       <description>SSH to a Raspberry Pi Server   Install SSH server and run it on Raspberry Pi Server (openssh server, port 22)
   SSH to a Raspberry Pi using ngrok . First, make sure to install ngrok on the device. Next, start a TCP tunnel on the device by listening on any port you choose:
 $ ngrok tcp 22    You started a session with SSH to Rasp.</description>
@@ -31,10 +31,10 @@ The type of request.Form is url.Value. It saves data with the format key=value.<
     
     <item>
       <title>Random Variables</title>
-      <link>https://phatngluu.github.io/posts/random-variables/</link>
+      <link>https://phatngluu.github.io/posts/statistics/random-variables/</link>
       <pubDate>Sun, 27 Sep 2020 08:24:20 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/random-variables/</guid>
+      <guid>https://phatngluu.github.io/posts/statistics/random-variables/</guid>
       <description>Random variables - RV Random variables are ways to map outcomes of random processes to numbers.
 For examples:
  Flipping a coin: X = {0 if head, 1 if tail} Sum of upward face after rolling 7 dice  Discrete and continous RV Discrete: distinct/separate value:

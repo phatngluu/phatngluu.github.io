@@ -10,10 +10,10 @@
     <lastBuildDate>Fri, 02 Oct 2020 07:50:43 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/categories/raspberry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH to a Raspberry Pi Server</title>
-      <link>https://phatngluu.github.io/posts/ssh-to-a-raspberry-pi-server/</link>
+      <link>https://phatngluu.github.io/posts/raspberry-server/ssh-to-a-raspberry-pi-server/</link>
       <pubDate>Fri, 02 Oct 2020 07:50:43 +0000</pubDate>
       
-      <guid>https://phatngluu.github.io/posts/ssh-to-a-raspberry-pi-server/</guid>
+      <guid>https://phatngluu.github.io/posts/raspberry-server/ssh-to-a-raspberry-pi-server/</guid>
       <description>SSH to a Raspberry Pi Server   Install SSH server and run it on Raspberry Pi Server (openssh server, port 22)
   SSH to a Raspberry Pi using ngrok . First, make sure to install ngrok on the device. Next, start a TCP tunnel on the device by listening on any port you choose:
 $ ngrok tcp 22    You started a session with SSH to Rasp.</description>
