@@ -13,3 +13,7 @@ title = "Install Ubuntu to run Raspberry Pi"
 Official Raspberry Pi 4 USB Boot is official! How-to
 
 [https://www.youtube.com/watch?v=8tTFgrOCsig](https://www.youtube.com/watch?v=8tTFgrOCsig "https://www.youtube.com/watch?v=8tTFgrOCsig")
+
+USB Boot Ubuntu Server 20.04 on Raspberry Pi 4
+
+[https://eugenegrechko.com/blog/USB-Boot-Ubuntu-Server-20.04-on-Raspberry-Pi-4](https://eugenegrechko.com/blog/USB-Boot-Ubuntu-Server-20.04-on-Raspberry-Pi-4 "https://eugenegrechko.com/blog/USB-Boot-Ubuntu-Server-20.04-on-Raspberry-Pi-4")
