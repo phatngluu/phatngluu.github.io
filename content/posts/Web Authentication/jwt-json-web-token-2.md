@@ -27,7 +27,9 @@ Your system has 2 services are running. They share the same secret key for JWT.
 Suppose a client has logged in the "Bank" service and client's browser keep a JWT. So if the client want to log in "Retirement" service, the client can use JWT for authentication.
 
 # For very detail
-https://topdev.vn/blog/json-web-token-la-gi/
+
+[https://trungquandev.com/hieu-sau-ve-jwt-json-web-tokens/](https://trungquandev.com/hieu-sau-ve-jwt-json-web-tokens/ "https://trungquandev.com/hieu-sau-ve-jwt-json-web-tokens/") \[Vietnamese\]
 
 # JWT Authentication Tutorial - Node.js
-https://www.youtube.com/watch?v=mbsmsi7l3r4
+
+[https://www.youtube.com/watch?v=mbsmsi7l3r4](https://www.youtube.com/watch?v=mbsmsi7l3r4 "https://www.youtube.com/watch?v=mbsmsi7l3r4")
