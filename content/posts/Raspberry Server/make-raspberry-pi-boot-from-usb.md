@@ -13,7 +13,7 @@ title = "Make Raspberry Pi boot from USB"
 
        # Upgrade OS packages
        sudo apt-get upgrade -y
-
+       
        # Get latest EEPROM
        sudo rpi-eeprom-update
 
@@ -40,9 +40,11 @@ In your computer (not on Raspberry Pi 4). Use Raspberry Pi Imager to write Raspb
 2. Choose SD card, instead of looking for a SD card, let's choose a USB instead.
 3. Hit "Write" and wait until it completed.
 
+\[Watch video from 1:11 to 1:27 [https://www.youtube.com/watch?v=B1aRGkH3bgw](https://www.youtube.com/watch?v=B1aRGkH3bgw "https://www.youtube.com/watch?v=B1aRGkH3bgw") \]
+
 # Boot from USB
 
-Remove the SD card from Raspberry Pi 4. 
+Remove the SD card from Raspberry Pi 4.
 
 Plug the USB in and power up the Raspberry Pi 4.
 
