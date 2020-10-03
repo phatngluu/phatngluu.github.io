@@ -30,6 +30,12 @@ title = "Make Raspberry Pi boot from USB"
 
        sudo reboot
 
+   After reboot, to check EEPROM is upgraded, run it again:
+
+       sudo rpi-eeprom-update
+
+   If current and latest are the same. EEPROM is already updated.
+
 # Write Raspberry Pi OS to the USB
 
 In your computer (not on Raspberry Pi 4). Use Raspberry Pi Imager to write Raspberry Pi OS to the USB
