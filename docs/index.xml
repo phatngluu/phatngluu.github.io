@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Phat Nguyen Luu</copyright>
-    <lastBuildDate>Sat, 03 Oct 2020 16:04:59 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2020 16:35:51 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OAuth</title>
+      <link>https://phatngluu.github.io/posts/web-authentication/oauth/</link>
+      <pubDate>Sat, 03 Oct 2020 16:35:51 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/web-authentication/oauth/</guid>
+      <description>See video: https://www.youtube.com/watch?v=SXDce0e3Ue4
+User / Twitter / App (3rd Party)
+ App requests access to user&amp;rsquo;s Twitter User says OK App asks Twitter for request token – Token 1 Twitter sends Token1 to App App sends Token1 to User to authorize User tells Twitter to authorize Token1 Twitter sends User authorized token – Token2 User sends Token 2 to App App sends to Twitter Token2 to request send a new authorization token Twitter turns Token2 to authorization token – Token 3 From now on, App uses Token 3 to communicate with Twitter.</description>
+    </item>
+    
     <item>
       <title>JWT - JSON Web Token</title>
       <link>https://phatngluu.github.io/posts/web-authentication/jwt-json-web-token-2/</link>
