@@ -28,3 +28,6 @@ Suppose a client has logged in the "Bank" service and client's browser keep a JW
 
 # For very detail
 https://topdev.vn/blog/json-web-token-la-gi/
+
+# JWT Authentication Tutorial - Node.js
+https://www.youtube.com/watch?v=mbsmsi7l3r4
