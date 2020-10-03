@@ -21,7 +21,7 @@ title = "Make Raspberry Pi boot from USB"
 
    ![](/static/uploads/screen-shot-2020-10-03-at-10-49-20.png)
 
-   Note: make sure current and lastest are the same.
+   Note: if current and latest are the same. EEPROM is already updated.
 3. Upgrade EEPROM:
 
        sudo rpi-eeprom-update -a
