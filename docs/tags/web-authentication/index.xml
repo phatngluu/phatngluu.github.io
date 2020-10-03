@@ -17,7 +17,7 @@
       <description>See video: https://www.youtube.com/watch?v=7Q17ubqLfaM
 How JWT is created and verified: Structure of JWT and encode/decode How different services work with JWT Your system has 2 services are running. They share the same secret key for JWT.
 Suppose a client has logged in the &amp;ldquo;Bank&amp;rdquo; service and client&amp;rsquo;s browser keep a JWT. So if the client want to log in &amp;ldquo;Retirement&amp;rdquo; service, the client can use JWT for authentication.
-For very detail https://topdev.</description>
+For very detail https://trungquandev.</description>
     </item>
     
     <item>
