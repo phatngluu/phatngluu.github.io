@@ -17,7 +17,7 @@
       <description>Update EEPROM   Start up the Raspberry Pi 4 with Raspberry Pi OS from SD card.
   To get latest EEPROM. In terminal, type:
 # Upgrade OS packages sudo apt-get upgrade -y # Get latest EEPROM sudo rpi-eeprom-update  Output of above command:
-Note: make sure current and lastest are the same.
+Note: if current and latest are the same. EEPROM is already updated.
   Upgrade EEPROM:
 sudo rpi-eeprom-update -a  After upgrading, reboot the Raspberry Pi 4, by typing:</description>
     </item>
