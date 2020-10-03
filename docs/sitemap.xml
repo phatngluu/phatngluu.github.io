@@ -4,21 +4,41 @@
   
   <url>
     <loc>https://phatngluu.github.io/categories/</loc>
-    <lastmod>2020-10-03T03:45:17+00:00</lastmod>
+    <lastmod>2020-10-03T10:16:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/web-authentication/different-ways-to-authenticate-a-web-application/</loc>
+    <lastmod>2020-10-03T10:16:21+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/</loc>
-    <lastmod>2020-10-03T03:45:17+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/raspberry-server/make-raspberry-pi-boot-from-usb/</loc>
-    <lastmod>2020-10-03T03:45:17+00:00</lastmod>
+    <lastmod>2020-10-03T10:16:21+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/posts/</loc>
+    <lastmod>2020-10-03T10:16:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/</loc>
+    <lastmod>2020-10-03T10:16:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/web-authentication/</loc>
+    <lastmod>2020-10-03T10:16:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/categories/web-authentication/</loc>
+    <lastmod>2020-10-03T10:16:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/raspberry-server/make-raspberry-pi-boot-from-usb/</loc>
     <lastmod>2020-10-03T03:45:17+00:00</lastmod>
   </url>
   
@@ -29,11 +49,6 @@
   
   <url>
     <loc>https://phatngluu.github.io/categories/raspberry/</loc>
-    <lastmod>2020-10-03T03:45:17+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/tags/</loc>
     <lastmod>2020-10-03T03:45:17+00:00</lastmod>
   </url>
   
