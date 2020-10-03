@@ -169,6 +169,7 @@ Upon logout session id will be cleared from both client cookie and server."/>
       <ul>
         <li><a href="#cookie-based">Cookie-Based</a></li>
         <li><a href="#token-based">Token-Based</a></li>
+        <li><a href="#third-party-access">Third party access</a></li>
       </ul>
     </li>
   </ul>
@@ -230,6 +231,9 @@ Upon logout session id will be cleared from both client cookie and server."/>
 <p>There are <strong>different ways</strong> to <strong>implement token based</strong> authentication.</p>
 <p>Most commonly used is <strong>JSON Web Token(JWT)</strong>. Client <strong>sends the credentials</strong>, the <strong>server validates the credentials</strong> and <strong>generates a signed JWT</strong> which <strong>contains the user information</strong>. Note, the <strong>token will never get stored in server</strong>(stateless). On subsequent <strong>request</strong> the <strong>token</strong> will be <strong>passed</strong> to server and gets <strong>verified</strong>(<strong>decoded</strong>) in the server.</p>
 <p>The token can be maintained at client side in local storage, session storage or even in cookies.</p>
+<h2 id="third-party-access">Third party access</h2>
+<p>If we have a need to expose our API’s outside of our system like third party app or even to access it from mobile apps we end up in two common ways to share the user information.</p>
+<p>Via API-token which is same as JWT token, where the token will be send via Authorization header which will get handled at API gateway to authenticate the user. And the other option is via Open Authentication(OAuth),OAuth is a protocol that allows an application to authenticate against server as a user. The recommendation is to implement OAuth 1.0a or OAuth 2.0. OAuth 2.0 relies on HTTPS for security and it currently implemented by Google, Facebook, Twitter etc., OAuth 2 provides secured delegate access to a resource based on user. OAuth 2 does this by allowing a token to be issued by Identity provider to these third party applications, with the approval of user. The client then uses the token to access the resource on behalf of that user.</p>
 
     </div>
   </article>
@@ -269,6 +273,7 @@ Upon logout session id will be cleared from both client cookie and server."/>
       <ul>
         <li><a href="#cookie-based">Cookie-Based</a></li>
         <li><a href="#token-based">Token-Based</a></li>
+        <li><a href="#third-party-access">Third party access</a></li>
       </ul>
     </li>
   </ul>
