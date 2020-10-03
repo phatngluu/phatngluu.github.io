@@ -3,7 +3,7 @@ categories = ["web authentication"]
 date = 2020-10-03T16:04:59Z
 layout = ""
 tags = ["web authentication"]
-title = "JWT - JSON Web Token 2"
+title = "JWT - JSON Web Token"
 
 +++
 See video: https://www.youtube.com/watch?v=7Q17ubqLfaM
