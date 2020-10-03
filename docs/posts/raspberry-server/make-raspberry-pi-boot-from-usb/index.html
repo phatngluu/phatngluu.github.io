@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Make Raspberry Pi boot from USB </title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Make Raspberry Pi boot from USB" />
+<meta property="og:description" content="Update EEPROM   Start up the Raspberry Pi 4 with Raspberry Pi OS from SD card.
+  To get latest EEPROM. In terminal, type:
+# Upgrade OS packages sudo apt-get upgrade -y # Get latest EEPROM sudo rpi-eeprom-update  Output of above command:
+Note: make sure current and lastest are the same.
+  Upgrade EEPROM:
+sudo rpi-eeprom-update -a  After upgrading, reboot the Raspberry Pi 4, by typing:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/raspberry-server/make-raspberry-pi-boot-from-usb/" />
+<meta property="article:published_time" content="2020-10-03T03:45:17+00:00" />
+<meta property="article:modified_time" content="2020-10-03T03:45:17+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Make Raspberry Pi boot from USB"/>
+<meta name="twitter:description" content="Update EEPROM   Start up the Raspberry Pi 4 with Raspberry Pi OS from SD card.
+  To get latest EEPROM. In terminal, type:
+# Upgrade OS packages sudo apt-get upgrade -y # Get latest EEPROM sudo rpi-eeprom-update  Output of above command:
+Note: make sure current and lastest are the same.
+  Upgrade EEPROM:
+sudo rpi-eeprom-update -a  After upgrading, reboot the Raspberry Pi 4, by typing:"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://phatngluu.github.io/css/style-dark.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://phatngluu.github.io/images/favicon.ico" />
+
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="https://phatngluu.github.io/">Home</a></li>
+         
+        <li><a href="https://phatngluu.github.io/posts">All posts</a></li>
+         
+        <li><a href="https://phatngluu.github.io/categories">Categories</a></li>
+         
+        <li><a href="https://phatngluu.github.io/tags">Tags</a></li>
+         
+        <li><a href="https://phatngluu.github.io/about">About</a></li>
+         
+        <li><a href="https://phatngluu.github.io/admin">Admin</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://phatngluu.github.io/posts/raspberry-server/install-ubuntu-to-run-raspberry-pi/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&text=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&title=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&is_video=false&description=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Make%20Raspberry%20Pi%20boot%20from%20USB&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&title=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&title=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&title=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&title=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&name=Make%20Raspberry%20Pi%20boot%20from%20USB&description=Update%20EEPROM%20%20%20Start%20up%20the%20Raspberry%20Pi%204%20with%20Raspberry%20Pi%20OS%20from%20SD%20card.%0a%20%20To%20get%20latest%20EEPROM.%20In%20terminal%2c%20type%3a%0a%23%20Upgrade%20OS%20packages%20sudo%20apt-get%20upgrade%20-y%20%23%20Get%20latest%20EEPROM%20sudo%20rpi-eeprom-update%20%20Output%20of%20above%20command%3a%0aNote%3a%20make%20sure%20current%20and%20lastest%20are%20the%20same.%0a%20%20Upgrade%20EEPROM%3a%0asudo%20rpi-eeprom-update%20-a%20%20After%20upgrading%2c%20reboot%20the%20Raspberry%20Pi%204%2c%20by%20typing%3a">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&t=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#update-eeprom">Update EEPROM</a></li>
+    <li><a href="#write-raspberry-pi-os-to-the-usb">Write Raspberry Pi OS to the USB</a></li>
+    <li><a href="#boot-from-usb">Boot from USB</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Make Raspberry Pi boot from USB
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-10-03 03:45:17 &#43;0000 UTC" itemprop="datePublished">2020-10-03</time>
+          
+        </div>
+        
+        <div class="article-category">
+            <i class="fas fa-archive"></i>
+            
+            
+            <a class="category-link" href="https://phatngluu.github.io/categories/raspberry">raspberry</a>
+            
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="https://phatngluu.github.io/tags/raspberry" rel="tag">raspberry</a>
+            
+        </div> 
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <h1 id="update-eeprom">Update EEPROM</h1>
+<ol>
+<li>
+<p>Start up the Raspberry Pi 4 with Raspberry Pi OS from SD card.</p>
+</li>
+<li>
+<p>To get latest EEPROM. In terminal, type:</p>
+<pre><code># Upgrade OS packages
+sudo apt-get upgrade -y
+
+# Get latest EEPROM
+sudo rpi-eeprom-update
+</code></pre>
+<p>Output of above command:</p>
+<p><img src="https://phatngluu.github.io/static/uploads/screen-shot-2020-10-03-at-10-49-20.png" alt=""></p>
+<p>Note: make sure current and lastest are the same.</p>
+</li>
+<li>
+<p>Upgrade EEPROM:</p>
+<pre><code>sudo rpi-eeprom-update -a
+</code></pre>
+<p>After upgrading, reboot the Raspberry Pi 4, by typing:</p>
+<pre><code>sudo reboot
+</code></pre>
+</li>
+</ol>
+<h1 id="write-raspberry-pi-os-to-the-usb">Write Raspberry Pi OS to the USB</h1>
+<p>In your computer (not on Raspberry Pi 4). Use Raspberry Pi Imager to write Raspberry Pi OS to the USB</p>
+<p><img src="https://phatngluu.github.io/static/uploads/120754926_1686969261450541_2314459776392102187_n.png" alt=""></p>
+<ol>
+<li>Choose OS as normal</li>
+<li>Choose SD card, instead of looking for a SD card, let&rsquo;s choose a USB instead.</li>
+<li>Hit &ldquo;Write&rdquo; and wait until it completed.</li>
+</ol>
+<h1 id="boot-from-usb">Boot from USB</h1>
+<p>Remove the SD card from Raspberry Pi 4.</p>
+<p>Plug the USB in and power up the Raspberry Pi 4.</p>
+<p>Watch the result!</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="https://phatngluu.github.io/">Home</a></li>
+         
+          <li><a href="https://phatngluu.github.io/posts">All posts</a></li>
+         
+          <li><a href="https://phatngluu.github.io/categories">Categories</a></li>
+         
+          <li><a href="https://phatngluu.github.io/tags">Tags</a></li>
+         
+          <li><a href="https://phatngluu.github.io/about">About</a></li>
+         
+          <li><a href="https://phatngluu.github.io/admin">Admin</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#update-eeprom">Update EEPROM</a></li>
+    <li><a href="#write-raspberry-pi-os-to-the-usb">Write Raspberry Pi OS to the USB</a></li>
+    <li><a href="#boot-from-usb">Boot from USB</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&text=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&title=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&is_video=false&description=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Make%20Raspberry%20Pi%20boot%20from%20USB&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&title=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&title=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&title=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&title=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&name=Make%20Raspberry%20Pi%20boot%20from%20USB&description=Update%20EEPROM%20%20%20Start%20up%20the%20Raspberry%20Pi%204%20with%20Raspberry%20Pi%20OS%20from%20SD%20card.%0a%20%20To%20get%20latest%20EEPROM.%20In%20terminal%2c%20type%3a%0a%23%20Upgrade%20OS%20packages%20sudo%20apt-get%20upgrade%20-y%20%23%20Get%20latest%20EEPROM%20sudo%20rpi-eeprom-update%20%20Output%20of%20above%20command%3a%0aNote%3a%20make%20sure%20current%20and%20lastest%20are%20the%20same.%0a%20%20Upgrade%20EEPROM%3a%0asudo%20rpi-eeprom-update%20-a%20%20After%20upgrading%2c%20reboot%20the%20Raspberry%20Pi%204%2c%20by%20typing%3a">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fraspberry-server%2fmake-raspberry-pi-boot-from-usb%2f&t=Make%20Raspberry%20Pi%20boot%20from%20USB">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Phat Nguyen Luu 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="https://phatngluu.github.io/">Home</a></li>
+         
+        <li><a href="https://phatngluu.github.io/posts">All posts</a></li>
+         
+        <li><a href="https://phatngluu.github.io/categories">Categories</a></li>
+         
+        <li><a href="https://phatngluu.github.io/tags">Tags</a></li>
+         
+        <li><a href="https://phatngluu.github.io/about">About</a></li>
+         
+        <li><a href="https://phatngluu.github.io/admin">Admin</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="https://phatngluu.github.io/lib/font-awesome/css/all.min.css">
+<script src="https://phatngluu.github.io/lib/jquery/jquery.min.js"></script>
+<script src="https://phatngluu.github.io/js/main.js"></script>
+
+
+
+</html>
