@@ -3,21 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> apt and apt-get </title>
+  <title> Install Java 11 on Ubuntu Server </title>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="apt and apt-get" />
-<meta property="og:description" content="https://itsfoss.com/apt-vs-apt-get-difference/" />
+  <meta property="og:title" content="Install Java 11 on Ubuntu Server" />
+<meta property="og:description" content="Download JDK at
+Use scp to copy your file in host to remote server via SSH
+https://www.simplified.guide/ssh/copy-file
+$ scp myfile.txt remoteuser@remoteserver:/remote/folder/  Extract and set up:
+https://www.youtube.com/watch?v=72mz0-98vg8
+Config java.home in User/Workspace
+Install VScode Extension Lombok" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://phatngluu.github.io/posts/linux/apt-and-apt-get/" />
-<meta property="article:published_time" content="2020-10-05T18:21:14+00:00" />
-<meta property="article:modified_time" content="2020-10-05T18:21:14+00:00" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/linux/install-java-11-on-ubuntu-server/" />
+<meta property="article:published_time" content="2020-10-05T19:47:20+00:00" />
+<meta property="article:modified_time" content="2020-10-05T19:47:20+00:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="apt and apt-get"/>
-<meta name="twitter:description" content="https://itsfoss.com/apt-vs-apt-get-difference/"/>
+<meta name="twitter:title" content="Install Java 11 on Ubuntu Server"/>
+<meta name="twitter:description" content="Download JDK at
+Use scp to copy your file in host to remote server via SSH
+https://www.simplified.guide/ssh/copy-file
+$ scp myfile.txt remoteuser@remoteserver:/remote/folder/  Extract and set up:
+https://www.youtube.com/watch?v=72mz0-98vg8
+Config java.home in User/Workspace
+Install VScode Extension Lombok"/>
 
   
   
@@ -67,17 +79,11 @@
       <ul>
         
         <li>
-          <a class="icon" href=" https://phatngluu.github.io/posts/web-authentication/oauth/">
+          <a class="icon" href=" https://phatngluu.github.io/posts/linux/apt-and-apt-get/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
-        
-        <li>
-          <a class="icon" href="https://phatngluu.github.io/posts/linux/install-java-11-on-ubuntu-server/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
@@ -105,57 +111,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&text=apt%20and%20apt-get">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&text=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&title=apt%20and%20apt-get">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&title=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&is_video=false&description=apt%20and%20apt-get">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&is_video=false&description=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=apt%20and%20apt-get&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f">
+    <a class="icon" href="mailto:?subject=Install%20Java%2011%20on%20Ubuntu%20Server&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&title=apt%20and%20apt-get">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&title=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&title=apt%20and%20apt-get">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&title=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&title=apt%20and%20apt-get">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&title=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-stumbleupon " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&title=apt%20and%20apt-get">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&title=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-digg " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&name=apt%20and%20apt-get&description=https%3a%2f%2fitsfoss.com%2fapt-vs-apt-get-difference%2f">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&name=Install%20Java%2011%20on%20Ubuntu%20Server&description=Download%20JDK%20at%0aUse%20scp%20to%20copy%20your%20file%20in%20host%20to%20remote%20server%20via%20SSH%0ahttps%3a%2f%2fwww.simplified.guide%2fssh%2fcopy-file%0a%24%20scp%20myfile.txt%20remoteuser%40remoteserver%3a%2fremote%2ffolder%2f%20%20Extract%20and%20set%20up%3a%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d72mz0-98vg8%0aConfig%20java.home%20in%20User%2fWorkspace%0aInstall%20VScode%20Extension%20Lombok">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&t=apt%20and%20apt-get">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&t=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -172,13 +178,13 @@
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        apt and apt-get
+        Install Java 11 on Ubuntu Server
       </h1>
       <div class="meta">
         
         <div class="postdate">
           
-          <time datetime="2020-10-05 18:21:14 &#43;0000 UTC" itemprop="datePublished">2020-10-05</time>
+          <time datetime="2020-10-05 19:47:20 &#43;0000 UTC" itemprop="datePublished">2020-10-05</time>
           
         </div>
         
@@ -204,8 +210,15 @@
 
   
     <div class="content" itemprop="articleBody">
-      <p><a href="https://itsfoss.com/apt-vs-apt-get-difference/" title="https://itsfoss.com/apt-vs-apt-get-difference/">https://itsfoss.com/apt-vs-apt-get-difference/</a></p>
-<p><img src="https://phatngluu.github.io/static/uploads/screen-shot-2020-10-06-at-01-20-52.png" alt=""></p>
+      <p>Download JDK at</p>
+<p>Use scp to copy your file in host to remote server via SSH</p>
+<p><a href="https://www.simplified.guide/ssh/copy-file" title="https://www.simplified.guide/ssh/copy-file">https://www.simplified.guide/ssh/copy-file</a></p>
+<pre><code>$ scp myfile.txt remoteuser@remoteserver:/remote/folder/
+</code></pre>
+<p>Extract and set up:</p>
+<p><a href="https://www.youtube.com/watch?v=72mz0-98vg8" title="https://www.youtube.com/watch?v=72mz0-98vg8">https://www.youtube.com/watch?v=72mz0-98vg8</a></p>
+<p>Config java.home in User/Workspace</p>
+<p>Install VScode Extension Lombok</p>
 
     </div>
   </article>
@@ -251,57 +264,57 @@
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&text=apt%20and%20apt-get">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&text=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&title=apt%20and%20apt-get">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&title=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&is_video=false&description=apt%20and%20apt-get">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&is_video=false&description=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=apt%20and%20apt-get&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f">
+    <a class="icon" href="mailto:?subject=Install%20Java%2011%20on%20Ubuntu%20Server&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&title=apt%20and%20apt-get">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&title=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&title=apt%20and%20apt-get">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&title=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&title=apt%20and%20apt-get">
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&title=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&title=apt%20and%20apt-get">
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&title=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&name=apt%20and%20apt-get&description=https%3a%2f%2fitsfoss.com%2fapt-vs-apt-get-difference%2f">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&name=Install%20Java%2011%20on%20Ubuntu%20Server&description=Download%20JDK%20at%0aUse%20scp%20to%20copy%20your%20file%20in%20host%20to%20remote%20server%20via%20SSH%0ahttps%3a%2f%2fwww.simplified.guide%2fssh%2fcopy-file%0a%24%20scp%20myfile.txt%20remoteuser%40remoteserver%3a%2fremote%2ffolder%2f%20%20Extract%20and%20set%20up%3a%0ahttps%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d72mz0-98vg8%0aConfig%20java.home%20in%20User%2fWorkspace%0aInstall%20VScode%20Extension%20Lombok">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2fapt-and-apt-get%2f&t=apt%20and%20apt-get">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2flinux%2finstall-java-11-on-ubuntu-server%2f&t=Install%20Java%2011%20on%20Ubuntu%20Server">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
