@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://phatngluu.github.io/posts/linux/apt-and-apt-get/</loc>
+    <lastmod>2020-10-05T18:21:14+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://phatngluu.github.io/categories/</loc>
-    <lastmod>2020-10-03T16:35:51+00:00</lastmod>
+    <lastmod>2020-10-05T18:21:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/tags/linux/</loc>
+    <lastmod>2020-10-05T18:21:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/categories/linux/</loc>
+    <lastmod>2020-10-05T18:21:14+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/</loc>
-    <lastmod>2020-10-03T16:35:51+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/posts/web-authentication/oauth/</loc>
-    <lastmod>2020-10-03T16:35:51+00:00</lastmod>
+    <lastmod>2020-10-05T18:21:14+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/posts/</loc>
-    <lastmod>2020-10-03T16:35:51+00:00</lastmod>
+    <lastmod>2020-10-05T18:21:14+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://phatngluu.github.io/tags/</loc>
+    <lastmod>2020-10-05T18:21:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://phatngluu.github.io/posts/web-authentication/oauth/</loc>
     <lastmod>2020-10-03T16:35:51+00:00</lastmod>
   </url>
   
@@ -199,16 +214,6 @@
   
   <url>
     <loc>https://phatngluu.github.io/posts/linux/environment-variables/</loc>
-    <lastmod>2020-09-12T09:30:27+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/tags/linux/</loc>
-    <lastmod>2020-09-12T09:30:27+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://phatngluu.github.io/categories/linux/</loc>
     <lastmod>2020-09-12T09:30:27+00:00</lastmod>
   </url>
   
