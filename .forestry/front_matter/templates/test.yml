@@ -59,6 +59,7 @@ pages:
 - content/posts/Hibernate/03.md
 - content/posts/Linux/apt-and-apt-get.md
 - content/posts/Linux/install-java-11-on-ubuntu-server.md
+- content/posts/Linux/set-time-and-timezone.md
 - content/posts/Raspberry Server/install-ubuntu-to-run-raspberry-pi.md
 - content/posts/Raspberry Server/make-raspberry-pi-boot-from-usb.md
 - content/posts/SpringBoot/LearnPath.md
