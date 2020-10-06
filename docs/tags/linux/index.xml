@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Phat Nguyen Luu</copyright>
-    <lastBuildDate>Mon, 05 Oct 2020 19:47:20 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Oct 2020 11:27:10 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set time and timezone</title>
+      <link>https://phatngluu.github.io/posts/linux/set-time-and-timezone/</link>
+      <pubDate>Tue, 06 Oct 2020 11:27:10 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/linux/set-time-and-timezone/</guid>
+      <description>sudo apt install policykit-1 sudo apt-get install ntp timedatectl set-ntp false timedatectl set-timezone Asia/Ho_Chi_Minh timedatectl set-ntp false Or run sudo date -s &amp;quot;Tuesday, October 6, 2020 6:25:09 PM GMT+07:00&amp;quot; </description>
+    </item>
+    
     <item>
       <title>Install Java 11 on Ubuntu Server</title>
       <link>https://phatngluu.github.io/posts/linux/install-java-11-on-ubuntu-server/</link>
