@@ -234,7 +234,7 @@ Async function declaration   async function(...){...}
 <li>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Google</span> {
    <span style="color:#a6e22e">constructor</span>() { ... }
-   <span style="color:#a6e22e">async</span> <span style="color:#66d9ef">function</span>() { ... }
+   <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span>() { ... }
 }
 </code></pre></div></li>
 </ol>
@@ -257,14 +257,14 @@ Async function declaration   async function(...){...}
 <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">btn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#39;button&#39;</span>);
 
 <span style="color:#75715e">// Handle all fetch requests
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getPeopleInSpace</span>(<span style="color:#a6e22e">url</span>){
-  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">peopleResponse</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>);
-  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">peopleJSON</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">peopleResponse</span>.<span style="color:#a6e22e">json</span>();
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getPeopleInSpace</span>(<span style="color:#a6e22e">url</span>){
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">peopleResponse</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>);
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">peopleJSON</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">peopleResponse</span>.<span style="color:#a6e22e">json</span>();
   
-  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profiles</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">peopleJSON</span>.<span style="color:#a6e22e">people</span>.<span style="color:#a6e22e">map</span>( <span style="color:#a6e22e">async</span> (<span style="color:#a6e22e">person</span>) =&gt; {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profiles</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">peopleJSON</span>.<span style="color:#a6e22e">people</span>.<span style="color:#a6e22e">map</span>( <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">person</span>) =&gt; {
     <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">craft</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">person</span>.<span style="color:#a6e22e">craft</span>;
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profileResponse</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">wikiUrl</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">person</span>.<span style="color:#a6e22e">name</span>);
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profileJSON</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">profileResponse</span>.<span style="color:#a6e22e">json</span>();
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profileResponse</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">wikiUrl</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">person</span>.<span style="color:#a6e22e">name</span>);
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">profileJSON</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">profileResponse</span>.<span style="color:#a6e22e">json</span>();
   
     <span style="color:#66d9ef">return</span> {...<span style="color:#a6e22e">profileJSON</span>, <span style="color:#a6e22e">craft</span>}
   });
@@ -288,15 +288,15 @@ Async function declaration   async function(...){...}
   });
 }
 
-<span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">async</span> (<span style="color:#a6e22e">event</span>) =&gt; {
+<span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">event</span>) =&gt; {
   <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Loading...&#34;</span>;
   
-  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">astros</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">getPeopleInSpace</span>(<span style="color:#a6e22e">astrosUrl</span>);
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">astros</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">getPeopleInSpace</span>(<span style="color:#a6e22e">astrosUrl</span>);
   <span style="color:#a6e22e">generateHTML</span>(<span style="color:#a6e22e">astros</span>);
   <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">remove</span>();
 });
 </code></pre></div><h3 id="combine-asyncawait-with-promises">Combine Async/Await with Promises</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">async</span> (<span style="color:#a6e22e">event</span>) =&gt; {
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">event</span>) =&gt; {
   <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Loading...&#34;</span>;
   
   <span style="color:#a6e22e">getPeopleInSpace</span>(<span style="color:#a6e22e">astrosUrl</span>)
@@ -305,10 +305,10 @@ Async function declaration   async function(...){...}
 });
 </code></pre></div><h3 id="error-handling-with-trycatch">Error Handling with try&hellip;catch</h3>
 <p><strong>Using <code>try...catch</code> and async/await in the event listener:</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">async</span> (<span style="color:#a6e22e">event</span>) =&gt; {
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">event</span>) =&gt; {
   <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Loading...&#39;</span>;
   <span style="color:#66d9ef">try</span> {
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">astros</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">getPeopleInSpace</span>(<span style="color:#a6e22e">astrosUrl</span>);
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">astros</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">getPeopleInSpace</span>(<span style="color:#a6e22e">astrosUrl</span>);
     <span style="color:#a6e22e">generateHTML</span>(<span style="color:#a6e22e">astros</span>);
   } <span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">e</span>) {
     <span style="color:#a6e22e">astrosList</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&lt;h3&gt;Something went wrong!&lt;/h3&gt;&#39;</span>;
