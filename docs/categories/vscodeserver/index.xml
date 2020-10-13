@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vscodeserver on Luu Nguyen Phat</title>
+    <link>https://phatngluu.github.io/categories/vscodeserver/</link>
+    <description>Recent content in vscodeserver on Luu Nguyen Phat</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Phat Nguyen Luu</copyright>
+    <lastBuildDate>Tue, 13 Oct 2020 09:14:07 +0000</lastBuildDate><atom:link href="https://phatngluu.github.io/categories/vscodeserver/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCode Server problem with remote machine</title>
+      <link>https://phatngluu.github.io/posts/vscode-server-problem-with-remote-machine/</link>
+      <pubDate>Tue, 13 Oct 2020 09:14:07 +0000</pubDate>
+      
+      <guid>https://phatngluu.github.io/posts/vscode-server-problem-with-remote-machine/</guid>
+      <description>VSCode Server problem  JDK Path:   VSCode/Settings/User: Search for Java: Home
+  VSCode/Settings/Remote [&amp;hellip;]: Search for Java: Home
+  Place inside settings.json as:
+{ ... &amp;quot;java.home&amp;quot;: &amp;quot;/usr/lib/jvm/java-11-openjdk-armhf&amp;quot;, ... }     Install Lombok Extension (if Language Server logs contains unable to extract/unzip Lombok.jar)  </description>
+    </item>
+    
+  </channel>
+</rss>

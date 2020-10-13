@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> VSCode Server problem with remote machine </title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="VSCode Server problem with remote machine" />
+<meta property="og:description" content="VSCode Server problem  JDK Path:   VSCode/Settings/User: Search for Java: Home
+  VSCode/Settings/Remote [&hellip;]: Search for Java: Home
+  Place inside settings.json as:
+{ ... &quot;java.home&quot;: &quot;/usr/lib/jvm/java-11-openjdk-armhf&quot;, ... }     Install Lombok Extension (if Language Server logs contains unable to extract/unzip Lombok.jar)  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/vscode-server-problem-with-remote-machine/" />
+<meta property="article:published_time" content="2020-10-13T09:14:07+00:00" />
+<meta property="article:modified_time" content="2020-10-13T09:14:07+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="VSCode Server problem with remote machine"/>
+<meta name="twitter:description" content="VSCode Server problem  JDK Path:   VSCode/Settings/User: Search for Java: Home
+  VSCode/Settings/Remote [&hellip;]: Search for Java: Home
+  Place inside settings.json as:
+{ ... &quot;java.home&quot;: &quot;/usr/lib/jvm/java-11-openjdk-armhf&quot;, ... }     Install Lombok Extension (if Language Server logs contains unable to extract/unzip Lombok.jar)  "/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://phatngluu.github.io/css/style-dark.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://phatngluu.github.io/images/favicon.ico" />
+
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="https://phatngluu.github.io/">Home</a></li>
+         
+        <li><a href="https://phatngluu.github.io/posts">All posts</a></li>
+         
+        <li><a href="https://phatngluu.github.io/categories">Categories</a></li>
+         
+        <li><a href="https://phatngluu.github.io/tags">Tags</a></li>
+         
+        <li><a href="https://phatngluu.github.io/about">About</a></li>
+         
+        <li><a href="https://phatngluu.github.io/admin">Admin</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://phatngluu.github.io/posts/esper-intro/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&text=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&title=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&is_video=false&description=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=VSCode%20Server%20problem%20with%20remote%20machine&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&title=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&title=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&title=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&title=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&name=VSCode%20Server%20problem%20with%20remote%20machine&description=VSCode%20Server%20problem%20%20JDK%20Path%3a%20%20%20VSCode%2fSettings%2fUser%3a%20Search%20for%20Java%3a%20Home%0a%20%20VSCode%2fSettings%2fRemote%20%5b%26hellip%3b%5d%3a%20Search%20for%20Java%3a%20Home%0a%20%20Place%20inside%20settings.json%20as%3a%0a%7b%20...%20%26quot%3bjava.home%26quot%3b%3a%20%26quot%3b%2fusr%2flib%2fjvm%2fjava-11-openjdk-armhf%26quot%3b%2c%20...%20%7d%20%20%20%20%20Install%20Lombok%20Extension%20%28if%20Language%20Server%20logs%20contains%20unable%20to%20extract%2funzip%20Lombok.jar%29%20%20">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&t=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#vscode-server-problem"><strong>VSCode Server problem</strong></a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        VSCode Server problem with remote machine
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-10-13 09:14:07 &#43;0000 UTC" itemprop="datePublished">2020-10-13</time>
+          
+        </div>
+        
+        <div class="article-category">
+            <i class="fas fa-archive"></i>
+            
+            
+            <a class="category-link" href="https://phatngluu.github.io/categories/vscodeserver">vscodeserver</a>
+            
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="https://phatngluu.github.io/tags/vscodeserver" rel="tag">vscodeserver</a>
+            
+        </div> 
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <h1 id="vscode-server-problem"><strong>VSCode Server problem</strong></h1>
+<ul>
+<li>JDK Path:
+<ul>
+<li>
+<p>VSCode/Settings/User: Search for Java: Home</p>
+</li>
+<li>
+<p>VSCode/Settings/Remote [&hellip;]: Search for Java: Home</p>
+</li>
+<li>
+<p>Place inside settings.json as:</p>
+<pre><code>{
+    ...
+    &quot;java.home&quot;: &quot;/usr/lib/jvm/java-11-openjdk-armhf&quot;,
+    ...
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Install Lombok Extension (if Language Server logs contains unable to extract/unzip Lombok.jar)</li>
+</ul>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="https://phatngluu.github.io/">Home</a></li>
+         
+          <li><a href="https://phatngluu.github.io/posts">All posts</a></li>
+         
+          <li><a href="https://phatngluu.github.io/categories">Categories</a></li>
+         
+          <li><a href="https://phatngluu.github.io/tags">Tags</a></li>
+         
+          <li><a href="https://phatngluu.github.io/about">About</a></li>
+         
+          <li><a href="https://phatngluu.github.io/admin">Admin</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#vscode-server-problem"><strong>VSCode Server problem</strong></a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&text=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&title=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&is_video=false&description=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=VSCode%20Server%20problem%20with%20remote%20machine&body=Check out this article: https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&title=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&title=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&title=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&title=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&name=VSCode%20Server%20problem%20with%20remote%20machine&description=VSCode%20Server%20problem%20%20JDK%20Path%3a%20%20%20VSCode%2fSettings%2fUser%3a%20Search%20for%20Java%3a%20Home%0a%20%20VSCode%2fSettings%2fRemote%20%5b%26hellip%3b%5d%3a%20Search%20for%20Java%3a%20Home%0a%20%20Place%20inside%20settings.json%20as%3a%0a%7b%20...%20%26quot%3bjava.home%26quot%3b%3a%20%26quot%3b%2fusr%2flib%2fjvm%2fjava-11-openjdk-armhf%26quot%3b%2c%20...%20%7d%20%20%20%20%20Install%20Lombok%20Extension%20%28if%20Language%20Server%20logs%20contains%20unable%20to%20extract%2funzip%20Lombok.jar%29%20%20">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fphatngluu.github.io%2fposts%2fvscode-server-problem-with-remote-machine%2f&t=VSCode%20Server%20problem%20with%20remote%20machine">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Phat Nguyen Luu 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="https://phatngluu.github.io/">Home</a></li>
+         
+        <li><a href="https://phatngluu.github.io/posts">All posts</a></li>
+         
+        <li><a href="https://phatngluu.github.io/categories">Categories</a></li>
+         
+        <li><a href="https://phatngluu.github.io/tags">Tags</a></li>
+         
+        <li><a href="https://phatngluu.github.io/about">About</a></li>
+         
+        <li><a href="https://phatngluu.github.io/admin">Admin</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="https://phatngluu.github.io/lib/font-awesome/css/all.min.css">
+<script src="https://phatngluu.github.io/lib/jquery/jquery.min.js"></script>
+<script src="https://phatngluu.github.io/js/main.js"></script>
+
+
+
+</html>
