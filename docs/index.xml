@@ -26,7 +26,10 @@
       <pubDate>Sat, 10 Oct 2020 08:58:07 +0000</pubDate>
       
       <guid>https://phatngluu.github.io/posts/esper-intro/</guid>
-      <description></description>
+      <description>Esper có 3 thành phần chính:
+ EPL (giống SQL) Compiler (dịch EPL thành bytecode) Runtime (chạy bytecode, nhận event và filter even, thực hiện hành động nếu thoả mãn)  Data =======&amp;gt; EPL (filter) =======&amp;gt;Do action (Event Listener)
+The Esper compiler compiles EPL source code into Java Virtual Machine (JVM) bytecode so that the resulting executable code runs on a JVM within the Esper runtime environment.
+The Esper runtime runs on top of a JVM.</description>
     </item>
     
     <item>
