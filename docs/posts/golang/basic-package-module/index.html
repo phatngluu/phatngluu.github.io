@@ -12,9 +12,10 @@
 <meta property="og:description" content="See details at: here
  Go Package là tập hợp các file trong cùng một thư mục, hướng tới xử lí một tập hợp các vấn đề có liên quan đến thứ mà Package đó hướng tới, ví dụ, trong thư mục user của mình mình có 3 file .go cùng xử lí các vấn đề liên quan đối với user thì mình sẽ đặt tên package là user, việc này giúp năng cao khả năng tái sử dụng code cho những project sau này." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://phatngluu.github.io/posts/golang/basic-package-module/" />
-<meta property="article:published_time" content="2020-09-11T09:07:12+00:00" />
-<meta property="article:modified_time" content="2020-09-11T09:07:12+00:00" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/golang/basic-package-module/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-09-11T09:07:12&#43;00:00" />
+<meta property="article:modified_time" content="2020-09-11T09:07:12&#43;00:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[Basic - 01] Get started with Go"/>
@@ -236,13 +237,13 @@
 <pre><code>package main
 
 import (
-    &quot;fmt&quot;
+	&quot;fmt&quot;
 
-    &quot;rsc.io/quote&quot;
+	&quot;rsc.io/quote&quot;
 )
 
 func main() {
-    fmt.Println(quote.Go())
+	fmt.Println(quote.Go())
 }
 </code></pre>
 <p>Put your code in a module for tracking dependencies – <code>rsc.io/quote</code> package. To create <code>hello</code> module:</p>
@@ -379,7 +380,7 @@ Don't communicate by sharing memory, share memory by communicating.</code></pre>
 
   <footer id="footer">
   <div class="footer-left">
-    Copyright  &copy; 2020  Phat Nguyen Luu 
+    Copyright  &copy; 2021  Phat Nguyen Luu 
   </div>
   <div class="footer-right">
     <nav>

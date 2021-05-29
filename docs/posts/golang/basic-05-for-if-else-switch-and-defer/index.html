@@ -13,9 +13,10 @@
  the init statement: executed before the first iteration the condition expression: evaluated before every iteration the post statement: executed at the end of every iteration  Attention   The init statement will often be a short variable declaration, and the variables declared there are visible only in the scope of the for statement.
   The loop will stop iterating once condition false." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://phatngluu.github.io/posts/golang/basic-05-for-if-else-switch-and-defer/" />
-<meta property="article:published_time" content="2020-09-13T05:21:38+00:00" />
-<meta property="article:modified_time" content="2020-09-13T05:21:38+00:00" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/golang/basic-05-for-if-else-switch-and-defer/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-09-13T05:21:38&#43;00:00" />
+<meta property="article:modified_time" content="2020-09-13T05:21:38&#43;00:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[Basic - 05] For, If-else, Switch and Defer"/>
@@ -253,14 +254,14 @@
 <p>The <strong>init and post statements are optional</strong>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">sum</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">1</span>
 <span style="color:#66d9ef">for</span> ; <span style="color:#a6e22e">sum</span> &lt; <span style="color:#ae81ff">1000</span>; {
-  <span style="color:#a6e22e">sum</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">sum</span>
+	<span style="color:#a6e22e">sum</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">sum</span>
 }
 <span style="color:#75715e">// It&#39;s like a while loop!
 </span></code></pre></div></li>
 <li>
 <p>Infinite loop:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">for</span> {
-  <span style="color:#75715e">// do stuff
+	<span style="color:#75715e">// do stuff
 </span><span style="color:#75715e"></span>}
 </code></pre></div></li>
 </ul>
@@ -446,7 +447,7 @@
 
   <footer id="footer">
   <div class="footer-left">
-    Copyright  &copy; 2020  Phat Nguyen Luu 
+    Copyright  &copy; 2021  Phat Nguyen Luu 
   </div>
   <div class="footer-right">
     <nav>

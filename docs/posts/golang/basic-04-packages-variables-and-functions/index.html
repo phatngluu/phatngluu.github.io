@@ -12,9 +12,10 @@
 <meta property="og:description" content="Functions func add(x int, y int) int { return x &#43; y } # Can be shortened func add(x, y int) int { return x &#43; y } # Function can return multiple values func swap(x, y string) (string, string) { return y, x }  Naked return statement:
 # Return values are named x,y func split(sum int) (x, y int) { x = sum * 4 / 9 y = sum - x return # Naked return statement }  Naked return statements should be used only in short functions, as with the example shown here." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://phatngluu.github.io/posts/golang/basic-04-packages-variables-and-functions/" />
-<meta property="article:published_time" content="2020-09-13T03:55:37+00:00" />
-<meta property="article:modified_time" content="2020-09-13T03:55:37+00:00" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/golang/basic-04-packages-variables-and-functions/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-09-13T03:55:37&#43;00:00" />
+<meta property="article:modified_time" content="2020-09-13T03:55:37&#43;00:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[Basic - 04] Packages, variables and functions"/>
@@ -253,8 +254,8 @@ import &quot;fmt&quot;
 var c, python, java bool
 
 func main() {
-    var i int
-    fmt.Println(i, c, python, java)
+	var i int
+	fmt.Println(i, c, python, java)
 }
 </code></pre>
 <h2 id="variables-with-initializers">Variables with initializers</h2>
@@ -266,8 +267,8 @@ import &quot;fmt&quot;
 var i, j int = 1, 2
 
 func main() {
-    var c, python, java = true, false, &quot;no!&quot;
-    fmt.Println(i, j, c, python, java)
+	var c, python, java = true, false, &quot;no!&quot;
+	fmt.Println(i, j, c, python, java)
 }
 </code></pre>
 <h2 id="short-variable-declarations">Short variable declarations</h2>
@@ -463,7 +464,7 @@ const Pi = 3.14
 
   <footer id="footer">
   <div class="footer-left">
-    Copyright  &copy; 2020  Phat Nguyen Luu 
+    Copyright  &copy; 2021  Phat Nguyen Luu 
   </div>
   <div class="footer-right">
     <nav>

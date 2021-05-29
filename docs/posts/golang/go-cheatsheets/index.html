@@ -14,9 +14,10 @@ var foo int var foo int = 42 foo := 23  Note: foo := 23 is short-form declaratio
   Can&rsquo;t redeclare variables, but can shadow them:
 package main ... var foo int = 1 func main() { var foo int = 2 fmt.Println(foo) } # Output: 2    All variables must be used, if not then the compiler will throw an error." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://phatngluu.github.io/posts/golang/go-cheatsheets/" />
-<meta property="article:published_time" content="2020-09-21T04:22:52+00:00" />
-<meta property="article:modified_time" content="2020-09-21T04:22:52+00:00" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/golang/go-cheatsheets/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-09-21T04:22:52&#43;00:00" />
+<meta property="article:modified_time" content="2020-09-21T04:22:52&#43;00:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Go Cheatsheets"/>
@@ -266,9 +267,9 @@ foo := 23
 <pre><code>package main
 ...
 var foo int = 1
-  
+
 func main() {
-  var foo int = 2
+	var foo int = 2
     fmt.Println(foo)
 }
 # Output: 2
@@ -284,7 +285,7 @@ func main() {
 var myVar int # package scope
 var MyVar int # export globally
 func main(){
-  var myvar int # block scope
+	var myvar int # block scope
 }
 </code></pre>
 </li>
@@ -354,48 +355,48 @@ d + c // d will be replaced by 42 as below
 <li>
 <p>iota is a counter, it increases whenever we specify a new enumeric constant:</p>
 <pre><code>const (
-  a = iota // 0
-  b = iota // 1
-  c = iota // 2
+	a = iota // 0
+	b = iota // 1
+	c = iota // 2
 )
 </code></pre>
 </li>
 <li>
 <p>iota is inferred:</p>
 <pre><code>const (
-  a = iota // 0
-  b		 // 1
-  c		 // 2
+	a = iota // 0
+	b		 // 1
+	c		 // 2
 )
 </code></pre>
 </li>
 <li>
 <p>iota resets in a new const block:</p>
 <pre><code>const (
-  a = iota // 0
-  b		 // 1
+	a = iota // 0
+	b		 // 1
 )
 const (
-  c = iota // 0
+	c = iota // 0
 )
 </code></pre>
 </li>
 <li>
 <p>Formular with iota is also inferred:</p>
 <pre><code>const (
-  a = iota + 5 // 0 + 5
-  b		 // 1 + 5
-  c		 // 2 + 5
+	a = iota + 5 // 0 + 5
+	b		 // 1 + 5
+	c		 // 2 + 5
 )
 </code></pre>
 </li>
 <li>
 <p>Ignore values of iota:</p>
 <pre><code>const (
-  _ = iota	// 0
-  a			// 1
-  _			// 2
-  c			// 3
+	_ = iota	// 0
+	a			// 1
+	_			// 2
+	c			// 3
 )
 </code></pre>
 </li>
@@ -409,8 +410,8 @@ const (
 <h1 id="structs">Structs</h1>
 <p>A <code>struct</code> is a collection of fields.</p>
 <pre><code>type Vertex struct {
-    X int
-    Y int
+	X int
+	Y int
 }
 v := Vertex{1, 2}
 v.X = 4
@@ -418,8 +419,8 @@ fmt.Println(v.X)
 </code></pre>
 <p>Pointer to struct:</p>
 <pre><code>    v := Vertex{1, 2}
-    p := &amp;v
-    (*p).X or &quot;cleaner&quot;: p.X
+	p := &amp;v
+	(*p).X or &quot;cleaner&quot;: p.X
 </code></pre>
 <p>Struct literals:</p>
 <pre><code>v1 = Vertex{1, 2}  // {1 2}  
@@ -517,7 +518,7 @@ for _, v := range pow {...}
 <li>
 <p>Basic usage:</p>
 <pre><code>type Vertex struct {
-  Lat, Long float64
+	Lat, Long float64
 }
 var m map[string]Vertex = make(map[string]Vertex)
 m[&quot;Bell Labs&quot;] = Vertex{40.68433, -74.39967}
@@ -526,17 +527,17 @@ m[&quot;Bell Labs&quot;] = Vertex{40.68433, -74.39967}
 <li>
 <p>Map literals:</p>
 <pre><code>var m = map[string]Vertex{
-  &quot;Bell Labs&quot;: Vertex{
+	&quot;Bell Labs&quot;: Vertex{
       40.68433, -74.39967,
-  },
-  &quot;Google&quot;: Vertex{
+	},
+	&quot;Google&quot;: Vertex{
       37.42202, -122.08408,
-  },
+	},
 }
 // Shorter
 var m = map[string]Vertex{
-  &quot;Bell Labs&quot;: {40.68433, -74.39967},
-  &quot;Google&quot;:    {37.42202, -122.08408},
+	&quot;Bell Labs&quot;: {40.68433, -74.39967},
+	&quot;Google&quot;:    {37.42202, -122.08408},
 }
 </code></pre>
 </li>
@@ -562,11 +563,11 @@ elem, ok := m[key]
 <p>Function values may be used as function arguments (1) and return values (2):</p>
 <p><img src="https://phatngluu.github.io/static/uploads/untitled.png" alt=""></p>
 <pre><code>func main() {
-    hypot := func(x, y float64) float64 {
+	hypot := func(x, y float64) float64 {
         return math.Sqrt(x*x + y*y)
-    }
-    fmt.Println(compute(hypot))
-    fmt.Println(compute(math.Pow))
+	}
+	fmt.Println(compute(hypot))
+	fmt.Println(compute(math.Pow))
 }
 </code></pre>
 </li>
@@ -575,20 +576,20 @@ elem, ok := m[key]
 </ul>
 <p><em>A closure is a function value that <strong>references variables from outside its body.</strong> The function may access and assign to the referenced variables =&gt; function is &ldquo;bound&rdquo; to the variables.</em> For example, the <code>adder</code> function returns a closure. Each closure is bound to its own <code>sum</code> variable.</p>
 <pre><code>func adder() func(int) int {
-    sum := 0
-    return func(x int) int {
+	sum := 0
+	return func(x int) int {
         sum += x
         return sum
-    }
+	}
 }
 func main() {
-    pos, neg := adder(), adder()
-    for i := 0; i &lt; 10; i++ {
+	pos, neg := adder(), adder()
+	for i := 0; i &lt; 10; i++ {
         fmt.Println(
             pos(i),
             neg(-2*i),
         )
-    }
+	}
 }
 </code></pre>
 <h1 id="methods">Methods</h1>
@@ -621,8 +622,8 @@ func (f MyFloat) Abs() float64 {
 <li>
 <p><strong>Pointer receivers:</strong> Methods with pointer receivers can modify the value to which the receiver points (as <code>Scale</code> does here):</p>
 <pre><code>func (v *Vertex) Scale(f float64) {
-  v.X = v.X * f
-  v.Y = v.Y * f
+	v.X = v.X * f
+	v.Y = v.Y * f
 }
 </code></pre>
 <p>Since methods often need to modify their receiver, pointer receivers are more common than value receivers.</p>
@@ -650,7 +651,7 @@ p.Scale(10) // OK
 <li>
 <p>Interface:</p>
 <pre><code>type Abser interface {
- Abs() float64
+	Abs() float64
 }
 </code></pre>
 </li>
@@ -658,17 +659,17 @@ p.Scale(10) // OK
 <p><code>MyFloat</code> and <code>*Vertex</code> (not <code>Vertex</code>) implement <code>Abs</code> of interface <code>Abser</code>:</p>
 <pre><code>type MyFloat float64
 func (f MyFloat) Abs() float64 {
- if f &lt; 0 {
+	if f &lt; 0 {
      return float64(-f)
- }
- return float64(f)
+	}
+	return float64(f)
 }
 type Vertex struct {
- X float64
- Y float64
+	X float64
+	Y float64
 }
 func (v *Vertex) Abs() float64 {
- return math.Sqrt(v.X*v.X + v.Y*v.Y)
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
 </code></pre>
 <p>Note: See pointer receiver in Methods.</p>
@@ -851,7 +852,7 @@ a2.Abs()
 
   <footer id="footer">
   <div class="footer-left">
-    Copyright  &copy; 2020  Phat Nguyen Luu 
+    Copyright  &copy; 2021  Phat Nguyen Luu 
   </div>
   <div class="footer-right">
     <nav>

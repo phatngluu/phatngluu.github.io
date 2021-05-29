@@ -12,9 +12,10 @@
 <meta property="og:description" content="Go get trong GOPATH thì cài vào GOPATH và cả binary
 go mod tidy # don dep thu vien khong dung go mod why # why do i need this go mod download # download nhugn thang trong require go mod get ./... # kiem tra tat ca file cua ban roi download go list -m all # liet ke het package minh   Import package, khong import file rieng le  HandlerFunc has signature: func(ResponseWriter, *Request)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://phatngluu.github.io/posts/golang/03-captain-code-go-module/" />
-<meta property="article:published_time" content="2020-09-15T12:33:18+00:00" />
-<meta property="article:modified_time" content="2020-09-15T12:33:18+00:00" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/golang/03-captain-code-go-module/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-09-15T12:33:18&#43;00:00" />
+<meta property="article:modified_time" content="2020-09-15T12:33:18&#43;00:00" />
+
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="03 - Captain Code - Go Module"/>
@@ -220,7 +221,7 @@ go list -m all # liet ke het package minh
 </ul>
 <p><code>HandlerFunc</code> has signature: <code>func(ResponseWriter, *Request)</code>. So it is true if return like this:</p>
 <pre><code>func GetHello() http.HandlerFunc {
-    ...
+	...
     return func(w http.ResponseWriter, r *http.Request) {
     ...
     }
@@ -346,7 +347,7 @@ go list -m all # liet ke het package minh
 
   <footer id="footer">
   <div class="footer-left">
-    Copyright  &copy; 2020  Phat Nguyen Luu 
+    Copyright  &copy; 2021  Phat Nguyen Luu 
   </div>
   <div class="footer-right">
     <nav>

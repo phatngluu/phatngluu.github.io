@@ -11,7 +11,9 @@
   <meta property="og:title" content="" />
 <meta property="og:description" content="const select = document.getElementById(&#39;breeds&#39;); const card = document.querySelector(&#39;.card&#39;); const form = document.querySelector(&#39;form&#39;); // ------------------------------------------ // FETCH FUNCTIONS // ------------------------------------------  function fetchData(url) { return fetch(url) .then(checkStatus) .then(res =&gt; res.json()) .catch(err =&gt; console.log(err)) } Promise.all([ fetchData(&#39;https://dog.ceo/api/breeds/list&#39;), fetchData(&#39;https://dog.ceo/api/breeds/image/random&#39;) ]) .then(data =&gt; { const breedList = data[0].message; const randomImg = data[1].message; generateOptions(breedList); generateImage(randomImg); }) // ------------------------------------------ // HELPER FUNCTIONS // ------------------------------------------  function checkStatus(response) { if (response.ok) { return Promise.resolve(response); } else { return Promise." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://phatngluu.github.io/posts/javascript/fetch-api/02-basic-fetch-request/" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/javascript/fetch-api/02-basic-fetch-request/" /><meta property="article:section" content="posts" />
+
+
 
 
   <meta name="twitter:card" content="summary"/>
@@ -406,7 +408,7 @@ Promise.<span style="color:#a6e22e">all</span>([
 
   <footer id="footer">
   <div class="footer-left">
-    Copyright  &copy; 2020  Phat Nguyen Luu 
+    Copyright  &copy; 2021  Phat Nguyen Luu 
   </div>
   <div class="footer-right">
     <nav>

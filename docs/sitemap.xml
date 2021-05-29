@@ -1,488 +1,278 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://phatngluu.github.io/categories/</loc>
     <lastmod>2020-10-13T09:14:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/</loc>
     <lastmod>2020-10-13T09:14:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/</loc>
     <lastmod>2020-10-13T09:14:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/</loc>
     <lastmod>2020-10-13T09:14:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/vscode-server-problem-with-remote-machine/</loc>
     <lastmod>2020-10-13T09:14:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/vscodeserver/</loc>
     <lastmod>2020-10-13T09:14:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/vscodeserver/</loc>
     <lastmod>2020-10-13T09:14:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/esper/</loc>
     <lastmod>2020-10-10T08:58:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/esper/</loc>
     <lastmod>2020-10-10T08:58:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/esper-intro/</loc>
     <lastmod>2020-10-10T08:58:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/siem/</loc>
     <lastmod>2020-10-09T10:03:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/siem/</loc>
     <lastmod>2020-10-09T10:03:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/siem-system-requirements/</loc>
     <lastmod>2020-10-09T10:03:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/linux/</loc>
     <lastmod>2020-10-06T11:27:10+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/linux/</loc>
     <lastmod>2020-10-06T11:27:10+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/linux/set-time-and-timezone/</loc>
     <lastmod>2020-10-06T11:27:10+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/linux/install-java-11-on-ubuntu-server/</loc>
     <lastmod>2020-10-05T19:47:20+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/linux/apt-and-apt-get/</loc>
     <lastmod>2020-10-05T18:21:14+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/web-authentication/oauth/</loc>
     <lastmod>2020-10-03T16:35:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/web-authentication/</loc>
     <lastmod>2020-10-03T16:35:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/web-authentication/</loc>
     <lastmod>2020-10-03T16:35:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/web-authentication/jwt-json-web-token-2/</loc>
     <lastmod>2020-10-03T16:04:59+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/web-authentication/different-ways-to-authenticate-a-web-application/</loc>
     <lastmod>2020-10-03T10:16:21+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/raspberry-server/make-raspberry-pi-boot-from-usb/</loc>
     <lastmod>2020-10-03T03:45:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/raspberry/</loc>
     <lastmod>2020-10-03T03:45:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/raspberry/</loc>
     <lastmod>2020-10-03T03:45:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/server/</loc>
     <lastmod>2020-10-02T08:40:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/raspberry-server/install-ubuntu-to-run-raspberry-pi/</loc>
     <lastmod>2020-10-02T08:40:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/server/</loc>
     <lastmod>2020-10-02T08:40:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/raspberry-server/ssh-to-a-raspberry-pi-server/</loc>
     <lastmod>2020-10-02T07:50:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/golang/</loc>
     <lastmod>2020-09-30T08:12:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/golang/</loc>
     <lastmod>2020-09-30T08:12:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/ki-n-th-c-go-l-m-l-t/</loc>
     <lastmod>2020-09-30T08:12:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/statistics/random-variables/</loc>
     <lastmod>2020-09-27T08:24:20+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/statistic/</loc>
     <lastmod>2020-09-27T08:24:20+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/statistic/</loc>
     <lastmod>2020-09-27T08:24:20+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/golang-custom-types/</loc>
     <lastmod>2020-09-23T15:21:44+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/go-cheatsheets/</loc>
     <lastmod>2020-09-21T04:22:52+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/03-captain-code-go-module/</loc>
     <lastmod>2020-09-15T12:33:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/springboot/learnpath/</loc>
     <lastmod>2020-09-13T15:41:21+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/spring/</loc>
     <lastmod>2020-09-13T15:41:21+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/spring/</loc>
     <lastmod>2020-09-13T15:41:21+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/hibernate/03/</loc>
     <lastmod>2020-09-13T15:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/hibernate/</loc>
     <lastmod>2020-09-13T15:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/hibernate/</loc>
     <lastmod>2020-09-13T15:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/hibernate/01/</loc>
     <lastmod>2020-09-13T15:38:54+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/basic-05-for-if-else-switch-and-defer/</loc>
     <lastmod>2020-09-13T05:21:38+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/basic-04-packages-variables-and-functions/</loc>
     <lastmod>2020-09-13T03:55:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/basic-03-install-your-go-application-on-your-machine/</loc>
     <lastmod>2020-09-13T03:13:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/basic-02-create-a-go-module/</loc>
     <lastmod>2020-09-12T12:22:56+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/cloud/aws/</loc>
     <lastmod>2020-09-12T09:30:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/tags/cloud/</loc>
     <lastmod>2020-09-12T09:30:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/categories/cloud/</loc>
     <lastmod>2020-09-12T09:30:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/linux/environment-variables/</loc>
     <lastmod>2020-09-12T09:30:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/cloud/vultr/</loc>
     <lastmod>2020-09-12T09:30:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/basic-package-module/</loc>
     <lastmod>2020-09-11T09:07:12+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/basic-00-setting-up-goroot-gopath/</loc>
     <lastmod>2020-09-11T02:39:14+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/01/</loc>
     <lastmod>2020-09-10T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/advanced-annotation/</loc>
     <lastmod>2020-09-10T09:53:33+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/advanced-jpa/</loc>
     <lastmod>2020-09-10T09:53:14+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/advanced-reflection/</loc>
     <lastmod>2020-09-10T09:51:45+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/gopath-explained/</loc>
     <lastmod>2020-09-09T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/about/</loc>
     <lastmod>2020-09-05T17:51:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/git/git/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/j2ee/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/_index/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/01-declaring-classes/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/02-declaring-member-variables/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/03-defining-methods/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/04-providing-constructors-for-your-classes/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/classes/05-passing-information-to-a-method-or-a-constructor/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/more-on-classes/initializing-fields/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/more-on-classes/understanding-class-members/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/nested-classes/01-nested-classes/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/objects/creating-objects/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/class-and-objects/objects/using-objects/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/classes-and-objects/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/lambda-expressions/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/method-references/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/operators/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/java-oracle-tutorials/variables/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/maven/tutorial/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/milestones/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/regular-array-and-array-list/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/java/rules-for-overriding/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/ajax/what-is-ajax/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/async/01-async-in-js/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/async/02-callback/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/async/03-project/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/async/04-promise/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/async/05-async-await/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/fetch-api/01-why-fetch-api/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/fetch-api/02-basic-fetch-request/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/intellij/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/js-dom/01-getting-and-setting-text/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/js-dom/dom/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/js-pure/00-build-tools/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/js-pure/01-basic/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/js-pure/03-prototype/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/js-pure/04-inheritance/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/js-pure/05-functions/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/objects/01-objects/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/objects/02-classes/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/javascript/objects/03-getters-setters/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://phatngluu.github.io/posts/golang/go/</loc>
   </url>
-  
 </urlset>

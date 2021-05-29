@@ -14,7 +14,9 @@
  NOTE:
   Calling getter by its name without parentheses." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://phatngluu.github.io/posts/javascript/objects/03-getters-setters/" />
+<meta property="og:url" content="https://phatngluu.github.io/posts/javascript/objects/03-getters-setters/" /><meta property="article:section" content="posts" />
+
+
 
 
   <meta name="twitter:card" content="summary"/>
@@ -215,10 +217,10 @@
   }
 
   <span style="color:#a6e22e">get</span> <span style="color:#a6e22e">owner</span>(){
-    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">_owner</span>;
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#ae81ff">_</span><span style="color:#a6e22e">owner</span>;
   }
   <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">owner</span>(<span style="color:#a6e22e">owner</span>) {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">_owner</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">owner</span>;
+    <span style="color:#66d9ef">this</span>.<span style="color:#ae81ff">_</span><span style="color:#a6e22e">owner</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">owner</span>;
   }
   
 } 
@@ -254,10 +256,10 @@
 <h3 id="backing-property-convention">Backing property convention</h3>
 <p>As convention, place an underscore before property name  which is used by getter/setter. Call that property is <code>backing property</code>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">  <span style="color:#a6e22e">get</span> <span style="color:#a6e22e">owner</span>(){
-    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">_owner</span>;
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#ae81ff">_</span><span style="color:#a6e22e">owner</span>;
   }
   <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">owner</span>(<span style="color:#a6e22e">owner</span>) {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">_owner</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">owner</span>;
+    <span style="color:#66d9ef">this</span>.<span style="color:#ae81ff">_</span><span style="color:#a6e22e">owner</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">owner</span>;
   }
 </code></pre></div>
     </div>
@@ -393,7 +395,7 @@
 
   <footer id="footer">
   <div class="footer-left">
-    Copyright  &copy; 2020  Phat Nguyen Luu 
+    Copyright  &copy; 2021  Phat Nguyen Luu 
   </div>
   <div class="footer-right">
     <nav>
